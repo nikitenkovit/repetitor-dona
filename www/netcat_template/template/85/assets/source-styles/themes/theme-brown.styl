@@ -1,0 +1,356 @@
+.tpl-theme-brown
+
+    //-------------------------------------------------------------------------
+    // header
+    //-------------------------------------------------------------------------
+    body > header
+
+        // Navbar
+        .tpl-block-navbar
+            background  #161312
+            margin-top  -20px
+            height      50px
+            padding-top 14px
+
+            a
+                color #7c6761
+
+            // login link
+            .tpl-link-login a
+                color #FFF
+                dashed-underline(#FFF)
+
+            &:after
+                content    ''
+                position   absolute
+                width      100%
+                height     50px
+                background #161312
+                top        0
+                right      0
+                z-index    -1
+
+        // Cart
+        .icon-cart-blue
+            @extend .icon-cart-white-large
+        .tpl-link-cart:hover
+            color #7c6761
+
+
+        // Menu
+        .tpl-block-menu div > a:hover
+            color #7c6761
+
+        .tpl-state-current
+            color #7c6761 !important
+
+
+        // Search
+        .tpl-block-search-query
+            input
+                color #000 !important
+
+            input:placeholder
+            input:-moz-placeholder
+            input::-webkit-input-placeholder
+                color #333
+            button
+                opacity 1
+                .icon-search
+                    color #161312
+
+    //-------------------------------------------------------------------------
+    // Sidebar menu
+    //-------------------------------------------------------------------------
+
+    .tpl-block-menu-secondary
+        opacity .9
+
+    //-------------------------------------------------------------------------
+    // Hero banner
+    //-------------------------------------------------------------------------
+
+    .tpl-block-hero
+        .tpl-block-hero-item a:before
+            content ''
+            position absolute
+            left 260px
+            top 0
+            right 21px
+            // height 100%
+            bottom 30px
+            background #FFF
+        .s-circle
+            background none
+        .s-info
+            text-align left
+            top        160px
+            left       280px
+
+            &,*
+                color #000
+        .s-product
+            right 20px
+        // Controls
+        .tpl-block-prevnext > *
+            background #161312 !important
+            opacity 0.9
+            &:hover
+                opacity 1
+
+    //-------------------------------------------------------------------------
+    // Modal
+    //-------------------------------------------------------------------------
+
+    // background
+    .tpl-block-mfp-bg
+        background #161312
+
+    // modal window
+    .tpl-block-popup
+        background #7c6761
+
+    //-------------------------------------------------------------------------
+    // Form
+    //-------------------------------------------------------------------------
+
+    button[type="submit"]
+        background #161312
+        color      #FFF
+
+    //-------------------------------------------------------------------------
+    // News
+    //-------------------------------------------------------------------------
+
+    .tpl-component-news
+        h2
+        > .tpl-link-more
+            color #FFF
+
+        // Row
+        .tpl-block-list-object
+            // title
+            .tpl-property-news-title
+                color        #C3C3C3
+                border-color #7c6761 // news row border
+                font-stretch condensed
+                &:hover
+                    text-decoration underline
+                    color #C3C3C3
+            // announce
+            .tpl-property-announce
+                color #C3C3C3
+            // more link
+            a.tpl-link-more
+                color #FFF
+
+    //-------------------------------------------------------------------------
+    // [<] [>]
+    //-------------------------------------------------------------------------
+    .tpl-block-prevnext > *
+        opacity .7
+
+        &:hover
+            opacity      1 !important
+            color        #FFF !important
+            border-color #FFF !important
+
+    //-------------------------------------------------------------------------
+    // New goods
+    //-------------------------------------------------------------------------
+
+    .tpl-block-goods-new
+
+        .tpl-block-list-object
+            article
+                background   #c3c3c3
+                border-color @background
+                position relative
+                &:before
+                    content    ''
+                    position   absolute
+                    left       10px
+                    top        10px
+                    width      95px
+                    height     110px
+                    background #FFF
+                *
+                    color #000
+                    text-transform none
+
+                // Star
+                .tpl-block-rating-item *
+                    color #312623 !important
+
+    //-------------------------------------------------------------------------
+    // Сейчас смотрят / аксессуары
+    //-------------------------------------------------------------------------
+
+    .tpl-block-list-objects
+    .tpl-widget-netshop-viewed-by-user
+    .tpl-widget-netshop-accessories
+    .tpl-block-goods-viewed-now
+        article
+            background #FFF
+            border-color #7c6761
+
+            *
+                color #000
+            // Star
+            .tpl-block-rating-item *
+                color #7c6761 !important
+
+            // Cart icon
+            .tpl-link-cart-add:before
+                @extend .icon-cart-brown
+
+    //-------------------------------------------------------------------------
+
+    // Buy btn
+    .tpl-link-cart-add-and-checkout
+        background #c3c3c3 !important
+        color #000 !important
+        &:hover
+            background #7C6761 !important
+            color #FFF !important
+
+    //-------------------------------------------------------------------------
+
+    .tpl-block-tabs--footer
+        .tpl-block-tabs-wrapper
+            background #161312
+
+
+    //-------------------------------------------------------------------------
+    // Footer
+    //-------------------------------------------------------------------------
+
+    footer
+        background none
+
+        .tpl-block-footer-list
+            border-color #7c6761
+
+    //-------------------------------------------------------------------------
+    // Иконки над товаром
+    //-------------------------------------------------------------------------
+
+    .tpl-block-menu-secondary
+        .tpl-block-menu-secondary-item:hover *
+            text-decoration none
+            color #FFF !important
+        .icon-bluecheck
+            @extend .icon-whitecheck
+        .icon-bluetruck
+            @extend .icon-whitetruck
+        .icon-bluecards
+            @extend .icon-whitecards
+        .icon-bluepin
+            @extend .icon-whitepin
+
+    //-------------------------------------------------------------------------
+    // Звездочки
+    //-------------------------------------------------------------------------
+
+    .tpl-block-rating
+        .tpl-block-rating-item *
+            color #7c6761 !important
+
+    //-------------------------------------------------------------------------
+    // Кол-во
+    //-------------------------------------------------------------------------
+
+    .tpl-block-amountchoice-value
+        background #c3c3c3
+        color #000
+
+    //-------------------------------------------------------------------------
+    // Параметры товара
+    //-------------------------------------------------------------------------
+
+    .tpl-block-cart-form
+        border-color #c3c3c3
+        .tpl-state-available
+            &,*
+                color #7c6761 !important
+        .tpl-divider
+            border-color #7c6761 !important
+
+        .tpl-link-cart-add
+            background-color #7C6761 !important
+            &:hover
+                opacity 0.8
+
+    //-------------------------------------------------------------------------
+
+    .tpl-block-tabs
+        .tpl-block-tabs-tab
+            color #7c6761
+            &.tpl-state-current
+                color #FFF
+
+    p
+        color #c3c3c3
+
+    .tpl-block-filter .nc_netshop_filter_row
+        background #7C6761
+
+    .tpl-property-type:after
+        display none !important
+
+    .tpl-block-list-object
+        article
+            border-color #7c6761
+
+    .tpl-component-goods .tpl-layout-tiles article > a:hover h3
+        color #7c6761
+
+    .chosen-container *
+        color #000 !important         
+
+    .nc_comments .dashed
+        A
+            border-bottom-color: #fff
+
+        A:hover
+            border-bottom-color: #161312
+
+    .tpl-block-properties TABLE TR:hover
+        background-color: #7c6761
+
+    .tpl-block-full-main .fotorama__stage
+        background-color: #fff
+    .tpl-block-content h1
+        color: #ffffff;
+
+    .tpl-block-main.tpl-component-cart .tpl-block-cart-actions .tpl-link-order-add
+        background: #161312 !important
+
+    .tpl-block-goods-new
+    .tpl-block-goods-offers
+    .tpl-block-goods-viewed-now
+    .tpl-block-goods-bought-recently
+    .tpl-widget-netshop-accessories
+    .tpl-widget-netshop-bought-together
+    .tpl-widget-netshop-viewed-together
+    .tpl-widget-netshop-compare
+    .tpl-widget-netshop-favorite
+    .tpl-widget-netshop-viewed-by-user
+    // Buy btn
+        .tpl-link-select-variant
+            background #c3c3c3 !important
+            color #000 !important
+            &:hover
+                background #7C6761 !important
+                color #FFF !important
+
+    #goodslist-compare-remove-confirm button
+    #goodslist-favorite-remove-confirm button
+    #cart-item-remove-confirm
+    .tpl-component-goods .tpl-layout-list a.tpl-link-select-variant
+    .nc-form button
+        background: #c3c3c3 !important
+        color: #000 !important
+        &:hover
+            background: #7C6761 !important
+            color: #FFF !important

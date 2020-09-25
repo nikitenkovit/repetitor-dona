@@ -1,0 +1,15 @@
+<!-- FormPrefix --><? if($totRows >= 5){ ?>
+<div class="teachers-sl owl-carousel owl-theme">
+<? }else{ ?>
+<div class="teachers-sl-5mil">
+<? } ?><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><div class="item">
+            <div class="block">
+              <div class="foto"><?=$f_objectPic ? "<img src='$f_objectPic_preview_url' alt=''>" : NULL?></div>
+              <div class="name"><?=$f_objectName?></div>
+              <a href="#" date="teac<?=$f_RowID?>" class="bottom-teacher">ПОДРОБНЕЕ О ПРЕПОДОВАТЕЛЕ</a>
+            </div>
+          </div><!-- /RecordTemplate -->
+
+<!-- FormSuffix --></div><!-- /FormSuffix -->

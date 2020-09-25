@@ -1,0 +1,16 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+		<div class="block6">
+			<div class="wrapper">
+				<div class="h2 center">ПОЧЕМУ УЧЕНИКИ И ИХ РОДИТЕЛИ  ВЫБИРАЮТ НАС</div>
+                <ol><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?>
+<li>
+						<div class="h4"><?=$f_objectName?></div>
+						<p><?=$f_objectText?></p>
+						<?= $f_objectUrl ? "<a class='more' href='$f_objectUrl'>$f_objectUrlText</a>" : NULL?>
+					</li><!-- /RecordTemplate -->
+
+<!-- FormSuffix --></ol>
+</div>
+		</div><!-- /FormSuffix -->

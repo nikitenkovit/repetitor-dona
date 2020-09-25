@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="40" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Заявки</Subdivision_Name>
+      <EnglishName>zayavki</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="327" subdivision_id="40" class_id="2068">
+      <Sub_Class_Name>Заявка на акцию</Sub_Class_Name>
+      <EnglishName>zayavki-4</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2811" type_of_data_id="1">
+      <Field_Name>objectName</Field_Name>
+      <Description>Заголовок блока</Description>
+    </field>
+    <field field_id="2812" type_of_data_id="3">
+      <Field_Name>objectText</Field_Name>
+      <Description>Подзаголовок</Description>
+    </field>
+    <field field_id="2813" type_of_data_id="3">
+      <Field_Name>objectText2</Field_Name>
+      <Description>Текст</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="3" class_id="2068" subdivision_id="40" sub_class_id="327">
+      <User_ID>397</User_ID>
+      <Priority>1</Priority>
+      <Checked>1</Checked>
+      <IP>93.178.65.132</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2020-08-13 10:30:41</Created>
+      <LastUpdated>2020-08-13 10:30:41</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[111]]></objectName>
+      <objectText><![CDATA[<p>111</p>]]></objectText>
+      <objectText2><![CDATA[<p>11</p>]]></objectText2>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

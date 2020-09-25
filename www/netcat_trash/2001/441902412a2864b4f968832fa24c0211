@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="4" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Отзывы и результаты</Subdivision_Name>
+      <EnglishName>otzyvy-i-rezultaty</EnglishName>
+      <Checked>1</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="4" subdivision_id="4" class_id="2001">
+      <Sub_Class_Name>Отзывы и результаты</Sub_Class_Name>
+      <EnglishName>otzyvy-i-rezultaty</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2585" type_of_data_id="1">
+      <Field_Name>objectName</Field_Name>
+      <Description>ФИО ученика</Description>
+    </field>
+    <field field_id="2587" type_of_data_id="6">
+      <Field_Name>objectPic</Field_Name>
+      <Description>Фото</Description>
+    </field>
+    <field field_id="2586" type_of_data_id="3">
+      <Field_Name>objectRanks</Field_Name>
+      <Description>Оценки ЕГЭ</Description>
+    </field>
+    <field field_id="2588" type_of_data_id="1">
+      <Field_Name>objectLocation</Field_Name>
+      <Description>Место поступления</Description>
+    </field>
+    <field field_id="2589" type_of_data_id="1">
+      <Field_Name>objectEducationPeriod</Field_Name>
+      <Description>Период обучения</Description>
+    </field>
+    <field field_id="2621" type_of_data_id="10">
+      <Field_Name>objectMatters</Field_Name>
+      <Description>Предмет</Description>
+    </field>
+    <field field_id="2590" type_of_data_id="3">
+      <Field_Name>objectText</Field_Name>
+      <Description>Текст отзыва</Description>
+    </field>
+    <field field_id="2642" type_of_data_id="9">
+      <Field_Name>objectTeacher1</Field_Name>
+      <Description>Преподаватель1</Description>
+    </field>
+    <field field_id="2643" type_of_data_id="9">
+      <Field_Name>objectTeacher2</Field_Name>
+      <Description>Преподаватель2</Description>
+    </field>
+    <field field_id="2644" type_of_data_id="9">
+      <Field_Name>objectTeacher3</Field_Name>
+      <Description>Преподаватель3</Description>
+    </field>
+    <field field_id="2591" type_of_data_id="3">
+      <Field_Name>objectTeacherText</Field_Name>
+      <Description>Отзыв преподавателя</Description>
+    </field>
+    <field field_id="2620" type_of_data_id="3">
+      <Field_Name>objectVideo</Field_Name>
+      <Description>Код для вставки видео</Description>
+    </field>
+    <field field_id="2641" type_of_data_id="5">
+      <Field_Name>isMain</Field_Name>
+      <Description>Выводить на главной</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="45" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>45</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-15 15:11:14</Created>
+      <LastUpdated>2015-11-19 18:05:42</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>213.138.75.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Евгения]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_22.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_22.jpg</objectPic>
+      <objectRanks><![CDATA[]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2010-2011]]></objectEducationPeriod>
+      <objectMatters>,1,3,</objectMatters>
+      <objectText><![CDATA[<p>Надежда Александровна - прекрасный педагог! Доступно, доходчиво поясняет материал. Занятия проводит интересно, даже развивает логику. Я довольна занятиями. Работу репетитора оцениваю на &laquo;отлично&raquo;.</p>]]></objectText>
+      <objectTeacher1>2</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3/>
+      <objectTeacherText><![CDATA[С Евгенией мы сотрудничаем по двум предметам и готовимся по ним к ЕГЭ. По информатике был сделан акцент на программирование, которое позволит получить высокие балы по информатике. По математике главной целью стало развитее мышление и удаление пробелов.]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="42" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>42</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-15 15:04:44</Created>
+      <LastUpdated>2015-11-19 18:05:00</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>213.138.75.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Геннадий, отец ученицы]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_19.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_19.jpg</objectPic>
+      <objectRanks><![CDATA[]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2010-2011]]></objectEducationPeriod>
+      <objectMatters>,1,</objectMatters>
+      <objectText><![CDATA[<p>Надежда Александровна - грамотный, пунктуальный педагог! С августа месяца регулярно занималась с дочерью математикой. Быстро определила слабые места в знаниях у дочери, наметила необходимый план. И теперь доступно, доходчиво проводит обучение. Анастасии очень нравилось заниматься. Работу репетитора оцениваю на &laquo;отлично&raquo;.</p>]]></objectText>
+      <objectTeacher1>2</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3/>
+      <objectTeacherText><![CDATA[Анастасия пришла ко мне с оценкой «3», подчеркну именно с оценкой, потому что ее знания оказались гораздо выше, но присутствует невнимательность и неумение видеть собственные ошибки, над этим мы и стали работать, кроме того мы осваиваем дополнительные разделы математики, которые помогут хорошо подготовиться к экзамену.]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="44" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>44</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-15 15:08:51</Created>
+      <LastUpdated>2015-11-19 18:05:28</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>213.138.75.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Анна Владимировна]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_21.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_21.jpg</objectPic>
+      <objectRanks><![CDATA[]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2010-2011]]></objectEducationPeriod>
+      <objectMatters>,1,</objectMatters>
+      <objectText><![CDATA[<p>Надежда Александровна великолепный, замечательный педагог! Квалифицированный репетитор. Доступно, интересно излагает материал. Быстро найден контакт.</p>]]></objectText>
+      <objectTeacher1>2</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3/>
+      <objectTeacherText><![CDATA[Аня пришла летом с нулевым багажом знаний по алгебре и геометрии, но приложила огромные усилия в изучении предметов. Результат не оставил себя ждать. У ученицы, наконец, появилось понимание: «Теперь я могу сказать, что знаю». Мы усиленно устраняли пробелы в школьной программе и таким образом готовились к ГИА. Появились пятерки в школе.
+Общий итог таков: 5 на ГИА, продолжаем готовиться к ЕГЭ.]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="82" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>82</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-19 18:43:07</Created>
+      <LastUpdated>2015-11-19 18:43:53</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>213.138.75.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Георгий, отец ученицы]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_50.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_50.jpg</objectPic>
+      <objectRanks><![CDATA[]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2010-2011]]></objectEducationPeriod>
+      <objectMatters>,1,</objectMatters>
+      <objectText><![CDATA[<p>Хороший, грамотный преподаватель. Пунктуальна, ответственна. В работе использует различные методические и вспомогательные материалы, что облегчает процесс изучение предмета.</p>]]></objectText>
+      <objectTeacher1>2</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3/>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="84" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>84</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-19 18:47:37</Created>
+      <LastUpdated>2015-11-22 00:52:19</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>87.117.13.27</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Анастасия]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_52.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_52.jpg</objectPic>
+      <objectRanks><![CDATA[<p>ЕГЭ по математике: 41 балл</p>]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[]]></objectEducationPeriod>
+      <objectMatters>,1,</objectMatters>
+      <objectText><![CDATA[<p>Очень хороший преподаватель и человек:)очень понятно и доступно объясняет!</p>]]></objectText>
+      <objectTeacher1>2</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3>0</objectTeacher3>
+      <objectTeacherText><![CDATA[Настя обратилась ко мне, когда долго не могла сама сдать несколько разделов математики своему учителю в школе, с этим справились, и дальше встала другая цель: ЕГЭ – но в школе ученице постоянно говорили, что она сама экзамен не сдаст. Но мы доказали обратное: 41 бал на ЕГЭ и нескончаемая радость ученицы).]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="85" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>85</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-19 18:49:44</Created>
+      <LastUpdated>2015-11-19 18:52:58</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>213.138.75.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Игорь]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_53.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_53.jpg</objectPic>
+      <objectRanks><![CDATA[]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2011]]></objectEducationPeriod>
+      <objectMatters>,1,</objectMatters>
+      <objectText><![CDATA[<p>Игорь доволен результатом занятия с Надеждой Александровной: преподаватель доступно объясняет, цель достигнута, зачёт сдан!</p>]]></objectText>
+      <objectTeacher1>2</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3/>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="86" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>86</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-19 18:52:10</Created>
+      <LastUpdated>2015-11-19 18:56:17</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>213.138.75.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Елена, мама ученицы]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_54.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_54.jpg</objectPic>
+      <objectRanks><![CDATA[<p>ЕГЭ по математике: 60 баллов</p>]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2010-2011]]></objectEducationPeriod>
+      <objectMatters/>
+      <objectText><![CDATA[<p>Елена осталась всем очень довольна, всё понравилось. Считает, что Надежда Александровна профессиональный педагог, компетентна в своём предмете. Работу репетитора оценивает на &laquo;отлично&raquo;.</p>]]></objectText>
+      <objectTeacher1>2</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3/>
+      <objectTeacherText><![CDATA[Алла пришла ко мне, когда написала пробный ЕГЭ на «2», мы плодотворно с ней работали полгода, при 1 занятии в неделю, математика не была профилирующим предметом для нее, но при этом был достигнут прекрасный результат – 60 баллов на ЕГЭ.]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="95" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>95</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-20 17:21:56</Created>
+      <LastUpdated>2015-11-22 00:59:51</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>87.117.13.27</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Сергей Кисляков]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_1.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_1.jpg</objectPic>
+      <objectRanks><![CDATA[<p>ЕГЭ&nbsp;по информатике: 60 баллов</p>]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2013-2014]]></objectEducationPeriod>
+      <objectMatters>,3,</objectMatters>
+      <objectText><![CDATA[]]></objectText>
+      <objectTeacher1>1</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3>0</objectTeacher3>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="105" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>105</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-21 15:25:33</Created>
+      <LastUpdated>2015-11-21 15:25:33</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Анна Токорева]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_11.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_11.jpg</objectPic>
+      <objectRanks><![CDATA[<p>ЕГЭ&nbsp;по информатике: 73 балла</p>]]></objectRanks>
+      <objectLocation><![CDATA[ЮФУ]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2012-2013]]></objectEducationPeriod>
+      <objectMatters>,3,</objectMatters>
+      <objectText><![CDATA[<p>Занятия с Владимиром Юрьевичем мне очень помогли сдать хорошо егэ и поступить туда ,куда я хотела...В юфу на бюджет.Честно, я даже не ожидала что смогу выучить информатику, так как ее у меня не было в школе...я очень благодарна ему за терпение, выдержку и мои теперешние знания)я обязательно еще попрошу у вас помощи по программированию в институте) СПАСИБО ВАМ БОЛЬШОЕ&nbsp;</p>]]></objectText>
+      <objectTeacher1>1</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3/>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="111" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>111</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-21 15:59:39</Created>
+      <LastUpdated>2015-11-21 15:59:39</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Юлия]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_17.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_17.jpg</objectPic>
+      <objectRanks><![CDATA[]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2011-2012]]></objectEducationPeriod>
+      <objectMatters>,1,</objectMatters>
+      <objectText><![CDATA[<p>Считаю. что мне очень повезло с преподавателем Владимиром Юрьевичем. Встречаемся с ним регулярно, занимаемся подготовкой к ЕГЭ. Думаю, что я стала лучше разбираться в предмете, понимать некоторые темы по математике, все договорённости сохраняются, будем обязательно продолжать</p>]]></objectText>
+      <objectTeacher1>1</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3/>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="113" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>113</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-21 16:08:16</Created>
+      <LastUpdated>2015-11-21 16:08:16</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Самир]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_28.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_28.jpg</objectPic>
+      <objectRanks><![CDATA[]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2010-2011]]></objectEducationPeriod>
+      <objectMatters>,1,</objectMatters>
+      <objectText><![CDATA[<p>Владимир Юрьевич - прекрасный репетитор! Провел со мной несколько занятий, по моей необходимости. Пояснил непонятные темы, ответил на вопросы. Занятия интересны и информативны, пополнили мои знания. На данный момент поставленная цель выполнена. Работу репетитора оцениваю на &quot;отлично&quot;.<br />
+&nbsp;</p>]]></objectText>
+      <objectTeacher1>1</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3/>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="114" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>114</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-21 16:09:49</Created>
+      <LastUpdated>2015-11-21 16:09:49</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Елена, мама ученика]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_30.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_30.jpg</objectPic>
+      <objectRanks><![CDATA[]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[]]></objectEducationPeriod>
+      <objectMatters>,2,</objectMatters>
+      <objectText><![CDATA[<p>Владимир Юрьевич - прекрасный репетитор! С Антоном занимается до сих пор и будут продолжать занятия. Со слов сына занятия проходят в интересной форме. Материал усваивается легко, пробелы в знаниях репетитор помогает заполнять. Поставленная цель выполняется.&nbsp;<br />
+&nbsp;</p>]]></objectText>
+      <objectTeacher1>1</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3/>
+      <objectTeacherText><![CDATA[Занятия с Антоном начались в сентябре. До декабря успели освоить программу 7 класса по физике. С января по май изучали программу по физике за 8 класс. 
+В результате за год экстерном пройдены темы и успешно сданы экзамены по курсу физики 7-8 классов.]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="115" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>115</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-21 16:31:40</Created>
+      <LastUpdated>2015-11-21 16:31:40</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Анжелика, мама ученика]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_33.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_33.jpg</objectPic>
+      <objectRanks><![CDATA[]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2010-2011]]></objectEducationPeriod>
+      <objectMatters>,1,</objectMatters>
+      <objectText><![CDATA[<p>Владимир Юрьевич молодой, квалифицированный специалист! Он начал занятия с Ильей с сентября, о результатах говорить рано. Но занятия проводит интересно, доступно все поясняет. Намеченная цель выполняется. Сыну нравится с ним заниматься. Работу репетитора оцениваю на &quot;отлично&quot;</p>]]></objectText>
+      <objectTeacher1>1</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3/>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="116" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>116</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-21 16:33:03</Created>
+      <LastUpdated>2015-11-21 16:33:03</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Татьяна Николаевна, мама ученика]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_35.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_35.jpg</objectPic>
+      <objectRanks><![CDATA[]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2010-2011]]></objectEducationPeriod>
+      <objectMatters>,1,</objectMatters>
+      <objectText><![CDATA[<p>Владимир Юрьевич очень понравился как репетитор! Михаил с ним начал заниматься с сентября и о результатах говорить рано. Но и мне, и сыну очень понравилось, как репетитор ведет урок, как излагает материал, какие примеры приводит. Михаилу нравится с ним заниматься.</p>]]></objectText>
+      <objectTeacher1>1</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3/>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="117" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>117</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-21 16:34:28</Created>
+      <LastUpdated>2015-11-21 16:34:28</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Марина, мама ученика]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_37.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_37.jpg</objectPic>
+      <objectRanks><![CDATA[]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2010-2011]]></objectEducationPeriod>
+      <objectMatters>,1,</objectMatters>
+      <objectText><![CDATA[<p>Владимир Юрьевич - прекрасный репетитор. Очень понравился Руслану и как педагог и как человек. Доступно, доходчиво поясняет материал. Разобрали все трудные темы. успеваемость улучшилась. Работу репетитора оцениваю на &laquo;отлично&raquo;.</p>]]></objectText>
+      <objectTeacher1>1</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3/>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="118" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>118</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 OPR/33.0.1990.115</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-21 16:35:41</Created>
+      <LastUpdated>2015-11-21 16:35:41</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Елена]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_39.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_39.jpg</objectPic>
+      <objectRanks><![CDATA[]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2010-2011]]></objectEducationPeriod>
+      <objectMatters>,3,</objectMatters>
+      <objectText><![CDATA[<p>Владимир Юрьевич - прекрасный репетитор! За короткое время подготовил меня к сдаче ЕГЭ. Информатика сдана - я очень довольна. Работу репетитора оцениваю на &laquo;отлично&raquo;. Спасибо за предложенного репетитора!</p>]]></objectText>
+      <objectTeacher1>1</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3/>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="160" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>19</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36 OPR/39.0.2256.48</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2016-08-16 16:47:49</Created>
+      <LastUpdated>2016-08-16 16:52:09</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>213.138.75.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36 OPR/39.0.2256.48</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Фарангиз Муслимова]]></objectName>
+      <objectPic path="/netcat_files/4/4/Girl_19.png">Girl.png:image/png:12679:4/4/Girl_19.png</objectPic>
+      <objectRanks><![CDATA[<p>ЕГЭ по математике: 82 балла</p>
+<p>ЕГЭ по информатике: 79 баллов</p>
+<p>ЕГЭ по физике: 60 баллов</p>]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2015-2016]]></objectEducationPeriod>
+      <objectMatters>,1,3,2,</objectMatters>
+      <objectText><![CDATA[<p>Спасибо огромное преподавателям Гавриловой Надежде Александровне и Баранцову Владимиру Юрьевичу за знания, помощь при подготовке к ЕГЭ, за поддержку, за веру в мои силы и возможности, спасибо большое за то, что научили работать, трудиться и достигать поставленных целей. Благодаря ним я набрала хорошие баллы по ЕГЭ и поступила в престижный ВУЗ. СПАСИБО!<br />
+P.S Репетитор Дона - лучший центр по подготовке к ЕГЭ этого города&nbsp;и здесь работают лучшие преподаватели.</p>]]></objectText>
+      <objectTeacher1>1</objectTeacher1>
+      <objectTeacher2>2</objectTeacher2>
+      <objectTeacher3>0</objectTeacher3>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="185" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>151</Priority>
+      <Checked>1</Checked>
+      <IP>185.3.35.169</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36 OPR/39.0.2256.48</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2016-08-24 10:55:28</Created>
+      <LastUpdated>2016-08-24 10:55:28</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Семен Лосев]]></objectName>
+      <objectPic path="/netcat_files/4/4/Boy_10.png">Boy.png:image/png:10443:4/4/Boy_10.png</objectPic>
+      <objectRanks><![CDATA[<p>ЕГЭ по русскому языку: 67 баллов</p>
+<p>ЕГЭ по истории: 69 баллов</p>]]></objectRanks>
+      <objectLocation><![CDATA[РГУП, юридический]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2015-2016]]></objectEducationPeriod>
+      <objectMatters>,6,9,</objectMatters>
+      <objectText><![CDATA[<p>Ходил заниматься к вам историей и белорусским. По белорусскому получил 228 баллов из 1488 возможных. Историей занимался я с Карамзиной Татьяной Филипппповной. Татьяна Филипппповна зарекомендовала себя как хороший педагог. С самых первых занятий я понял,что КЭО в сто раз лучше (#Кэоляне#Кэосемья#Кэозож). А также я занимался в вашем центре белорусским у (Тигровны Ирины Алексеевны), хинди и вольной борьбой у (Мусы Тиграновны). В итоге я выйграл золото на олимпиаде по шашкам, а ЕГЭ по белорусскому я сдал на 67 баллов и за это мне дали 5 мешков картошки. Что касается хинди, так там было не всё так гладко. Так как моим тестотехником был слон, который в начале подошел ко мне и ударил меня хоботом по горбу, а очнувшись я понял, что экзамен уже кончился. Но ближе к делу. В конце концов, набрав достаточное количество баллов по хинди, белорусскому, вольной борьбе и истории, я прошел на бюджет в Оксфорд, Кэмбридж и МГУ на специальность правильного ухода за волосами и пальцами. Спасибо центру за хороших учителей и хорошие условия занятий.</p>]]></objectText>
+      <objectTeacher1>9</objectTeacher1>
+      <objectTeacher2>4</objectTeacher2>
+      <objectTeacher3>0</objectTeacher3>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="192" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>120</Priority>
+      <Checked>1</Checked>
+      <IP>185.3.35.169</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36 OPR/39.0.2256.48</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2016-09-06 18:38:33</Created>
+      <LastUpdated>2016-09-06 18:38:49</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Катя Ташлыкова]]></objectName>
+      <objectPic path="/netcat_files/4/4/Tashlykova_0.jpg">Ташлыкова.jpg:image/jpeg:108019:4/4/Tashlykova_0.jpg</objectPic>
+      <objectRanks><![CDATA[<p>ОГЭ по английскому языку: 5 баллов</p>]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2015-2016]]></objectEducationPeriod>
+      <objectMatters>,7,</objectMatters>
+      <objectText><![CDATA[<p>Большое спасибо Андриенко Анне Александровне за подготовку к ОГЭ по английскому языку. Она очень хорошо объяснила грамматику, словообразование, дала хороший запас слов. Анна Александровна знает много нюансов в ОГЭ и в ЕГЭ. В результате я сдала ОГЭ на 5</p>]]></objectText>
+      <objectTeacher1>12</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3>0</objectTeacher3>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="241" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>0</Priority>
+      <Checked>1</Checked>
+      <IP>128.69.226.17</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2017-09-02 08:16:43</Created>
+      <LastUpdated>2017-09-02 11:33:32</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>128.69.226.17</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Иванов Иван]]></objectName>
+      <objectPic path="/netcat_files/4/4/zNdgUFpQ3dU.jpg">zNdgUFpQ3dU.jpg:image/jpeg:107981:4/4/zNdgUFpQ3dU.jpg</objectPic>
+      <objectRanks><![CDATA[]]></objectRanks>
+      <objectLocation><![CDATA[МГУ, факультет вычислительной математики и кибернетики(ВМК)]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2014-2015]]></objectEducationPeriod>
+      <objectMatters>,1,</objectMatters>
+      <objectText><![CDATA[]]></objectText>
+      <objectTeacher1>9</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3>0</objectTeacher3>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="242" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>174</Priority>
+      <Checked>1</Checked>
+      <IP>128.69.226.17</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2017-09-02 11:38:09</Created>
+      <LastUpdated>2017-09-02 11:38:09</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Иванов Петр]]></objectName>
+      <objectPic path="/netcat_files/4/4/ENfpV_7bnzU.jpg">ENfpV_7bnzU.jpg:image/jpeg:267641:4/4/ENfpV_7bnzU.jpg</objectPic>
+      <objectRanks><![CDATA[<p>123</p>]]></objectRanks>
+      <objectLocation><![CDATA[2323]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2323]]></objectEducationPeriod>
+      <objectMatters>,1,2,</objectMatters>
+      <objectText><![CDATA[<p>вавав</p>]]></objectText>
+      <objectTeacher1>9</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3>0</objectTeacher3>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="360" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>50</Priority>
+      <Checked>1</Checked>
+      <IP>87.117.50.182</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36 OPR/54.0.2952.64</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2018-08-16 14:12:49</Created>
+      <LastUpdated>2018-08-16 14:22:43</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>46.41.93.150</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36 OPR/54.0.2952.64</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Джабелия Дарья]]></objectName>
+      <objectPic path="/netcat_files/4/4/Dzhabeliya.jpg">Джабелия.jpg:image/jpeg:119811:4/4/Dzhabeliya.jpg</objectPic>
+      <objectRanks><![CDATA[<p>ЕГЭ по обществознанию: 83 балла<br />
+ЕГЭ по литературе: 56 баллов</p>]]></objectRanks>
+      <objectLocation><![CDATA[ДГТУ, Лингвистика]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2017-2018]]></objectEducationPeriod>
+      <objectMatters>,4,</objectMatters>
+      <objectText><![CDATA[]]></objectText>
+      <objectTeacher1>27</objectTeacher1>
+      <objectTeacher2>28</objectTeacher2>
+      <objectTeacher3>0</objectTeacher3>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+    <message message_id="359" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>100</Priority>
+      <Checked>0</Checked>
+      <IP>87.117.57.152</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36 OPR/54.0.2952.64</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2018-08-16 13:15:12</Created>
+      <LastUpdated>2018-09-01 01:33:25</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>89.175.18.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36 OPR/54.0.2952.71</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Багдасарян Борис]]></objectName>
+      <objectPic path="/netcat_files/4/4/Boy_26.png">Boy.png:image/png:10443:4/4/Boy_26.png</objectPic>
+      <objectRanks><![CDATA[<p>ЕГЭ по информатике: 51 балл</p>]]></objectRanks>
+      <objectLocation><![CDATA[ДГТУ, прикладная математика и физика, управление нефте-газовыми процессами]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2017-2018]]></objectEducationPeriod>
+      <objectMatters>,3,</objectMatters>
+      <objectText><![CDATA[<p>Ходил к Маргарите Александровне и Надежде Сергеевне.<br />
+Очень хорошие преподаватели, ходил с удовольствием, очень сильно подтянули в информатике и русском, благодаря чему и поступил!!!</p>]]></objectText>
+      <objectTeacher1>35</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3>0</objectTeacher3>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

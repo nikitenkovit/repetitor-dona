@@ -1,0 +1,27 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+<? $counter = 1; ?>
+<div class="aboutLessonsFAQ">
+		<div class="wrapper">
+			<div class="h1 center">Часто задаваемые вопросы:</div>
+			<table>
+				<tr>
+                    <td><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><div class="aboutLessonsFAQItem">
+    <?= $f_AdminButtons; ?>
+    <div class="h2"><?=$f_objectName?></div>
+	<?=$f_objectText?>
+	<?=$f_objectUrl ? "<p><a href='$f_objectUrl'>$f_objectUrlText</a></p>" : NULL?>
+</div>	
+<?
+    if($counter == 5) {
+        echo "</td><td>";
+    }
+?>
+<? $counter++; ?><!-- /RecordTemplate -->
+
+<!-- FormSuffix --></td>
+</tr>
+			</table>
+		</div>
+	</div><!-- /FormSuffix -->

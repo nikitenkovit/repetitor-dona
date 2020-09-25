@@ -1,0 +1,49 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+<div class="gia">
+		<div class="block1">
+			<div class="wrapper">
+			    <div class="loginPan">
+			        <?=!$current_user['Login'] ? "
+                  <a href='/netcat/modules/auth/' class='enter logIn'>Войти</a>
+                  " : "
+                  <a href='/lk/' class='enter'>Личный Кабинет</a> / 
+                  <a href='/netcat/modules/auth/?logoff=1&REQUESTED_FROM=".$REQUEST_URI."&REQUESTED_BY=".$REQUEST_METHOD."' class='enter'>Выйти</a>
+              "?>
+			    </div>
+			    			    
+			<!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?>
+<h1 class="h1 center"><?=$f_objectName?></h1><!-- /RecordTemplate -->
+
+<!-- FormSuffix --></div>	
+		</div>
+        
+        <div class="block2">
+			<div class="wrapper">
+			    	    
+			</div>	
+			<div class="arrow"></div>
+		</div>
+
+		<div class="block3">
+			<div class="wrapper">
+				<?=nc_objects_list(6, 303)?>
+				<?=nc_objects_list(6, 304)?>
+            </div>    
+		</div>
+        
+        <div class="block4">
+			<div class="wrapper">
+                <?=nc_objects_list(4, 4, "&nc_ctpl=2074&recNum=4&showGIA=1")?>
+                <?=nc_objects_list(4, 4, "&nc_ctpl=2075&recNum=8&showGIA=1&showCarousel=1")?>
+            </div>
+        </div>
+        
+        <?=nc_objects_list(6, 306)?>
+        <?=nc_objects_list(6, 308)?>
+        <?=nc_objects_list(6, 309)?>
+        <?=nc_objects_list(6, 310)?>
+        <?=nc_objects_list(6, 315)?>		
+        
+</div>        <!-- /FormSuffix -->

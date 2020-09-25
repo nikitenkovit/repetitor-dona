@@ -1,0 +1,23 @@
+<div class="wrapper">
+			<form name='adminForm' id='adminForm' class='ajaxForm nc-form' enctype='multipart/form-data' method='post' action='<?= $SUB_FOLDER ?><?= $HTTP_ROOT_PATH ?>add.php?isNaked=1'>
+				
+            <input name='catalogue' type='hidden' value='<?= $catalogue ?>' />
+            <input name='cc' type='hidden' value='<?= $cc ?>' />
+            <input name='sub' type='hidden' value='<?= $sub ?>' /><input name='posting' type='hidden' value='1' />
+            <input name='curPos' type='hidden' value='<?= $curPos ?>' />
+            <input name='f_Parent_Message_ID' type='hidden' value='<?= $f_Parent_Message_ID ?>' />
+            
+                <span class="warnText"></span>
+                
+                <div class="block">
+                    <?= nc_string_field('objectName', "maxlength='255' placeholder='Ваше имя' required", ($class_id ? $class_id : $classID), 0) ?>
+                </div>
+				<div class="block">
+                    <?= nc_string_field('objectPhone', "maxlength='255' placeholder='Ваш телефон' required", ($class_id ? $class_id : $classID), 0) ?>
+                </div>
+				<div class="block">				
+					<?= nc_string_field('objectTime', "placeholder='Удобное время для звонк' maxlength='255' required", ($class_id ? $class_id : $classID), 0) ?>
+				</div>
+				<div class="formButton"><button class="pull-right"><span class='preloader'></span>Записаться</button></div>
+			</form>
+		</div>

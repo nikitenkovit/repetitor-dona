@@ -1,0 +1,19 @@
+<?= $f_AdminCommon; ?>
+
+<div class="articles">
+		<div class="wrapper">
+			    <div class="loginPan">
+			        <?=!$current_user['Login'] ? "
+                        <a href='/netcat/modules/auth/' class='enter logIn'>Войти</a>
+                        " : "
+                        <a href='/lk/' class='enter'>Личный Кабинет</a> / 
+                        <a href='/netcat/modules/auth/?logoff=1&REQUESTED_FROM=".$REQUEST_URI."&REQUESTED_BY=".$REQUEST_METHOD."' class='enter'>Выйти</a>
+                    "?>
+			    </div>
+			    <h1 class="h1 center">материалы и статьи</h1>	
+			    <div class="intro greenPan">Здесть предствлены полезные статьи, которые помогут вам лучше подготовиться к ЕГЭ и ГИА, выбрать стратегию поступления и много другое... </div>	
+			    <div class="newsItems">
+			    	
+
+	    
+		

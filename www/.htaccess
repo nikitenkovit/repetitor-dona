@@ -1,0 +1,11 @@
+DirectoryIndex index.php
+
+AddDefaultCharset utf-8
+
+# Если NetCat стоит в подпапке, например mysite, то
+# ErrorDocument 404 /mysite/netcat/require/e404.php
+# в противном случае
+ErrorDocument 404 /netcat/require/e404.php
+
+Options -Indexes
+Options +FollowSymLinks

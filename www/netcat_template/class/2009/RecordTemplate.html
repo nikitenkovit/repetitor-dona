@@ -1,0 +1,36 @@
+<?/* Служебная часть */for ($f_RowNum = 0; $f_RowNum < $rowCount; $f_RowNum++) {    if($fetch_row[$f_RowNum] instanceof Iterator) {        extract($fetch_row[$f_RowNum]->to_array(), EXTR_PREFIX_ALL, "f");    } else {        extract($fetch_row[$f_RowNum], EXTR_PREFIX_ALL, "f");    }    foreach($iteration_RecordTemplate[$f_RowNum] as $value) {        extract($value);    }    eval($cc_env["convert2txt"]);    ob_start();/* Конец служебной части */?>
+<?= $f_AdminButtons; ?>
+<div class="contactsItem">
+			<div class="h1"><?=$f_objectName?></div>
+			<ul class="contactsInfo">
+				<li class="contactsAddress">
+					<div class="h3">Адрес</div>
+					<div><?=$f_objectAddress?></div>
+				</li>
+				<li class="contactsPhone">
+					<div class="h3">Телефон</div>
+					<div><?=$f_objectPhone?></div>
+				</li>
+				<li class="contactsTime">
+					<div class="h3">Режим работы</div>
+					<div><?=$f_objectTime?></div>
+				</li>
+				<li class="contactsAddress2">
+					<div class="h3">Ориентир</div>
+					<div><?=$f_objectLocation?></div>
+				</li>
+			</ul>
+			<? if($f_coordinates) : ?><div id="map<?=$f_RowID?>" class="contactsMap"></div><? endif; ?>
+            <? if($f_objectPics->count()) : ?>
+			<div class="contactsSlider">
+				<div class="h4">Фотографии филиала:</div>
+				<a href="" class="contactsSliderButton left"></a>
+				<a href="" class="contactsSliderButton right"></a>
+				<?=$f_objectPics ?>
+			</div>
+            <? endif; ?>
+            
+            
+            
+		</div>
+<?/* Служебная часть */    echo nc_finishing_RecordTemplate(ob_get_clean(), $inside_admin, $classID, $f_RowID, $parent_message, $cc, $cc_env["Class_Name"], $no_cache_marks);}/* Конец служебной части */?>

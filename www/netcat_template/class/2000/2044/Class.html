@@ -1,0 +1,41 @@
+<!-- FormPrefix --><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><div class="block-nfo-teachers <? if($f_RowNum!=0){?>hidden<? } ?>" id="teac<?=$f_RowID?>">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="foto"><?=$f_objectPic ? "<img src='$f_objectPic_preview_url' alt=''>" : NULL?></div>
+              <div class="name"><?=$f_objectName?></div>
+              <?
+                            foreach($f_objectMatters as $index => $val) {
+                                if ($val) {
+                                    echo "<span>$val</span>";                                    
+                                }
+                            }
+              ?>
+              <div class="obr"> 
+                Образование: <?=$f_objectEducation?> <br>
+                <? if($f_objectSkills){ ?>Опыт работы: <?=$f_objectSkills?><? } ?>
+              </div>
+              <a href="#" class="video">Посмотреть видео</a> </div>
+            <div class="col-md-8">
+              <div class="content">
+                <div class="h2 center"><?=$f_objectName?></div>
+                <?=$f_objectShortDesc?>
+                <p style="margin-top: 15px;margin-bottom: 0;"><strong>Район проведения занятий:</strong> <?=$f_objectLocation?></p>
+                <p><strong>Стоимость занятий:</strong> <?=$f_objectPrice?></p>
+                <? if($f_objectAchiev) : ?>
+                  <div class="dffg">
+                      <?=$f_objectAchiev?>
+                  </div>
+                <? endif; ?>
+                
+                <div class="teacherItemMoreInfoLinks">
+                   <a href="/otzyvy-i-rezultaty/?teacherID=<?=$f_RowID?>" class="a">Отзывы учеников</a> 
+                   <a href="<?=$fullLink?>" class="a">Подробнее о преподавателе</a> 
+                </div>
+               </div>
+            </div>
+          </div>
+        </div><!-- /RecordTemplate -->
+
+<!-- FormSuffix --><!-- /FormSuffix -->

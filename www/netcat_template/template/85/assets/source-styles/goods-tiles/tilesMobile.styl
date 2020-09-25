@@ -1,0 +1,133 @@
+tilesMobile()
+  article
+    padding: 370px 40px 230px
+    width: auto
+    min-height: 855px
+    height: auto
+    border: 10px solid
+    theme(border-color 'accent-1-darker')
+    theme(background 'white')
+
+    > a
+      display: block
+      text-decoration: none
+      theme(color 'base')
+      &:hover
+        theme(color 'base')
+        .tpl-property-title
+          theme(color 'base')
+      &:active
+        .tpl-property-title
+          theme(color 'accent-2')
+
+  .tpl-property-description
+  .tpl-link-cart-add-and-checkout
+  .tpl-link-compare-add
+  .tpl-link-compare-remove
+  .tpl-link-favorite-add
+  .tpl-link-favorite-remove
+    display: none
+
+  h3
+    display: block
+    position: static
+    overflow: visible
+    text-overflow: visible
+    white-space: normal
+    text-align: left
+    font-weight: 600
+    font-size: 42px
+    line-height: 1.2
+
+  .tpl-property-type
+    display: block
+    position: static
+    overflow: visible
+    text-overflow: visible
+    white-space: normal
+    margin: 10px 0 0
+    font-size: 24px
+    font-style: italic
+    line-height: 1.2
+    font-weight: 400
+    text-align: left
+    &:after
+      display: none
+
+  .tpl-property-image
+    display: block
+    position: absolute
+    left: 40px
+    right: 40px
+    top: 40px
+    height: 300px
+    width: auto
+    line-height: 300px
+    text-align: center
+
+  .tpl-block-rating
+    position: static
+    width: 100%
+    left: auto
+    right: auto
+    top: auto
+    margin-top: 30px
+    margin-bottom: 10px
+    text-align: left
+    font-size: 2em
+
+  .tpl-property-item-price
+    display: block
+    position: absolute
+    left: 40px
+    margin-top: 10px
+    top: auto
+    bottom: auto
+    right: auto
+    font-size: 57px
+    line-height: 1.2
+    width: 50%
+    text-align: left
+    font-weight: 400
+
+  .tpl-property-original-price
+    display: block
+    position: absolute
+    top: auto
+    left: auto
+    right: 40px
+    margin-top: 15px
+    font-size: 35px
+    line-height: 1.2
+    width: auto
+    text-align: right
+    font-weight: 400
+    opacity: 1
+    &:after
+      content: ''
+      border-bottom: 2px solid //colorRed
+      theme(border-color 'accent-2')
+      left: 0
+      top: 52%
+      width: 100%
+      height: 0
+      position: absolute
+
+  .tpl-link-cart-add
+    display: block
+    position: absolute
+    top: auto
+    bottom: 40px
+    left: 40px
+    right: 40px
+    width: 430px
+    font-size: 32px
+    padding: 10px
+    button-colors('accent-2', 'white', 'accent-2', 'white')
+    mlink()
+    clearfix()
+    &:hover
+      theme(color 'white')
+    &:active
+      theme(color 'white')
+

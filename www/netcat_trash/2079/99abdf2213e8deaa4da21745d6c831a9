@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="5" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Курсы ЕГЭ</Subdivision_Name>
+      <EnglishName>kursy-ege</EnglishName>
+      <Checked>1</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="314" subdivision_id="5" class_id="2079">
+      <Sub_Class_Name>Форма заявки</Sub_Class_Name>
+      <EnglishName>kursy-ege-12</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2857" type_of_data_id="1">
+      <Field_Name>objectName</Field_Name>
+      <Description>Имя</Description>
+    </field>
+    <field field_id="2858" type_of_data_id="1">
+      <Field_Name>objectPhone</Field_Name>
+      <Description>Телефон</Description>
+    </field>
+    <field field_id="2859" type_of_data_id="1">
+      <Field_Name>objectTime</Field_Name>
+      <Description>Время для звонка</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="2" class_id="2079" subdivision_id="5" sub_class_id="314">
+      <User_ID>397</User_ID>
+      <Priority>2</Priority>
+      <Checked>1</Checked>
+      <IP>87.117.51.213</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.1; rv:76.0) Gecko/20100101 Firefox/76.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2020-06-08 19:10:58</Created>
+      <LastUpdated>2020-06-08 19:10:58</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Антон]]></objectName>
+      <objectPhone><![CDATA[89081960962]]></objectPhone>
+      <objectTime><![CDATA[после 9]]></objectTime>
+    </message>
+    <message message_id="1" class_id="2079" subdivision_id="5" sub_class_id="314">
+      <User_ID>397</User_ID>
+      <Priority>1</Priority>
+      <Checked>1</Checked>
+      <IP>87.117.51.213</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2020-06-08 19:07:09</Created>
+      <LastUpdated>2020-06-08 19:07:09</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Антон Горяйнов]]></objectName>
+      <objectPhone><![CDATA[89081960962]]></objectPhone>
+      <objectTime><![CDATA[после 9]]></objectTime>
+    </message>
+    <message message_id="3" class_id="2079" subdivision_id="5" sub_class_id="314">
+      <User_ID>397</User_ID>
+      <Priority>1</Priority>
+      <Checked>1</Checked>
+      <IP>87.117.51.213</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2020-06-08 19:16:16</Created>
+      <LastUpdated>2020-06-08 19:16:16</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Восхождение на Эльбрус с севера]]></objectName>
+      <objectPhone><![CDATA[89081960962]]></objectPhone>
+      <objectTime><![CDATA[после 9]]></objectTime>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

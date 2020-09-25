@@ -1,0 +1,23 @@
+</div>	
+
+<ol class="carousel-indicators">
+<?
+for ($i=1; $i <= $counter/4; $i++) {
+  if ($i==1) {
+      echo "<li data-target='#caruselReview' data-slide-to='$i' class='active'></li>";
+  }
+  else {
+      echo "<li data-target='#caruselReview' data-slide-to='$i'></li>";
+  }
+}
+?>
+
+</ol>
+
+					<a class="left carousel-control" href="#caruselReview" role="button" data-slide="prev"></a>
+					<a class="right carousel-control" href="#caruselReview" role="button" data-slide="next"></a>
+			    </div>
+
+				<!-- end carousel -->
+
+				<a class="center takeResult" href="#">Хочу такой же результат!</a>

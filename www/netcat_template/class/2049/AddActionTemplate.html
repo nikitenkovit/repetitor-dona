@@ -1,0 +1,22 @@
+<?
+$from      = "mailbot@repetitor-dona.ru";
+$to = explode(",", $cc_settings['EmailTo']);
+$reply     = "mailbot@repetitor-dona.ru";
+$from_name = "Репетитор Дона";
+$subject   = $cc_settings['Tema'];
+$text = "<b>Заявка на запись с сайта Репетитор Дона (Акция)</b>
+<br>Имя: $f_Name
+<br>Телефон: $f_Phone
+<br>Время: $f_Time
+<hr>
+$cc_settings[signature]
+";
+
+$mailer = new CMIMEMail();
+$mailer->mailbody( strip_tags($text), $text);
+
+foreach($to as $val) {
+    $mailer->send($val, $from, $reply, $subject, $from_name);
+}
+
+?>

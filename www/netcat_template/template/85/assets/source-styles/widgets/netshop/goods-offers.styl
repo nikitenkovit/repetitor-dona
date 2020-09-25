@@ -1,0 +1,62 @@
+.tpl-widget-netshop-goods-offers
+  widgetTitle()
+
+  .tpl-block-list-objects
+    @extend .s-tiles-wide
+    article
+      theme(border-color 'accent-1')
+
+    @media min
+      tilesMobile()
+
+    img.tpl-property-image
+      max-width: 240px
+      max-height: 190px
+      height: auto
+      width: auto
+      top: 15px
+
+    .tpl-block-prices
+      position: absolute
+      top: 75px
+      left: 255px
+
+      .tpl-property-item-price
+      .tpl-property-original-price
+        position: relative
+        left: 0
+        top: 0
+        display: inline-block
+
+    .tpl-block-prices.tpl-state-left
+      left: 15px
+
+    .tpl-block-text
+      position: absolute
+      left: 15px
+      top: 210px
+      width: 390px
+      height: 86px
+      overflow: hidden
+
+      h3
+        overflow: visible
+        white-space: normal
+        margin-bottom: 10px
+        line-height: 1
+
+      h4
+        line-height: 1.1;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 400;
+
+      p
+        line-height: 1.5
+
+    .tpl-block-text.tpl-state-up
+      top: 15px
+      height: 280px
+
+    a:hover h3
+      color: inherit !important

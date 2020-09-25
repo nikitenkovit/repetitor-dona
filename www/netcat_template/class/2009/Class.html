@@ -1,0 +1,96 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+<div class="wrapper contacts">
+    <div class="loginPan">
+              <?=!$current_user['Login'] ? "
+                  <a href='/netcat/modules/auth/' class='enter logIn'>Войти</a>
+                  " : "
+                  <a href='/lk/' class='enter'>Личный Кабинет</a> / 
+                  <a href='/netcat/modules/auth/?logoff=1&REQUESTED_FROM=".$REQUEST_URI."&REQUESTED_BY=".$REQUEST_METHOD."' class='enter'>Выйти</a>
+              "?>
+     </div>
+<h1 class="h1" style="margin-bottom:20px">Контакты</h1>	<!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?>
+<div class="contactsItem">
+			<div class="h1"><?=$f_objectName?></div>
+			<ul class="contactsInfo">
+				<li class="contactsAddress">
+					<div class="h3">Адрес</div>
+					<div><?=$f_objectAddress?></div>
+				</li>
+				<li class="contactsPhone">
+					<div class="h3">Телефон</div>
+					<div><?=$f_objectPhone?></div>
+				</li>
+				<li class="contactsTime">
+					<div class="h3">Режим работы</div>
+					<div><?=$f_objectTime?></div>
+				</li>
+				<li class="contactsAddress2">
+					<div class="h3">Ориентир</div>
+					<div><?=$f_objectLocation?></div>
+				</li>
+			</ul>
+			<? if($f_coordinates) : ?><div id="map<?=$f_RowID?>" class="contactsMap"></div><? endif; ?>
+            <? if($f_objectPics->count()) : ?>
+			<div class="contactsSlider">
+				<div class="h4">Фотографии филиала:</div>
+				<a href="" class="contactsSliderButton left"></a>
+				<a href="" class="contactsSliderButton right"></a>
+				<?=$f_objectPics ?>
+			</div>
+            <? endif; ?>
+            
+            
+            
+		</div><!-- /RecordTemplate -->
+
+<!-- FormSuffix --></div>
+<style>
+.contactsMap .contbal{
+    text-align:center;
+    border:1px solid #EEEEEE;
+    margin:5px;
+    padding:10px;
+}
+
+.contactsMap .contbal b, .contactsMap .contbal strong{
+    font-weight: bold;
+    font-size: 18px;
+    display:block;
+    margin:0 0 15px 0;
+}
+.contactsMap .contbal p{
+    margin:0 0 15px 0;
+}
+
+.contactsMap .contbal hr{
+    text-align:center;
+    border-top:1px solid #EEEEEE;
+    margin:0 auto 15px auto;
+    width:70%;
+}
+
+</style>
+<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+<script>
+ymaps.ready(init);
+
+function init() {
+<?=listQuery("SELECT * FROM `Message2009` WHERE `Checked`=1 ORDER BY `Created`", "
+
+    var myMap\$data[Message_ID] = new ymaps.Map('map\$data[Message_ID]', {center: [\$data[coordinates]],zoom: 18});
+    var myPlacemark\$data[Message_ID] = new ymaps.Placemark([\$data[coordinates]], {balloonContentBody: '<div class=contbal>\".trim(preg_replace('/\s+/', ' ', \$data[contactmap])).\"</div>',hintContent: '\$data[objectName]'}, {preset: 'twirl#redIcon'});
+    myMap\$data[Message_ID].geoObjects.add(myPlacemark\$data[Message_ID]);
+    
+    myMap\$data[Message_ID].balloon.open([\$data[coordinates]], '<div class=contbal>\".trim(preg_replace('/\s+/', ' ', \$data[contactmap])).\"</div>', {
+        // Опция: не показываем кнопку закрытия.
+        closeButton: true
+    });
+
+")?>
+
+    
+   
+}
+</script><!-- /FormSuffix -->

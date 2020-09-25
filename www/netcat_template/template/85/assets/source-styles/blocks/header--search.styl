@@ -1,0 +1,99 @@
+body > header .tpl-block-search
+
+  float: left;
+  margin-right: -100%;
+  padding-left: 80px;
+  position: relative;
+  left: 60%;
+  width: 40%;
+  z-index: 10;
+
+  form
+    padding-top: 5px;
+    theme(background 'accent-2')
+    theme(color 'white')
+    height: 40px
+    position: relative;
+
+  &-area
+    float: left
+    width: 160px
+    display: none
+    margin: -5px 0 0 0
+    .chosen-container
+      position: relative
+      display: inline-block
+      user-select: none
+      font-weight: 400
+      &.chosen-with-drop .chosen-single:after,
+      .chosen-single:hover:after
+        theme(color 'white')
+      .chosen-single
+        theme(background 'accent-2')
+        theme(color 'white')
+        &:after
+          font-size: 1.2em
+      .chosen-results
+        max-height: 400px
+        li
+          padding: 7px 20px
+          theme(color 'white')
+          theme(background 'accent-2')
+          &.highlighted
+            theme(background 'accent-2-darker')
+
+  &-query
+    overflow: hidden
+    position: relative
+    padding: 5px 0 0 5px
+    height: 40px
+    top: -5px
+    left: -5px
+    margin-left: 5px
+
+    input
+      overflow: hidden
+      display: block
+      border: none
+      margin: 0
+      // width: 385px
+      width: 100%
+      height: 30px
+      padding-left: 20px
+      theme(color 'base')
+      font-size: 14px
+      z-index: 2
+      position: relative
+      ::placeholder
+        theme(color 'base')
+
+  button[type="submit"]
+    background none
+    theme(color 'base')
+    font-size: 1.3em
+    position: absolute
+    right: 0
+    top: 0
+    z-index: 2
+    line-height: 35px
+    height: 40px
+    padding: 0 10px
+    margin 0
+    opacity: 0.2
+    /*transition: opacity 0.2s*/
+    backface-visibility: hidden
+    &:hover
+      opacity: 0.5
+
+
+.tpl-block-search-query ::-webkit-input-placeholder {
+  theme(color 'base');
+}
+
+.tpl-block-search-query ::-moz-placeholder {
+  theme(color 'base');
+}
+
+.tpl-block-search-query :-ms-input-placeholder {
+  theme(color 'base');
+}

@@ -1,0 +1,59 @@
+<div class="tpl-block-full tpl-component-goods">
+<?php
+
+echo "<h1>$f_FullName</h1>";
+echo $f_AdminButtons;
+
+?>
+
+<!-- Изображения -->
+<?php if ($f_Slider): ?>
+    <div class="tpl-property-slider"><?= $f_Slider ?></div>
+<?php endif; ?>
+
+<!-- Цена -->
+<?php if (!$f_ItemPrice || !$f_Checked): /* Товар отключён — показываем диапазон цен */ ?>
+
+    <?php if ($f_ItemPriceMin != $f_OriginalPriceMin): ?>
+        <div class="tpl-block-original-price">
+            <span class="tpl-property-original-price tpl-property-original-price-range"><?= $f_OriginalPriceRange ?></span>
+        </div>
+    <?php endif; ?>
+
+    <div class="tpl-property-price tpl-property-price-range"><?= $f_ItemPriceRange ?></div>
+
+<?php else: /* Показываем цену на текущий товар */ ?>
+
+    <?php if ($f_ItemDiscount): ?>
+        <div class="tpl-block-original-price">
+            <span class="tpl-property-original-price"><?= $f_OriginalPriceF ?></span>
+            <span class="tpl-property-discount-percent">(скидка: <?=$f_DiscountPercent ?>%)</span>
+        </div>
+    <?php endif; ?>
+
+    <div class="tpl-property-price"><?= $f_ItemPriceF ?></div>
+    
+<?php endif; ?>
+
+<!-- Описание -->
+<?php if ($f_Description): ?>
+    <div class="tpl-property-description">
+        <?= $f_Description; ?>
+    </div>
+<?php endif; ?>
+
+<?php if ($f_Vendor): ?>
+    <div class="tpl-property-vendor">
+        <span class="tpl-caption">Производитель: </span>
+        <span class="tpl-value"><?= $f_Vendor ?></span>
+    </div>
+<?php endif; ?>
+
+<?php if ($f_Article): ?>
+    <div class="tpl-property-article">
+        <span class="tpl-caption">Артикул: </span>
+        <span class="tpl-value"><?= $f_Article ?></span>
+    </div>
+<?php endif; ?>
+
+</div>

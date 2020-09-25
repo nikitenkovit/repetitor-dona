@@ -1,0 +1,52 @@
+<?=( $warnText ? "<div class='warnText'>$warnText</div>" : NULL )?>
+<form name='adminForm' id='adminForm' class='nc-form' enctype='multipart/form-data' method='post' action='<?= $SUB_FOLDER ?><?= $HTTP_ROOT_PATH ?>message.php'>
+<div id='nc_moderate_form'>
+<div class='nc_clear'></div>
+<input name='admin_mode' type='hidden' value='<?= $admin_mode ?>' />
+<?= $nc_core->token->get_input() ?>
+<input name='catalogue' type='hidden' value='<?= $catalogue ?>' />
+<input name='cc' type='hidden' value='<?= $cc ?>' />
+<input name='sub' type='hidden' value='<?= $sub ?>' /><input name='message' type='hidden' value='<?= $message ?>' />
+<input name='posting' type='hidden' value='1' />
+<input name='curPos' type='hidden' value='<?= $curPos ?>' />
+<input name='f_Parent_Message_ID' type='hidden' value='<?= $f_Parent_Message_ID ?>' />
+<?= nc_form_moderate('change', $admin_mode, 0, $systemTableID, $current_cc, (isset($f_Checked) ? $f_Checked  : null), $f_Priority , $f_Keyword, $f_ncTitle, $f_ncKeywords, $f_ncDescription ) ?>
+</div>
+<div style="float:left; width:21%; padding:2%">
+   <h3 style="color: #1C87C1;font-weight: bold;border-bottom: 1px solid;">Блок 1</h3>
+   <div class='nc-field'><?= nc_string_field('Title1', "style='width:100%'", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_text_field('Text1', "", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_text_field('Text2', "", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_file_field('Foto1', "", ($class_id ? $class_id : $classID), 1) ?></div>
+</div>
+<div style="float:left; width:21%; padding:2%">
+   <h3 style="color: #1C87C1;font-weight: bold;border-bottom: 1px solid;">Блок 2</h3>
+   <div class='nc-field'><?= nc_string_field('Title2', "style='width:100%'", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_text_field('Text11', "", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_text_field('Text12', "", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_text_field('Text13', "", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_text_field('Text14', "", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_text_field('Text15', "", ($class_id ? $class_id : $classID), 1) ?></div>
+</div>
+<div style="float:left; width:21%; padding:2%">
+   <h3 style="color: #1C87C1;font-weight: bold;border-bottom: 1px solid;">Блок 3</h3>
+   <div class='nc-field'><?= nc_string_field('Title3', "style='width:100%'", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_text_field('Text21', "", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_text_field('Text22', "", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_text_field('Text23', "", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_text_field('Text24', "", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_file_field('Foto2', "", ($class_id ? $class_id : $classID), 1) ?></div>
+</div>
+<div style="float:left; width:21%; padding:2%">
+   <h3 style="color: #1C87C1;font-weight: bold;border-bottom: 1px solid;">Блок 4</h3>   
+   <div class='nc-field'><?= nc_string_field('Title4', "style='width:100%'", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_text_field('Text31', "", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_text_field('Text32', "", ($class_id ? $class_id : $classID), 1) ?></div>
+   <div class='nc-field'><?= nc_file_field('Foto3', "", ($class_id ? $class_id : $classID), 1) ?></div>
+</div>
+
+<div style="clear:both"></div>
+
+<div><?= NETCAT_MODERATION_INFO_REQFIELDS ?></div><br/>
+<?= nc_submit_button(NETCAT_MODERATION_BUTTON_CHANGE) ?>
+</form>

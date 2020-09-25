@@ -1,0 +1,225 @@
+.tpl-component-offers .tpl-layout-tiles
+
+  article
+    text-align: left
+    border: 5px solid //colorDull
+    theme(border-color 'dull')
+    padding: 15px
+    width: 100%
+    height: 260px
+    position: relative
+
+    > a
+      display: block
+      text-decoration: none
+      theme(color 'accent-1')
+      color: #000
+      &:hover
+        h3
+          theme(color 'accent-2')
+
+  .tpl-block-admin
+    display none
+
+  h3
+    text-transform: none
+    display: block
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    text-align: left
+    font-weight: 400
+    font-size: 20px
+    line-height: 1.4
+    margin-bottom: 0
+
+  .tpl-property-html
+    height: 30px
+    text-align: left
+    theme(color 'base')
+    @media min
+      font-style: italic
+      font-size: 24px
+      text-align: left
+      font-weight: 400
+
+  .tpl-property-image
+    display: block
+    position: absolute
+    left: 15px
+    right: 15px
+    max-height: 135px
+    line-height: 140px
+    top: 100px
+    max-width: 320px
+
+  .tpl-block-prices
+    position: absolute
+    right: 15px
+    top: 110px
+    text-align: left
+
+    .tpl-property-price
+      display: block
+      font-size: 32px
+      line-height: 1.2
+      font-weight: 400
+
+    .tpl-property-old-price
+      theme(border-color 'price-strike')
+      border-bottom-style: solid
+      border-bottom-width: 2px
+      content: ""
+      height: 21px
+      width: auto
+      display: table-caption
+      .tpl-value
+        font-size: 18px
+        font-weight: 400
+        white-space: nowrap
+        theme(color 'gray')
+
+  .tpl-block-list-object
+    margin-bottom: 20px
+    float: left
+    width: 33.333%
+    padding-right: 20px
+    @media min
+      padding-right: 0
+      float: none
+      margin: 50px 0 0
+      width: auto !important
+    /*@media max
+      width: 25%*/
+
+    img.tpl-property-image
+      max-width: 200px
+      max-height: 150px
+      height: auto
+      width: auto
+      top: 10px
+      left: 10px;
+
+    .tpl-block-prices
+      position: absolute
+      top: 50px
+      left: 220px
+
+      .tpl-property-price
+        position: relative
+        left: 0
+        top: 0
+        display: inline-block
+        font-size: 24px
+        span
+          font-size: inherit
+          color: #000
+
+      .tpl-property-old-price
+        position: relative
+        left: 0
+        top: 0
+        display: inline-block
+        font-size: 14px
+        height: 15px
+        margin-top: -15px
+        span
+          font-size: inherit
+          color: #000
+
+
+    .tpl-block-prices.tpl-state-left
+      left: 10px
+
+    .tpl-block-text
+      position: absolute
+      left: 10px
+      top: 170px
+      width: 330px
+      height: 75px
+      overflow: hidden
+
+      h3
+        overflow: visible
+        white-space: normal
+        margin-bottom: 5px
+        line-height: 1
+        color: #000
+
+      h4
+        line-height: 1.1;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 400;
+        color: #000
+
+      p
+        line-height: 1.5
+        color: #000
+
+    .tpl-block-text.tpl-state-up
+      top: 10px
+      height: 236px
+
+    a:hover h3
+      color: #000 !important
+
+
+.tpl-component-offers .tpl-block-full
+
+  .tpl-block-admin
+    display none
+
+  h3
+    text-transform: none
+    display: block
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    text-align: left
+    font-weight: 400
+    font-size: 20px
+    line-height: 1.4
+    margin-bottom: 0
+
+  .tpl-property-html
+    text-align: left
+    theme(color 'base')
+    @media min
+      font-style: italic
+      font-size: 24px
+      text-align: left
+      font-weight: 400
+
+  .tpl-property-description
+    width: 70%
+    float: left
+    .tpl-property-image
+      float: left
+      height: 135px
+      line-height: 140px
+      margin: 0px 15px 15px 0px
+
+  .tpl-block-prices
+    float: left
+    margin-left: 20px
+
+    .tpl-property-price
+      display: block
+      font-size: 32px
+      line-height: 1.2
+      font-weight: 400
+
+    .tpl-property-old-price
+      theme(border-color 'price-strike')
+      border-bottom-style: solid
+      border-bottom-width: 2px
+      content: ""
+      height: 21px
+      width: auto
+      display: table-caption
+      .tpl-value
+        font-size: 18px
+        font-weight: 400
+        white-space: nowrap
+        theme(color 'gray')

@@ -1,0 +1,60 @@
+<?php if ($admin_mode && !$inside_admin) {
+    nc_print_status('Варианты товара редактируются в режиме администрирования', 'info');
+} ?>
+<?
+echo $f_AdminCommon;
+?>
+<div class='item_full'>
+
+    <div class='item_content'>
+        <div class='item_photo'>
+            <? if (!$f_BigImage): ?>
+                <? if ($f_Image): ?>
+                    <img src='<?= $f_Image_url ?>' />
+                <? endif; ?>
+            <? else: ?>
+                <img src='<?= $f_BigImage_url ?>' />
+            <? endif ?>
+        </div>
+
+        <div class="price_block">
+            <div class="price">
+                <?=$f_Price ." ". $nc_minishop->get_currency(); ?>
+            </div>
+            <div class="cart_btn">
+                <?= $nc_minishop->show_put_button($f_Name, $f_Price, $fullLink, $f_RowID) ?>
+            </div>
+        </div>
+    </div>
+
+    <div class='item_description'>
+        <? if ($f_Description): ?>
+            <div class="block_description">
+                <div class="title">Общие характеристики</div>
+                <?= nc_edit_inline('Description', $f_RowID, $cc) ?>
+            </div>
+        <? endif ?>
+        <div class="title">Описание</div>
+        <?= nc_edit_inline('Details', $f_RowID, $cc) ?>
+
+        <div class="title">Технические характеристики</div>
+
+        <table>
+            <?php for($i=1; $i<14; $i++) { ?>
+            <?php $fieldName = "f_Property_field".$i; ?>
+            <?php $settingName = "Property_field".$i; ?>
+            <?php if (!empty($cc_settings["Property_field".$i]) && !empty($$fieldName)) : ?>
+            <tr>
+                <td>
+                    <?= $cc_settings["Property_field".$i] ?>
+                </td>
+                <td>
+                    <?= $$fieldName; ?>
+                </td>
+            </tr>
+            <?php endif; ?>
+            <?php } ?>
+        </table>
+
+    </div>
+</div>

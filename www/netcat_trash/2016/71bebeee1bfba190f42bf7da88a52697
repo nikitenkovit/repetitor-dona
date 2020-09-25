@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="16" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Заказ звонка</Subdivision_Name>
+      <EnglishName>zakaz-zvonka</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="14" subdivision_id="16" class_id="2016">
+      <Sub_Class_Name>Заказ звонка</Sub_Class_Name>
+      <EnglishName>zakaz-zvonka</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2638" type_of_data_id="1">
+      <Field_Name>objectName</Field_Name>
+      <Description>Имя</Description>
+    </field>
+    <field field_id="2639" type_of_data_id="1">
+      <Field_Name>objectPhone</Field_Name>
+      <Description>Телефон</Description>
+    </field>
+    <field field_id="2640" type_of_data_id="1">
+      <Field_Name>objectTime</Field_Name>
+      <Description>Время для звонка</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="5" class_id="2016" subdivision_id="16" sub_class_id="14">
+      <User_ID>0</User_ID>
+      <Priority>5</Priority>
+      <Checked>1</Checked>
+      <IP>109.165.125.230</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-27 03:56:28</Created>
+      <LastUpdated>2015-11-27 03:56:28</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Ykkk]]></objectName>
+      <objectPhone><![CDATA[555]]></objectPhone>
+      <objectTime><![CDATA[3]]></objectTime>
+    </message>
+    <message message_id="4" class_id="2016" subdivision_id="16" sub_class_id="14">
+      <User_ID>0</User_ID>
+      <Priority>4</Priority>
+      <Checked>1</Checked>
+      <IP>109.165.125.230</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-27 03:54:48</Created>
+      <LastUpdated>2015-11-27 03:54:48</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[тест]]></objectName>
+      <objectPhone><![CDATA[89085180715]]></objectPhone>
+      <objectTime><![CDATA[3]]></objectTime>
+    </message>
+    <message message_id="3" class_id="2016" subdivision_id="16" sub_class_id="14">
+      <User_ID>2</User_ID>
+      <Priority>3</Priority>
+      <Checked>1</Checked>
+      <IP>87.117.37.102</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-23 03:19:11</Created>
+      <LastUpdated>2015-11-23 03:19:11</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[1]]></objectName>
+      <objectPhone><![CDATA[1]]></objectPhone>
+      <objectTime><![CDATA[1]]></objectTime>
+    </message>
+    <message message_id="2" class_id="2016" subdivision_id="16" sub_class_id="14">
+      <User_ID>2</User_ID>
+      <Priority>2</Priority>
+      <Checked>1</Checked>
+      <IP>87.117.37.102</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-23 03:19:09</Created>
+      <LastUpdated>2015-11-23 03:19:09</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[1]]></objectName>
+      <objectPhone><![CDATA[1]]></objectPhone>
+      <objectTime><![CDATA[1]]></objectTime>
+    </message>
+    <message message_id="150" class_id="2016" subdivision_id="16" sub_class_id="14">
+      <User_ID>234</User_ID>
+      <Priority>140</Priority>
+      <Checked>1</Checked>
+      <IP>178.155.4.205</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2018-09-18 01:23:57</Created>
+      <LastUpdated>2018-09-18 01:23:57</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[тест]]></objectName>
+      <objectPhone><![CDATA[234234]]></objectPhone>
+      <objectTime><![CDATA[1]]></objectTime>
+    </message>
+    <message message_id="149" class_id="2016" subdivision_id="16" sub_class_id="14">
+      <User_ID>234</User_ID>
+      <Priority>139</Priority>
+      <Checked>1</Checked>
+      <IP>178.155.4.205</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2018-09-18 01:16:18</Created>
+      <LastUpdated>2018-09-18 01:16:18</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[тест]]></objectName>
+      <objectPhone><![CDATA[1]]></objectPhone>
+      <objectTime><![CDATA[1]]></objectTime>
+    </message>
+    <message message_id="148" class_id="2016" subdivision_id="16" sub_class_id="14">
+      <User_ID>234</User_ID>
+      <Priority>138</Priority>
+      <Checked>1</Checked>
+      <IP>178.155.4.205</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2018-09-17 20:01:58</Created>
+      <LastUpdated>2018-09-17 20:01:58</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[тест]]></objectName>
+      <objectPhone><![CDATA[234234]]></objectPhone>
+      <objectTime><![CDATA[234]]></objectTime>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

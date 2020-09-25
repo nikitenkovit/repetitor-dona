@@ -1,0 +1,25 @@
+<?
+
+
+$subject   = "Заявка на тест уровня знаний";
+$text = "<b>Заявка на тест уровня знаний с сайта Репетитор Дона</b>
+<br>Имя: $f_objectName
+<br>Телефон: $f_objectPhone
+<br>Время: $f_objectTime
+";
+
+$mailer = new CMIMEMail();
+$mailer->mailbody( strip_tags($text), $text);
+
+foreach($to as $val) {
+    $mailer->send($val, $from, $reply, $subject, $from_name);
+}
+
+//echo nc_mail2queue("admin@mysite.ru", "noreply@mysite.ru", "Заявка на тест уровня знаний", $f_objectName);
+
+if($inside_admin) {
+    ob_end_clean();
+    header('Location: '.$goBackLink.'&inside_admin=1');
+    exit;
+
+?>

@@ -1,0 +1,15 @@
+<?
+
+echo nc_mail2queue("admin@mysite.ru", "noreply@mysite.ru", "Заявка на тест уровня знаний", $f_objectName);
+
+if($inside_admin) {
+    ob_end_clean();
+    header('Location: '.$goBackLink.'&inside_admin=1');
+    exit;
+} else { 
+	echo ($IsChecked ? "<p>Заявка успешно отправлена!</p>" : NETCAT_MODERATION_MSG_OBJADDMOD);
+}
+
+//$body = "Имя: ".$f_objectName."<br>Телефон: ".$f_objectPhone."<br>Время: ".$f_objectTime;
+
+?>

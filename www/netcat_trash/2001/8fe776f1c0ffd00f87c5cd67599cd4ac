@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="4" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Отзывы и результаты</Subdivision_Name>
+      <EnglishName>otzyvy-i-rezultaty</EnglishName>
+      <Checked>1</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="4" subdivision_id="4" class_id="2001">
+      <Sub_Class_Name>Отзывы и результаты</Sub_Class_Name>
+      <EnglishName>otzyvy-i-rezultaty</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2585" type_of_data_id="1">
+      <Field_Name>objectName</Field_Name>
+      <Description>ФИО ученика</Description>
+    </field>
+    <field field_id="2587" type_of_data_id="6">
+      <Field_Name>objectPic</Field_Name>
+      <Description>Фото</Description>
+    </field>
+    <field field_id="2586" type_of_data_id="3">
+      <Field_Name>objectRanks</Field_Name>
+      <Description>Оценки ЕГЭ</Description>
+    </field>
+    <field field_id="2588" type_of_data_id="1">
+      <Field_Name>objectLocation</Field_Name>
+      <Description>Место поступления</Description>
+    </field>
+    <field field_id="2589" type_of_data_id="1">
+      <Field_Name>objectEducationPeriod</Field_Name>
+      <Description>Период обучения</Description>
+    </field>
+    <field field_id="2621" type_of_data_id="10">
+      <Field_Name>objectMatters</Field_Name>
+      <Description>Предмет</Description>
+    </field>
+    <field field_id="2590" type_of_data_id="3">
+      <Field_Name>objectText</Field_Name>
+      <Description>Текст отзыва</Description>
+    </field>
+    <field field_id="2642" type_of_data_id="9">
+      <Field_Name>objectTeacher1</Field_Name>
+      <Description>Преподаватель1</Description>
+    </field>
+    <field field_id="2643" type_of_data_id="9">
+      <Field_Name>objectTeacher2</Field_Name>
+      <Description>Преподаватель2</Description>
+    </field>
+    <field field_id="2644" type_of_data_id="9">
+      <Field_Name>objectTeacher3</Field_Name>
+      <Description>Преподаватель3</Description>
+    </field>
+    <field field_id="2591" type_of_data_id="3">
+      <Field_Name>objectTeacherText</Field_Name>
+      <Description>Отзыв преподавателя</Description>
+    </field>
+    <field field_id="2620" type_of_data_id="3">
+      <Field_Name>objectVideo</Field_Name>
+      <Description>Код для вставки видео</Description>
+    </field>
+    <field field_id="2641" type_of_data_id="5">
+      <Field_Name>isMain</Field_Name>
+      <Description>Выводить на главной</Description>
+    </field>
+    <field field_id="2732" type_of_data_id="1">
+      <Field_Name>lp</Field_Name>
+      <Description>lp</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="445" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>307</Priority>
+      <Checked>1</Checked>
+      <IP>80.80.100.124</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 OPR/62.0.3331.116</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-19 18:58:52</Created>
+      <LastUpdated>2019-08-19 18:58:52</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Шевела Ангелина]]></objectName>
+      <objectPic path="/netcat_files/4/4/445_Shevela_Angelina.jpg">445 Шевела Ангелина.jpg:image/jpeg:106511:4/4/445_Shevela_Angelina.jpg</objectPic>
+      <objectRanks><![CDATA[<p>ЕГЭ по английскому языку: 97 баллов</p>
+<p>ЕГЭ по русскому языку: 91 балл</p>]]></objectRanks>
+      <objectLocation><![CDATA[РАНХИГС  международные отношения]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2018-2019]]></objectEducationPeriod>
+      <objectMatters>,7,6,</objectMatters>
+      <objectText><![CDATA[<p>Очень рада, что однажды решила бросить своего предыдущего преподавателя и пойти заниматься русским языком в Репетитор Дона к Левченко Ирине Алексеевне! Впервые я попала к ней на урок в марте, то есть всего я с ней прозанималась 3,5 месяца. На мой взгляд, подготовка к ЕГЭ по русскому с Ириной Алексеевной во многом отличается от других преподавателей. За несколько месяцев я успела прорешать все возможные варианты тестов. Более того, каждое занятие Ирина Алексеевна готовила для нас десятки различных типовых заданий. Поэтому перед самим экзаменом мы успели прорешать абсолютно все задания, узнали особенности тестов и &laquo;капканы&raquo; составителей. Даже несмотря на то, что занятия проходили в группах, преподаватель успевала уделять внимание каждому ученику и его &laquo;слабым местам&raquo;. Именно благодаря тщательной подготовке и грамотному подходу учителя, мне удалось максимально подготовиться к ЕГЭ по русскому языку и сдать экзамен на достойный 91 балл!&nbsp; []]></objectText>
+      <objectTeacher1>9</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3>0</objectTeacher3>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+      <lp><![CDATA[]]></lp>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

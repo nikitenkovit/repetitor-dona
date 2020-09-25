@@ -1,0 +1,27 @@
+<?= $f_AdminButtons; ?>
+
+<div class="articles">
+		<div class="wrapper">
+			    <div class="loginPan">
+			        <?=!$current_user['Login'] ? "
+                        <a href='/netcat/modules/auth/' class='enter logIn'>Войти</a>
+                        " : "
+                        <a href='#' class='enter'>Личный Кабинет</a> / 
+                        <a href='/netcat/modules/auth/?logoff=1&REQUESTED_FROM=".$REQUEST_URI."&REQUESTED_BY=".$REQUEST_METHOD."' class='enter'>Выйти</a>
+                    "?>
+			    </div>
+			    <div class="h1 center">материалы и статьи</div>	
+			    <div class="back"><a href="/materialy-i-stati/">назад</a></div>	
+			    <div class="newsDetail">
+		    		<div class="newsDetailPic">
+		    			<?=$f_objectPic ? "<img src='$f_objectPic' alt=''>" : NULL?>
+		    			<h1 class="h3"><?=$f_objectName?></h1>
+		    		</div>
+			    	<div class="newsDetailText"><?=$f_objectTextFull?></div>
+                    <div class="newsDetailAuthor"><?=$f_objectAuthor ? "Автор: $f_objectAuthor" : NULL?></div>
+			    	</div>
+			    	<?= $f_objectPics->set_template($f_objectPics_detail_tpl)?>
+			    	<div class="back"><a href="/materialy-i-stati/">назад</a></div>		    	
+			    </div>
+			    	    
+		</div>		

@@ -1,0 +1,18 @@
+<!-- FormPrefix --><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><? if ($inside_admin): ?>
+<div class="tpl-block-banner">
+  <?= $f_AdminButtons; ?>
+  <p><img src="<?= $f_Image ?>" height="200"></p>
+  <p><?= $f_Text ?></p>
+</div>
+<? else: ?>
+<div class="tpl-block-banner" style="background-image: url(<?= $f_Image ?>)">
+  <div class="tpl-block-admin"><?= $f_AdminButtons; ?></div>
+  <a href="<?= $f_Link ?>">
+    <div class="tpl-block-banner-text"><?= $f_Text ?></div>
+  </a>
+</div>
+<? endif; ?><!-- /RecordTemplate -->
+
+<!-- FormSuffix --><!-- /FormSuffix -->

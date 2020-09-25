@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru-RU" class="tpl-theme-<?= $tpl_theme ?> <?= $template_settings['show_item_rating'] ? 'tpl-option-item-rating' : ''; ?> <?= $template_settings['show_share_block'] ? 'tpl-option-share-block' : ''; ?> <?= $template_settings['show_reviews'] ? 'tpl-option-reviews' : ''; ?>">
+<head>
+    <? /* Блок SEO/SMO */ ?>
+    <? /* Запрос заголовка через ядро системы, если нету, то выводим хлебные крошки */ ?>
+    <title><?=( ($title = $nc_core->page->get_title()) ? $title : strip_tags(s_browse_path($browse_path_title)))?></title>
+    <?= $nc_core->page->get_metatags(); ?>
+
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=<?= $nc_core->NC_CHARSET ?>"/>
+    <meta name="MobileOptimized" content="640">
+    <meta name="HandheldFriendly" content="true">    
+	<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, initial-scale=0.5, minimum-scale=0.1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link href="<?= $nc_parent_template_folder_path ?>assets/css/styles.css" rel="stylesheet">
+    <link href="<?= $nc_parent_template_folder_path ?>assets/css/custom.css" rel="stylesheet">
+    <? if ((bool)preg_match("/IEMobile/is", $_SERVER['HTTP_USER_AGENT'])) { ?>
+		<style>
+			@-ms-viewport { width: 640px; }
+		</style>
+    <? } ?>
+</head>
+
+<body>
+<!-- Скрипты макета -->
+<script src="<?= $nc_parent_template_folder_path ?>assets/js/jquery.js"></script>
+<script data-main="<?= $nc_parent_template_folder_path ?>assets/js/main" src="<?= $nc_parent_template_folder_path ?>assets/js/require.js"></script>
+<!-- скрипт custom.js в этом макете загружается в main.js -->
+<!-- script src="<?= $nc_parent_template_folder_path ?>assets/js/custom.js"></script -->
+
+<!-- Шапка-->
+<header>
+<div class="tpl-mobile-only">
+    <!-- Мобильная навигация-->
+    <div class="tpl-block-mobilenav">
+        <div class="tpl-block-mobilenav-item tpl-block-mobilenav-item--logo">
+            <a href="<?= $nc_core->SUB_FOLDER; ?>/"><i class="icon-mobilenav-logo"></i></a>
+        </div>
+        <div class="tpl-block-mobilenav-item tpl-block-mobilenav-item--user"><a href="#"><i class="icon-mobilenav-user"></i></a>
+        </div>
+        <div class="tpl-block-mobilenav-item tpl-block-mobilenav-item--cart"><a href="#"><i class="icon-mobilenav-cart"></i>
+            <div class="tpl-block-mobilenav-counter"><?= $netshop->cart->get_item_count(true); ?>
+            </div>
+        </a>
+        </div>
+        <div class="tpl-block-mobilenav-item tpl-block-mobilenav-item--search">
+            <a href="#"><i class="icon-mobilenav-search"></i></a>
+        </div>
+        <div class="tpl-block-mobilenav-item tpl-block-mobilenav-item--menu"><a href="#"><i class="icon-mobilenav-menu"></i></a>
+        </div>
+    </div>
+    <div class="tpl-block-headerdrop tpl-block-headerdrop--user">
+    </div>
+    <!-- Мобильный вход-->
+    <div class="tpl-block-headerdrop tpl-block-headerdrop--user">
+        <? if (!empty($current_user)): ?>
+        <div class="tpl-block-mobileuser">
+            <div class="tpl-block-mobileuser-row">
+                <a href="<?= $nc_core->SUB_FOLDER; ?>/my/"><?= $current_user['ForumName'] ? $current_user['ForumName'] : $current_user['Login'] ?></a>
+                <a class="tpl-block-ibtn tpl-block-ibtn--theme_red" href='/netcat/modules/auth/?logoff=1&amp;REQUESTED_FROM=<?= $REQUEST_URI ?>&amp;REQUESTED_BY=<?= $REQUEST_METHOD ?>'>Выйти</a>
+            </div>
+        </div>
+        <? else: ?>
+        <form class="tpl-block-mobileuser" action="<?= $SUB_FOLDER . $HTTP_ROOT_PATH ?>modules/auth/index.php" method="post">
+            <div class="tpl-block-mobileuser-row">
+                <input name="AUTH_USER" type="text" placeholder="<?= NETCAT_MODULE_AUTH_LOGIN ?>" value='<?= htmlspecialchars($AUTH_USER, ENT_QUOTES) ?>' class="tpl-block-itext">
+            </div>
+            <div class="tpl-block-mobileuser-row">
+                <input name="AUTH_PW" type="password" placeholder="<?= NETCAT_MODULE_AUTH_PASSWORD ?>" class="tpl-block-itext">
+                <button type="submit" class="tpl-block-ibtn tpl-block-ibtn--theme_red">Вход</button>
+            </div>
+
+            <input type='hidden' name='AuthPhase' value='1'/>
+            <input type='hidden' name='REQUESTED_FROM' value='<?= htmlspecialchars($REQUESTED_FROM, ENT_QUOTES) ?>'/>
+            <input type='hidden' name='REQUESTED_BY' value='<?= htmlspecialchars($REQUESTED_BY, ENT_QUOTES) ?>'/>
+            <input type='hidden' name='catalogue' value='<?= $catalogue ?>'/>
+            <input type='hidden' name='sub' value='<?= $sub ?>'/>
+            <input type='hidden' name='cc' value='<?= $cc ?>'/>
+
+            <div class="tpl-block-mobileuser-row">
+                <a href="<?= $nc_core->SUB_FOLDER; ?>/my/registration">Регистрация</a></div>
+        </form>
+        <? endif ?>
+    </div>
+    <?
+    $total_items = $netshop->cart->get_item_count(true);
+    ?>
+    <!-- Мобильная корзина-->
+    <div class="tpl-block-headerdrop tpl-block-headerdrop--cart">
+        <form class="tpl-block-mobilecart" method="post" action="<?= $netshop->get_add_to_cart_url(); ?>">
+            <div class="tpl-block-mobilecart-info">
+                <? if ($total_items) { ?>
+                В корзине
+                <span class="tpl-property-amount"><?= $total_items; ?> <?= plural_form($total_items, 'товар', 'товара', 'товаров'); ?></span>
+                <br>на сумму
+                <span class="tpl-property-summary"><?= $netshop->format_price($netshop->cart->get_totals()); ?></span>
+                <? } else { ?>
+                Корзина пуста
+                <? } ?>
+            </div>
+            <? foreach ($netshop->cart->get_items() as $item) { ?>
+            <div class="tpl-block-mobilecart-item">
+                <div class="tpl-block-mobilecart-delete"><i class="icon-close">
+                    <button class="tpl-block-ibtn-submit" type="submit" name="cart<?= $item['RowID'] ?>" value="0"></button>
+                </i></div>
+                <div class="tpl-block-mobilecart-showimage"></div>
+                <div class="tpl-block-mobilecart-item-title"><?= $item['FullName'] ?></div>
+                <div class="tpl-property-type"><?= $item['Type']; ?></div>
+                <div class="tpl-property-image"><img src="<?= $item['Image']; ?>"></div>
+                <div class="tpl-property-total-price"><?= $item['TotalPriceF']; ?></div>
+            </div>
+            <? } ?>
+            <? if ($total_items) { ?>
+            <div class="tpl-block-mobilecart-actions">
+                <a class="tpl-block-ibtn tpl-block-ibtn--theme_red" href="<?= $nc_core->SUB_FOLDER; ?>/orders/add_order.html">Оформить заказ</a>
+            </div>
+            <? } ?>
+        </form>
+    </div>
+    <!-- Мобильный поиск-->
+    <div class="tpl-block-headerdrop tpl-block-headerdrop--search">
+        <form class="tpl-block-mobilesearch" action="/search/">
+            <input type="hidden" name="area" value="site<?=$catalogue ?>">
+            <input type="text" name="search_query" class="tpl-block-itext" placeholder="поиск"><span class="tpl-block-ibtnimage"><i class="icon-angle-right"></i>
+                <input type="submit" class="tpl-block-ibtnimage-submit" value=""></span>
+        </form>
+    </div>
+    <!-- Мобильный каталог-->
+    <div class="tpl-block-headerdrop tpl-block-headerdrop--menu">
+        <div class="tpl-block-mobilemenu">
+            <div class="tpl-block-mobilemenu-category">
+                <div class="tpl-block-mobilemenu-title">Каталог</div>
+                <?= nc_browse_sub($template_settings['catalogue_sub'], $browse_top_menu_mobile); ?>
+			</div>
+			<div class="tpl-block-mobilemenu-category">
+				<div class="tpl-block-mobilemenu-title">Меню</div>
+				<?= nc_browse_sub(0, $browse_top_menu_mobile, 0, "`Subdivision_ID` <> 370"); ?>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+    <div class="tpl-block-navbar">
+        <div class="tpl-link-order-info">
+            <? if ($template_settings['header_link_title']) { ?>
+            <? if ($template_settings['header_link_sub']) { ?>
+            <?
+                    $tmp_sub = $nc_core->subdivision->get_by_id($template_settings['header_link_sub']);
+            ?>
+            <em><a href="<?= $nc_core->SUB_FOLDER; ?><?= $tmp_sub['Hidden_URL']; ?>"><?= $template_settings['header_link_title']; ?></a></em>
+            <? } else { ?>
+            <em><?= $template_settings['header_link_title']; ?></em>
+            <? } ?>
+            <? } ?>
+        </div>
+        <div class="tpl-block-auth">
+            <? if (!empty($current_user)): ?>
+            <div class="tpl-link-profile">
+                <a href="<?= $nc_core->SUB_FOLDER; ?>/my/"><?= $current_user['ForumName'] ? $current_user['ForumName'] : $current_user['Login'] ?></a>
+            </div>
+            <div class="tpl-link-logout">
+                <a href='/netcat/modules/auth/?logoff=1&amp;REQUESTED_FROM=<?= $REQUEST_URI ?>&amp;REQUESTED_BY=<?= $REQUEST_METHOD ?>'>Выйти</a>
+            </div>
+            <? else: ?>
+            <div class="tpl-link-login">
+                <a href="/netcat/modules/auth/" data-mfp-src="#signin" class="tpl-link-modal">Вход</a>
+            </div>
+            <div class="tpl-link-register">
+                <a href="/my/registration/" data-mfp-src="#signup" class="tpl-link-modal">Регистрация</a>
+            </div>
+
+            <form class="tpl-block-auth-form tpl-block-mfp-hide tpl-block-popup" action="<?= $SUB_FOLDER . $HTTP_ROOT_PATH ?>modules/auth/index.php" id="signin" method="post">
+                <input type='hidden' name='loginsave' value='1'/>
+                <div class="tpl-block-auth-form-title">Вход на сайт</div>
+                <p>
+                    <input name="AUTH_USER" type="text" placeholder="E-mail" value='<?= htmlspecialchars($AUTH_USER, ENT_QUOTES) ?>'>
+                </p>
+
+                <p>
+                    <input name="AUTH_PW" type="password" placeholder="<?= NETCAT_MODULE_AUTH_PASSWORD ?>">
+                </p>
+
+                <div class="tpl-block-auth-form-actions">
+                    <a href="/netcat/modules/auth/password_recovery.php" data-mfp-src="#recovery" class="tpl-link-modal tpl-link-password-recovery">Забыли пароль?</a>
+                    <button type="submit">Войти</button>
+                </div>
+
+                <input type='hidden' name='AuthPhase' value='1'/>
+                <input type='hidden' name='REQUESTED_FROM' value='<?= $_SERVER['REQUEST_URI']; ?>'/>
+                <input type='hidden' name='REQUESTED_BY' value='<?= htmlspecialchars($REQUESTED_BY, ENT_QUOTES) ?>'/>
+                <input type='hidden' name='catalogue' value='<?= $catalogue ?>'/>
+                <input type='hidden' name='sub' value='<?= $sub ?>'/>
+                <input type='hidden' name='cc' value='<?= $cc ?>'/>
+            </form>
+
+            <form class="tpl-block-auth-form tpl-block-mfp-hide tpl-block-popup" action='<?= $nc_core->SUB_FOLDER ?>/netcat/add.php' method="post" id='signup'>
+                <div class="tpl-block-auth-form-title">Регистрация</div>
+                <p><input name="f_Email" id="f_Email" value="<?= htmlspecialchars($f_Email) ?>" type="text" placeholder="E-mail*"></p>
+                <p><input name="Password1" id="Password1" type="password" placeholder="Пароль*"></p>
+                <p><input name="Password2" id="Password2" type="password" placeholder="Повторите пароль*"></p>
+                <p><input name="f_ForumName" id="f_ForumName" value="<?= htmlspecialchars($f_ForumName) ?>" type="text" placeholder="Как к вам обращаться*"></p>
+                <div class="tpl-block-auth-form-actions"><button type="submit">Зарегистрироваться</button></div>
+
+                <input name='admin_mode' type='hidden' value='<?= $admin_mode ?>'/>
+                <input name='catalogue' type='hidden' value='<?= $catalogue ?>'/>
+                <?php
+                    $signup_infoblock = $db->get_row(
+                        "SELECT sc.`Sub_Class_ID`, sc.`Subdivision_ID`
+                           FROM `Class` AS c JOIN `Sub_Class` AS sc
+                             ON (c.`System_Table_ID` = 3 AND c.`Class_ID` = sc.`Class_ID`)
+                          WHERE sc.`Catalogue_ID` = $catalogue
+                            AND sc.`DefaultAction` = 'add'",
+                        ARRAY_A);
+                ?>
+                <input name='cc' type='hidden' value='<?= $signup_infoblock['Sub_Class_ID'] ?>'/>
+                <input name='sub' type='hidden' value='<?= $signup_infoblock['Subdivision_ID'] ?>'/>
+                <input name='posting' type='hidden' value='1'/>
+                <input name='curPos' type='hidden' value='0'/>
+            </form>
+
+            <form class="tpl-block-auth-form tpl-block-mfp-hide tpl-block-popup" method="post" action="<?= $SUB_FOLDER . $HTTP_ROOT_PATH ?>modules/auth/password_recovery.php" id="recovery">
+                <div class="tpl-block-auth-form-title">Восстановление пароля</div>
+                <p><input name="Email" type="text" placeholder="<?= NETCAT_MODULE_AUTH_PRF_EMAIL_2 ?>" value='<?= htmlspecialchars($Email, ENT_QUOTES) ?>'></p>
+
+
+                <div class="tpl-block-auth-form-actions">
+                    <button type="submit"><?= NETCAT_MODULE_AUTH_PRF_DOBUTT ?></button>
+                </div>
+
+                <input type='hidden' name='catalogue' value='<?= $catalogue ?>'/>
+                <input type='hidden' name='sub' value='<?= $sub ?>'/>
+                <input type='hidden' name='cc' value='<?= $cc ?>'/>
+                <input type='hidden' name='post' value='1'/>
+            </form>
+            <? endif ?>
+        </div>
+    </div>
+
+<div class="tpl-layout-page-center">
+    <div class="tpl-block-logo-row">
+        <!-- Логотип-->
+        <div class="tpl-block-logo">
+            <a href="<?= $nc_core->SUB_FOLDER . '/'; ?>">
+                <img src="<?= $template_settings['logo']['path'] ?>" >
+            </a>
+        </div>
+
+        <!-- Контакты (телефон 1) -->
+        <div class="tpl-block-phone tpl-block-phone-1">
+            <div class="tpl-value"><?= $template_settings['phone_1']; ?></div>
+            <div class="tpl-caption"><?= $template_settings['phone_1_title']; ?></div>
+        </div>
+
+        <!-- Контакты (телефон 2) -->
+        <div class="tpl-block-phone tpl-block-phone-2">
+            <div class="tpl-value"><?= $template_settings['phone_2']; ?></div>
+            <div class="tpl-caption"><?= $template_settings['phone_2_title']; ?></div>
+        </div>
+
+        <!-- Корзина-->
+        <div class="tpl-block-cart">
+            <a class="tpl-link-cart" href="<?= $nc_core->SUB_FOLDER; ?>/cart/">
+                <div class="tpl-cart-icon"><i class="icon-cart-blue"></i></div>
+                <div class="tpl-cart-title">Корзина товаров</div>
+                <div class="tpl-cart-summary">
+                    <? if ($total_items) { ?>
+                    В корзине
+                    <span class="tpl-property-amount"><?= $total_items; ?> <?= plural_form($total_items, 'товар', 'товара', 'товаров'); ?></span>
+                    <br>на сумму
+                    <? $totals = $netshop->cart->get_totals(); ?>
+                    <span class="<?= $totals ? 'tpl-property-totals' : ''; ?>"><?= $netshop->format_price($totals); ?></span>
+                    <? } else { ?>
+                    Корзина пуста
+                    <? } ?>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Навигация-->
+    <?= nc_browse_sub(0, $browse_top_menu); ?>
+
+    <!-- Поиск-->
+    <div  class="tpl-block-search">
+        <form action="/search/">
+            <!-- Категории-->
+            <div class="tpl-block-search-area">
+                <select name="area">
+                    <option value="site<?=$catalogue ?>">Все товары</option>
+                    <option value="sub371*">Палатки</option>
+                    <option value="sub372*">Кроссовки</option>
+                    <option value="sub373*">Фотоаппараты</option>
+                </select>
+            </div>
+            <div class="tpl-block-search-query">
+                <input type="text" name="search_query" placeholder="Поиск"><button type="submit"><i class="icon-search"></i></button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<!-- Дополнительные «меню» для страниц товаров -->
+<? if ($action == 'full' && in_array($classID, nc_netshop::get_instance()->get_goods_components_ids())): ?>
+<!-- Меню с иконками-->
+<div class="tpl-block-menu-secondary">
+    <? if ($template_settings['guarantee_sub']) { ?>
+    <? $tmp_sub = $nc_core->subdivision->get_by_id($template_settings['guarantee_sub']); ?>
+    <a class="tpl-block-menu-secondary-item" href="<?= $nc_core->SUB_FOLDER; ?><?= $tmp_sub['Hidden_URL']; ?>">
+        <i class="icon-bluecheck"></i>
+        <span>Гарантия<br>качества</span>
+    </a>
+    <? } ?>
+    <? if ($template_settings['guarantee_sub']) { ?>
+    <? $tmp_sub = $nc_core->subdivision->get_by_id($template_settings['shipping_sub']); ?>
+    <a class="tpl-block-menu-secondary-item" href="<?= $nc_core->SUB_FOLDER; ?><?= $tmp_sub['Hidden_URL']; ?>">
+        <i class="icon-bluetruck"></i>
+        <span>Бесплатная<br>доставка</span>
+    </a>
+    <? } ?>
+    <? if ($template_settings['guarantee_sub']) { ?>
+    <? $tmp_sub = $nc_core->subdivision->get_by_id($template_settings['credit_sub']); ?>
+    <a class="tpl-block-menu-secondary-item" href="<?= $nc_core->SUB_FOLDER; ?><?= $tmp_sub['Hidden_URL']; ?>">
+        <i class="icon-bluecards"></i>
+        <span>Купить<br>в кредит</span>
+    </a>
+    <? } ?>
+    <? if ($template_settings['guarantee_sub']) { ?>
+    <? $tmp_sub = $nc_core->subdivision->get_by_id($template_settings['addresses_sub']); ?>
+    <a class="tpl-block-menu-secondary-item" href="<?= $nc_core->SUB_FOLDER; ?><?= $tmp_sub['Hidden_URL']; ?>">
+        <i class="icon-bluepin"></i>
+        <span>Пункты<br>самовывоза</span>
+    </a>
+    <? } ?>
+</div>
+<? endif; ?>
+
+</header>
+<!-- content -->

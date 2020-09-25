@@ -1,0 +1,51 @@
+%Header
+<div class="tpl-block-content tpl-block-front-page">
+    <!-- Герой -->
+    <?= nc_objects_list(0, $template_settings['hero_banner_cc'], '', true); ?>
+
+    <!-- Разделы каталога (мобильная версия) -->
+    <?= nc_browse_sub($template_settings['catalogue_sub'], $mobile_menu); ?>
+
+    <div class="tpl-layout-page-center">
+        <aside>
+            <div class="tpl-block-menu-secondary-container">
+               <?= nc_browse_sub($template_settings['catalogue_sub'], array($GLOBALS['browse_top_menu'][1], $GLOBALS['browse_top_menu'][2])); ?>
+            </div>
+
+            <!-- Список новостей-->
+            <div class="tpl-block-news">
+                <?= nc_objects_list(0, $template_settings['news_cc'], '&recNum=5'); ?>
+            </div>
+        </aside>
+
+        <!-- Баннер-->
+        <?= nc_objects_list(0, $template_settings['small_banner_cc'], 'recNum=1', true); ?>
+        <? if ($template_settings['banner_text']) { ?>
+            <div><?= $template_settings['banner_text']; ?></div>
+        <? } else { ?>
+            <!-- Новое-->
+            <? /*
+                <div class="tpl-block-goods-new">
+                    <?= $nc_core->widget->show('netshop_new_goods') ?>
+                </div>
+            */ ?>
+        <? } ?>
+        <!-- Акции-->
+        <div class="tpl-block-goods-offers">
+            <?= nc_objects_list(0, $template_settings['offers_cc'], 'widget_mode=1', true); ?>
+        </div>
+
+    <? if ($template_settings['show_viewed_now']) { ?>
+        <!-- Сейчас смотрят-->
+        <div class="tpl-block-goods-viewed-now">
+            <?= $nc_core->widget->show('netshop_viewed_now') ?>
+        </div>
+    <? } ?>
+    <? if ($template_settings['show_recently_bought']) { ?>
+        <!-- Недавно купили-->
+        <div class="tpl-block-goods-bought-recently">
+            <?= $nc_core->widget->show('netshop_bought_recently') ?>
+        </div>
+    <? } ?>
+    </div>
+</div>

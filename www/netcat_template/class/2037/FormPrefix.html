@@ -1,0 +1,32 @@
+<?= $f_AdminCommon; ?>
+  <!-- Наша гордость -->
+  <style type="text/css">
+  .box {
+    display: none;
+  }
+  .box.visible {
+    display: block;
+  }
+  .controls{
+    width: 111px;
+    margin: 10px 0 0 480px;
+  }
+  .btn{
+    color: #f7f8fa;
+    background-color: #6eb33a;
+    border: none;
+    font-family: 'Myriad Pro';
+    font-weight: bold;
+    font-style: normal;
+  }
+  </style>
+
+  <div class="our-pride">
+    <div class="h1"><?=$cc_settings['title']?></div>
+    <div class="wrapper">
+       <ul class="tabs">
+       <?= nc_objects_list( $sub, $cc, "&recNum=90&nc_ctpl=2051" ); ?>     
+       </ul>
+       <div class="box visible">
+
+ 

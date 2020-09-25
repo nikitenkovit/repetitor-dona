@@ -1,0 +1,17 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+<?= !$admin_mode ? $addForm : NULL?>
+<? if ($admin_mode) : ?>
+<ul class="list-group">
+<? endif; ?><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><? if ($admin_mode) : ?>
+<li class="list-group-item">
+    <?= $f_AdminButtons; ?>    
+    <div class="h2">Имя: <?=$f_objectName?>, Телефон: <?=$f_objectPhone?>, Время звонка: <?=$f_objectTime?></div>
+    <div><em>Дата добавления: <?=$f_Created?></em></div>
+</li>
+<? endif; ?><!-- /RecordTemplate -->
+
+<!-- FormSuffix --><? if ($admin_mode) : ?>
+</ul>
+<? endif; ?><!-- /FormSuffix -->

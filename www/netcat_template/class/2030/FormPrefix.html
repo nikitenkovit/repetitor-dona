@@ -1,0 +1,57 @@
+<?= $f_AdminCommon; ?>
+  <!-- Курсы -->
+  <div class="courses">
+    <div class="courses-bg">
+      <div class="wrapper">
+      <? if(!$current_sub[NoMenu]){ ?> 
+        <div class="loginPan" style="color:#ffffff;">
+              <?=!$current_user['Login'] ? "
+                  <a href='' class='enter logIn'>Войти</a>
+                  " : "
+                  <a href='/lk/' class='enter'>Личный Кабинет</a> / 
+                  <a href='/netcat/modules/auth/?logoff=1&REQUESTED_FROM=$REQUEST_URI&REQUESTED_BY=$REQUEST_METHOD' class='enter'>Выйти</a>
+              "?>
+        </div>
+        <? } ?>
+        <h2 class="whiteFont title"><?=$cc_settings['tit1']?></h2>
+        <div class="bord-c">
+          <div class="row">
+            <div class="col-md-6"><?=$cc_settings['tet1']?></div>
+            <div class="col-md-6"><?=$cc_settings['tet2']?></div>
+          </div>
+        </div>
+      </div>
+      <div class="order-red-courses"><?=$cc_settings['ord1']?></div>
+      <div class="mgu"></div>
+    </div>
+    <div class="courses-bg-d">
+      <div class="wrapper">
+        <div class="text-h-o1"><?=$cc_settings['textho1']?></div>
+        <div class="text-h-o2"><?=$cc_settings['textho2']?></div>
+        <div class="text-h-o2"><?=$cc_settings['textho3']?></div>
+        <form class="ajaxForm form-courses" enctype="multipart/form-data" method="post" action="/netcat/add.php?isNaked=1">
+          <input name="catalogue" type="hidden" value="<?=$catalogue?>">
+          <input name="cc" type="hidden" value="<?=$cc?>">
+          <input name="sub" type="hidden" value="<?=$sub?>">
+          <input name="posting" type="hidden" value="1">
+          <input name="curPos" type="hidden" value="0">
+          <input name="f_Parent_Message_ID" type="hidden" value="">
+          
+          <div class="warnText w"></div>
+          
+          <div class="input">
+            <input type="text" placeholder="Ваше имя" name="f_name" required>
+          </div>
+          <div class="input">
+            <input type="text" placeholder="Ваш телефон" name="f_phone" required>
+          </div>
+          <div class="input">
+            <input type="text" placeholder="Удобное время для звонка" name="f_time" required>
+          </div>
+          <div class="submit">
+            <input type="submit" value="ЗАПИСАТЬСЯ">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

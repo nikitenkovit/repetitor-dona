@@ -1,0 +1,159 @@
+// Карточка в списке товаров (ex cardList())
+.tpl-component-goods .tpl-layout-tiles
+
+  .tpl-block-list-object
+    margin-bottom: 20px
+    float: left
+    width: 33.333%
+    padding-right: 20px
+    @media min
+      padding-right: 0
+      float: none
+      margin: 50px 0 0
+      width: auto !important
+    @media max
+      width: 25%
+
+  article
+    text-align: center
+    border: 5px solid //colorDull
+    theme(border-color 'dull')
+    padding: 15px 15px 15px
+    // width: 300px
+    width: 100%
+    height: 340px
+    position: relative
+
+    > a
+      display: block
+      text-decoration: none
+      theme(color 'accent-1')
+      &:hover
+        h3
+          theme(color 'accent-2')
+
+  .tpl-block-admin
+    position: absolute
+    bottom: -22px
+    left: 10px
+
+  h3
+    text-transform: none
+    display: block
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    text-align: center
+    font-weight: 400
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+    /*transition: color .2s*/
+
+  .tpl-property-type
+    display: block
+    position: relative
+    margin: -0.4em 0 0
+    line-height: 1.2
+    z-index: 3
+    text-align: center
+    theme(color 'base')
+    gradient-bottom()
+    @media min
+      margin-top: 10px
+      font-style: italic
+      font-size: 24px
+      text-align: left
+      font-weight: 400
+
+  .tpl-property-image
+    display: block
+    position: absolute
+    left: 15px
+    right: 15px
+    height: 135px
+    line-height: 140px
+    top: 115px
+
+  .tpl-block-rating
+    text-align: center
+    font-size: 14px
+    &-item
+      display inline-block
+      float none
+      max-width 1em
+
+  .tpl-property-item-price
+    display: block
+    position: absolute
+    left: 15px
+    right: 15px
+    text-align: center
+    top: 277px
+    font-size: 32px
+    line-height: 1.2
+    font-weight: 400
+
+  .tpl-property-item-price-range
+    font-size: 24px
+    margin-top: 8px
+    bottom: 16px
+    top: auto
+    .tpl-value { white-space: nowrap }
+
+  .tpl-property-original-price
+    display: block
+    position: absolute
+    top: 252px
+    left: 0
+    right: 0
+    margin-left: auto
+    margin-right: auto
+    width: 73px
+    white-space: nowrap
+    font-size: 18px
+    font-weight: 400
+    theme(color 'gray')
+    price-strike-through(50%)
+
+  .tpl-property-description
+  .tpl-link-compare-add
+  .tpl-link-compare-remove
+  .tpl-link-favorite-add
+  .tpl-link-favorite-remove
+  .tpl-link-cart-add
+  .tpl-link-cart-add-and-checkout
+  .tpl-link-select-variant
+    display: none
+
+.tpl-link-compare-remove
+.tpl-link-favorite-remove
+  opacity: 0.5
+  cursor: default
+
+.tpl-block-item-remove
+    position: absolute
+    right: 10px
+    top: 10px
+    display: none
+    .tpl-block-ibtn
+      cursor: pointer
+      display: block
+      width: 30px
+      height: 30px
+      theme(color 'dull')
+      border: 5px solid //colorDull
+      theme(border-color 'dull')
+      transition: color 0.2s, border 0.2s, opacity 0.2s
+      font-size: 15px
+      user-select: none
+      line-height: 16px !important
+      &:hover
+        theme(color 'accent-2')
+        theme(border-color 'accent-2')
+    A
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0

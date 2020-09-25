@@ -1,0 +1,22 @@
+.tpl-widget-netshop-new-goods
+  widgetTitle()
+  h2 { theme(color 'accent-2') }
+
+  .tpl-block-list-objects
+    /*@media notMin*/
+    @extend .s-tiles-small
+    @media min
+      form { display: block }
+      tilesWide()
+      tilesMobile()
+      padding 0 !important
+
+  @media notMin
+    .tpl-block-prevnext
+       .tpl-link-next
+       .tpl-link-prev
+         theme(color 'dull')
+         &:hover
+          theme(border-color 'accent-2')
+          theme(color 'accent-2')
+

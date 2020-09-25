@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="11" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Материалы и статьи</Subdivision_Name>
+      <EnglishName>materialy-i-stati</EnglishName>
+      <Checked>1</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="22" subdivision_id="11" class_id="2026">
+      <Sub_Class_Name>Материалы и статьи</Sub_Class_Name>
+      <EnglishName>materialy-i-stati</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2652" type_of_data_id="1">
+      <Field_Name>objectName</Field_Name>
+      <Description>Заголовок</Description>
+    </field>
+    <field field_id="2653" type_of_data_id="6">
+      <Field_Name>objectPic</Field_Name>
+      <Description>Фото</Description>
+    </field>
+    <field field_id="2654" type_of_data_id="3">
+      <Field_Name>objectText</Field_Name>
+      <Description>Анонс</Description>
+    </field>
+    <field field_id="2655" type_of_data_id="3">
+      <Field_Name>objectTextFull</Field_Name>
+      <Description>Подробное описание</Description>
+    </field>
+    <field field_id="2656" type_of_data_id="11">
+      <Field_Name>objectPics</Field_Name>
+      <Description>Фотографии</Description>
+    </field>
+    <field field_id="2658" type_of_data_id="1">
+      <Field_Name>objectAuthor</Field_Name>
+      <Description>Автор</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="1" class_id="2026" subdivision_id="11" sub_class_id="22">
+      <User_ID>1</User_ID>
+      <Priority>1</Priority>
+      <Checked>1</Checked>
+      <IP>37.144.57.52</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-12-24 13:10:27</Created>
+      <LastUpdated>2015-12-24 13:10:27</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Лучшие шпаргалки по математике]]></objectName>
+      <objectPic path="/netcat_files/11/22/articlesItemPic1.jpg">articlesItemPic1.jpg:image/jpeg:81064:11/22/articlesItemPic1.jpg</objectPic>
+      <objectText><![CDATA[<p>Каждый или почти каждый человек, учившийся в школе и университете, имел дело со шпаргалками. Маленькие скомканные бумажки, &laquo;гармошки&raquo;, классические записи ручкой на руке &ndash; все это варианты хорошо знакомые не только учащимся, но и успешно выявляемые при желании преподавателями и учителями.</p>]]></objectText>
+      <objectTextFull><![CDATA[<p>Каждый или почти каждый человек, учившийся в школе и университете, имел дело со шпаргалками. Маленькие скомканные бумажки, &laquo;гармошки&raquo;, классические записи ручкой на руке &ndash; все это варианты хорошо знакомые не только учащимся, но и успешно выявляемые при желании преподавателями и учителями.&nbsp;Каждый или почти каждый человек, учившийся в школе и университете, имел дело со шпаргалками. Маленькие скомканные бумажки, &laquo;гармошки&raquo;, классические записи ручкой на руке &ndash; все это варианты хорошо знакомые не только учащимся, но и успешно выявляемые при желании преподавателями и учителями.</p>
+<p>Каждый или почти каждый человек, учившийся в школе и университете, имел дело со шпаргалками. Маленькие скомканные бумажки, &laquo;гармошки&raquo;, классические записи ручкой на руке &ndash; все это варианты хорошо знакомые не только учащимся, но и успешно выявляемые при желании преподавателями и учителями.</p>
+<p>Каждый или почти каждый человек, учившийся в школе и университете, имел дело со шпаргалками. Маленькие скомканные бумажки, &laquo;гармошки&raquo;, классические записи ручкой на руке &ndash; все это варианты хорошо знакомые не только учащимся, но и успешно выявляемые при желании преподавателями и учителями.</p>]]></objectTextFull>
+      <objectPics/>
+      <objectAuthor><![CDATA[]]></objectAuthor>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

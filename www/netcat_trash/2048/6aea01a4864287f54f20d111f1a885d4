@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="23" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Лендинг пейдж</Subdivision_Name>
+      <EnglishName>lp</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+    <subdivision subdivision_id="34" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>История</Subdivision_Name>
+      <EnglishName>lp-history</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+    <subdivision subdivision_id="35" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>ОГЭ Математика</Subdivision_Name>
+      <EnglishName>lp-matematika-oge</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+    <subdivision subdivision_id="25" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>ЕГЭ Математика</Subdivision_Name>
+      <EnglishName>lp-matematika-ege</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="47" subdivision_id="23" class_id="2048">
+      <Sub_Class_Name>Акции 2.0</Sub_Class_Name>
+      <EnglishName>aktsii-20</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+    <sub_class sub_class_id="194" subdivision_id="34" class_id="2048">
+      <Sub_Class_Name>Акции 2.0</Sub_Class_Name>
+      <EnglishName>aktsii-20-copy-copy-copy</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+    <sub_class sub_class_id="211" subdivision_id="35" class_id="2048">
+      <Sub_Class_Name>Акции 2.0</Sub_Class_Name>
+      <EnglishName>aktsii-20-copy</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+    <sub_class sub_class_id="64" subdivision_id="25" class_id="2048">
+      <Sub_Class_Name>Акции 2.0</Sub_Class_Name>
+      <EnglishName>aktsii-20</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2715" type_of_data_id="1">
+      <Field_Name>Name</Field_Name>
+      <Description>Имя</Description>
+    </field>
+    <field field_id="2716" type_of_data_id="1">
+      <Field_Name>Phone</Field_Name>
+      <Description>Телефон</Description>
+    </field>
+    <field field_id="2717" type_of_data_id="1">
+      <Field_Name>Time</Field_Name>
+      <Description>Время</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="1" class_id="2048" subdivision_id="23" sub_class_id="47">
+      <User_ID>234</User_ID>
+      <Priority>1</Priority>
+      <Checked>1</Checked>
+      <IP>178.155.4.205</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2018-09-18 01:45:19</Created>
+      <LastUpdated>2018-09-18 01:45:19</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Name><![CDATA[Тест]]></Name>
+      <Phone><![CDATA[67]]></Phone>
+      <Time><![CDATA[67878]]></Time>
+    </message>
+    <message message_id="2" class_id="2048" subdivision_id="23" sub_class_id="47">
+      <User_ID>234</User_ID>
+      <Priority>2</Priority>
+      <Checked>1</Checked>
+      <IP>178.155.4.205</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2018-09-18 01:50:49</Created>
+      <LastUpdated>2018-09-18 01:50:49</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Name><![CDATA[dfgdfg]]></Name>
+      <Phone><![CDATA[dfgdfg]]></Phone>
+      <Time><![CDATA[dfgdfg]]></Time>
+    </message>
+    <message message_id="3" class_id="2048" subdivision_id="23" sub_class_id="47">
+      <User_ID>234</User_ID>
+      <Priority>3</Priority>
+      <Checked>1</Checked>
+      <IP>178.155.4.205</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2018-09-18 01:56:37</Created>
+      <LastUpdated>2018-09-18 01:56:37</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Name><![CDATA[sdf]]></Name>
+      <Phone><![CDATA[]]></Phone>
+      <Time><![CDATA[]]></Time>
+    </message>
+    <message message_id="11" class_id="2048" subdivision_id="34" sub_class_id="194">
+      <User_ID>2</User_ID>
+      <Priority>1</Priority>
+      <Checked>1</Checked>
+      <IP>87.117.63.190</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18362</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-10-14 19:46:21</Created>
+      <LastUpdated>2019-10-14 19:46:21</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Name><![CDATA[ТестИ4]]></Name>
+      <Phone><![CDATA[+7 (111) 111-11-11]]></Phone>
+      <Time><![CDATA[11]]></Time>
+    </message>
+    <message message_id="13" class_id="2048" subdivision_id="35" sub_class_id="211">
+      <User_ID>2</User_ID>
+      <Priority>1</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.240.231</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-10-15 18:34:22</Created>
+      <LastUpdated>2019-10-15 18:34:22</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Name><![CDATA[Тест4]]></Name>
+      <Phone><![CDATA[+7 (222) 222-22-22]]></Phone>
+      <Time><![CDATA[2]]></Time>
+    </message>
+    <message message_id="14" class_id="2048" subdivision_id="35" sub_class_id="211">
+      <User_ID>2</User_ID>
+      <Priority>2</Priority>
+      <Checked>1</Checked>
+      <IP>87.117.63.190</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18362</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-10-15 18:34:22</Created>
+      <LastUpdated>2019-10-15 18:34:22</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Name><![CDATA[ТестМ7]]></Name>
+      <Phone><![CDATA[+7 (111) 111-11-11]]></Phone>
+      <Time><![CDATA[1]]></Time>
+    </message>
+    <message message_id="10" class_id="2048" subdivision_id="25" sub_class_id="64">
+      <User_ID>2</User_ID>
+      <Priority>1</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.240.231</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-09-04 00:56:29</Created>
+      <LastUpdated>2019-09-04 00:56:29</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Name><![CDATA[Тест4]]></Name>
+      <Phone><![CDATA[+7 (222) 222-22-22]]></Phone>
+      <Time><![CDATA[2]]></Time>
+    </message>
+    <message message_id="12" class_id="2048" subdivision_id="25" sub_class_id="64">
+      <User_ID>2</User_ID>
+      <Priority>2</Priority>
+      <Checked>1</Checked>
+      <IP>87.117.63.190</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18362</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-10-14 19:50:27</Created>
+      <LastUpdated>2019-10-14 19:50:27</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Name><![CDATA[ТестМ7]]></Name>
+      <Phone><![CDATA[+7 (111) 111-11-11]]></Phone>
+      <Time><![CDATA[1]]></Time>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

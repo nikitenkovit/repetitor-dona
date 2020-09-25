@@ -1,0 +1,223 @@
+<!-- /content -->
+
+<div class="tpl-block-tabs tpl-block-tabs--footer">
+    <div class="tpl-block-popup tpl-block-mfp-hide" id="goodslist-favorite-add">
+    <div class="tpl-block-popup-title">Избранное</div>
+    Выбранный товар добавлен в&nbsp;<a class="tpl-link-scroll" href="#goodslist-favorite">список&nbsp;«Избранное»</a>.
+</div>
+
+<div class="tpl-block-popup tpl-block-mfp-hide" id="goodslist-favorite-remove">
+    <div class="tpl-block-popup-title">Избранное</div>
+    Товар удалён из&nbsp;<a class="tpl-link-scroll" href="#goodslist-favorite">списка&nbsp;«Избранное»</a>.
+</div>
+
+    <div class="tpl-block-popup tpl-block-mfp-hide" id="goodslist-favorite-remove-confirm">
+        <div class="tpl-block-popup-title">Избранное</div>
+        Удалить товар из "Избранного"?
+        <div>
+            <input type="hidden" name="url"/>
+            <input type="hidden" name="items"/>
+            <button class="tpl-value-cancel">Отмена</button> <button class="tpl-value-confirm">Удалить</button>
+        </div>
+    </div>
+
+<div class="tpl-block-popup tpl-block-mfp-hide" id="cart-item-remove">
+    <div class="tpl-block-popup-title">Корзина</div>
+    Вы действительно хотите удалить товар из корзины?
+    <div>
+        <button id="cart-item-remove-confirm">Удалить</button>
+    </div>
+</div>
+
+    <div class="tpl-block-popup tpl-block-mfp-hide" id="goodslist-compare-add">
+<div class="tpl-block-popup-title">Сравнение товаров</div>
+Выбранный товар добавлен в&nbsp;<a class="tpl-link-scroll" href="#goodslist-compare">список «Сравнение&nbsp;товаров»</a>.
+</div>
+
+<div class="tpl-block-popup tpl-block-mfp-hide" id="goodslist-compare-remove">
+    <div class="tpl-block-popup-title">Сравнение товаров</div>
+    Товар удалён из <a class="tpl-link-scroll" href="#goodslist-compare">списка «Сравнение&nbsp;товаров»</a>.
+</div>
+
+    <div class="tpl-block-popup tpl-block-mfp-hide" id="goodslist-compare-remove-confirm">
+        <div class="tpl-block-popup-title">Сравнение товаров</div>
+        Удалить товар из списка сравнения?<br>
+        <div>
+            <input type="hidden" name="url"/>
+            <input type="hidden" name="items"/>
+            <button class="tpl-value-cancel">Отмена</button> <button class="tpl-value-confirm">Удалить</button>
+        </div>
+    </div>
+
+<div class="tpl-block-popup tpl-block-mfp-hide" id="subscriber-added">
+    <div class="tpl-block-popup-title">Подписка</div>
+    Вы успешно подписались на рассылку!
+</div>
+
+<div class="tpl-block-popup tpl-block-mfp-hide" id="cart-added-popup">
+    <div class="tpl-block-popup-title">Корзина</div>
+    Товар добавлен в&nbsp;<a href="<?= $nc_core->SUB_FOLDER ?>/cart/">корзину</a>.
+</div>
+
+<div class="tpl-block-popup tpl-block-mfp-hide" id="cart-quantity-popup">
+    <div class="tpl-block-popup-title">Корзина</div>
+    <span></span>
+</div>
+
+<div class="tpl-block-popup tpl-block-mfp-hide" id="cart-error-popup">
+    <div class="tpl-block-popup-title">Корзина</div>
+    Ошибка: не удалось добавить товар в корзину!
+</div>
+<?php
+$show_recent_list = count(nc_netshop::get_instance()->goodslist_recent->get_all()) ? true : false;
+?>
+<!-- Закрытое положение: +e.trigger / +e.wrapper.tpl-state-hidden-->
+<!-- Открытое положение: +e.trigger.tpl-state-active / +e.wrapper-->
+<? if ($show_recent_list) { ?>
+<div class="tpl-block-tabs-switcher">
+    <div class="tpl-layout-page-center">
+        <? if ($show_recent_list) { ?>
+        <div class="tpl-block-tabs-tab tpl-state-current">Вы недавно смотрели</div>
+        <? } ?>
+            <div class="tpl-block-tabs-tab">Список сравнения</div>
+    <div class="tpl-block-tabs-tab">Избранное</div>
+    <div class="tpl-block-tabs-trigger tpl-state-active">
+    </div>
+</div>
+<? } ?>
+</div>
+<div class="tpl-block-tabs-wrapper">
+    <div class="tpl-layout-page-center">
+        <? if ($show_recent_list) { ?>
+        <div class="tpl-block-tabs-content tpl-state-current">
+            <?= $nc_core->widget->show('netshop_viewed_by_user'); ?>
+        </div>
+        <? } ?>
+            <div class="tpl-block-tabs-content">
+        <?= $nc_core->widget->show('netshop_compare'); ?>
+        <? if (count($netshop->goodslist_compare->get_all()) >= 2) { ?>
+        <div class="tpl-block-compare-button">
+            <a href="<?= $nc_core->SUB_FOLDER; ?>/compare" class="tpl-link-compare">Сравнение товаров &rarr;</a>
+        </div>
+        <? } ?>
+    </div>
+    <div class="tpl-block-tabs-content">
+        <?= $nc_core->widget->show('netshop_favorite'); ?>
+    </div>
+</div>
+</div>
+</div>
+<!-- Подвал-->
+<footer>
+    <div class="tpl-layout-page-center">
+        <div class="tpl-block-mobile-only tpl-block-menu-secondary">
+            <div class="tpl-block-menu-secondary-item"><a href="<?= $nc_core->SUB_FOLDER; ?>/help/">Помощь</a></div>
+            <div class="tpl-block-menu-secondary-item"><a href="<?= $nc_core->SUB_FOLDER; ?>/about/reviews/">О нас</a></div>
+        </div>
+        <div class="tpl-block-mobile-only tpl-block-social-buttons">
+            <div class="tpl-block-social-buttons-item"><a href="#"><i class="icon-facebook-mobile"></i></a>
+            </div>
+            <div class="tpl-block-social-buttons-item"><a href="#"><i class="icon-instagram-mobile"></i></a>
+            </div>
+        </div>
+
+        <div class="tpl-block-footer-row">
+            <div class="tpl-block-footer-col tpl-block-footer-col--1">
+                <? if ($template_settings['help_sub']) { ?>
+                <div class="tpl-block-footer-list">
+                    <? $tmp_sub = $nc_core->subdivision->get_by_id($template_settings['help_sub']); ?>
+                    <div class="tpl-block-footer-title"><?= $tmp_sub['Subdivision_Name']; ?></div>
+                    <?= nc_browse_sub($template_settings['help_sub'], $footer_menu); ?>
+                </div>
+                <? } else { ?>
+                <?= $template_settings['help_sub_text']; ?>
+                <? } ?>
+            </div>
+            <div class="tpl-block-footer-col tpl-block-footer-col--2">
+                <? if ($template_settings['about_sub']) { ?>
+                <div class="tpl-block-footer-list">
+                    <? $tmp_sub = $nc_core->subdivision->get_by_id($template_settings['about_sub']); ?>
+                    <div class="tpl-block-footer-title"><?= $tmp_sub['Subdivision_Name']; ?></div>
+                    <?= nc_browse_sub($template_settings['about_sub'], $footer_menu); ?>
+                </div>
+                <? } else { ?>
+                <?= $template_settings['about_sub_text']; ?>
+                <? } ?>
+            </div>
+            <div class="tpl-block-footer-col tpl-block-footer-col--3">
+                <? if ($template_settings['show_social_block']) { ?>
+                <div class="tpl-block-footer-list">
+                    <div class="tpl-block-footer-title">Мы в соц. сетях</div>
+                    <? if ($template_settings['vk_link']) { ?>
+                    <div class="tpl-block-footer-list-item">
+                        <a href="<?= $template_settings['vk_link']; ?>" target="_blank">Вконтакте</a>
+                    </div>
+                    <? } ?>
+                    <? if ($template_settings['ok_link']) { ?>
+                    <div class="tpl-block-footer-list-item">
+                        <a href="<?= $template_settings['ok_link']; ?>" target="_blank">Одноклассники</a>
+                    </div>
+                    <? } ?>
+                    <? if ($template_settings['fb_link']) { ?>
+                    <div class="tpl-block-footer-list-item">
+                        <a href="<?= $template_settings['fb_link']; ?>" target="_blank">Facebook</a>
+                    </div>
+                    <? } ?>
+                    <? if ($template_settings['twitter_link']) { ?>
+                    <div class="tpl-block-footer-list-item">
+                        <a href="<?= $template_settings['twitter_link']; ?>" target="_blank">Twitter</a>
+                    </div>
+                    <? } ?>
+                </div>
+                <? } ?>
+            </div>
+            <div class="tpl-block-footer-col tpl-block-footer-col--4">
+                <? if ($template_settings['show_subscribe_block'] && $nc_core->modules->get_by_keyword('subscriber', 0)) { ?>
+                <?
+                $news_cc = $template_settings['news_cc'];
+                $news_sub = nc_core()->sub_class->get_by_id($news_cc, 'Subdivision_ID');
+                $user = $AUTH_USER_ID ? nc_Core::get_object()->user->get_by_id($AUTH_USER_ID) : null;
+                $user_email = $user ? $user['Email'] : '';
+                ?>
+                <form class="tpl-block-subscribe" action="<?= $nc_core->SUB_FOLDER; ?>/netcat/subscribe.php" method="post">
+                    <input type="hidden" name="catalogue" value="<?= $catalogue; ?>"/>
+                    <input type="hidden" name="sub" value="<?= $news_sub; ?>"/>
+                    <input type="hidden" name="cc" value="<?= $news_cc; ?>"/>
+                    <input type="hidden" name="posting" value="1"/>
+
+                    <div class="tpl-block-footer-title">Подпишитесь на новости</div>
+                    <input type="text" placeholder="e-mail" name="fields[Email]" value="<?= $user_email; ?>">
+
+                    <button type="submit"><i class="icon-angle-right"></i></button>
+                </form>
+                <? } ?>
+            </div>
+            <div class="tpl-block-footer-col tpl-block-footer-col--5">
+                <div class="tpl-block-footer-cards">
+                    <? if ($template_settings['show_maestro_card']) { ?>
+                    <div class="tpl-block-footer-cards-item">
+                        <img src="<?= $nc_parent_template_folder_path ?>assets/i/card-1.jpg">
+                    </div>
+                    <? } ?>
+                    <? if ($template_settings['show_visa_card']) { ?>
+                    <div class="tpl-block-footer-cards-item">
+                        <img src="<?= $nc_parent_template_folder_path ?>assets/i/card-2.jpg">
+                    </div>
+                    <? } ?>
+                    <? if ($template_settings['show_visae_card']) { ?>
+                    <div class="tpl-block-footer-cards-item">
+                        <img src="<?= $nc_parent_template_folder_path ?>assets/i/card-3.jpg">
+                    </div>
+                    <? } ?>
+                </div>
+                <? if ($template_settings['show_designer_copyright']) { ?>
+                <div class="tpl-block-footer-developer">Создание сайта — <a href="http://xdesign-nn.ru/" target="_blank">xDesign</a>
+                </div>
+                <? } ?>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="//yandex.st/share/share.js" defer charset="utf-8"></script>
+</body>
+</html>

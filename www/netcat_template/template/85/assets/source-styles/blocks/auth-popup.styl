@@ -1,0 +1,28 @@
+.tpl-block-auth-form
+  border: 5px solid // colorBlue
+  theme(border-color 'accent-1')
+  padding: 40px 135px 50px !important
+  // background: #EAEFF2 !important
+  width: 540px !important
+  position: relative
+  p
+    margin-bottom: 20px
+  &-title
+    font-size: 30px
+    font-weight: 600
+    text-align: center
+    margin: 15px 0 45px
+    line-height: 1.2
+  &-actions
+    text-align: center
+    font-size: 16px
+    margin-top: 40px
+  input
+    darker-input()
+  .tpl-link-password-recovery
+    button()
+    button-colors('dull','black','accent-2','white');
+    margin-right: 0
+  button
+    margin-right: 0
+

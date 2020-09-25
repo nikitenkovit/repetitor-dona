@@ -1,0 +1,11 @@
+<? if ( ! $nc_core->input->fetch_get('lsDisplayType')): ?>
+%Header
+<div id='content' class='content' <?=nc_ls_display_container('content'); ?>>
+<? endif ?>
+<h1><?=htmlspecialchars($f_title) ?></h1>
+
+<script>
+    $(function() {
+        set_cart_count( <?=$nc_minishop->cart_count() ?> );
+    });
+</script>

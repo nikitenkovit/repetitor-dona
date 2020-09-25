@@ -1,0 +1,31 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?>
+<div class="callBackForm" style="background: url('<?=$f_objectPic?>') center no-repeat;">
+		<div class="wrapper">
+			<h1 class="h1 center textCompressed"><?=$f_objectText?></h1>
+			<form name="adminForm" id="adminForm" class="ajaxForm nc-form" enctype="multipart/form-data" method="post" action="/netcat/add.php?isNaked=1">
+			<input name="catalogue" type="hidden" value="1">
+            <input name="cc" type="hidden" value="6">
+            <input name="sub" type="hidden" value="13"><input name="posting" type="hidden" value="1">
+            <input name="curPos" type="hidden" value="0">
+            <input name="f_Parent_Message_ID" type="hidden" value="">
+                <span class="warnText"></span>
+				<div class="formControl"><input type="text" name="f_objectName" required="required" placeholder="Ваше имя"></div>
+				<div class="formControl"><input type="text" name="f_objectPhone" required="required" placeholder="Ваш телефон"></div>
+				<div class="formControl"><input type="text" name="f_objectTime" required="required" placeholder="Удобное время для звонка"></div>
+				<div class="formControl send"><button class="green"><span class='preloader'></span>Перезвоните мне!</button></div>
+				<div class="formInfo">Заполните поля, отправьте заявку и наш консультант свяжется с Вами для уточнения деталей</div>
+			</form>
+            <div class="loginPan">
+              <?=!$current_user['Login'] ? "
+                  <a href='' class='enter logIn'>Войти</a>
+                  " : "
+                  <a href='/lk/' class='enter'>Личный Кабинет</a> / 
+                  <a href='/netcat/modules/auth/?logoff=1&REQUESTED_FROM=$REQUEST_URI&REQUESTED_BY=$REQUEST_METHOD' class='enter'>Выйти</a>
+              "?>
+            </div>
+		</div>
+	</div><!-- /RecordTemplate -->
+
+<!-- FormSuffix --><!-- /FormSuffix -->

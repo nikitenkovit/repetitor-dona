@@ -1,0 +1,25 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+<div class="block4">
+    <div class="wrapper"><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?>
+<div class="h2 center"><?=$f_objectName?></div>
+<div class="h3 center"><?=$f_objectText?></div>	<!-- /RecordTemplate -->
+
+<!-- FormSuffix --><form name="adminForm" id="adminForm" class="ajaxForm nc-form" enctype="multipart/form-data" method="post" action="/netcat/add.php?isNaked=1">
+				
+	            <input name="catalogue" type="hidden" value="1">
+	            <input name="cc" type="hidden" value="6">
+	            <input name="sub" type="hidden" value="13"><input name="posting" type="hidden" value="1">
+	            <input name="curPos" type="hidden" value="0">
+	            <input name="f_Parent_Message_ID" type="hidden" value="">
+	            
+	                <span class="warnText"></span>
+	                <input name="f_objectName" size="50" type="text" maxlength="255" placeholder="Ваше имя" required="" value="">                
+	                <input name="f_objectPhone" size="50" type="text" maxlength="255" placeholder="Ваш телефон" required="" value="">                
+					<input name="f_objectTime" size="50" type="text" maxlength="255" placeholder="Удобное время для звонка" required="" value="">				
+					<button class="pull-right"><span class="preloader"></span>Записаться</button>
+				</form>
+
+</div>
+		</div><!-- /FormSuffix -->

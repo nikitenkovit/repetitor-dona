@@ -1,0 +1,219 @@
+<!-- Header --><!DOCTYPE html >
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=<?=$nc_core->NC_CHARSET?>" />  
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<? /* Блок SEO */ ?>
+<? /* Запрос заголовка через ядро системы, если нету, то выводим хлебные крошки */ ?>
+<title><?=( ($title = $nc_core->page->get_title()) ? $title : strip_tags(s_browse_path($browse_path_title)))?></title>
+<? /* Запрос description через ядро системы */ ?>
+<?=( ($description=$nc_core->page->get_description()) ? "<meta name='description' content='".$description."'>" : "" )?>
+<? /* Запрос Keywords через ядро системы */ ?>
+<?=( ($keywords=$nc_core->page->get_keywords()) ? "<meta name='Keywords' content='".$keywords."'>" : "" )?>
+
+
+
+<link href="<?=$nc_parent_template_folder_path; ?>css/bootstrap.min.css" rel="stylesheet">
+<link href="<?=$nc_parent_template_folder_path; ?>css/style.css" rel="stylesheet">
+<link href="<?=$nc_parent_template_folder_path; ?>css/jquery.scrollbar.css" rel="stylesheet">
+<link rel="stylesheet" href="<?=$nc_parent_template_folder_path; ?>css/owl.carousel.min.css" type="text/css" media="screen">
+<link href="<?=$nc_parent_template_folder_path; ?>css/colorbox.css" rel="stylesheet">
+<script src="<?=$nc_parent_template_folder_path; ?>js/jquery.min.js"></script>
+<script src="<?=$nc_parent_template_folder_path; ?>js/jquery.maskedinput.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function($){
+
+if( /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent) ) {}else{$("input[name='f_phone'],input[name='f_Phone'], input[name='f_objectPhone']").mask("+7 (999) 999-99-99");}
+
+});
+</script>
+<script type="text/javascript">    document.onkeydown=key;  function key()  {    window.status=event.keyCode;  if(event.keyCode==17)alert("КОПИРОВАНИЕ МАТЕРИАЛОВ ЗАПРЕЩЕНО!");  }  </script>
+</head>
+
+<body>
+<div class="wrapper">
+  <header class="header">
+    <div class="wrapper">
+      <div class="logo"></div>
+      <div class="phones whiteFont">
+        <div>8 (908) 511 91 16</div>
+        <div>8 (908) 518 07 15</div>
+      </div>
+      <a href="#" class="callBack whiteFont"><span>Заказать обратный звонок</span></a> </div>
+  </header>
+  <nav>
+    <div class="wrapper">
+      <div class="shedule">
+        <div><span>Мы работаем без выходных!</span></div>
+        <div>Часы работы: <span>10:00 - 21.00</span></div>
+      </div>
+      <button class="takeClass top orange">Записаться на курс</button>
+      <? if(!$current_sub[NoMenu]){?> 
+      <div class="menu">
+        <?= nc_browse_sub(0, $top_menu1, 0, $where_cond = "Subdivision_ID < 8 AND lp = 0")?>
+		<?= nc_browse_sub(0, $top_menu2, 0, $where_cond = "Subdivision_ID > 7 AND lp = 0")?>
+      </div>
+      <? } ?>
+    </div>
+  </nav>
+<!-- /Header -->
+
+<!-- Footer -->  <footer class="footer">
+    <div class="wrapper">
+      <table>
+        <tbody>
+          <tr>
+            <td class="social"><div>Мы в соцсетях:</div>
+              <ul>
+                <li><a href="http://ok.ru/group/51604463222879" target="_blank" class="odn"></a></li>
+                <li><a href="https://vk.com/repetitor_dona_ru" target="_blank" class="vk"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCIt9saNis7sWyxtw8VKJY9g" target="_blank" class="fb"></a></li>
+                <li><a href="#" class="tw"></a></li>
+              </ul></td>
+            <td class="footerMenu">
+               <?=nc_browse_sub(0, $footer_menu, 0, $where_cond = "lp = 0")?>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </footer>
+</div>
+<div class="modalWindow auth_block">
+  <div class="type_block"> <span class="closeModalWindow">×</span>
+    <div class="title">Авторизация</div>
+    <form method="post" action="/netcat/modules/auth/">
+      <input type="hidden" name="AuthPhase" value="1">
+      <input type="hidden" name="REQUESTED_FROM" value="/lk/">
+      <input type="hidden" name="REQUESTED_BY" value="GET">
+      <input type="hidden" name="catalogue" value="1">
+      <input type="hidden" name="sub" value="1">
+      <input type="hidden" name="cc" value="">
+      <div class="block">
+        <div class="input_text">
+          <input type="text" placeholder="Логин" name="AUTH_USER" value="">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="input_text">
+          <input type="password" placeholder="Пароль" name="AUTH_PW" value="">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+      </div>
+      <div class="block save">
+        <label>Сохранить логин и пароль</label>
+        <input type="checkbox" name="loginsave">
+      </div>
+      <input type="hidden" value="1" name="AuthPhase">
+      <input type="submit" class="login_submit" name="submit" value="Войти">
+      <a class="remindPwd" id="rem_pwd" href="/netcat/modules/auth/password_recovery.php">Забыли пароль?</a>
+    </form>
+    <!--<div id="login_social">
+        <div id="social_name">Войти через социальные сети</div>
+        <div class="social_block"><img src="/images/template1/i/images_".$template_settings['color_scheme']."/vk_open.jpg" alt="" /></div>
+        <div class="social_block"><img src="/images/template1/i/images_".$template_settings['color_scheme']."/facebook_login.jpg" alt="" /></div>
+        <div class="social_block last"><img src="/images/template1/i/images_".$template_settings['color_scheme']."/twitter_login.jpg" alt="" /></div>
+        <div class="clear"></div>--> 
+    
+  </div>
+</div>
+<div class="modalWindow getCall">
+  <div class="type_block"> <span class="closeModalWindow">×</span>
+    <div class="title">Заказать обратный звонок</div>
+    <div class="wrapper">
+      <form name="adminForm" id="adminForm" class="ajaxForm nc-form" enctype="multipart/form-data" method="post" action="/netcat/add.php?isNaked=1">
+        <input name="catalogue" type="hidden" value="1">
+        <input name="cc" type="hidden" value="14">
+        <input name="sub" type="hidden" value="16">
+        <input name="posting" type="hidden" value="1">
+        <input name="curPos" type="hidden" value="0">
+        <input name="f_Parent_Message_ID" type="hidden" value="">
+        <span class="warnText"></span>
+        <div class="block">
+          <input name="f_objectName" size="50" type="text" maxlength="255" placeholder="Ваше имя" required value="">
+        </div>
+        <div class="block">
+          <input name="f_objectPhone" size="50" type="text" maxlength="255" placeholder="Ваш телефон" required value="">
+        </div>
+        <div class="block">
+          <input name="f_objectTime" size="50" type="text" placeholder="Удобное время для звонк" maxlength="255" required value="">
+        </div>
+        <div class="formButton">
+          <button class="pull-right"><span class="preloader"></span>Записаться</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="interview">
+  <button class="showInterview"></button>
+  <div class="wrapper">
+    <div class="h2 center">Запишись на <span>бесплатное</span> собеседование!</div>
+    <form name="adminForm" class="ajaxForm nc-form" enctype="multipart/form-data" method="post" action="/netcat/add.php?isNaked=1">
+      <div id="nc_moderate_form">
+        <div class="nc_clear"></div>
+        <input name="admin_mode" type="hidden" value="">
+        <input type="hidden" name="nc_token" value="cfad6074a81e9390c4e701e328c163de">
+        <input name="catalogue" type="hidden" value="1">
+        <input name="cc" type="hidden" value="8">
+        <input name="sub" type="hidden" value="15">
+        <input name="posting" type="hidden" value="1">
+        <input name="curPos" type="hidden" value="0">
+        <input name="f_Parent_Message_ID" type="hidden" value="">
+        <input type="hidden" name="f_Checked" value="1">
+      </div>
+      <span class="warnText"></span>
+      <div class="formControl">
+        <label>Имя</label>
+        <input name="f_objectName" size="50" type="text" maxlength="255" required value="">
+      </div>
+      <div class="formControl">
+        <label>Телефон</label>
+        <input name="f_objectPhone" size="50" type="text" maxlength="255" required value="">
+      </div>
+      <div class="formControl send">
+        <button class="greenModal"><span class="preloader"></span>Записаться</button>
+      </div>
+    </form>
+  </div>
+  <div class="wrapper">
+    <div class="h2 center">Подпишись на нашу рассылку<br>
+      для абитуриентов и получи много полезной информации о том, как сдать и поступить!</div>
+    <form class="ajaxForm nc-form" action="/netcat/subscribe.php?isNaked=1">
+      <input type="hidden" name="catalogue" value="1">
+      <input type="hidden" name="sub" value="18">
+      <input type="hidden" name="cc" value="16">
+      <input type="hidden" name="posting" value="1">
+      <span class="warnText"></span>
+      <div class="formControl">
+        <label>Имя</label>
+        <input type="text" name="fields[Login]">
+      </div>
+      <div class="formControl">
+        <label>E-mail</label>
+        <input type="text" name="fields[Email]">
+      </div>
+      <div class="formControl">
+        <label></label>
+        <input type="checkbox" value="1" name="fields[Type]">
+        Родитель</div>
+      <div class="formControl">
+        <label></label>
+        <input type="checkbox" value="2" name="fields[Type]">
+        Абитуриент</div>
+      <div class="formControl send">
+        <button class="redModal">Записаться</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div id="cboxOverlay" style="display: none;"></div>
+<script src="<?=$nc_parent_template_folder_path; ?>js/jquery.colorbox-min.js"></script> 
+<script src="<?=$nc_parent_template_folder_path; ?>js/jquery.scrollbar.js"></script> 
+<script src="<?=$nc_parent_template_folder_path; ?>js/owl.carousel.min.js"></script> 
+<script src="<?=$nc_parent_template_folder_path; ?>js/mine.js"></script>
+</body>
+</html><!-- /Footer -->

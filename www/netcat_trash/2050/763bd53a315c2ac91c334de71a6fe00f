@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="39" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Биология</Subdivision_Name>
+      <EnglishName>lp-biology</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="284" subdivision_id="39" class_id="2050">
+      <Sub_Class_Name>Контакты</Sub_Class_Name>
+      <EnglishName>kontakty-copy-copy-copy-copy</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2729" type_of_data_id="6">
+      <Field_Name>Foto</Field_Name>
+      <Description>Фото</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="40" class_id="2050" subdivision_id="39" sub_class_id="284">
+      <User_ID>234</User_ID>
+      <Priority>1</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2020-05-24 15:07:30</Created>
+      <LastUpdated>2020-05-24 15:07:30</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP>31.23.253.81</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</LastUserAgent>
+      <Keyword/>
+      <Foto path="/netcat_files/39/284/83b3b8d8318f664aa5935bcfb173e54e">addressMapZapadniy.png:image/png:262010</Foto>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

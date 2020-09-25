@@ -1,0 +1,50 @@
+<!-- FormPrefix --><?$counter=0;?>
+<div class="h2">Отзывы наших  учеников:</div>	 
+<div id="caruselReview" class="carousel slide" data-ride="carousel" data-interval="10000">
+<ol class="carousel-indicators">
+
+<?php
+    $nc_core = nc_Core::get_object();
+    $item = $nc_core->db->get_col("SELECT Message_ID FROM Message2001 WHERE isMain = 1 LIMIT 5", ARRAY_A); 
+    if (!empty($item)) {
+        $n = 0;
+        foreach ($item as $row) {
+        if($n==0) { echo "<li class='active' data-target='#caruselReview' data-slide-to='0'></li>"; }
+                        else { echo "<li data-target='#caruselReview' data-slide-to='$n'></li>";}  
+                        $n++;
+                    }
+                }
+ 
+ ?>
+
+
+</ol>
+<div class="carousel-inner" role="listbox"> 		
+		    	<!-- /FormPrefix -->
+
+<!-- RecordTemplate --><div class="item<?=$counter==0 ? " active" : NULL?>">
+				      <dl>
+				      	<dt>
+				      		<?=$f_objectPic ? "<img src='$f_objectPic_preview_url' alt=''>" : NULL?>
+				      		<em><?=$f_objectName?></em>
+				      	</dt>
+				      	<dd>
+				      		<blockquote>
+				      			<?
+                                    if(strlen($f_objectText) > 588) {
+                                        echo substr("$f_objectText", 0, 588)."<img class='hideText' src='../img/tpGradient.png' alt=''>";
+                                    }    
+                                    else echo $f_objectText;
+                                ?>                                
+				      		</blockquote>
+				      		<em><?=$f_objectRanks?></em>
+				      	</dd>
+				      </dl>
+</div>
+<?$counter++;?><!-- /RecordTemplate -->
+
+<!-- FormSuffix --></div>
+<a href="/otzyvy-i-rezultaty/" class="allReviews">Все отзывы</a>
+<a class="left carousel-control" href="#caruselReview" role="button" data-slide="prev"></a>
+<a class="right carousel-control" href="#caruselReview" role="button" data-slide="next"></a>
+</div>     <!-- /FormSuffix -->

@@ -1,0 +1,486 @@
+$thm = 'grey-green'
+
+.tpl-theme-grey-green
+
+    body
+        background theme-image($thm, "bg-noice-grey.png")
+
+    //-------------------------------------------------------------------------
+    // header
+    //-------------------------------------------------------------------------
+    body > header
+
+        background theme-image($thm, "bg-noice-white.png")
+
+        // Navbar
+        .tpl-block-navbar
+            margin-top  -20px
+            height      50px
+            padding-top 14px
+
+            a
+                color #fff
+                text-decoration none
+                underline(#FFF7)
+
+            // login link
+            .tpl-link-login a
+                color #FFF
+                dashed-underline(#FFF)
+
+            &:after
+                content    ''
+                position   absolute
+                width      100%
+                height     50px
+                background  theme-image($thm, 'bg-green-striped.png') repeat-x
+                top        0
+                right      0
+                z-index    -1
+
+
+        // Cart
+        .icon-cart-blue
+            background theme-image($thm, "icon-cart-green.png") 50% 50% no-repeat
+            font-weight bold
+        .tpl-link-cart:hover
+            color #268c59
+
+
+        // Menu
+        .tpl-block-menu
+            // border-width 3px
+            // border-color #98888D
+            position relative
+
+            &:after
+                position   absolute
+                content    ''
+                width      100%
+                height     2px
+                background #98888D
+                bottom     -5px
+                left       0
+                z-index    3
+
+        // Search
+        .tpl-block-search
+            form
+                border-radius 7px
+                // padding 4px 1px 5px
+                background theme-image($thm, "bg-gradient-beight.png") repeat-x 0 100% !important
+        .tpl-block-search-query
+            input
+                color #000 !important
+                border-radius 5px
+                box-shadow 0 -1px 0 #0003
+            input:placeholder
+            input:-moz-placeholder
+            input::-webkit-input-placeholder
+                color #777
+            button
+                opacity 1 !important
+                &:hover
+                    background none
+                    opacity 0.5
+                .icon-search
+                    margin-top -3px
+                    background theme-image($thm, "icon-search.png") no-repeat
+                    width 21px
+                    height 21px
+                    opacity 1
+                    &:before
+                        content ''
+
+    //-------------------------------------------------------------------------
+    // Sidebar menu
+    //-------------------------------------------------------------------------
+
+    aside .tpl-block-menu-secondary
+        border-radius 7px
+
+        // hide default arrow
+        &:before
+            display none !important
+
+        // custom arrow
+        &:after
+            content     ''
+            background  theme-image($thm, "bg-sidebar-arrow.png") no-repeat 0 0
+            width       31px
+            height      11px
+            position    absolute
+            top         -11px
+            left        35px
+            margin-left -15px
+
+        // active element
+        a:hover
+                cursor pointer
+                color #FFF !important
+                background-color #9E7985
+
+    //-------------------------------------------------------------------------
+    // Hero banner
+    //-------------------------------------------------------------------------
+
+    .tpl-block-hero
+        .tpl-block-hero-item a:before
+            content    ''
+            position   absolute
+            left       260px
+            top        0
+            right      21px
+            //         height 100%
+            bottom     30px
+            background #FFF
+            background linear-gradient(left, #FFF0 0%, #FFFF 40%, #FFFF 100%)
+        .s-circle
+            background none
+        .s-info
+            text-align left
+            top        160px
+            left       280px
+
+            &,*
+                color #000
+        .s-product
+            right 20px
+
+    //--------------------------------------------------------------------------
+    // Баннер
+    //--------------------------------------------------------------------------
+    .tpl-block-banner
+        border-radius 7px
+
+        a
+            border        1px solid #268c59
+            border-radius 7px
+            margin        10px 0 -10px -10px
+            position      relative
+
+            .tpl-block-banner-text
+                background    #268c59
+                position      absolute
+                top           auto
+                bottom        0
+                left          0
+                border-radius 0 0 0 5px
+
+
+    //-------------------------------------------------------------------------
+    // Modal
+    //-------------------------------------------------------------------------
+
+    // // background
+    // .tpl-block-mfp-bg
+    //     background #161312
+
+    // // modal window
+    // .tpl-block-popup
+    //     background #7c6761
+
+    //-------------------------------------------------------------------------
+    // Form
+    //-------------------------------------------------------------------------
+
+    .tpl-block-main.tpl-component-order input[type=text]
+    .tpl-block-main.tpl-component-order input[type=number]
+    .tpl-block-main.tpl-component-order input[type=email]
+    .tpl-block-main.tpl-component-order textarea
+        background    #f6f5f3
+        border-radius 5px
+        box-shadow    inset 0 1px 0 #9e7985
+    .tpl-block-auth-form
+        input
+            background    #f6f5f3
+            border-radius 5px
+            box-shadow    inset 0 1px 0 #9e7985
+
+    .tpl-block-cart-actions
+    .tpl-block-auth-form-actions
+        button
+        a
+            border-radius 5px
+            color #FFF
+    button[type="submit"]
+        border-radius 5px
+
+    //-------------------------------------------------------------------------
+    // News
+    //-------------------------------------------------------------------------
+
+    .tpl-component-news
+        h2
+            color #000 !important
+        > .tpl-link-more
+            color #268c59 !important
+
+        // Row
+        .tpl-block-list-object
+            // title
+            .tpl-property-news-title
+                // color        #C3C3C3
+                border none
+                padding-bottom 0
+            .tpl-property-announce
+                color #7a7e87
+            // more link
+            a.tpl-link-more
+                color #268c59 !important
+
+    //-------------------------------------------------------------------------
+    // [<] [>]
+    //-------------------------------------------------------------------------
+    .tpl-block-prevnext
+        border-radius 7px
+        overflow      hidden
+
+        > .tpl-link-next
+            margin-left 1px !important
+        > *
+            border      none !important
+            line-height 30px !important
+            background  theme-image($thm, 'bg-green-striped.png') repeat-x !important
+            color       #FFF !important
+
+            &:hover
+                opacity      .8 !important
+                color        #FFF !important
+
+    //-------------------------------------------------------------------------
+    // New goods
+    //-------------------------------------------------------------------------
+
+    .tpl-block-goods-new
+        .tpl-block-list-object
+            article
+                border-radius 7px
+                background    #fff
+                border-color  #268c59
+                position      relative
+                border-width  1px
+                box-shadow    0 1px 3px #0003
+                margin-bottom 5px
+                // &:before
+                //     content    ''
+                //     position   absolute
+                //     left       10px
+                //     top        10px
+                //     width      95px
+                //     height     110px
+                //     background #FFF
+                // *
+                //     color #000
+                //     text-transform none
+
+                // // Star
+                // .tpl-block-rating-item *
+                //     color #312623 !important
+
+    //-------------------------------------------------------------------------
+    // Сейчас смотрят / аксессуары
+    //-------------------------------------------------------------------------
+
+    .tpl-block-goods-offers
+    .tpl-component-goods
+    .tpl-block-list-objects
+    .tpl-widget-netshop-viewed-by-user
+    .tpl-widget-netshop-accessories
+    .tpl-widget-netshop-compare
+    .tpl-widget-netshop-favorite
+    .tpl-block-goods-viewed-now
+        .tpl-block-swiper
+            h2
+                color #9e7985
+        .tpl-block-list-objects
+            article
+                border-radius 7px
+                background    #fff
+                border-color  transparent
+                position      relative
+                border-width  1px
+                margin 1px 1px 5px
+                box-shadow    0 1px 5px #0003, 0 0 0 1px #0001
+
+        // [<] [>]
+        .tpl-block-prevnext > *
+                border     none !important
+                line-height 30px !important
+                background theme-image($thm, "bg-tabs.png") repeat-x 0 100% !important
+                // *
+                //     color #000
+                // // Star
+                // .tpl-block-rating-item *
+                //     color #7c6761 !important
+
+                // // Cart icon
+                // .tpl-link-cart-add:before
+                //     @extend .icon-cart-brown
+
+    //-------------------------------------------------------------------------
+
+    // Buy btn
+    a.tpl-link-select-variant
+    .tpl-link-cart-add-and-checkout
+        background    theme-image($thm, 'bg-green-striped.png') repeat-x !important
+        color         #FFF !important
+        border-radius 5px
+        &:hover
+            opacity 0.8
+
+    //--------------------------------------------------------------------------
+
+    // Иконки
+    .tpl-link-compare-add:before
+    .tpl-link-compare-remove:before
+        background theme-image($thm, 'icon-compare.png') no-repeat 50% 50% !important
+        width 17px !important
+        height 23px !important
+    .tpl-link-favorite-add:before
+    .tpl-link-favorite-remove:before
+        background theme-image($thm, 'icon-favorite.png') no-repeat 50% 50% !important
+        width 20px !important
+        height 23px !important
+    .tpl-link-cart-add:before
+        background theme-image($thm, 'icon-cart-green.png') no-repeat 50% 50% !important
+        width 26px !important
+        height 27px !important
+    .tpl-variable-part .tpl-link-cart-add
+        background theme-image($thm, "bg-tabs.png") repeat-x 0 0 !important
+        border-radius 5px
+        &:before
+            background theme-image($thm, "icon-cart-white.png") no-repeat !important
+            width 23px !important
+            height 23px !important
+            vertical-align top
+
+    //-------------------------------------------------------------------------
+
+    // Фон сравнения
+    .tpl-block-tabs--footer
+        .tpl-block-tabs-wrapper
+            background theme-image($thm, 'bg-noice-dark.png')
+
+
+    //-------------------------------------------------------------------------
+    // Footer
+    //-------------------------------------------------------------------------
+
+    footer
+        background #9c8f93 !important
+
+        &, a
+            color #FFF !important
+        .tpl-block-footer-list
+            border-color #FFF
+
+    //-------------------------------------------------------------------------
+    // Иконки над товаром
+    //-------------------------------------------------------------------------
+
+    .tpl-block-menu-secondary
+        .tpl-block-menu-secondary-item:hover *
+            text-decoration none
+            // color #FFF !important
+        .icon-bluecheck
+            background theme-image($thm, "icon-check.png") no-repeat 50% 50%
+        .icon-bluetruck
+            background theme-image($thm, "icon-truck.png") no-repeat 50% 50%
+        .icon-bluecards
+            background theme-image($thm, "icon-cards.png") no-repeat 50% 50%
+        .icon-bluepin
+            background theme-image($thm, "icon-pin.png") no-repeat 50% 50%
+
+    //-------------------------------------------------------------------------
+    // Звездочки
+    //-------------------------------------------------------------------------
+
+    // .tpl-block-rating
+    //     .tpl-block-rating-item *
+    //         color #7c6761 !important
+
+    //-------------------------------------------------------------------------
+    // Кол-во
+    //-------------------------------------------------------------------------
+
+    .tpl-block-amountchoice-value
+        background #f6f5f3
+        box-shadow inset 0 1px 0 #9e7985
+        border-radius 5px
+
+    //-------------------------------------------------------------------------
+    // Параметры товара
+    //-------------------------------------------------------------------------
+
+    .tpl-block-cart-form
+        border        1px solid #9e7985 !important
+        border-radius 7px
+
+        // .tpl-state-available
+        //     &,*
+        //         color #7c6761 !important
+        // .tpl-divider
+        //     border-color #7c6761 !important
+
+        // .tpl-link-cart-add
+        //     background-color #7C6761 !important
+        //     &:hover
+        //         opacity 0.8
+
+    //-------------------------------------------------------------------------
+    // Вкладки
+    //-------------------------------------------------------------------------
+    .tpl-block-tabs.tpl-block-tabs--footer
+        .tpl-block-tabs-switcher
+            border-color #9e7a85 !important
+            &:after
+                content       ''
+                position      relative
+                margin-bottom -5px
+                width         100%
+                height        1px
+                background    #83656f
+                z-index       3
+        .tpl-block-tabs-tab
+            background none
+            &.tpl-state-current
+                background theme-image($thm, "bg-tabs.png") repeat-x 0 0 !important
+                border-radius 7px 7px 0 0
+                &:hover
+                    color #FFF
+
+        h3
+            margin 0 !important
+            padding 0 !important
+
+        .tpl-block-list-object h3
+            margin-bottom 0.5em !important
+
+    .chosen-container
+        *
+            &:first-child
+                box-shadow inset 0 1px 0 #9e7985
+            border-radius 5px
+            background #f6f5f3 !important
+        .result-selected
+        .active-result:hover
+            color #9e7985 !important
+        span
+            border-radius 0
+
+    .tpl-block-full
+        padding 30px
+        background-color #fff
+        border-radius 7px
+        border 1px solid #268c59
+
+    .tpl-block-content h1
+        color #000
+
+    .tpl-link-password-recovery
+        color #FFF !important
+
+    .tpl-component-order
+        fieldset
+            background #FFF2

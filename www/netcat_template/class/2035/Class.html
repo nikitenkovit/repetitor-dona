@@ -1,0 +1,19 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+  <!-- Почему выбирают нас -->
+  
+  <div class="why-we">
+    <div class="wrapper">
+      <div class="line-why-we"><?=$cc_settings['title']?></div>
+      <div class="block-why-we"><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?>
+
+        <div class="bb<?=$f_RowNum+1?>">
+           <div class="descript"><?=$f_Descript?></div>
+        
+           <? if($f_Numer){ ?><div class="blocjik"><?=$f_Numer?></div><? } ?>
+        </div><!-- /RecordTemplate -->
+
+<!-- FormSuffix -->      </div>
+    </div>
+  </div><!-- /FormSuffix -->

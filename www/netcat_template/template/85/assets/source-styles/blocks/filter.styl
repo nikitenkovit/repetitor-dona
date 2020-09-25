@@ -1,0 +1,99 @@
+.tpl-block-filter
+  margin: 0 -50px
+  padding: 0 50px
+  @media min
+    height: 150px
+    overflow: hidden
+    border-bottom: 1px solid #ADADAD
+
+  .nc_netshop_filter_row
+    background: #F5F5F5
+    border: none
+    border-top: 1px solid #ADADAD
+    padding: 15px 25px 5px
+    @media min
+      padding: 55px 0
+      font-size: 30px
+      background: none
+    .nc_netshop_filter_label
+      font-size: 16px
+      line-height: 1.15
+      font-weight: 500
+      display: block
+      margin: -15px -25px 0
+      padding: 15px 25px
+    &:first-of-type
+      .nc_netshop_filter_label
+        theme(background 'accent-2')
+        theme(color 'white')
+        font-weight: 300
+        padding: 11px 25px
+        margin: -16px -25px 10px
+    .nc_netshop_filter_field label
+      checkbox-label()
+
+    &_range
+      .nc_netshop_filter_field label
+        text-indent 0
+        padding 0 0 8px 0
+        white-space nowrap
+        span
+          width 18%
+          display inline-block
+        input
+          width 78%
+          display inline-block
+
+
+  .nc_netshop_filter_actions
+    padding-top: 10px
+
+  &.tpl-state-active
+    height: auto
+    overflow: visible
+
+  h3
+    display: none
+    @media min
+      display: block
+      height: 150px
+      line-height: 150px
+      mlink()
+      position: relative
+      // background: pink
+      font-size: 30px
+      font-weight: 300
+      user-select: none
+      margin: 0 -50px
+      padding: 0 50px
+
+      &:after
+        position: absolute
+        right: 30px
+        top: 60px
+        content '\e803'
+        font-size: 30px
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+        speak: none;
+        display: inline-block;
+        text-decoration: inherit;
+        width: 1em;
+        text-align: center;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1em;
+        margin: 2px 0;
+
+  @media min
+    &.tpl-state-active h3:after
+      content '\e80c'
+  .nc_netshop_filter_field > div
+    margin-bottom: 0.6em
+
+  input[type=button]
+    button()
+
+  .nc_netshop_filter_reset
+    button-colors('accent-1', 'white', 'accent-2', 'white')

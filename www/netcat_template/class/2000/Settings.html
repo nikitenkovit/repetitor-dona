@@ -1,0 +1,27 @@
+<?php
+
+if($matterID) {
+    //$query_where = "objectMatters LIKE '%".$matterID.",%'";
+}
+
+$f_objectSertificates_tpl = array(
+    'prefix' => "",
+    'record' => "<div><a href='%Path%' class='gallery'><img src='%Preview%' /></a></div>",
+    'divider' => "",
+    'suffix' => "",
+    'i' => 1
+);
+
+$f_objectPics_tpl = array(
+    'prefix' => "",
+    'record' => "<a href='%Path%' class='gallery'><img src='%Preview%' /></a>",
+    'divider' => "",
+    'suffix' => "",
+    'i' => 1
+);
+
+$matters['prefix']  = "<ul>";
+$matters['element'] = "<li class='math %I'>%ELEMENT</li>";
+$matters['suffix']  = "</ul>";
+
+?>

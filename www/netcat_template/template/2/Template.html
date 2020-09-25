@@ -1,0 +1,166 @@
+<!-- Header --><!DOCTYPE html>
+<html>
+<head>	
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=<?=$nc_core->NC_CHARSET?>" />  
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <? /* Блок SEO */ ?>
+    <? /* Запрос заголовка через ядро системы, если нету, то выводим хлебные крошки */ ?>
+    <title><?=( ($title = $nc_core->page->get_title()) ? $title : strip_tags(s_browse_path($browse_path_title)))?></title>
+    <? /* Запрос description через ядро системы */ ?>
+    <?=( ($description=$nc_core->page->get_description()) ? "<meta name='description' content='".$description."'>" : "" )?>
+    <? /* Запрос Keywords через ядро системы */ ?>
+    <?=( ($keywords=$nc_core->page->get_keywords()) ? "<meta name='Keywords' content='".$keywords."'>" : "" )?>
+
+	<link href="/css/colorbox.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">  
+    <link href="/css/slick.css" rel="stylesheet">  
+    <link href="/css/slick-theme.css" rel="stylesheet">  
+	<link href="/css/style.css" rel="stylesheet">  
+    <link href="http://allfont.ru/allfont.css?fonts=odessa-script-cyr" rel="stylesheet" type="text/css" />
+
+	<script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/jquery.colorbox-min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/behavior.js"></script>
+    
+    <!-- //MONEY4HONEY CONTENT PROTECT JS --><script LANGUAGE="JavaScript">   document.ondragstart = test;   //запрет на перетаскивание     document.oncontextmenu = test;   //запрет на выведение контекстного меню   function test() {   return false   }   </script> <script type="text/javascript">    document.onkeydown=key;  function key()  {    window.status=event.keyCode;  if(event.keyCode==17)alert("КОПИРОВАНИЕ МАТЕРИАЛОВ ЗАПРЕЩЕНО!");  }  </script><!-- //MONEY4HONEY CONTENT PROTECT JS -->
+
+</head>
+
+<body <?= $sub != 1 ? "class='inner'" : NULL?>>
+
+<div class="wrapper">
+
+	<header class="header">
+
+		<div class="wrapper">
+			<?= $sub == 1 ? "<div class='logo'></div>" : "<a href='/'><div class='logo'></div></a>"?>
+			<div class="phones whiteFont">				
+				<div><?=$current_catalogue['Phone_1']?></div>
+                <div><?=$current_catalogue['Phone_2']?></div>
+			</div>
+			<a href="#" class="callBack whiteFont"><span>Заказать обратный звонок</span></a>
+		</div>
+		
+	</header><!-- .header-->
+
+	<nav>
+		<div class="wrapper">
+			<div class="shedule">
+				<?=$current_catalogue['WorkingTime']?>
+			</div>
+			<button class="takeClass top orange">Записаться на курс</button>
+			<div class="menu">
+				<?= nc_browse_sub(0, $top_menu1, 0, $where_cond = "Subdivision_ID < 8")?>
+				<?= nc_browse_sub(0, $top_menu2, 0, $where_cond = "Subdivision_ID > 7")?>
+			</div>
+		</div>		
+	</nav>	
+
+	<!-- /Header -->
+
+<!-- Footer --><footer class="footer">
+		<div class="wrapper">
+			<table>
+				<tr>
+					<td class="social">
+						<div>Мы в соцсетях:</div>
+						<ul>
+							<li><a href="http://ok.ru/group/51604463222879" target="_blank" class="odn"></a></li>
+							<li><a href="https://vk.com/repetitor_dona_ru" target="_blank" class="vk"></a></li>
+							<li><a href="https://www.youtube.com/channel/UCIt9saNis7sWyxtw8VKJY9g" target="_blank" class="fb"></a></li>
+							<li><a href="#" class="tw"></a></li>
+						</ul>
+					</td>
+					<td class="footerMenu">
+						<?=nc_browse_sub(0, $footer_menu)?>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</footer><!-- .footer -->
+
+</div><!-- .wrapper -->
+
+<div class="interview">
+	<button class="showInterview"></button>
+	<div class="wrapper">
+        <div class="interviewHeader"><span class="closeInterview">x</span></div>
+		<div class="h2 center">Запишись на <span>бесплатное</span> собеседование!</div>
+		<form name="adminForm" class="ajaxForm nc-form" enctype="multipart/form-data" method="post" action="/netcat/add.php?isNaked=1">
+          <div id="nc_moderate_form">
+          <div class="nc_clear"></div>
+          <input name="admin_mode" type="hidden" value="">
+          <input type="hidden" name="nc_token" value="cfad6074a81e9390c4e701e328c163de">
+          <input name="catalogue" type="hidden" value="1">
+          <input name="cc" type="hidden" value="8">
+          <input name="sub" type="hidden" value="15">
+          <input name="posting" type="hidden" value="1">
+          <input name="curPos" type="hidden" value="0">
+          <input name="f_Parent_Message_ID" type="hidden" value="">
+          <input type="hidden" name="f_Checked" value="1"></div>
+
+          <span class="warnText"></span>
+          
+          <div class="formControl"><label>Имя</label> <input name="f_objectName" size="50" type="text" maxlength="255" required="" value=""></div>
+          <div class="formControl"><label>Телефон</label> <input name="f_objectPhone" size="50" type="text" maxlength="255" required="" value=""></div>
+          <div class="formControl send"><button class="greenModal"><span class='preloader'></span>Записаться</button></div>
+          
+          </form>
+	</div>
+	<div class="wrapper">
+		<div class="h2 center">Подпишись на нашу рассылку<br>для абитуриентов и получи много полезной информации о том, как сдать и поступить!</div>
+		<form class="ajaxForm nc-form" action='<?=$SUB_FOLDER?>/netcat/subscribe.php?isNaked=1'>
+            <input type='hidden' name='catalogue' value='1' />
+            <input type='hidden' name='sub' value='18' />
+            <input type='hidden' name='cc' value='16' />
+            <input type='hidden' name='posting' value='1' />
+            
+            <span class="warnText"></span>
+            
+			<div class="formControl"><label>Имя</label> <input type="text" name='fields[Login]'></div>
+			<div class="formControl"><label>E-mail</label> <input type="text" name='fields[Email]'></div>
+			<div class="formControl"><label></label> <input type="checkbox" value="1" name='fields[Type]'> Родитель</div>
+			<div class="formControl"><label></label> <input type="checkbox" value="2" name='fields[Type]'> Абитуриент</div>
+			<div class="formControl send"><button class="redModal">Записаться</button></div>
+		</form>
+	</div>
+</div>
+
+<div class='modalWindow getCall'>
+<div class='type_block'>
+    <span class="closeModalWindow"></span>
+    <div class="title">Заказать обратный звонок</div>
+    <?=nc_objects_list(16, 14);?>
+</div>
+</div>
+
+<div class='modalWindow auth_block'><?=$nc_auth->auth_form();?></div>
+
+<!— Yandex.Metrika counter —>
+<div style="display:none;"><script type="text/javascript">
+(function(w, c) {
+(w[c] = w[c] || []).push(function() {
+try {
+w.yaCounter9429052 = new Ya.Metrika({id:9429052, enableAll: true});
+}
+catch(e) { }
+});
+})(window, "yandex_metrika_callbacks");
+</script></div>
+<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
+<noscript><div><img src="//mc.yandex.ru/watch/9429052" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!— /Yandex.Metrika counter —>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100949457-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html><!-- /Footer -->

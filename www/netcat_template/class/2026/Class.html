@@ -1,0 +1,33 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+
+<div class="articles">
+		<div class="wrapper">
+			    <div class="loginPan">
+			        <?=!$current_user['Login'] ? "
+                        <a href='/netcat/modules/auth/' class='enter logIn'>Войти</a>
+                        " : "
+                        <a href='/lk/' class='enter'>Личный Кабинет</a> / 
+                        <a href='/netcat/modules/auth/?logoff=1&REQUESTED_FROM=".$REQUEST_URI."&REQUESTED_BY=".$REQUEST_METHOD."' class='enter'>Выйти</a>
+                    "?>
+			    </div>
+			    <h1 class="h1 center">материалы и статьи</h1>	
+			    <div class="intro greenPan">Здесть предствлены полезные статьи, которые помогут вам лучше подготовиться к ЕГЭ и ГИА, выбрать стратегию поступления и много другое... </div>	
+			    <div class="newsItems">
+			    	
+
+	    
+		<!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?>
+<div class="newsItem clearfix">
+    <div class="newsItemPic"><?=$f_objectPic ? "<img src='$f_objectPic_preview_url' alt=''>" : NULL?></div>
+	<div class="newsItemText">
+	    <div class="h3"><?=$f_objectName?></div>
+		<?=$f_objectText?>
+		<a href="<?=$fullLink?>" class="readMore">Подробнее</a>
+	</div>
+</div><!-- /RecordTemplate -->
+
+<!-- FormSuffix -->        </div>
+    </div>
+</div>	<!-- /FormSuffix -->

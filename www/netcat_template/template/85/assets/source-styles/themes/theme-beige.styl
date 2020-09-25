@@ -1,0 +1,309 @@
+.tpl-theme-beige
+
+    //-------------------------------------------------------------------------
+    // header
+    //-------------------------------------------------------------------------
+    body > header
+
+        // color #fff
+
+        // a
+        //     color #fff
+        //     &:hover
+        //         color #fff
+
+        // Navbar
+        .tpl-block-navbar
+            background  #000
+            margin-top  -20px
+            height      50px
+            //          margin-bottom -160px
+            padding-top 14px
+            // position    relative
+
+            &:after
+                content    ''
+                position   absolute
+                width      100%
+                height     50px
+                background #000
+                top        0
+                right      0
+                z-index    -1
+
+            // a
+            //     color #ff7368
+
+            // login link
+            .tpl-link-login a
+                color #FFF
+                dashed-underline(#FFF)
+
+
+        // Cart
+        .icon-cart-blue
+            background-image url("../i/inline/icon-cart-beige-large.png")
+        // .tpl-link-cart
+        //     color #000
+        //     &:hover
+        //         color #B81B35
+
+
+        // Menu
+        // .tpl-block-menu
+        //     // border-color #135cbe !important
+
+        //     div > a
+        //         color #c7b3a3
+        //         &:hover
+        //             color #c7b3a3
+
+        .tpl-cart-summary
+            font-style normal
+
+    //-------------------------------------------------------------------------
+    // Hero banner
+    //-------------------------------------------------------------------------
+
+    .tpl-block-hero
+        .s-circle
+            background none
+        .s-info
+            text-align left
+            top        160px
+            left       280px
+
+            p
+                color #000 !important
+        .s-cost
+            color #c7b3a3 !important
+            font-size 90px
+
+        Controls
+        .tpl-block-prevnext > *
+            background #000 !important
+            opacity 0.9
+            &:hover
+                opacity 1
+
+    //-------------------------------------------------------------------------
+    // News
+    //-------------------------------------------------------------------------
+
+    .tpl-component-news
+        h2
+            color #c7b3a3
+
+        > .tpl-link-more
+            color #c7b3a3
+        // .tpl-property-date
+        //     color #BCBABB !important
+        // Row
+        .tpl-block-list-object
+            // title
+            .tpl-property-news-title
+                // color        #000
+                border-color #c7b3a3 // news row border
+            //     font-stretch condensed
+            //     &:hover
+            //         text-decoration underline
+            //         color #C3C3C3
+            // // announce
+            // .tpl-property-announce
+            //     color #C3C3C3
+
+            // more link
+            a.tpl-link-more
+                color #c7b3a3
+
+    //-------------------------------------------------------------------------
+    // [<] [>]
+    //-------------------------------------------------------------------------
+    .tpl-block-prevnext > *
+        opacity .7
+
+        &:hover
+            opacity      1 !important
+            color        #c7b3a3 !important
+            border-color #c7b3a3 !important
+
+    //-------------------------------------------------------------------------
+    // Сейчас смотрят / аксессуары
+    //-------------------------------------------------------------------------
+
+    .tpl-widget-netshop-accessories
+    .tpl-block-goods-viewed-now
+
+        article
+            // border-color #e1e6ea !important
+
+            // *
+            //     color #000
+
+            // // // Star
+            // // .tpl-block-rating-item *
+            // //     color #7c6761 !important
+
+            // Cart icon
+            .tpl-link-cart-add:before
+                background-image url("../i/inline/icon-cart-beige.png") !important
+
+    //-------------------------------------------------------------------------
+
+    // Buy btn
+    .tpl-link-cart-add-and-checkout
+        background #e1e6ea !important
+        color      #000 !important
+
+        &:hover
+            background #c7b3a3 !important
+            // box-shadow inset 0 0 0 5px #e1e6ea
+            color #FFF !important
+
+    //-------------------------------------------------------------------------
+    // Footer
+    //-------------------------------------------------------------------------
+
+    footer
+        background #fff
+
+        input
+            background #EEE !important
+
+    //-------------------------------------------------------------------------
+    // Иконки над товаром
+    //-------------------------------------------------------------------------
+
+    .tpl-block-menu-secondary
+        *
+            color #ca58be
+        a:hover
+            background-color darken(#c7b3a3, 10);
+            color #FFF !important
+        *
+            color #c1ab99
+        .tpl-block-menu-secondary-item:hover *
+            text-decoration none
+        .icon-bluecheck
+            background-image url('../i/inline/icon-beigecheck.png')
+        .icon-bluetruck
+            background-image url('../i/inline/icon-beigetruck.png')
+        .icon-bluecards
+            background-image url('../i/inline/icon-beigecards.png')
+        .icon-bluepin
+            background-image url('../i/inline/icon-beigepin.png')
+
+    //-------------------------------------------------------------------------
+    // Звездочки
+    //-------------------------------------------------------------------------
+
+    .tpl-block-rating
+        .tpl-block-rating-item *
+            color #c7b3a3 !important
+
+    //-------------------------------------------------------------------------
+    // Параметры товара
+    //-------------------------------------------------------------------------
+
+    .tpl-block-cart-form
+        // border-color #3ab3ff !important
+        // .tpl-state-available
+        //     &,*
+        //         color #135cbe !important
+        .tpl-divider
+            border-color #c1ab99 !important
+
+        .tpl-link-cart-add
+            background-color #c7b3a3 !important
+            &:hover
+                background-color #e1e6ea !important
+                color #333 !important
+                &:before
+                    background-image url('../i/inline/icon-cart-black.png') !important
+
+    //-------------------------------------------------------------------------
+    // New goods
+    //-------------------------------------------------------------------------
+
+    .tpl-block-goods-new
+
+        .tpl-block-list-object
+
+            article
+                position relative
+                &:before
+                    content    ''
+                    position   absolute
+                    left       10px
+                    top        10px
+                    width      95px
+                    height     110px
+                    background #FFF
+
+    //-------------------------------------------------------------------------
+
+    .tpl-block-banner-text
+        background #000 !important
+        p
+            color #FFF
+
+
+    button[type="submit"]
+        background #c3c3c3
+        color      #333
+
+    .tpl-property-original-price
+        opacity 1 !important
+        color #000 !important
+        &:after
+            border-color #c7b3a3 !important
+
+    .tpl-component-goods .tpl-layout-tiles article > a
+        color #000
+
+    .nc_comments .dashed
+        A
+            border-bottom-color: #c7b3a3
+
+        A:hover
+            border-bottom-color: #c7b3a3
+    .tpl-block-content h1
+        color: #c7b3a3
+    .tpl-component-goods.tpl-block-full h1
+        color: #000000
+
+    .tpl-block-goods-new
+    .tpl-block-goods-offers
+    .tpl-block-goods-viewed-now
+    .tpl-block-goods-bought-recently
+    .tpl-widget-netshop-accessories
+    .tpl-widget-netshop-bought-together
+    .tpl-widget-netshop-viewed-together
+    .tpl-widget-netshop-compare
+    .tpl-widget-netshop-favorite
+    .tpl-widget-netshop-viewed-by-user
+        // Buy btn
+        .tpl-link-select-variant
+            background #e1e6ea !important
+            color      #000 !important
+            &:hover
+                background #c7b3a3 !important
+                // box-shadow inset 0 0 0 5px #e1e6ea
+                color #FFF !important
+
+    #goodslist-compare-remove-confirm button
+    #goodslist-favorite-remove-confirm button
+    #cart-item-remove-confirm
+    .nc-form button
+        background #e1e6ea !important
+        color      #000 !important
+        &:hover
+            background #c7b3a3 !important
+            // box-shadow inset 0 0 0 5px #e1e6ea
+            color #FFF !important
+
+
+    .tpl-component-goods .tpl-layout-list a.tpl-link-select-variant
+        background: #e1e6ea !important
+        &:hover
+            background: #c7b3a3 !important

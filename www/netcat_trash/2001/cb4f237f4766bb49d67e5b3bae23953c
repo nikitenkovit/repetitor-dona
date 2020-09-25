@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="4" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Отзывы и результаты</Subdivision_Name>
+      <EnglishName>otzyvy-i-rezultaty</EnglishName>
+      <Checked>1</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="4" subdivision_id="4" class_id="2001">
+      <Sub_Class_Name>Отзывы и результаты</Sub_Class_Name>
+      <EnglishName>otzyvy-i-rezultaty</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2585" type_of_data_id="1">
+      <Field_Name>objectName</Field_Name>
+      <Description>ФИО ученика</Description>
+    </field>
+    <field field_id="2587" type_of_data_id="6">
+      <Field_Name>objectPic</Field_Name>
+      <Description>Фото</Description>
+    </field>
+    <field field_id="2586" type_of_data_id="3">
+      <Field_Name>objectRanks</Field_Name>
+      <Description>Оценки ЕГЭ</Description>
+    </field>
+    <field field_id="2588" type_of_data_id="1">
+      <Field_Name>objectLocation</Field_Name>
+      <Description>Место поступления</Description>
+    </field>
+    <field field_id="2589" type_of_data_id="1">
+      <Field_Name>objectEducationPeriod</Field_Name>
+      <Description>Период обучения</Description>
+    </field>
+    <field field_id="2621" type_of_data_id="10">
+      <Field_Name>objectMatters</Field_Name>
+      <Description>Предмет</Description>
+    </field>
+    <field field_id="2590" type_of_data_id="3">
+      <Field_Name>objectText</Field_Name>
+      <Description>Текст отзыва</Description>
+    </field>
+    <field field_id="2591" type_of_data_id="3">
+      <Field_Name>objectTeacherText</Field_Name>
+      <Description>Отзыв преподавателя</Description>
+    </field>
+    <field field_id="2620" type_of_data_id="3">
+      <Field_Name>objectVideo</Field_Name>
+      <Description>Код для вставки видео</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="9" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>9</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-13 16:36:06</Created>
+      <LastUpdated>2015-11-13 16:36:25</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>213.138.75.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Домбровская Анна]]></objectName>
+      <objectPic path="/netcat_files/4/4/Dombrovskaya_Anna__2_.jpg">Домбровская Анна (2).jpg:image/jpeg:91474:4/4/Dombrovskaya_Anna__2_.jpg</objectPic>
+      <objectRanks><![CDATA[<p>ЕГЭ по физике: 87 баллов</p>
+<p>ЕГЭ по математике: 78 баллов</p>]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2014-2015]]></objectEducationPeriod>
+      <objectMatters>,1,2,</objectMatters>
+      <objectText><![CDATA[]]></objectText>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[https://youtu.be/VY-uFbVYRvU]]></objectVideo>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="4" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Отзывы и результаты</Subdivision_Name>
+      <EnglishName>otzyvy-i-rezultaty</EnglishName>
+      <Checked>1</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="4" subdivision_id="4" class_id="2001">
+      <Sub_Class_Name>Отзывы и результаты</Sub_Class_Name>
+      <EnglishName>otzyvy-i-rezultaty</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2585" type_of_data_id="1">
+      <Field_Name>objectName</Field_Name>
+      <Description>ФИО ученика</Description>
+    </field>
+    <field field_id="2587" type_of_data_id="6">
+      <Field_Name>objectPic</Field_Name>
+      <Description>Фото</Description>
+    </field>
+    <field field_id="2586" type_of_data_id="3">
+      <Field_Name>objectRanks</Field_Name>
+      <Description>Оценки ЕГЭ</Description>
+    </field>
+    <field field_id="2588" type_of_data_id="1">
+      <Field_Name>objectLocation</Field_Name>
+      <Description>Место поступления</Description>
+    </field>
+    <field field_id="2589" type_of_data_id="1">
+      <Field_Name>objectEducationPeriod</Field_Name>
+      <Description>Период обучения</Description>
+    </field>
+    <field field_id="2621" type_of_data_id="10">
+      <Field_Name>objectMatters</Field_Name>
+      <Description>Предмет</Description>
+    </field>
+    <field field_id="2590" type_of_data_id="3">
+      <Field_Name>objectText</Field_Name>
+      <Description>Текст отзыва</Description>
+    </field>
+    <field field_id="2642" type_of_data_id="9">
+      <Field_Name>objectTeacher1</Field_Name>
+      <Description>Преподаватель1</Description>
+    </field>
+    <field field_id="2643" type_of_data_id="9">
+      <Field_Name>objectTeacher2</Field_Name>
+      <Description>Преподаватель2</Description>
+    </field>
+    <field field_id="2591" type_of_data_id="3">
+      <Field_Name>objectTeacherText</Field_Name>
+      <Description>Отзыв преподавателя</Description>
+    </field>
+    <field field_id="2620" type_of_data_id="3">
+      <Field_Name>objectVideo</Field_Name>
+      <Description>Код для вставки видео</Description>
+    </field>
+    <field field_id="2641" type_of_data_id="5">
+      <Field_Name>isMain</Field_Name>
+      <Description>Выводить на главной</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="61" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>61</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-16 17:28:55</Created>
+      <LastUpdated>2015-11-16 18:02:06</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>213.138.75.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Яна Медведева]]></objectName>
+      <objectPic path="/netcat_files/4/4/logotip1_kopiya_31.jpg">логотип1 копия.jpg:image/jpeg:1048961:4/4/logotip1_kopiya_31.jpg</objectPic>
+      <objectRanks><![CDATA[<p>Огэ по математике</p>]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2014-2015]]></objectEducationPeriod>
+      <objectMatters>,1,</objectMatters>
+      <objectText><![CDATA[<p>Премного благодарна прекрасной,мудрой женщине, чуткому,просто удивительному человеку,самому лучшему преподавателю,НАДЕЖДЕ АЛЕКСАНДРОВНЕ,которая готовила меня к ГИА по математике. Алгебра и геометрия были одними из моих самых нелюбимых школьных предметов,у меня всегда была по ним спорная оценка: между 3 и 4,но Надежда Александровна за очень короткое время смогла изменить моё отношение к ним. Она как будто открыла для меня новый мир,интереснейший мир математики. Нам выдавалась составленная Надеждой Александровной теория,страницы которой возникают у меня перед глазами и сейчас,на уроках в 10 классе,что мне очень помогает. Также выдавались методички с множеством заданий; на занятиях хотелось сделать как можно больше,двигаться всё дальше и дальше,особенно,когда получалось. Атмосфера царила просто замечательная:очень тёплая,лёгкая,порой было даже очень весело,но в то же время,конечно,рабочая. Работать приходилось много,но оно того стоило,ГИА я конечно сдала на 5,5. Надежда Александровна многому меня научила: от вычислений в столбик до решения задач,которые ранее казались просто невозможными. Но главное,она привила мне любовь к математике. Никуда я ещё не ходила с таким большим удовольствием,как на занятия к Надежде Александровне. Она стала не только моим самым-пресамым любимым учителем,но и настоящим примером для подражания,примером умной, успешной женщины,которая с полной отдачей занимается своим любимым делом и у которой это превосходно получается.</p>]]></objectText>
+      <objectTeacher1>2</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacherText><![CDATA[Спасибо огромное)))]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>1</isMain>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

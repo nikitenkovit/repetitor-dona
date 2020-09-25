@@ -1,0 +1,58 @@
+<?/* Служебная часть */for ($f_RowNum = 0; $f_RowNum < $rowCount; $f_RowNum++) {    if($fetch_row[$f_RowNum] instanceof Iterator) {        extract($fetch_row[$f_RowNum]->to_array(), EXTR_PREFIX_ALL, "f");    } else {        extract($fetch_row[$f_RowNum], EXTR_PREFIX_ALL, "f");    }    foreach($iteration_RecordTemplate[$f_RowNum] as $value) {        extract($value);    }    eval($cc_env["convert2txt"]);    ob_start();/* Конец служебной части */?>
+<?=$f_AdminButtons?>
+<? if(!$admin_mode) : ?>
+<div class="teacherItem">
+			<div class="teacherItemInfo">
+				<div class="teacherItemInfoPic">
+					<?=$f_objectPic ? "<img src='$f_objectPic_preview_url' alt=''>" : NULL?>
+				</div>
+				<div class="teacherItemInfoMatter">
+					<div class="h3 center"><?=$f_objectName?></div>
+				</div>
+				<div class="teacherItemInfoDetail">
+                    <ul>
+                        <?
+                            foreach($f_objectMatters as $index => $val) {
+                                if ($val) {
+                                    if ($f_objectMatters_id[$index]!=1) {
+                                    echo "<li class='matter$f_objectMatters_id[$index]'>$val</li>";  }                                  
+                                }
+                            }
+                        ?>                        
+                    </ul>
+					<div class="teacherItemInfoExperience">
+						<ul>
+							<li>Образование: <?=$f_objectEducation?></li>
+							<li>Опыт работы: <?=$f_objectSkills?></li>
+						</ul>
+					</div>	
+					<a href='#' class='teacherItemInfoWatchingVideo'>Посмотреть видео</a>			
+				</div>
+			</div>
+			<div class="teacherItemMoreInfo">
+				<div class="h2 center"><?=$f_objectName?></div>
+				<div class="h3 center"><?=$f_objectRank?></div>
+				<?=$f_objectShortDesc?>
+				<div class="teacherItemMoreInfoAddress"><strong>Район проведения занятий:</strong> <?=$f_objectLocation?></div>
+				<div class="teacherItemMoreInfoPrice"><strong>Стоимость занятий:</strong> <?=$f_objectPrice?></div>
+				<? if($f_objectAchiev) : ?>
+                  <div class="teacherItemMoreInfoAchievement">
+                      <?=$f_objectAchiev?>
+                  </div>
+                <? endif; ?>
+			</div>	
+			<div class="teacherItemMoreInfoLinks">
+				<a class="teacherItemMoreInfoMore" href="<?=$fullLink?>">Подробнее о преподавателе</a>
+                <a class="teacherItemMoreInfoReview" href="/otzyvy-i-rezultaty/?teacherID=<?=$f_RowID?>">Отзывы учеников</a>
+			</div>		
+		</div>
+<? endif; ?>        
+<? if($admin_mode) : ?>
+<div class="teacherItemInfoPic">
+					<?=$f_objectPic ? "<img src='$f_objectPic_preview_url' alt=''>" : NULL?>
+				</div>
+				<div class="teacherItemInfoMatter">
+					<div class="h3 center"><?=$f_objectName?></div>
+				</div>
+<? endif; ?>
+<?/* Служебная часть */    echo nc_finishing_RecordTemplate(ob_get_clean(), $inside_admin, $classID, $f_RowID, $parent_message, $cc, $cc_env["Class_Name"], $no_cache_marks);}/* Конец служебной части */?>

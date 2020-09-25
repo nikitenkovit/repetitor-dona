@@ -1,0 +1,197 @@
+.tpl-block-main.tpl-component-order
+.tpl-block-main.tpl-component-order-added
+  width: 100%
+
+  @media min
+    margin-bottom: 200px
+
+  .tpl-block-breadcrumbs
+    margin: 20px 0
+
+  table.tpl-block-order-items
+    padding-bottom: 30px
+    .tpl-block-order-confirmation &
+      padding-bottom: 0
+    th, td
+      text-align: left
+      padding 10px 20px
+
+    th:first-child, td:first-child
+      text-align: left
+
+    /*
+    .tpl-property-qty
+      text-align center
+    */
+
+  fieldset
+    border: 5px solid
+    theme(border-color 'accent-1-darker')
+    width: 100%
+    padding: 30px 75px 75px
+    margin-top: 30px
+    font-weight: 400
+    position: relative
+    @media min
+      padding: 55px 0 0
+      border: none
+      margin: 75px 0
+      &:first-of-type
+        margin-top: 150px
+    legend
+      font-size: 24px
+      font-weight: 400
+      padding: 0 20px
+      margin-left: -18px
+      @media min
+        font-size: 36px
+        font-weight: 300
+        line-height: 1.2
+        padding: 0 0 20px
+        margin: 0
+    &.tpl-block-order-confirm-items
+      padding-bottom: 50px
+      @media min
+        padding: 55px 0 0
+
+
+.tpl-block-main.tpl-component-order
+
+  h2
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: none;
+    margin-bottom 40px
+
+  input[type=text], input[type=number], input[type=email], textarea
+    font-weight: 400
+    darker-input()
+
+  .tpl-block-order-data
+    padding-bottom: 75px
+
+  .tpl-block-order-customer
+  .tpl-block-order-address
+    float: left
+    position: relative
+    margin-right: -100%
+    width: 50%
+    @media min
+      float none
+      left: auto !important
+      width: auto
+      margin: 0 !important
+      padding: 0 !important
+
+    p
+      margin-bottom: 20px
+      label
+        clearfix()
+      .tpl-caption
+        width: 30%
+        float left
+      .tpl-value
+        width: 70%
+        float left
+
+      @media min
+        .tpl-caption
+        .tpl-value
+          float: none
+          width: 100%
+        .tpl-caption
+          theme(color 'gray');
+          font-weight: 300;
+
+  .tpl-block-order-customer
+    padding-right: 50px
+    left: 0
+
+  .tpl-block-order-address
+    left: 50%
+    padding-left: 50px
+
+  .tpl-block-register
+    margin 60px 0 60px 35px !important
+    input[type=checkbox]
+      margin-left -35px
+      width: 32px
+
+  .tpl-block-order-payment
+  .tpl-block-order-delivery
+    clear both
+
+  .tpl-block-order-actions
+    position: absolute
+    bottom: 25px
+    left: 0
+    width: 100%
+    text-align: center
+    @media min
+      bottom: -175px
+    button
+      font-size: 18px
+      margin 5px 0
+      @media min
+        font-size: 32px
+
+  .tpl-block-order-delivery-method
+  .tpl-block-order-payment-method
+    width: 33%
+    display: inline-block
+    vertical-align: top
+    padding: 0 40px 60px 0
+    line-height: 1.6
+    @media min
+      width: 100%
+    label
+      display block
+      margin-left 30px
+      position relative
+    input[type=radio]
+      margin-left -35px
+      width 31px
+    .tpl-property-delivery-method-name
+    .tpl-property-payment-method-name
+      font-size: 16px
+    .tpl-property-delivery-method-description
+    .tpl-property-delivery-method-estimate
+    .tpl-property-payment-method-description
+      font-size: 12px
+      font-weight: 300
+      margin-top: 20px
+
+
+  .tpl-block-order-confirmation
+    h3
+      margin-top 35px
+      margin-bottom 15px
+      font-weight 600
+      theme(color 'accent-1')
+
+    .tpl-link-change
+      button-colors('dull', 'base', 'red', 'white')
+      line-height: 2em
+      margin-top: 10px
+      padding: 2px 12px
+
+  .tpl-block-totals-confirmation
+    margin-bottom: 50px
+
+
+.tpl-block-main.tpl-component-order-added
+  text-align: center
+  .tpl-block-order-info
+    font-size: 30px
+    font-weight: 300
+    line-height: 1.3
+  .tpl-link-catalog
+  input[type=submit]
+    button()
+    button-colors('accent-1', 'white', 'accent-2', 'white')
+    font-size: 18px
+    height: 40px
+    line-height: 40px
+    padding: 0 20px
+    margin: 0

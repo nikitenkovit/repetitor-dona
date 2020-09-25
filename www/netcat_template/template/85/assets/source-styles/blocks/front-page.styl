@@ -1,0 +1,54 @@
+.tpl-block-front-page
+  clearfix()
+
+  .tpl-block-news
+    // float: left
+    // width: 26%
+    // padding-right: 20px
+    // padding: 0 20px 0 0
+    padding-top 20px
+    min-height: 200px
+    @media min
+      width: auto
+      margin: 0
+      float: none
+      padding: 55px 0
+
+  /* banner: see banner.styl */
+  .tpl-block-goods-offers
+  .tpl-block-goods-new  /* ← TODO: TEMPORARILY ADDED */
+    // float: left
+    // width: 100%
+    width: 880px
+    float: right
+    margin-top: 40px
+    @media min
+      float: none
+      width: auto
+      margin-bottom: 20px
+
+  /* TODO: TEMPORARILY REMOVED →    .tpl-block-goods-new*/
+  .tpl-block-goods-viewed-now
+  .tpl-block-goods-bought-recently
+    float: left
+    width: 100%
+    padding-top: 40px
+    @media min, max
+      width: 100%
+      margin-left: 0
+    @media min
+      float: none
+      width: auto
+      margin-bottom: 20px
+
+  .tpl-block-goods-viewed-now
+  .tpl-block-goods-bought-recently
+    @media min
+      display: none
+
+  .tpl-block-goods-viewed-now .tpl-widget-netshop-viewed-now
+  .tpl-block-goods-bought-recently .tpl-widget-netshop-bought-recently
+    .tpl-block-list-objects .tpl-property-original-price
+        left: 225px
+        @media max
+            left: 140px

@@ -1,0 +1,68 @@
+Нумерация строк примерная. Из-за постепенного добавления элементов, возможен сдвиг на 5-10 строк в большую сторону.
+
+index.html
+
+5 - Добавил <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+17 - заменил  style.css на <link href="css/style.min.css" rel="stylesheet">
+22 - добавил <script src="js/script.js" defer></script>
+53- добавил <button class="nav__toggle-button" aria-label="Открыть меню"></button>
+78- удалил <li class='show'><a href=''>
+                     <img src='./netcat_files/19/20/bannerTop_0.jpg' alt=''>
+                   </a></li>
+76- перпеделал блок banner  <div class="banner">
+                               <div class="wrapper">
+                                 <ul>
+                                   <li><a href=''>
+                                     <picture>
+                                       <source srcset="./netcat_files/19/20/banner-tochilka-320.jpg" media="(max-width: 479px)">
+                                       <source srcset="./netcat_files/19/20/banner-tochilka-480.jpg" media="(max-width: 769px)">
+                                       <img class="banner__image" src='./netcat_files/19/20/bannerTop.jpg' alt=''>
+                                     </picture>
+                                   </a></li>
+                                 </ul>
+                               </div>
+                             </div>
+91 - переместил инлайновые стили из html в css  <div class="callBackForm">
+93 - изменен текст <h1 class="h1 center textCompressed">Компания «Репетитор Дона» объявляет набор в мини-группы <br>по подготовке к
+        ЕГЭ и ГИА (ОГЭ) на 2020–2021 год по всем предметам</h1>
+126 - изменен тест <div class="h1 center textCompressed">
+                           Почему готовиться к ЕГЭ и ГИА (ОГЭ) лучше всего с командой<br>«Репетитор дона»?
+                         </div>
+131 - добавил тег br <li>Стоимость <br>от 350 руб./60 минут</li>
+565 - убрал ФфПЕЗДУ:) <button class="showInterview"></button>
+
+
+//////////////////////////////////////
+img
+
+оптимизировал на 90% headerBg.jpg
+Добавил logo-320.png
+Добавил logo-480.png
+добавил bg-480.jpg
+добавил basicCompose-480.jpg
+добавил bg-whyMiniGroups-480.jpg
+добавил content-whyMiniGroups-480.png
+добавил howDoWeWorkNew-480.png
+inst.png
+ok.png
+vk.png
+YT.png
+
+netcat_files/19/20 добавил banner-tochilka-480.jpg
+netcat_files/19/20 добавил banner-prevedi-druga-480.jpg
+netcat_files/1/287 добавил callBackFormBg-480.jpg
+
+///////////////////////////////
+js
+
+добавил файл script.js
+///////////////////////////////////
+
+
+
+планшет max-width: 769px
+мобила max-width: 479px
+
+обратить внимание на шрифты в форме!
+в преимуществах не совпадает текст (дебильный)
+нахрена селекторы .courses-title h4 и .courses-title если их нет в html? и еще куча не существующих селекторов (например в слайдере)

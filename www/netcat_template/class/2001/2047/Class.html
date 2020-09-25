@@ -1,0 +1,30 @@
+<!-- FormPrefix --><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><div class="item">
+          <div class="row">
+            <div class="left">
+              <div class="foto"><?=$f_objectPic ? "<img src='$f_objectPic_preview_url' alt=''>" : NULL?></div>
+            </div>
+            <div class="right">
+              <div class="name"><?=$f_objectName?></div>
+              <div class="ted"><?=$f_objectRanks?></div>
+              <div class="ted"><?=$f_objectLocation?></div>
+              <div class="ted" style="margin-top:20px;">Год обучения: <?=$f_objectEducationPeriod?></div>
+            </div>
+          </div>
+          <? if($f_objectText){ ?>
+          <div class="text">
+            <div class="scroll-b mCustomScrollbar" id="wrapper">
+              <?=$f_objectText?>	
+            </div>
+          </div>
+          <? }else{ ?>
+          <? } ?>
+          <? if($f_objectVideo):?>
+          <div class="reviewsItemVideo">
+               <div class="reviewsItemVideoReview"><?=$f_objectVideo?></div>
+          </div>    
+          <? endif; ?>
+        </div><!-- /RecordTemplate -->
+
+<!-- FormSuffix --><!-- /FormSuffix -->

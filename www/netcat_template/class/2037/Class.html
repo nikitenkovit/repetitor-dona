@@ -1,0 +1,61 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+  <!-- Наша гордость -->
+  <style type="text/css">
+  .box {
+    display: none;
+  }
+  .box.visible {
+    display: block;
+  }
+  .controls{
+    width: 111px;
+    margin: 10px 0 0 480px;
+  }
+  .btn{
+    color: #f7f8fa;
+    background-color: #6eb33a;
+    border: none;
+    font-family: 'Myriad Pro';
+    font-weight: bold;
+    font-style: normal;
+  }
+  </style>
+
+  <div class="our-pride">
+    <div class="h1"><?=$cc_settings['title']?></div>
+    <div class="wrapper">
+       <ul class="tabs">
+       <?= nc_objects_list( $sub, $cc, "&recNum=90&nc_ctpl=2051" ); ?>     
+       </ul>
+       <div class="box visible">
+
+ 
+<!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?>
+      <?=(!($f_RowNum%$NumCols) && $f_RowNum?"</div><div class='box'>":NULL);?>
+      <div class="item">
+
+        <div class="paddleft">
+          <div class="foto-lo"> <img src="<?=$f_Foto ?>" alt="<?=$f_Name?>">
+            <div class="name"><?=$f_Name?></div>
+            <div class="text"> 
+             <?= $f_Descript ?>
+            </div>
+          </div>
+        </div>
+      
+     
+        
+      </div><!-- /RecordTemplate -->
+
+<!-- FormSuffix -->    </div>
+    <? if($totRows > 8){ ?>
+    <div class="controls">
+       <a href="#" class="btn btn-default prev"><</a>
+       <a href="#" class="btn btn-default next">></a>
+    </div>
+    <? } ?>
+     
+    </div>
+  </div><!-- /FormSuffix -->

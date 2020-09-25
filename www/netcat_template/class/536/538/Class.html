@@ -1,0 +1,19 @@
+<!-- FormPrefix --><?php if ($admin_mode && !$inside_admin) {
+    nc_print_status('Варианты товара редактируются в режиме администрирования', 'info');
+} ?>
+<?=$f_AdminCommon ?>
+<? if ($cc_settings['Title']): ?>
+    <h2><?=$cc_settings['Title'] ?></h2>
+<? endif ?>
+<div class="items-grid"><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><div class="item">
+    <?= $f_AdminButtons; ?>
+    <a href="<?= $fullLink ?>" <?=nc_ls_display_link('content', 0, null, null, array('isNaked'=>0)) ?> class="img"><img src="<?= $f_Image_url ?>" alt="<?= $f_Name ?>"></a>
+    <span class="price"><?=$f_Price." ".$nc_minishop->get_currency() ?></span>
+    <a class="caption" href="<?= $fullLink ?>" <?=nc_ls_display_link('content', 0, null, null, array('isNaked'=>0)) ?>><?= $f_Name ?></a>
+    <?=cart_link($f_RowID, $f_Name, $f_Price, $fullLink, 1, $f_db_Class_ID) ?>
+</div><!-- /RecordTemplate -->
+
+<!-- FormSuffix --></div>
+<!-- /.items-grid --><!-- /FormSuffix -->

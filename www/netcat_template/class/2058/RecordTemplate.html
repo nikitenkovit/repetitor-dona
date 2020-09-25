@@ -1,0 +1,48 @@
+<?/* Служебная часть */for ($f_RowNum = 0; $f_RowNum < $rowCount; $f_RowNum++) {    if($fetch_row[$f_RowNum] instanceof Iterator) {        extract($fetch_row[$f_RowNum]->to_array(), EXTR_PREFIX_ALL, "f");    } else {        extract($fetch_row[$f_RowNum], EXTR_PREFIX_ALL, "f");    }    foreach($iteration_RecordTemplate[$f_RowNum] as $value) {        extract($value);    }    eval($cc_env["convert2txt"]);    ob_start();/* Конец служебной части */?>
+<?= $f_AdminButtons; ?>
+<table class="why-mini-groups">
+			<tr>
+				<td class="why-mini-groups-1">
+					<div>
+						<?=$f_objectText1?>
+					</div>
+				</td>
+				<td class="why-mini-groups-2">
+					<?=$f_objectText2?>
+				</td>
+				<td class="why-mini-groups-3">
+					<div>
+						<?=$f_objectText3?>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="why-mini-groups-4">
+					<?=$f_objectText4?>					
+				</td>
+				<td class="why-mini-groups-5">
+					<div>
+						<?=$f_objectText5?>
+					</div>
+				</td>
+				<td class="why-mini-groups-6">
+					<?=$f_objectText6?>
+				</td>
+			</tr>
+			<tr>
+				<td class="why-mini-groups-7">
+					<div>
+						<?=$f_objectText7?>	
+					</div>				
+				</td>
+				<td class="why-mini-groups-8">
+					<?=$f_objectText8?>
+				</td>
+				<td class="why-mini-groups-9">
+					<div>
+						<?=$f_objectText9?>
+					</div>
+				</td>
+			</tr>
+		</table>
+<?/* Служебная часть */    echo nc_finishing_RecordTemplate(ob_get_clean(), $inside_admin, $classID, $f_RowID, $parent_message, $cc, $cc_env["Class_Name"], $no_cache_marks);}/* Конец служебной части */?>

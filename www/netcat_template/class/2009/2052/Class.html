@@ -1,0 +1,93 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+<style>
+.map-code{
+    position: relative;
+    border: 1px solid #F16D7C;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.address li.map-code:last-child{
+    margin-top:35px
+}
+.address li.map-code span{
+    position: absolute;
+    top: -13px;
+    left: 30px;
+    background: #8CD148;
+    z-index: 9;
+    display: block;
+    font-size: 18px;
+    padding: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.map-code .contactsMap{
+    width: 423px;
+    height: 460px;
+    font-size: 14px;
+    border: none;
+    margin: 0 0 0 0 !important;
+    padding: 0;
+    overflow: visible;
+}
+
+.contactsMap .contbal{
+    text-align:center;
+    border:1px solid #EEEEEE;
+    margin:5px;
+    padding:10px;
+}
+
+.contactsMap .contbal b, .contactsMap .contbal strong{
+    font-weight: bold;
+    font-size: 18px;
+    display:block;
+    margin:0 0 15px 0;
+}
+.contactsMap .contbal p{
+    margin:0 0 15px 0;
+}
+
+.contactsMap .contbal hr{
+    text-align:center;
+    border-top:1px solid #EEEEEE;
+    margin:0 auto 15px auto;
+    width:70%;
+}
+
+</style>
+<ul><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?>
+
+
+
+<li class="map-code">
+   <span><?=$f_objectName?></span>
+   <div id="map<?=$f_RowID?>" class="contactsMap"></div>
+</li><!-- /RecordTemplate -->
+
+<!-- FormSuffix --></ul>
+<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+<script>
+ymaps.ready(init);
+
+function init() {
+<?=listQuery("SELECT * FROM `Message2009` WHERE `Checked`=1 ORDER BY `Created`", "
+
+var myMap\$data[Message_ID] = new ymaps.Map('map\$data[Message_ID]', {center: [\$data[coordinates]],zoom: 17});
+    var myPlacemark\$data[Message_ID] = new ymaps.Placemark([\$data[coordinates]], {balloonContentBody: '<div class=contbal>\".trim(preg_replace('/\s+/', ' ', \$data[contactmap])).\"</div>',hintContent: '\$data[objectName]'}, {preset: 'twirl#redIcon'});
+    myMap\$data[Message_ID].geoObjects.add(myPlacemark\$data[Message_ID]);
+    
+    myMap\$data[Message_ID].balloon.open([\$data[coordinates]], '<div class=contbal>\".trim(preg_replace('/\s+/', ' ', \$data[contactmap])).\"</div>', {
+        // Опция: не показываем кнопку закрытия.
+        closeButton: false
+    });
+")?>
+
+    
+   
+}
+</script> <!-- /FormSuffix -->

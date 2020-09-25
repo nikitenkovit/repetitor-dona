@@ -1,0 +1,4 @@
+<div id='nc_mscont_<?= $hash ?>' class='nc_msput'>
+<a class="cart_link" href='/netcat/modules/minishop/index.php?good[<?= $id ?>][name]=<?= $name ?>&amp;good[<?= $id ?>][quantity]=1&amp;good[<?= $id ?>][price]=<?= $price ?>&amp;good[<?= $id ?>][hash]=<?= $hash ?>&amp;good[<?= $id ?>][uri]=<?= $uri ?>' <?= ( $this->settings['ajax'] ? "onclick='jQuery.get(this.href,{},function(response){nc_minishop_response(response)}, \"json\");return false;'" : "") ?>  ><i class="icon icon-cart">Купить</i></a>
+<a class="cart_big_link" href='/netcat/modules/minishop/index.php?good[<?= $id ?>][name]=<?= $name ?>&amp;good[<?= $id ?>][quantity]=1&amp;good[<?= $id ?>][price]=<?= $price ?>&amp;good[<?= $id ?>][hash]=<?= $hash ?>&amp;good[<?= $id ?>][uri]=<?= $uri ?>' <?= ( $this->settings['ajax'] ? "onclick='jQuery.get(this.href,{},function(response){nc_minishop_response(response)}, \"json\");return false;'" : "") ?>  ><i class="icon-large icon-cart-empty"></i></a>
+</div>

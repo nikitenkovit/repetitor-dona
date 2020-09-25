@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="3" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Преподаватели и стоимость</Subdivision_Name>
+      <EnglishName>prepodavateli-i-stoimost</EnglishName>
+      <Checked>1</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="3" subdivision_id="3" class_id="2000">
+      <Sub_Class_Name>Преподаватели и стоимость</Sub_Class_Name>
+      <EnglishName>prepodavateli-i-stoimost</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2566" type_of_data_id="1">
+      <Field_Name>objectName</Field_Name>
+      <Description>ФИО преподавателя</Description>
+    </field>
+    <field field_id="2573" type_of_data_id="6">
+      <Field_Name>objectPic</Field_Name>
+      <Description>Фото</Description>
+    </field>
+    <field field_id="2567" type_of_data_id="1">
+      <Field_Name>objectRank</Field_Name>
+      <Description>Должность</Description>
+    </field>
+    <field field_id="2568" type_of_data_id="1">
+      <Field_Name>objectEducation</Field_Name>
+      <Description>Образование (кратко)</Description>
+    </field>
+    <field field_id="2569" type_of_data_id="1">
+      <Field_Name>objectSkills</Field_Name>
+      <Description>Опыт работы (кратко)</Description>
+    </field>
+    <field field_id="2570" type_of_data_id="10">
+      <Field_Name>objectMatters</Field_Name>
+      <Description>Предметы</Description>
+    </field>
+    <field field_id="2571" type_of_data_id="3">
+      <Field_Name>objectShortDesc</Field_Name>
+      <Description>Краткое описание</Description>
+    </field>
+    <field field_id="2572" type_of_data_id="3">
+      <Field_Name>objectAchiev</Field_Name>
+      <Description>Достижения</Description>
+    </field>
+    <field field_id="2574" type_of_data_id="1">
+      <Field_Name>objectLocation</Field_Name>
+      <Description>Район проведения занятий</Description>
+    </field>
+    <field field_id="2575" type_of_data_id="1">
+      <Field_Name>objectPrice</Field_Name>
+      <Description>Стоимость занятий</Description>
+    </field>
+    <field field_id="2576" type_of_data_id="3">
+      <Field_Name>objectAbout</Field_Name>
+      <Description>Подробное описание</Description>
+    </field>
+    <field field_id="2577" type_of_data_id="3">
+      <Field_Name>objectEducationFull</Field_Name>
+      <Description>Образование (подробно)</Description>
+    </field>
+    <field field_id="2578" type_of_data_id="1">
+      <Field_Name>objectTutorSkills</Field_Name>
+      <Description>Репетиторский опыт</Description>
+    </field>
+    <field field_id="2579" type_of_data_id="1">
+      <Field_Name>objectTeacherSkills</Field_Name>
+      <Description>Педагогический опыт</Description>
+    </field>
+    <field field_id="2580" type_of_data_id="3">
+      <Field_Name>objectAboutEGE</Field_Name>
+      <Description>О ЕГЭ</Description>
+    </field>
+    <field field_id="2581" type_of_data_id="3">
+      <Field_Name>objectAboutClasses</Field_Name>
+      <Description>Об обучении</Description>
+    </field>
+    <field field_id="2582" type_of_data_id="6">
+      <Field_Name>objectPicBig</Field_Name>
+      <Description>Большое Фото в подробном описании</Description>
+    </field>
+    <field field_id="2583" type_of_data_id="11">
+      <Field_Name>objectPics</Field_Name>
+      <Description>Фото-галерея</Description>
+    </field>
+    <field field_id="2584" type_of_data_id="11">
+      <Field_Name>objectSertificates</Field_Name>
+      <Description>Сертификаты</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="17" class_id="2000" subdivision_id="3" sub_class_id="3">
+      <User_ID>2</User_ID>
+      <Priority>17</Priority>
+      <Checked>1</Checked>
+      <IP>213.138.75.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36 OPR/34.0.2036.25</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2016-01-13 15:15:56</Created>
+      <LastUpdated>2016-01-14 15:04:27</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>213.138.75.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36 OPR/34.0.2036.47</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Чуб Дмитрий Сергеевич]]></objectName>
+      <objectPic path="/netcat_files/3/3/Foto_Chuba.jpg">Фото Чуба.jpg:image/jpeg:30966:3/3/Foto_Chuba.jpg</objectPic>
+      <objectRank><![CDATA[]]></objectRank>
+      <objectEducation><![CDATA[ЮФУ]]></objectEducation>
+      <objectSkills><![CDATA[3 года]]></objectSkills>
+      <objectMatters>,1,</objectMatters>
+      <objectShortDesc><![CDATA[<p>Преподаватель математики. Окончил в 2012 году ЮФУ, физический факультет, кафедра физики твердого тела. Аспирант кафедры спектроскопии и наноразмерных материалов.</p>
+<ul>
+<li>Подготовка к ГИА (любой уровень)</li></ul>]]></objectShortDesc>
+      <objectAchiev><![CDATA[]]></objectAchiev>
+      <objectLocation><![CDATA[Центр (Красноармейская/Соколова)]]></objectLocation>
+      <objectPrice><![CDATA[900 р./120 минут (мини-группа 3-4 человека)]]></objectPrice>
+      <objectAbout><![CDATA[]]></objectAbout>
+      <objectEducationFull><![CDATA[<p>Закончив в 2012 году ЮФУ, физический факультет, кафедра физики твердого тела. Аспирант кафедры спекроскопии и наноразмерных материалов.</p>]]></objectEducationFull>
+      <objectTutorSkills><![CDATA[3 года]]></objectTutorSkills>
+      <objectTeacherSkills><![CDATA[]]></objectTeacherSkills>
+      <objectAboutEGE><![CDATA[]]></objectAboutEGE>
+      <objectAboutClasses><![CDATA[]]></objectAboutClasses>
+      <objectPicBig path=""/>
+      <objectPics/>
+      <objectSertificates/>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="3" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Преподаватели и стоимость</Subdivision_Name>
+      <EnglishName>prepodavateli-i-stoimost</EnglishName>
+      <Checked>1</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="3" subdivision_id="3" class_id="2000">
+      <Sub_Class_Name>Преподаватели и стоимость</Sub_Class_Name>
+      <EnglishName>prepodavateli-i-stoimost</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2566" type_of_data_id="1">
+      <Field_Name>objectName</Field_Name>
+      <Description>ФИО преподавателя</Description>
+    </field>
+    <field field_id="2573" type_of_data_id="6">
+      <Field_Name>objectPic</Field_Name>
+      <Description>Фото</Description>
+    </field>
+    <field field_id="2567" type_of_data_id="1">
+      <Field_Name>objectRank</Field_Name>
+      <Description>Должность</Description>
+    </field>
+    <field field_id="2568" type_of_data_id="1">
+      <Field_Name>objectEducation</Field_Name>
+      <Description>Образование (кратко)</Description>
+    </field>
+    <field field_id="2569" type_of_data_id="1">
+      <Field_Name>objectSkills</Field_Name>
+      <Description>Опыт работы (кратко)</Description>
+    </field>
+    <field field_id="2570" type_of_data_id="10">
+      <Field_Name>objectMatters</Field_Name>
+      <Description>Предметы</Description>
+    </field>
+    <field field_id="2571" type_of_data_id="3">
+      <Field_Name>objectShortDesc</Field_Name>
+      <Description>Краткое описание</Description>
+    </field>
+    <field field_id="2572" type_of_data_id="3">
+      <Field_Name>objectAchiev</Field_Name>
+      <Description>Достижения</Description>
+    </field>
+    <field field_id="2574" type_of_data_id="1">
+      <Field_Name>objectLocation</Field_Name>
+      <Description>Район проведения занятий</Description>
+    </field>
+    <field field_id="2575" type_of_data_id="1">
+      <Field_Name>objectPrice</Field_Name>
+      <Description>Стоимость занятий</Description>
+    </field>
+    <field field_id="2576" type_of_data_id="3">
+      <Field_Name>objectAbout</Field_Name>
+      <Description>Подробное описание</Description>
+    </field>
+    <field field_id="2577" type_of_data_id="3">
+      <Field_Name>objectEducationFull</Field_Name>
+      <Description>Образование (подробно)</Description>
+    </field>
+    <field field_id="2578" type_of_data_id="1">
+      <Field_Name>objectTutorSkills</Field_Name>
+      <Description>Репетиторский опыт</Description>
+    </field>
+    <field field_id="2579" type_of_data_id="1">
+      <Field_Name>objectTeacherSkills</Field_Name>
+      <Description>Педагогический опыт</Description>
+    </field>
+    <field field_id="2580" type_of_data_id="3">
+      <Field_Name>objectAboutEGE</Field_Name>
+      <Description>О ЕГЭ</Description>
+    </field>
+    <field field_id="2581" type_of_data_id="3">
+      <Field_Name>objectAboutClasses</Field_Name>
+      <Description>Об обучении</Description>
+    </field>
+    <field field_id="2582" type_of_data_id="6">
+      <Field_Name>objectPicBig</Field_Name>
+      <Description>Большое Фото в подробном описании</Description>
+    </field>
+    <field field_id="2583" type_of_data_id="11">
+      <Field_Name>objectPics</Field_Name>
+      <Description>Фото-галерея</Description>
+    </field>
+    <field field_id="2584" type_of_data_id="11">
+      <Field_Name>objectSertificates</Field_Name>
+      <Description>Сертификаты</Description>
+    </field>
+    <field field_id="2731" type_of_data_id="1">
+      <Field_Name>lp</Field_Name>
+      <Description>Для лендингов</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="39" class_id="2000" subdivision_id="3" sub_class_id="3">
+      <User_ID>234</User_ID>
+      <Priority>32</Priority>
+      <Checked>1</Checked>
+      <IP>178.155.4.205</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2018-09-19 13:55:16</Created>
+      <LastUpdated>2018-09-19 13:55:16</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[12]]></objectName>
+      <objectPic path="/netcat_files/3/3/116.jpg">116.jpg:image/jpeg:8793:3/3/116.jpg</objectPic>
+      <objectRank><![CDATA[]]></objectRank>
+      <objectEducation><![CDATA[]]></objectEducation>
+      <objectSkills><![CDATA[]]></objectSkills>
+      <objectMatters/>
+      <objectShortDesc><![CDATA[]]></objectShortDesc>
+      <objectAchiev><![CDATA[]]></objectAchiev>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectPrice><![CDATA[]]></objectPrice>
+      <objectAbout><![CDATA[]]></objectAbout>
+      <objectEducationFull><![CDATA[]]></objectEducationFull>
+      <objectTutorSkills><![CDATA[]]></objectTutorSkills>
+      <objectTeacherSkills><![CDATA[]]></objectTeacherSkills>
+      <objectAboutEGE><![CDATA[]]></objectAboutEGE>
+      <objectAboutClasses><![CDATA[]]></objectAboutClasses>
+      <objectPicBig path=""/>
+      <objectPics/>
+      <objectSertificates/>
+      <lp><![CDATA[23,24]]></lp>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

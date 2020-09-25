@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="30" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Литература</Subdivision_Name>
+      <EnglishName>lp-literatura</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+    <subdivision subdivision_id="32" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>География</Subdivision_Name>
+      <EnglishName>lp-geografiya</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="128" subdivision_id="30" class_id="2045">
+      <Sub_Class_Name>Отзывы учеников</Sub_Class_Name>
+      <EnglishName>otzyvy-uchenikov-copy</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+    <sub_class sub_class_id="162" subdivision_id="32" class_id="2045">
+      <Sub_Class_Name>Отзывы учеников</Sub_Class_Name>
+      <EnglishName>otzyvy-uchenikov-copy-copy</EnglishName>
+      <Checked>0</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2703" type_of_data_id="1">
+      <Field_Name>Year</Field_Name>
+      <Description>Год</Description>
+    </field>
+    <field field_id="2704" type_of_data_id="1">
+      <Field_Name>IdYear</Field_Name>
+      <Description>ID Год</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="28" class_id="2045" subdivision_id="30" sub_class_id="128">
+      <User_ID>2</User_ID>
+      <Priority>8</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.127.92</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 OPR/62.0.3331.116</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-23 22:25:22</Created>
+      <LastUpdated>2019-08-23 22:25:22</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Year><![CDATA[2012]]></Year>
+      <IdYear><![CDATA[tab2012]]></IdYear>
+    </message>
+    <message message_id="27" class_id="2045" subdivision_id="30" sub_class_id="128">
+      <User_ID>2</User_ID>
+      <Priority>7</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.127.92</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 OPR/62.0.3331.116</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-23 22:25:22</Created>
+      <LastUpdated>2019-08-23 22:25:22</LastUpdated>
+      <LastUser_ID>234</LastUser_ID>
+      <LastIP>178.155.5.66</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36</LastUserAgent>
+      <Keyword/>
+      <Year><![CDATA[2013]]></Year>
+      <IdYear><![CDATA[tab2013]]></IdYear>
+    </message>
+    <message message_id="26" class_id="2045" subdivision_id="30" sub_class_id="128">
+      <User_ID>2</User_ID>
+      <Priority>6</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.46.51</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 OPR/62.0.3331.116</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-23 22:25:22</Created>
+      <LastUpdated>2019-08-23 22:25:22</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>31.23.46.51</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 OPR/62.0.3331.116</LastUserAgent>
+      <Keyword/>
+      <Year><![CDATA[2014]]></Year>
+      <IdYear><![CDATA[tab2014]]></IdYear>
+    </message>
+    <message message_id="21" class_id="2045" subdivision_id="30" sub_class_id="128">
+      <User_ID>234</User_ID>
+      <Priority>5</Priority>
+      <Checked>1</Checked>
+      <IP>178.155.5.217</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-23 22:25:22</Created>
+      <LastUpdated>2019-08-23 22:25:22</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>31.23.46.51</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 OPR/62.0.3331.116</LastUserAgent>
+      <Keyword/>
+      <Year><![CDATA[2015]]></Year>
+      <IdYear><![CDATA[tab2015]]></IdYear>
+    </message>
+    <message message_id="22" class_id="2045" subdivision_id="30" sub_class_id="128">
+      <User_ID>234</User_ID>
+      <Priority>4</Priority>
+      <Checked>1</Checked>
+      <IP>178.155.5.217</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-23 22:25:22</Created>
+      <LastUpdated>2019-08-23 22:25:22</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>31.23.46.51</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 OPR/62.0.3331.116</LastUserAgent>
+      <Keyword/>
+      <Year><![CDATA[2016]]></Year>
+      <IdYear><![CDATA[tab2016]]></IdYear>
+    </message>
+    <message message_id="33" class_id="2045" subdivision_id="32" sub_class_id="162">
+      <User_ID>234</User_ID>
+      <Priority>2</Priority>
+      <Checked>1</Checked>
+      <IP>178.155.5.217</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-09-20 20:33:35</Created>
+      <LastUpdated>2019-09-20 20:33:35</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>31.23.46.51</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 OPR/62.0.3331.116</LastUserAgent>
+      <Keyword/>
+      <Year><![CDATA[2018]]></Year>
+      <IdYear><![CDATA[tab2018]]></IdYear>
+    </message>
+    <message message_id="32" class_id="2045" subdivision_id="32" sub_class_id="162">
+      <User_ID>234</User_ID>
+      <Priority>3</Priority>
+      <Checked>1</Checked>
+      <IP>178.155.5.217</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-09-20 20:33:35</Created>
+      <LastUpdated>2019-09-20 20:33:35</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Year><![CDATA[2017]]></Year>
+      <IdYear><![CDATA[tab2017]]></IdYear>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

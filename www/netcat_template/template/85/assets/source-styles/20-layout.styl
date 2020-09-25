@@ -1,0 +1,89 @@
+
+*, *:after, *:before
+  box-sizing: border-box
+
+
+body
+  // min-width: 1220px
+  min-width: 1000px
+  // overflow-x: hidden
+  @media max
+    // min-width: 1980px
+  @media min
+    min-width: 640px
+    max-width: 640px
+    overflow-x: hidden
+    margin: 0 auto
+
+
+titleSize()
+  @media screen and (min-width: 321px) and (max-width: 1220px)
+    font-size: 90%
+  @media screen and (min-width: 321px) and (max-width: 1150px)
+    font-size: 85%
+  @media screen and (min-width: 321px) and (max-width: 1080px)
+    font-size: 80%
+
+widgetTitle()
+  h2
+    theme(color 'accent-1')
+    font-size: 25px
+    font-weight: 600
+    @media min
+      font-size: 48px
+
+
+.tpl-block-content aside
+  float: left
+  width: 22%
+  transition: left 0.2s, margin-top 0.2s
+  padding-right: 30px
+  @media min
+    float: none
+    width: 100%
+    transition: none
+    padding: 0
+    margin-top: -25px
+  .tpl-block-front-page&
+    position: relative
+    margin-top: -435px
+    @media min
+      display: none
+
+.tpl-block-main
+  float: left
+  width: 78%
+  @media min
+    float: none
+    width: auto
+  &--wide
+    float: none
+    width: auto !important
+
+// Резервируем место для хлебных крошек
+.tpl-block-content > .tpl-layout-page-center:first-child
+  @media min
+    //padding-top: 150px
+    padding-top: 0
+
+.tpl-block-front-page
+  padding-top: 435px
+  @media min
+    padding-top: 781px
+
+.tpl-layout-page-center
+  margin: 0 auto
+  position: relative
+  min-width: 1180px //viewport = 980
+  max-width: 1180px
+  width: 100%
+  padding: 0 20px
+  line-height: 2.0em
+
+  @media min
+    width: 640px
+    padding: 0 50px
+    min-width: 640px
+    max-width: 640px
+    /*overflow-x: hidden*/
+    overflow: visible

@@ -1,0 +1,13 @@
+<?= $f_AdminCommon; ?>
+<div class="wrapper">
+    <div class="loginPan">
+              <?=!$current_user['Login'] ? "
+                  <a href='/netcat/modules/auth/' class='enter logIn'>Войти</a>
+                  " : "
+                  <a href='/lk/' class='enter'>Личный Кабинет</a> / 
+                  <a href='/netcat/modules/auth/?logoff=1&REQUESTED_FROM=".$REQUEST_URI."&REQUESTED_BY=".$REQUEST_METHOD."' class='enter'>Выйти</a>
+              "?>
+     </div>
+<h1 class="h1">Занятия в мини-группах</h1>
+	<div class="greenPan optimalVariantIco" style="margin-top:20px">Оптимальный вариант по цене и качеству — это подготовка к ЕГЭ в мини-группе (3-7 человек).<br>Занятия ведёт опытный репетитор по специально разработанной методике.</div>		
+</div>

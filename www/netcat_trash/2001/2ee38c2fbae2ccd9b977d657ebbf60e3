@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="4" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Отзывы и результаты</Subdivision_Name>
+      <EnglishName>otzyvy-i-rezultaty</EnglishName>
+      <Checked>1</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="4" subdivision_id="4" class_id="2001">
+      <Sub_Class_Name>Отзывы и результаты</Sub_Class_Name>
+      <EnglishName>otzyvy-i-rezultaty</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2585" type_of_data_id="1">
+      <Field_Name>objectName</Field_Name>
+      <Description>ФИО ученика</Description>
+    </field>
+    <field field_id="2587" type_of_data_id="6">
+      <Field_Name>objectPic</Field_Name>
+      <Description>Фото</Description>
+    </field>
+    <field field_id="2586" type_of_data_id="3">
+      <Field_Name>objectRanks</Field_Name>
+      <Description>Оценки ЕГЭ</Description>
+    </field>
+    <field field_id="2588" type_of_data_id="1">
+      <Field_Name>objectLocation</Field_Name>
+      <Description>Место поступления</Description>
+    </field>
+    <field field_id="2589" type_of_data_id="1">
+      <Field_Name>objectEducationPeriod</Field_Name>
+      <Description>Период обучения</Description>
+    </field>
+    <field field_id="2621" type_of_data_id="10">
+      <Field_Name>objectMatters</Field_Name>
+      <Description>Предмет</Description>
+    </field>
+    <field field_id="2590" type_of_data_id="3">
+      <Field_Name>objectText</Field_Name>
+      <Description>Текст отзыва</Description>
+    </field>
+    <field field_id="2642" type_of_data_id="9">
+      <Field_Name>objectTeacher1</Field_Name>
+      <Description>Преподаватель1</Description>
+    </field>
+    <field field_id="2643" type_of_data_id="9">
+      <Field_Name>objectTeacher2</Field_Name>
+      <Description>Преподаватель2</Description>
+    </field>
+    <field field_id="2644" type_of_data_id="9">
+      <Field_Name>objectTeacher3</Field_Name>
+      <Description>Преподаватель3</Description>
+    </field>
+    <field field_id="2591" type_of_data_id="3">
+      <Field_Name>objectTeacherText</Field_Name>
+      <Description>Отзыв преподавателя</Description>
+    </field>
+    <field field_id="2620" type_of_data_id="3">
+      <Field_Name>objectVideo</Field_Name>
+      <Description>Код для вставки видео</Description>
+    </field>
+    <field field_id="2641" type_of_data_id="5">
+      <Field_Name>isMain</Field_Name>
+      <Description>Выводить на главной</Description>
+    </field>
+    <field field_id="2732" type_of_data_id="1">
+      <Field_Name>lp</Field_Name>
+      <Description>lp</Description>
+    </field>
+    <field field_id="2735" type_of_data_id="1">
+      <Field_Name>YearDLP</Field_Name>
+      <Description>Год для Лендинга</Description>
+    </field>
+    <field field_id="2853" type_of_data_id="5">
+      <Field_Name>selectEGE</Field_Name>
+      <Description>Выводить в ЕГЭ</Description>
+    </field>
+    <field field_id="2854" type_of_data_id="5">
+      <Field_Name>selectGIA</Field_Name>
+      <Description>Выводить в ГИА</Description>
+    </field>
+    <field field_id="2855" type_of_data_id="3">
+      <Field_Name>objectTextAdd</Field_Name>
+      <Description>Поле для ЕГЭ, ГИА</Description>
+    </field>
+    <field field_id="2856" type_of_data_id="5">
+      <Field_Name>selectCarousel</Field_Name>
+      <Description>Показатель в карусели ЕГЭ/ГИА</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="555" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>553</Priority>
+      <Checked>1</Checked>
+      <IP>188.170.175.115</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2020-08-18 15:20:30</Created>
+      <LastUpdated>2020-08-18 15:20:30</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Аршакян Эрнест]]></objectName>
+      <objectPic path="/netcat_files/4/4/Arshakyan_0.jpg">Аршакян.jpg:image/jpeg:16086:4/4/Arshakyan_0.jpg</objectPic>
+      <objectRanks><![CDATA[<p>ЕГЭ по русскому языку: 72 балла.</p>
+<p>ЕГЭ по математике: 56 баллов.</p>]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[2019-2020]]></objectEducationPeriod>
+      <objectMatters>,13,6,</objectMatters>
+      <objectText><![CDATA[<p>Хочу выразить благодарность компании &quot;Репетитор Дона&quot;, а также Ирине Алексеевне.</p>
+<p>Она очень добрый и отзывчивый преподаватель, прежде всего очень хороший человек. Благодаря ей, я поднял свои знания по русскому языку на высокий уровень. К каждому ученику найдется свой подход. С большим удовольствием я провел этот год на занятиях, не заметив как все закончилось. Хорошее, всегда быстро заканчивается!</p>
+<p>Будущим абитуриентам я советую не ленится, и учить все правила русского языка, которые даются на занятиях!</p>]]></objectText>
+      <objectTeacher1>21</objectTeacher1>
+      <objectTeacher2>9</objectTeacher2>
+      <objectTeacher3>0</objectTeacher3>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+      <lp><![CDATA[]]></lp>
+      <YearDLP><![CDATA[]]></YearDLP>
+      <selectEGE>0</selectEGE>
+      <selectGIA>0</selectGIA>
+      <objectTextAdd><![CDATA[]]></objectTextAdd>
+      <selectCarousel>0</selectCarousel>
+    </message>
+    <message message_id="143" class_id="2001" subdivision_id="4" sub_class_id="4">
+      <User_ID>2</User_ID>
+      <Priority>500</Priority>
+      <Checked>1</Checked>
+      <IP>87.117.37.102</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-11-22 03:51:50</Created>
+      <LastUpdated>2020-08-27 00:24:36</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>31.23.168.67</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 OPR/62.0.3331.116</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Терзян Светлана]]></objectName>
+      <objectPic path="/netcat_files/4/4/Girl_16.png">Girl.png:image/png:12679:4/4/Girl_16.png</objectPic>
+      <objectRanks><![CDATA[<p>ЕГЭ по английскому: 63 балла. Для поступления не пригодился.</p>]]></objectRanks>
+      <objectLocation><![CDATA[]]></objectLocation>
+      <objectEducationPeriod><![CDATA[]]></objectEducationPeriod>
+      <objectMatters>,7,</objectMatters>
+      <objectText><![CDATA[<p>Занятия проходили очень интересно, Анна Александровна давала всю информацию, которая нужна и которая действительно пригодилась. Всеми знаниями, которые дала мне преподаватель, &nbsp;я сейчас пользуюсь. В университете, в котором я сейчас учусь (СКАГС), английский очень требовательный. Занятия были классные, мне все нравилось!</p>]]></objectText>
+      <objectTeacher1>12</objectTeacher1>
+      <objectTeacher2>0</objectTeacher2>
+      <objectTeacher3>0</objectTeacher3>
+      <objectTeacherText><![CDATA[]]></objectTeacherText>
+      <objectVideo><![CDATA[]]></objectVideo>
+      <isMain>0</isMain>
+      <lp><![CDATA[]]></lp>
+      <YearDLP><![CDATA[]]></YearDLP>
+      <selectEGE>0</selectEGE>
+      <selectGIA>0</selectGIA>
+      <objectTextAdd><![CDATA[]]></objectTextAdd>
+      <selectCarousel>0</selectCarousel>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

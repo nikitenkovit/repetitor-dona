@@ -1,0 +1,25 @@
+body > header .tpl-block-menu
+  border-bottom: 5px solid // colorRed
+  theme(border-color 'accent-2')
+  height: 40px
+  position: relative
+  margin-right: -100%
+  left: 0;
+  padding-left: 0;
+  width: 900px;
+  z-index: 5;
+  float: left;
+
+  > div
+    display: inline-block
+    font-size: 18px
+    margin-right: 20px
+    line-height: 35px
+    theme(color 'accent-2')
+    a
+      theme(color 'base')
+      text-decoration: none
+      &:hover
+        theme(color 'accent-2')
+      &.tpl-state-current
+        theme(color 'accent-2')

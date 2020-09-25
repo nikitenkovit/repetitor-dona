@@ -1,0 +1,22 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+<?$counter=1;?>
+<div class="block5">
+			<div class="wrapper">
+				<div class="h2 center"><?=$cc_settings['Title']?></div>
+				<table>
+					<tr>
+						<td><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?>
+<div class="item">
+						<div class="h3"><span><?=$counter;?></span> <?=$f_objectName?></div>
+						<?=$f_objectText?>
+					</div>
+<?=$counter==6 ? "</td><td>" : NULL?>                    
+                    <?$counter++;?><!-- /RecordTemplate -->
+
+<!-- FormSuffix --></td>
+					</tr>
+				</table>
+			</div>
+		</div><!-- /FormSuffix -->

@@ -1,0 +1,29 @@
+<?= $f_AdminCommon; ?>
+
+  
+  <div class="reviews">
+    <div class="line-h1">
+      <?=$cc_settings['title']?>
+    
+      <div class="line-h2"><?=$cc_settings['title2']?>
+    </div>
+  </div>
+    <div class="wrapper">
+      <div class="tabs-year">
+        <?
+        
+        $nc_core->db->query("SELECT * FROM `Message2045` WHERE `Subdivision_ID` = '".$sub."' AND `Sub_Class_ID` = '".$cc."' AND `Checked` = 1 ORDER BY `Priority` ASC " );
+        $arr = $nc_core->db->last_result;
+
+        if (!empty($arr)) {
+            $i=0;
+            foreach ($arr as $row) {
+                $i++;
+                echo'<div class="tab"><a href="#'.$row->IdYear.'" class="a '.opt($i==1,'active').'">'.$row->Year.'</a></div>';
+            }
+        }
+        
+        ?>
+      
+      </div>
+   

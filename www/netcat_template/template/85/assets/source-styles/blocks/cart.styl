@@ -1,0 +1,268 @@
+.tpl-block-main.tpl-component-cart
+  width: 100%
+
+  .tpl-block-breadcrumbs
+    margin: 20px 0
+
+  .tpl-block-cart
+    &-contents
+    &-coupons
+      border: 5px solid // colorBlue
+      theme(border-color 'accent-1')
+      width: 100%
+      padding: 30px 55px 55px
+      margin-top: 30px
+      font-weight: 400
+      position: relative
+      @media min
+        padding: 55px 0 0
+        border: none
+        margin-top: 75px
+        margin-bottom: 235px
+      legend
+        font-size: 24px
+        font-weight: 400
+        padding: 0 20px
+        margin-left: -20px
+        @media min
+          font-size: 36px
+          font-weight: 300
+          line-height: 1.2
+          padding: 0 0 20px
+          margin: 0
+
+    &-item
+      margin-bottom: 55px
+      position relative
+
+      padding: 65px 0 0 215px
+      height: 170px
+
+      h3
+        display: block
+        text-transform none
+        width: 390px
+        font-size: 18px
+        margin-bottom: -15px
+        @media max
+          width: 430px
+
+      .tpl-property-subdivision
+        display: inline-block
+        position: static
+        font-size: 12px
+        font-weight: 400
+        margin-top: 10px
+
+      .tpl-property-image
+        display: block
+        position: absolute
+        width: 165px
+        left: 0
+        top: 0
+        height: 170px
+        line-height: 170px
+        text-align: center
+        img
+          max-height 100%
+          max-width 100%
+          vertical-align middle
+
+      /*.tpl-block-rating
+        position: absolute
+        left: 215px
+        top: 10px
+        font-size: 16px
+      */
+
+      .tpl-property-type
+        display: block
+        position: absolute
+        left: 215px
+        top: 30px
+        font-size: 14px
+        font-weight: 300
+
+      .tpl-property-total-price
+        display: block
+        position: absolute
+        right: 70px
+        top: 58px
+        line-height: 1.2
+        font-size: 32px
+        text-align: left
+        font-weight: 400
+        white-space nowrap
+
+      .tpl-property-variant-name
+        display: block
+        font-style italic
+        margin: 8px 0 -18px 0
+        width: 390px
+        @media max
+          width: 430px
+
+      .tpl-property-qty
+        display: block
+        position: absolute
+        left: 640px
+        top: 58px
+        .tpl-value
+          width: 40px
+        .tpl-value-units { display: none }
+        @media max
+         left: 690px
+
+      .tpl-link-cart-remove
+        font-size: 0
+        fontello-icon('\e812')
+        &:before { font-size: 22px }
+        display: inline-block
+        position: absolute
+        right: 0
+        top: 57px
+        theme(color 'dull')
+        button-transparent()
+        &:hover
+          theme(color 'accent-2')
+
+      a.tpl-link-more
+        text-decoration: none
+        theme(color 'base')
+        &:hover
+          theme(color 'base')
+          h3
+            theme(color 'accent-2')
+
+      .tpl-property-original-price
+        display none
+
+    /*
+    &-order
+      margin: 0 -55px 0
+      padding: 55px 55px 0
+      border: none
+      border-top: 1px solid #E5EBEF
+    &-ordertitle
+      padding: 0 20px
+      font-style: italic
+      theme(color 'gray')
+    */
+
+    &-summary
+      border-top: 5px solid // colorBlue
+      theme(border-color 'accent-1')
+      padding-top: 50px
+      position: relative
+      line-height: 1.8
+      .tpl-block-cart-totals
+        float: right
+        clear: both
+        .tpl-caption
+          display: block
+          font-size: 14px
+        .tpl-value
+          font-size: 36px
+          font-weight: 600
+          margin-top: -10px
+      .tpl-block-cart-discount
+        margin-bottom: 20px
+        font-size: 24px
+        .tpl-caption
+          font-weight: 300
+        .tpl-value
+          font-weight: 600
+
+    &-info
+      theme(color 'gray')
+      font-weight: 300
+      strong
+        theme(color 'base')
+        font-weight: 400
+
+    &-actions
+      /*position: absolute*/
+      /*bottom: -100px*/
+      left: 0
+      width: 100%
+      text-align: center
+
+      .tpl-link-order-add
+        button()
+        button-colors('accent-1', 'white', 'accent-2', 'white')
+
+      @media min
+        bottom: -175px
+
+      button
+      .tpl-link-order-add
+        font-size: 18px
+        margin 5px 0
+        @media min
+          font-size: 32px
+
+    &-coupons
+      margin-bottom: 40px
+      .tpl-block-cart-coupon-code
+        margin-right: 20px
+      .tpl-link-coupon-remove
+        button-link-alike()
+
+      &-add
+        input
+          darker-input()
+          width: 400px
+          height 40px
+          margin-right 8px
+          float left
+
+  @media min
+    .tpl-block-cart-item
+      margin-bottom: 100px
+      clearfix()
+
+      h3
+        font-size: 28px
+
+
+      .tpl-property-subdivision
+        display none
+
+      .tpl-property-item-price
+      .tpl-property-qty
+        position relative
+        top auto
+        right auto
+        left auto
+        display inline-block
+        margin-top 30px
+
+      .tpl-property-item-price
+        font-size 32px
+        font-weight 300
+        &:after
+          content: ' × ';
+          display inline-block
+          padding 0 20px
+          opacity 0.6
+
+      .tpl-property-total-price
+        display none
+        /*
+        position relative
+        display block
+        top auto
+        right auto
+        left auto
+        width 100%
+        font-size 32px
+        &:before
+          content: ' = '
+          font-weight 100
+          opacity 0.6
+        */
+
+    .tpl-block-cart-summary
+      .tpl-block-cart-totals
+        position relative
+        right auto

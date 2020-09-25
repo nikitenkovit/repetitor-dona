@@ -1,0 +1,29 @@
+.tpl-widget-netshop-special-offer
+  position: fixed;
+  z-index: 100;
+  right: 10px;
+  bottom: 20px;
+  width: 350px;
+  theme(background 'white');
+  border: 5px solid //colorBlue;
+  theme(border-color 'accent-1')
+  padding: 15px;
+  display: none;
+
+  .tpl-block-description
+    font-size: 12px;
+    line-height: 14px;
+
+  .tpl-property-item-price
+    font-weight: bold;
+    font-size: 14px;
+    .tpl-value
+      display: inline-block;
+
+  .tpl-link-accept
+    button()
+    button-colors('accent-2', 'white', 'accent-1', 'white')
+
+  .tpl-link-decline
+    display: block;
+

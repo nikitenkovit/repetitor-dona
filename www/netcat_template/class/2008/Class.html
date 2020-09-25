@@ -1,0 +1,28 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+<div class="wrapper">
+		<div class="loginPan">
+              <?=!$current_user['Login'] ? "
+                  <a href='/netcat/modules/auth/' class='enter logIn'>Войти</a>
+                  " : "
+                  <a href='/lk/' class='enter'>Личный Кабинет</a> / 
+                  <a href='/netcat/modules/auth/?logoff=1&REQUESTED_FROM=".$REQUEST_URI."&REQUESTED_BY=".$REQUEST_METHOD."' class='enter'>Выйти</a>
+              "?>
+     </div>
+
+		<h1 class="h1 center">Фотогалерея</h1>
+		<div class="photogallery">
+			<div class="folders"><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?>
+<div class="items">
+    <div class="itemsThumb">
+	    <a href="<?=$fullLink?>"><?=$f_objectPics->get_record(1)?></a>
+        <div class="itemsQuantity"><span><?=$f_objectPics->count()?> фотографии</span></div>
+	</div>
+	<div class="itemsTitle"><?=$f_objectName?></div>
+</div><!-- /RecordTemplate -->
+
+<!-- FormSuffix -->                <!--<div class="showMore center"><a href="#">Показать больше</a></div>-->
+			</div>
+		</div>		
+	</div><!-- /FormSuffix -->

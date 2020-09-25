@@ -1,0 +1,13 @@
+imagePath = '../i/'
+
+image-url(img)
+  return url(imagePath + $img)
+
+image-width($img)
+  return image-size(imagePath + $img)[0]
+
+image-height($img)
+  return image-size(imagePath + $img)[1]
+
+theme-image(theme, img)
+  return url(imagePath + 'theme-' + theme + '/' + img)

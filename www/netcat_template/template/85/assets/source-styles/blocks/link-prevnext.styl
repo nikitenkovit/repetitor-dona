@@ -1,0 +1,59 @@
+.tpl-block-pagination
+.tpl-block-prevnext
+  .tpl-link-prev
+  .tpl-link-next
+    cursor: pointer
+    display: block
+    height: 30px
+    width: 30px
+    theme(color 'dull')
+    border: 5px solid //colorDull
+    theme(border-color 'dull')
+    transition: color 0.2s, border 0.2s, opacity 0.2s
+    margin-left: 10px
+    float: left
+    line-height: 16px
+    text-align: center
+    user-select: none
+    margin-right: 0
+
+    &:first-child
+      margin-left: 0
+    &:hover
+      theme(color 'accent-1')
+      theme(border-color 'accent-1')
+    &.tpl-state-disabled
+      opacity: 0.3
+      pointer-events: none
+      theme(color 'dull')
+      theme(border-color 'dull')
+      cursor: default
+
+    &:hover
+      theme(color 'accent-1')
+      theme(border-color 'accent-1')
+
+    /* ICONS */
+    font-size: 0; // remove text, if any
+    fontello-icon()
+
+    @media min
+      height: auto
+      width: auto
+      border: none
+      line-height: 70px
+      theme(color 'base')
+      position: absolute
+      font-size: 0; // remove text, if any
+      &:before
+        font-size: 40px
+
+    &.tpl-state-disabled
+      cursor: default
+      color: lighten(#ccc, 20%)
+      border-color: lighten(#ccc, 20%)
+
+  .tpl-link-prev:before
+    content: '\e806'  /* < */
+  .tpl-link-next:before
+    content: '\e805'  /* > */

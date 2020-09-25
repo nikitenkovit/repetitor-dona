@@ -1,0 +1,19 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+<form method='post' action='<?=$SUB_FOLDER?>/netcat/subscribe.php'>
+  <input type='hidden' name='catalogue' value='<?=$catalogue?>' />
+  <input type='hidden' name='sub' value='<?=$sub?>' />
+  <input type='hidden' name='cc' value='<?=$cc?>' />
+  <input type='hidden' name='posting' value='1' />
+
+ Укажите ваш электронный адрес: <br/>
+
+ <input type='text' name='fields[Email]' value='' />
+
+<input type='submit' value='Подписаться' />
+
+</form>
+<!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?><!-- /RecordTemplate -->
+
+<!-- FormSuffix --><!-- /FormSuffix -->

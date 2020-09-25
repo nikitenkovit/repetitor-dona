@@ -1,0 +1,22 @@
+darker-input()
+  background: #EAEFF2
+  &:focus
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  @media min
+    background transparent
+    &:focus
+      box-shadow none
+
+
+
+select
+  width: 100%
+  display: block
+  opacity: 0
+
+  .nc-form &
+    opacity: 1
+
+  @media min
+    opacity: 1
+

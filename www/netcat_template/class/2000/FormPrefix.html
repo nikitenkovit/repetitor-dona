@@ -1,0 +1,26 @@
+<? if(!$admin_mode) : ?>
+
+<?= $f_AdminCommon; ?>
+
+	<div class="matterWrapper teachers">
+		<div class="h2"><?=$cc_settings['filterName'];?></div>
+		<div class="matter">
+			<div>
+				<?=listQuery("SELECT matters_Name, matters_ID, Value FROM Classificator_matters WHERE Checked = 1 ORDER BY matters_Priority", "
+                \".(\$data[matters_ID] == 7 ? \"</div><div>\" : NULL).\"                
+                <a href='?action=index&srchPat[1]=\$data[matters_ID]'>\$data[matters_Name]</a>
+                ")?>
+                <a href="/prepodavateli-i-stoimost/">Все предметы</a></div>
+                
+                <div>
+                              <?=listQuery("SELECT teachersFilter2_Name, teachersFilter2_ID, Value FROM Classificator_teachersFilter2 WHERE Checked = 1 ORDER BY teachersFilter2_Priority",
+                "
+                \".(\$data[teachersFilter2_ID] == 5 ? \"</div><div>\" : NULL).\" 
+                <a href='?action=index&srchPat[3]=\$data[teachersFilter2_ID]'>\$data[teachersFilter2_Name]</a> &nbsp;")?>
+                </div>
+                
+                
+                
+		
+		</div>	
+        <? endif; ?>

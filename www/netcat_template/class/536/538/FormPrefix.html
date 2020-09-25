@@ -1,0 +1,8 @@
+<?php if ($admin_mode && !$inside_admin) {
+    nc_print_status('Варианты товара редактируются в режиме администрирования', 'info');
+} ?>
+<?=$f_AdminCommon ?>
+<? if ($cc_settings['Title']): ?>
+    <h2><?=$cc_settings['Title'] ?></h2>
+<? endif ?>
+<div class="items-grid">

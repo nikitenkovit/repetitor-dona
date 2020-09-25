@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="25" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Lp_математика</Subdivision_Name>
+      <EnglishName>lp_matematika</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+    <subdivision subdivision_id="30" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Литература</Subdivision_Name>
+      <EnglishName>lp-literatura</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="58" subdivision_id="25" class_id="2035">
+      <Sub_Class_Name>Почему выбирают нас</Sub_Class_Name>
+      <EnglishName>pochemu-vybirayut-nas</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+    <sub_class sub_class_id="120" subdivision_id="30" class_id="2035">
+      <Sub_Class_Name>Почему выбирают нас</Sub_Class_Name>
+      <EnglishName>pochemu-vybirayut-nas-copy</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2668" type_of_data_id="3">
+      <Field_Name>Descript</Field_Name>
+      <Description>Описание</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="11" class_id="2035" subdivision_id="25" sub_class_id="58">
+      <User_ID>2</User_ID>
+      <Priority>1</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-05-09 20:14:46</Created>
+      <LastUpdated>2019-05-09 20:14:46</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Descript><![CDATA[<p><strong>РАБОТАЕМ, А НЕ ПОДРАБАТЫВАЕМ</strong> Центр довузовской подготовки Репетитор Дона занимается исключительно репетиторской деятельностью уже 7 лет. Мы работаем, а не подрабатываем в отличие от большинства репетиторов</p>]]></Descript>
+    </message>
+    <message message_id="47" class_id="2035" subdivision_id="30" sub_class_id="120">
+      <User_ID>234</User_ID>
+      <Priority>8</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-23 22:25:22</Created>
+      <LastUpdated>2019-08-23 22:25:22</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>31.23.127.92</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 OPR/62.0.3331.116</LastUserAgent>
+      <Keyword/>
+      <Descript><![CDATA[<p><b>ОБУЧАЕМ, А НЕ ТОЛЬКО ПРОРЕШИВАЕМ!&nbsp;</b>Обучаем учеников математке, а не только&nbsp;прорешиваем типовые тесты. Все наши ученики&nbsp;действительно знают, как решать задания на&nbsp;экзамене.<br />
+&nbsp;</p>]]></Descript>
+    </message>
+    <message message_id="45" class_id="2035" subdivision_id="30" sub_class_id="120">
+      <User_ID>234</User_ID>
+      <Priority>4</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-23 22:25:22</Created>
+      <LastUpdated>2019-08-23 22:25:22</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>109.165.51.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36 OPR/62.0.3331.72</LastUserAgent>
+      <Keyword/>
+      <Descript><![CDATA[<p><b>ГОТОВИМ КО ВСЕМ ЗАДАНИЯМ ЕГЭ</b>&nbsp;<strong>ПО МАТЕМАТИКЕ.&nbsp;</strong>Готовим полностью к первой части, а так же ко всей&nbsp;второй части, даже к таким сложным заданиям, как&nbsp;18-21 что даёт возможность получить самый&nbsp;высокий балл!</p>]]></Descript>
+    </message>
+    <message message_id="44" class_id="2035" subdivision_id="30" sub_class_id="120">
+      <User_ID>234</User_ID>
+      <Priority>3</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-23 22:25:22</Created>
+      <LastUpdated>2019-08-26 17:11:46</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>46.61.53.182</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 OPR/62.0.3331.116</LastUserAgent>
+      <Keyword/>
+      <Descript><![CDATA[<p><b>СРЕДНИЙ БАЛЛ ПО МАТЕМАТИКЕ В РЕПЕТИТОР ДОНА &nbsp;В 2019 ГОДУ 75,7</b>&nbsp;</p>
+<p>Для сравнения средний балл по Ростовской области равен 55,3</p>]]></Descript>
+    </message>
+    <message message_id="43" class_id="2035" subdivision_id="30" sub_class_id="120">
+      <User_ID>234</User_ID>
+      <Priority>2</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-23 22:25:22</Created>
+      <LastUpdated>2019-08-23 22:25:22</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>84.51.193.139</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36 OPR/62.0.3331.72</LastUserAgent>
+      <Keyword/>
+      <Descript><![CDATA[<p><b>250 УЧЕНИКОВ В 2019 Г ПОСТУПИЛИ!</b> <span>За прошлый год в центре Репетитор Дона подготовили 250 выпускников, которые поступили в ВУЗы Москвы и Ростова-на-Дону: МГУ, МФТИ, ВШЭ, МГТУ им. Баумана, ИТМО, ЮФУ, РСИ, РТА, РИЖТ и т.д.</span></p>]]></Descript>
+    </message>
+    <message message_id="50" class_id="2035" subdivision_id="30" sub_class_id="120">
+      <User_ID>234</User_ID>
+      <Priority>9</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-23 22:25:22</Created>
+      <LastUpdated>2019-08-23 22:25:22</LastUpdated>
+      <LastUser_ID>234</LastUser_ID>
+      <LastIP>178.155.5.66</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36</LastUserAgent>
+      <Keyword/>
+      <Descript><![CDATA[<p><b>ИНДИВИДУАЛЬНАЯ РАБОТА</b>&nbsp;Работаем в группе, но с каждым учеником&nbsp;индивидуально - у каждого свой план обучения и&nbsp;скорость изучения материала, то есть вы получаете&nbsp;индивидуальные занятия по цене групповых.</p>]]></Descript>
+    </message>
+    <message message_id="51" class_id="2035" subdivision_id="30" sub_class_id="120">
+      <User_ID>234</User_ID>
+      <Priority>10</Priority>
+      <Checked>0</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-23 22:25:22</Created>
+      <LastUpdated>2019-09-01 20:25:33</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>31.23.127.92</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 OPR/62.0.3331.116</LastUserAgent>
+      <Keyword/>
+      <Descript><![CDATA[<p><b>УВЕЛИЧИВАЕМ ЗНАНИЯ В 2 РАЗА</b>&nbsp;</p>
+<p>Мы определяем стартовый балл ЕГЭ перед началом занятий. Наши ученики показывают значительный прирост баллов! Максимальный прирост: 78 баллов, средняя прибавка к начальному уровню - 50 баллов!</p>]]></Descript>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

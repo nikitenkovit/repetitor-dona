@@ -1,0 +1,179 @@
+.tpl-block-tabs--footer
+  margin-top: 40px
+  clear: both
+
+body > footer
+  background: #EAEFF2
+  padding: 20px 0 40px
+  clear: both
+
+  a
+    theme(color 'base')
+    &:hover
+      theme(color 'accent-2')
+  @media min
+    padding: 50px 0
+    height: 500px
+    position: relative
+    backface-visibility: hidden
+
+.tpl-block-footer
+  &-row
+    clearfix()
+  &-col
+    float: left
+    margin-right: -100%
+    // background: rgba(pink, .15)
+    position: relative
+    width: 18.5%   
+    @media min
+      position: static
+      float: none
+      width: auto
+      margin: 0
+    &--1
+      left: 0
+      @media min
+        display: none
+    &--2
+      left: 20%      
+      @media min
+        display: none
+    &--3
+      left: 40%    
+      @media min
+        display: none
+    &--4
+      left: 60%
+      width: 22%
+      z-index: 2     
+      @media min
+        left: auto
+        width: auto
+    &--5
+      left: 80%
+      width: 20%
+      text-align: right      
+  .tpl-layout-page-center
+    @media min
+      position: absolute
+      top: 0
+      bottom: 0
+
+body > footer .tpl-block-subscribe
+  position: relative
+  @media min
+    line-height: 85px
+    font-size: 1.4em
+  input
+    theme(background 'white')
+    @media min
+      border: none
+      &:focus
+        box-shadow: 0 0 5px rgba(colorBase, 0.3)
+
+  button[type=submit]
+    position: absolute
+    display: block
+    top: 24px
+    right: 5px
+    line-height: 40px
+    height: 44px
+    padding: 0
+    margin: 0
+    background: transparent
+    theme(color 'base')
+    font-size: 1.2em
+    opacity: 0.2
+    transition: opacity 0.2s
+    &:hover
+      opacity: 0.5
+    mlink()
+    transition: opacity 0.2s, transform 0.2s
+    @media min
+      top: 100px
+      &:active
+        opacity: 1
+
+  @media min
+    position: absolute
+    top: 130px
+    font-size: 34px
+    left: 50px
+    right: 50px
+
+
+.tpl-block-footer-title
+  font-weight: 400
+  text-transform: uppercase
+  @media min
+    text-transform: none
+    font-size: 30px
+    font-weight: 300
+
+.tpl-block-footer-list
+  border-right: 1px dashed #B9C2C5
+  height: 115px
+  &-item
+    font-size: 12px
+    line-height: 1.7
+
+.tpl-block-footer-cards
+  &-item
+    margin: 10px 0
+  @media min
+    display: none
+
+.tpl-block-footer-developer
+  padding-top: 10px
+  @media max
+    width: 200px
+    float: left
+    margin-right: -100%
+    margin-left: -280px
+  @media min
+    font-size: 24px
+    line-height: 24px
+    position: absolute
+    right: 50px
+    /*bottom: 50px*/
+    top: 390px
+  a:hover
+    theme(color 'base')
+  a:active
+    theme(color 'accent-2')
+
+
+@media min
+  body > footer
+    .tpl-block-menu-secondary.tpl-block-mobile-only
+      position: absolute
+      @extend .tpl-block-journal
+      text-transform: uppercase
+      left: 50px
+      right: 50px
+      top: 0
+      border-bottom: 1px dashed #798992
+      .tpl-block-menu-secondary-item
+        @extend .tpl-block-journal-column
+        a
+          font-size: 30px
+          /*line-height: 125px*/
+          text-decoration: none
+          display: block
+          /*height: 125px*/
+          height: 100px
+          theme(color 'base')
+          mlink()
+
+    .tpl-block-social-buttons.tpl-block-mobile-only
+      position: absolute
+      left: 50px
+      /*bottom: 50px*/
+      top: 350px
+      .tpl-block-social-buttons-item
+        float: left
+        margin-right: 20px
+      a
+        display: block
+        mlink()

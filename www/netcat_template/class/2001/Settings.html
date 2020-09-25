@@ -1,0 +1,64 @@
+<?php
+
+$browse_msg['prefix']   = "<ul class='pagination'>"; // Префикс перед блоком навигации
+$browse_msg['suffix']   = "</ul>"; // Суффикс после блока навигации
+$browse_msg['active']   = "<li class='page-item'>%PAGE</li>"; // Формат вывода текущей страницы
+$browse_msg['unactive'] = "<li class='page-item'><a href='%URL&isNaked=1'>%PAGE</a></li>"; // Формат вывода ссылок
+$browse_msg['divider']  = ""; // Разделитель между ссылками
+
+if($isVideo) {
+    $query_where = "objectVideo != ''";
+}
+if($matterID) {
+    $query_where = "objectMatters LIKE '%".$matterID."%'";
+}
+if($teacherID) {
+    $query_where = "objectTeacher1 = $teacherID OR objectTeacher2 = $teacherID OR objectTeacher3 = $teacherID";
+    
+    $query_order = "teacher1Rat  DESC, teacher2Rat DESC, teacher3Rat DESC";
+}
+
+if ($current_cc==312) {
+    $ignore_sub=1;
+$ignore_сс=1;
+}
+
+if ($showEGE==1) {
+    $query_where = "a.selectEGE = 1";
+}
+
+if($srchPat[4]==13) {
+    $query_order = "mathRat DESC";
+}
+if($srchPat[4]==4) {
+    $query_order = "obshRat DESC";
+}
+if($srchPat[4]==3) {
+    $query_order = "infoRat DESC";
+}
+if($srchPat[4]==2) {
+    $query_order = "physRat DESC";
+}
+if($srchPat[4]==6) {
+    $query_order = "rusRat DESC";
+}
+if($srchPat[4]==7) {
+    $query_order = "engRat DESC";
+}
+if($srchPat[4]==8) {
+    $query_order = "bioRat DESC";
+}
+if($srchPat[4]==9) {
+    $query_order = "historyRat DESC";
+}
+if($srchPat[4]==10) {
+    $query_order = "himRat DESC";
+}
+if($srchPat[4]==11) {
+    $query_order = "litRat DESC";
+}
+if($srchPat[4]==12) {
+    $query_order = "geoRat DESC";
+}
+
+?>

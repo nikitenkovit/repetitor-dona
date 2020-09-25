@@ -1,0 +1,98 @@
+<div class="wrapper teachers">
+    <div class="loginPan">
+              <?=!$current_user['Login'] ? "
+                  <a href='/netcat/modules/auth/' class='enter logIn'>Войти</a>
+                  " : "
+                  <a href='#' class='enter'>Личный Кабинет</a> / 
+                  <a href='/netcat/modules/auth/?logoff=1&REQUESTED_FROM=".$REQUEST_URI."&REQUESTED_BY=".$REQUEST_METHOD."' class='enter'>Выйти</a>
+              "?>
+     </div>
+</div>					
+<div class="matterWrapper teachers">
+	
+    <?=$f_AdminButtons?>
+<div class="teacherItem">
+			<div class="teacherItemInfo">
+				<div class="teacherItemInfoPic">
+					<?=$f_objectPic ? "<img src='$f_objectPic_preview_url' alt=''>" : NULL?>
+				</div>
+				<div class="teacherItemInfoMatter">
+					<div class="h3 center"><?=$f_objectName?></div>
+				</div>
+				<div class="teacherItemInfoDetail">
+                    <ul>
+                        <?
+                            foreach($f_objectMatters as $index => $val) {
+                                if ($val) {
+                                    echo "<li class='matter$f_objectMatters_id[$index]'>$val</li>";                                    
+                                }
+                            }
+                        ?>                        
+                    </ul>
+					<div class="teacherItemInfoExperience">
+						<ul>
+							<li>Образование: <?=$f_objectEducation?></li>
+							<li>Опыт работы: <?=$f_objectSkills?></li>
+						</ul>
+					</div>	
+					<a href='#' class='teacherItemInfoWatchingVideo'>Посмотреть видео</a>			
+				</div>
+			</div>
+			<div class="teacherItemMoreInfo">
+				<div class="h2 center"><?=$f_objectName?></div>
+				<div class="h3 center"><?=$f_objectRank?></div>
+				<?=$f_objectShortDesc?>
+				<div class="teacherItemMoreInfoAddress"><strong>Район проведения занятий:</strong> <?=$f_objectLocation?></div>
+				<div class="teacherItemMoreInfoPrice"><strong>Стоимость занятий:</strong> <?=$f_objectPrice?></div>
+				<? if($f_objectAchiev) : ?>
+                <div class="teacherItemMoreInfoAchievement">
+                    <?=$f_objectAchiev?>
+                </div>
+                <? endif; ?>
+			</div>					
+		</div>
+
+
+		<div class="teacherItem teacherItemAbout">
+			<div class="teacherItemAboutEducation">	
+                <? if($f_objectAbout) : ?>
+                  <div class="teacherItemAboutItalic">
+                      <?=$f_objectAbout?>
+                  </div>
+                <? endif; ?> 
+				<div class="teacherItemAboutEducationPic">
+                    <?= $f_objectPicBig ? "<img src='$f_objectPicBig' alt=''>" : NULL?>
+                </div>				
+			
+            <? if( $f_objectPics->count() ): ?>
+            
+				<div class="teacherItemAboutEducationPic">
+					<?=$f_objectPics?>
+				</div>
+                
+            <? endif; ?>     
+
+
+            <? if( $f_objectSertificates->count() ): ?>
+
+				<div><strong>Дипломы, грамоты, благодарности:</strong></div>
+
+				<div class="diplomaSlider">	
+                    <div class="diplomaSliderWrapper">
+					    <?=$f_objectSertificates?>
+                    </div>
+                    <!--
+                    <a href="" class="diplomaSliderArrow left"></a>
+					<a href="" class="diplomaSliderArrow right"></a>
+                    -->
+				</div>
+                
+            <? endif; ?>    
+
+				<div class="showReview center">
+					<a href="/otzyvy-i-rezultaty/?teacherID=<?=$f_RowID?>">Посмотреть отзывы</a>
+				</div>
+				
+			</div>            
+		</div> 
+	</div>

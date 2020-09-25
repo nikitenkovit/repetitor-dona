@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="30" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Литература</Subdivision_Name>
+      <EnglishName>lp-literatura</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+    <subdivision subdivision_id="31" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Черчение</Subdivision_Name>
+      <EnglishName>lp-cherchenie</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+    <subdivision subdivision_id="32" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>География</Subdivision_Name>
+      <EnglishName>lp-geografiya</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="119" subdivision_id="30" class_id="2034">
+      <Sub_Class_Name>Проблемы</Sub_Class_Name>
+      <EnglishName>problemy-copy</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+    <sub_class sub_class_id="136" subdivision_id="31" class_id="2034">
+      <Sub_Class_Name>Проблемы</Sub_Class_Name>
+      <EnglishName>problemy-copy-copy</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+    <sub_class sub_class_id="153" subdivision_id="32" class_id="2034">
+      <Sub_Class_Name>Проблемы</Sub_Class_Name>
+      <EnglishName>problemy-copy-copy</EnglishName>
+      <Checked>0</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2667" type_of_data_id="3">
+      <Field_Name>Descript</Field_Name>
+      <Description>Описание</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="38" class_id="2034" subdivision_id="30" sub_class_id="119">
+      <User_ID>2</User_ID>
+      <Priority>2</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-23 22:25:22</Created>
+      <LastUpdated>2019-08-23 22:25:22</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>31.23.253.81</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</LastUserAgent>
+      <Keyword/>
+      <Descript><![CDATA[Многие репетиторы занимаются прорешиванием тестов ЕГЭ по какому - либо пособию, что не ведет к увеличению уровня знаний]]></Descript>
+    </message>
+    <message message_id="53" class_id="2034" subdivision_id="31" sub_class_id="136">
+      <User_ID>2</User_ID>
+      <Priority>8</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-23 22:48:04</Created>
+      <LastUpdated>2019-08-23 22:48:04</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Descript><![CDATA[ВУЗ принимает учеников только с высокими баллами ЕГЭ]]></Descript>
+    </message>
+    <message message_id="52" class_id="2034" subdivision_id="31" sub_class_id="136">
+      <User_ID>2</User_ID>
+      <Priority>7</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-23 22:48:04</Created>
+      <LastUpdated>2019-08-23 22:48:04</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Descript><![CDATA[Плохая подготовка в школе]]></Descript>
+    </message>
+    <message message_id="54" class_id="2034" subdivision_id="31" sub_class_id="136">
+      <User_ID>2</User_ID>
+      <Priority>9</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-23 22:48:04</Created>
+      <LastUpdated>2019-08-23 22:48:04</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Descript><![CDATA[Репетитор не заинтересован в результатах ученика]]></Descript>
+    </message>
+    <message message_id="63" class_id="2034" subdivision_id="32" sub_class_id="153">
+      <User_ID>2</User_ID>
+      <Priority>9</Priority>
+      <Checked>0</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-09-20 20:33:35</Created>
+      <LastUpdated>2019-09-24 17:24:18</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>46.61.58.40</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36 OPR/63.0.3368.53</LastUserAgent>
+      <Keyword/>
+      <Descript><![CDATA[Ученик думает, что для успешной сдачи экзамена нужно только перечитать все произведения классической литературы.]]></Descript>
+    </message>
+    <message message_id="64" class_id="2034" subdivision_id="32" sub_class_id="153">
+      <User_ID>2</User_ID>
+      <Priority>10</Priority>
+      <Checked>0</Checked>
+      <IP>46.61.58.40</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36 OPR/63.0.3368.53</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-09-20 20:33:35</Created>
+      <LastUpdated>2019-09-24 17:24:16</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Descript><![CDATA[У обычного ученика отсутствуют навыки анализа текста, работы со словом и стилем писателя или поэта.]]></Descript>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

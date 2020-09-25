@@ -1,0 +1,12 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+<? $counter=1; ?>
+<ul>     <!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?>
+<?= $counter == 1 ?
+"<li class='show'><a href='$f_objectUrl'><img src='$f_objectPic' alt=''></a></li>" :
+"<li><a href='$f_objectUrl'><img src='$f_objectPic' alt=''></a></li>"
+?>
+<? $counter++; ?><!-- /RecordTemplate -->
+
+<!-- FormSuffix --></ul><!-- /FormSuffix -->

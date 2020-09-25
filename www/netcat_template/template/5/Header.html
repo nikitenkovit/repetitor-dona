@@ -1,0 +1,58 @@
+<!DOCTYPE html >
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=<?=$nc_core->NC_CHARSET?>" />  
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<? /* Блок SEO */ ?>
+<? /* Запрос заголовка через ядро системы, если нету, то выводим хлебные крошки */ ?>
+<title><?=( ($title = $nc_core->page->get_title()) ? $title : strip_tags(s_browse_path($browse_path_title)))?></title>
+<? /* Запрос description через ядро системы */ ?>
+<?=( ($description=$nc_core->page->get_description()) ? "<meta name='description' content='".$description."'>" : "" )?>
+<? /* Запрос Keywords через ядро системы */ ?>
+<?=( ($keywords=$nc_core->page->get_keywords()) ? "<meta name='Keywords' content='".$keywords."'>" : "" )?>
+
+
+
+<link href="<?=$nc_parent_template_folder_path; ?>css/bootstrap.min.css" rel="stylesheet">
+<link href="<?=$nc_parent_template_folder_path; ?>css/style.css" rel="stylesheet">
+<link href="<?=$nc_parent_template_folder_path; ?>css/jquery.scrollbar.css" rel="stylesheet">
+<link rel="stylesheet" href="<?=$nc_parent_template_folder_path; ?>css/owl.carousel.min.css" type="text/css" media="screen">
+<link href="<?=$nc_parent_template_folder_path; ?>css/colorbox.css" rel="stylesheet">
+<script src="<?=$nc_parent_template_folder_path; ?>js/jquery.min.js"></script>
+<script src="<?=$nc_parent_template_folder_path; ?>js/jquery.maskedinput.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function($){
+
+if( /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent) ) {}else{$("input[name='f_phone'],input[name='f_Phone'], input[name='f_objectPhone']").mask("+7 (999) 999-99-99");}
+
+});
+</script>
+<script type="text/javascript">    document.onkeydown=key;  function key()  {    window.status=event.keyCode;  if(event.keyCode==17)alert("КОПИРОВАНИЕ МАТЕРИАЛОВ ЗАПРЕЩЕНО!");  }  </script>
+</head>
+
+<body>
+<div class="wrapper">
+  <header class="header">
+    <div class="wrapper">
+      <div class="logo"></div>
+      <div class="phones whiteFont">
+        <div>8 (908) 511 91 16</div>
+        <div>8 (908) 518 07 15</div>
+      </div>
+      <a href="#" class="callBack whiteFont"><span>Заказать обратный звонок</span></a> </div>
+  </header>
+  <nav>
+    <div class="wrapper">
+      <div class="shedule">
+        <div><span>Мы работаем без выходных!</span></div>
+        <div>Часы работы: <span>10:00 - 21.00</span></div>
+      </div>
+      <button class="takeClass top orange">Записаться на курс</button>
+      <? if(!$current_sub[NoMenu]){?> 
+      <div class="menu">
+        <?= nc_browse_sub(0, $top_menu1, 0, $where_cond = "Subdivision_ID < 8 AND lp = 0")?>
+		<?= nc_browse_sub(0, $top_menu2, 0, $where_cond = "Subdivision_ID > 7 AND lp = 0")?>
+      </div>
+      <? } ?>
+    </div>
+  </nav>

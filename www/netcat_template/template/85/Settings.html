@@ -1,0 +1,94 @@
+<?
+$registration_url = "/my/registration/";
+$compare_url = "/compare/";
+$nc_auth_profile_url = $AUTH_USER_ID && function_exists('nc_auth_profile_url') ? nc_auth_profile_url($AUTH_USER_ID) : '';
+
+$browse_top_menu[0]['prefix'] = '<div class="tpl-block-menu">';
+$browse_top_menu[0]['suffix'] = '</div>';
+$browse_top_menu[0]['active'] = '<div><a href="%URL" class="tpl-state-current" title="%NAME">%NAME</a></div>';
+$browse_top_menu[0]['unactive'] = '<div><a href="%URL" title="%NAME">%NAME</a></div>';
+
+$browse_top_menu[1]['prefix'] = "<div class=\"tpl-block-menu-secondary\">\n";
+$browse_top_menu[1]['suffix'] = "</div>\n";
+$browse_top_menu[1]['active'] = "\t<div><a href=\"%URL\" class=\"tpl-state-current\">%NAME</a>%NEXT_LEVEL</div>\n";
+$browse_top_menu[1]['unactive'] = "\t<div><a href=\"%URL\">%NAME</a></div>\n";
+
+$browse_top_menu[2]['prefix'] = "";
+$browse_top_menu[2]['suffix'] = "";
+$browse_top_menu[2]['active'] = "<div><a href=\"%URL\" class=\"tpl-state-current\">%NAME</a></div>";
+$browse_top_menu[2]['unactive'] = "<div><a href=\"%URL\">%NAME</a></div>";
+
+$browse_top_menu_mobile[0]['prefix'] = "<div class='tpl-block-mobilemenu-drop'>\n";
+$browse_top_menu_mobile[0]['suffix'] = "</div>\n";
+$browse_top_menu_mobile[0]['active'] = "<div class='tpl-block-mobilemenu-item'><a href='%URL'>%NAME</a></div>";
+$browse_top_menu_mobile[0]['unactive'] = "<div class='tpl-block-mobilemenu-item'><a href='%URL'>%NAME</a></div>";
+
+$bottom_menu[0]['prefix'] = "<ul id='menu_bottom'>";
+$bottom_menu[0]['suffix'] = "</ul>";
+$bottom_menu[0]['active'] = "<li class='active'><a href='%URL' title='%NAME'>%NAME</a></li>";
+$bottom_menu[0]['unactive'] = "<li><a href='%URL' title='%NAME'>%NAME</a></li>";
+
+$footer_menu[0]['prefix'] = '';
+$footer_menu[0]['suffix'] = '';
+$footer_menu[0]['active'] = '<div class="tpl-block-footer-list-item"><a href="%URL" title="%NAME">%NAME</a></div>';
+$footer_menu[0]['unactive'] = '<div class="tpl-block-footer-list-item"><a href="%URL" title="%NAME">%NAME</a></div>';
+
+// хлебные крошки
+$browse_path['prefix'] = "<div class='tpl-block-breadcrumbs'>";
+$browse_path['suffix'] = "</div>";
+$browse_path['active'] = "<div class='tpl-block-breadcrumbs-item'><a href='%URL' class='tpl-state-current'>%NAME</a></div>";
+$browse_path['unactive'] = "<div class='tpl-block-breadcrumbs-item'><a href='%URL'>%NAME</a></div> ";
+$browse_path['divider'] = "";
+
+// хлебные крошки для тайтла
+$browse_path_title['active'] = "%NAME ";
+$browse_path_title['active_link'] = "%NAME";
+$browse_path_title['unactive'] = "%NAME";
+$browse_path_title['divider'] = " / ";
+
+// меню слева
+$browse_sub[1]['prefix'] = "<ul>";
+$browse_sub[1]['suffix'] = "</ul>";
+$browse_sub[1]['active'] = "<li class='active'><a href='%URL'>%NAME</a></li>";
+$browse_sub[1]['unactive'] = "<li><a href='%URL'>%NAME</a></li>";
+
+$browse_sub[0]['prefix'] = "<ul id='menu_left'>";
+$browse_sub[0]['suffix'] = "</ul>";
+$browse_sub[0]['active_link'] = "<li class='active'><a href='%URL'>%NAME</a>%NEXT_LEVEL</li>";
+$browse_sub[0]['active'] = "<li class='active'><a href='%URL'>%NAME</a></li>";
+$browse_sub[0]['unactive'] = "<li><a href='%URL'>%NAME</a></li>";
+
+$mobile_menu = array(
+	'prefix'   => "<ul class='tpl-layout-page-center mobile-menu'>",
+	'active'   => "<li><a href='%URL'>%NAME<i class='icon-angle-right'></i></a></li>",
+	'unactive' => "<li><a href='%URL'>%NAME<i class='icon-angle-right'></i></a></li>",
+	'suffix'   => "</ul>",
+);
+
+// шаблон вывода навигации по страницам
+$pages_template['prefix'] = "";
+$pages_template['suffix'] = "";
+$pages_template['active'] = "<a class=\"tpl-link-page tpl-state-current\" href=\"%URL\">%PAGE</a>";
+$pages_template['unactive'] = "<a class=\"tpl-link-page\" href=\"%URL\">%PAGE</a>";
+$pages_template['divider'] = " ";
+$browse_msg  = $pages_template;
+
+$netshop = nc_netshop::get_instance();
+
+// Тема оформления: может быть передана через cookie, get-параметр (для Store) или взята из настроек шаблона
+if (strpos($_SERVER["SERVER_NAME"], ".store.netcat.ru")) {
+    $tpl_theme = $nc_core->input->fetch_get('tpl_theme');
+    if (preg_match("/^[\\w-]+$/", $tpl_theme)) { setcookie('tpl_theme', $tpl_theme, time()+60*60*24*365, '/'); }
+    else { $tpl_theme = $nc_core->input->fetch_cookie('tpl_theme'); }
+    if (!preg_match("/^[\\w-]+$/", $tpl_theme)) { $tpl_theme = null; }
+}
+else {
+    $tpl_theme = null;
+}
+$tpl_theme = $tpl_theme ? $tpl_theme : $template_settings['theme'];
+
+
+if (empty($template_settings['logo'])) {
+    $theme_image_dir = $tpl_theme ? "theme-{$tpl_theme}/" : "";
+    $template_settings['logo']['path'] = "{$nc_parent_template_folder_path}assets/i/{$theme_image_dir}logo.png";
+}

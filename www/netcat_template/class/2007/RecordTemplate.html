@@ -1,0 +1,33 @@
+<?/* Служебная часть */for ($f_RowNum = 0; $f_RowNum < $rowCount; $f_RowNum++) {    if($fetch_row[$f_RowNum] instanceof Iterator) {        extract($fetch_row[$f_RowNum]->to_array(), EXTR_PREFIX_ALL, "f");    } else {        extract($fetch_row[$f_RowNum], EXTR_PREFIX_ALL, "f");    }    foreach($iteration_RecordTemplate[$f_RowNum] as $value) {        extract($value);    }    eval($cc_env["convert2txt"]);    ob_start();/* Конец служебной части */?>
+<?= $f_AdminButtons; ?>
+<div class="principleOfFormation">
+		<div class="h2 center"><?=$f_objectTitle1?></div>
+		<div class="block1">
+			<?=$f_objectText1?>
+		</div>
+
+		<div class="block2">
+			<?=$f_objectText2?>
+		</div>
+
+		<div class="block3">
+			<?=$f_objectText3?>
+		</div>
+	</div>
+<div class="wrapper miniGroupsAdvantages">
+    <div class="greenPanSm center"><?=$f_objectTitle2?></div>
+    <?=$f_objectText4?>   
+    <div class="greenPan proofIco"><?=$f_objectText5?></div>
+    
+    <div class="reviewLink"><a href="/otzyvy-i-rezultaty/">Отзывы учеников</a></div>
+
+		<div class="photoSlider clearfix">
+			<a href="#" class="arrow left"></a>
+			<?=$f_objectPics?>
+			<a href="#" class="arrow right"></a>
+		</div>
+		
+		<button class="takeClass bottom orange">Записаться на курс</button>
+    
+</div>
+<?/* Служебная часть */    echo nc_finishing_RecordTemplate(ob_get_clean(), $inside_admin, $classID, $f_RowID, $parent_message, $cc, $cc_env["Class_Name"], $no_cache_marks);}/* Конец служебной части */?>

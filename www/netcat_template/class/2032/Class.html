@@ -1,0 +1,25 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+  
+  <!-- Результаты учеников -->
+  <div class="results">
+    <div class="line-resul"><?=$cc_settings['title']?></div>
+    <div class="wrapper">
+      <div class="row">
+
+<!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?>
+
+        <div class="col-md-14">
+          <div class="bg-foto-result">
+             <img src="<?=$f_Foto_preview_url;?>" alt="<?=$f_Name?>"> 
+             <span>
+                <span class="n"><?=$f_Name?></span>
+                <span class="b"><?=$f_Ball?></span>
+             </span> 
+          </div>
+        </div><!-- /RecordTemplate -->
+
+<!-- FormSuffix -->      </div>
+    </div>
+  </div><!-- /FormSuffix -->

@@ -1,0 +1,14 @@
+<?= $f_AdminCommon; ?>
+<div class="gia">
+		<div class="block1">
+			<div class="wrapper">
+			    <div class="loginPan">
+			        <?=!$current_user['Login'] ? "
+                  <a href='/netcat/modules/auth/' class='enter logIn'>Войти</a>
+                  " : "
+                  <a href='/lk/' class='enter'>Личный Кабинет</a> / 
+                  <a href='/netcat/modules/auth/?logoff=1&REQUESTED_FROM=".$REQUEST_URI."&REQUESTED_BY=".$REQUEST_METHOD."' class='enter'>Выйти</a>
+              "?>
+			    </div>
+			    			    
+			

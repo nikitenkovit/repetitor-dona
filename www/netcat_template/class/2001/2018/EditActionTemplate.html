@@ -1,0 +1,14 @@
+<?
+
+$lpID = implode(',', $f_lp);
+$nc_core->db->query("UPDATE `Message2001` SET `lp` = '".$lpID."' WHERE `Message_ID` = '".$message."'");
+
+if($inside_admin) {
+    ob_end_clean();
+    header('Location: '.$goBackLink.'&inside_admin=1');
+    exit;
+} else { 
+	echo NETCAT_MODERATION_MSG_OBJCHANGED;
+	echo "<br /><br />".$goBack;
+}
+?>

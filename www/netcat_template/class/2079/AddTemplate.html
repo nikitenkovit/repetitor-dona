@@ -1,0 +1,30 @@
+<div class="block9">
+			<div class="wrapper">
+				<table>
+					<tr>
+						<td>
+							<div class="h3"><?=$cc_settings['Text1'];?></div>
+							
+							<?=$cc_settings['Text2'];?>
+						</td>
+						<td>
+							<div class="h4"><?=$cc_settings['Text3'];?></div>
+							<form name="adminForm" class="ajaxForm nc-form" enctype="multipart/form-data" method="post" action="/netcat/add.php?isNaked=1">
+				
+            <input name='catalogue' type='hidden' value='<?= $catalogue ?>' />
+            <input name='cc' type='hidden' value='<?= $cc ?>' />
+            <input name='sub' type='hidden' value='<?= $sub ?>' /><input name='posting' type='hidden' value='1' />
+            <input name='curPos' type='hidden' value='<?= $curPos ?>' />
+            <input name='f_Parent_Message_ID' type='hidden' value='<?= $f_Parent_Message_ID ?>' />
+				            
+				                <span class="warnText"></span>
+				                <input name="f_objectName" size="50" type="text" maxlength="255" placeholder="Ваше имя" required="" value="">                
+				                <input name="f_objectPhone" size="50" type="text" maxlength="255" placeholder="Ваш телефон" required="" value="">                
+								<input name="f_objectTime" size="50" type="text" maxlength="255" placeholder="Удобное время для звонка" required="" value="">				
+								<button class="pull-right"><span class="preloader"></span>Записаться</button>
+							</form>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>	

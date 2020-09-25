@@ -1,0 +1,13 @@
+<?php
+$f_Dip_tpl = array(
+    'prefix' => "<div>",
+    'record' => "<a href='%Path%' class='gallery' rel='gal'><img src='%Preview%' alt=''></a>",   
+    'divider' => " ",
+    'suffix' => "</div>",
+    'i' => 1
+);
+
+(!isset($nc_num_cols) ? $NumCols = &$cc_settings[NumCols] : $NumCols= (int)$nc_num_cols );
+$ColWidth= ( $NumCols>1 ? 'width="'.(floor(100/$NumCols)).'%"' : NULL);
+
+?>

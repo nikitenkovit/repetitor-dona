@@ -1,0 +1,87 @@
+<?=( $warnText ? "<div class='warnText'>$warnText</div>" : NULL )?>
+<form name='adminForm' id='adminForm' class='nc-form' enctype='multipart/form-data' method='post' action='<?= $SUB_FOLDER ?><?= $HTTP_ROOT_PATH ?>message.php'>
+<div id='nc_moderate_form'>
+<div class='nc_clear'></div>
+<input name='admin_mode' type='hidden' value='<?= $admin_mode ?>' />
+<?= $nc_core->token->get_input() ?>
+<input name='catalogue' type='hidden' value='<?= $catalogue ?>' />
+<input name='cc' type='hidden' value='<?= $cc ?>' />
+<input name='sub' type='hidden' value='<?= $sub ?>' /><input name='message' type='hidden' value='<?= $message ?>' />
+<input name='posting' type='hidden' value='1' />
+<input name='curPos' type='hidden' value='<?= $curPos ?>' />
+<input name='f_Parent_Message_ID' type='hidden' value='<?= $f_Parent_Message_ID ?>' />
+<?= nc_form_moderate('change', $admin_mode, 0, $systemTableID, $current_cc, (isset($f_Checked) ? $f_Checked  : null), $f_Priority , $f_Keyword, $f_ncTitle, $f_ncKeywords, $f_ncDescription ) ?>
+</div>
+<div class='nc-field'><?= nc_string_field('objectName', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 1) ?></div>
+
+<div class='nc-field'><?= nc_file_field('objectPic', "size='50'", ($class_id ? $class_id : $classID), 1) ?></div>
+
+<div class='nc-field'><?= nc_text_field('objectRanks', "", ($class_id ? $class_id : $classID), 1) ?></div>
+
+<div class='nc-field'><?= nc_string_field('objectLocation', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 1) ?></div>
+
+<div class='nc-field'><?= nc_string_field('objectEducationPeriod', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 1) ?></div>
+<div class='nc-field'><?= nc_string_field('YearDLP', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 1) ?></div>
+
+<div class='nc-field'><?= nc_multilist_field('objectMatters', "", "", ($class_id ? $class_id : $classID), 1) ?></div>
+
+<div>Рейтинги по предметам, от 0 до 100</div>
+<?= nc_int_field('mathRat', "maxlength='12' type='number' size='12'", ($class_id ? $class_id : $classID), 1) ?>
+<?= nc_int_field('obshRat', "maxlength='12' type='number' size='12'", ($class_id ? $class_id : $classID), 1) ?>
+<?= nc_int_field('infoRat', "maxlength='12' type='number' size='12'", ($class_id ? $class_id : $classID), 1) ?>
+<?= nc_int_field('physRat', "maxlength='12' type='number' size='12'", ($class_id ? $class_id : $classID), 1) ?>
+<?= nc_int_field('rusRat', "maxlength='12' type='number' size='12'", ($class_id ? $class_id : $classID), 1) ?>
+<?= nc_int_field('engRat', "maxlength='12' type='number' size='12'", ($class_id ? $class_id : $classID), 1) ?>
+<?= nc_int_field('bioRat', "maxlength='12' type='number' size='12'", ($class_id ? $class_id : $classID), 1) ?>
+<?= nc_int_field('historyRat', "maxlength='12' type='number' size='12'", ($class_id ? $class_id : $classID), 1) ?>
+<?= nc_int_field('himRat', "maxlength='12' type='number' size='12'", ($class_id ? $class_id : $classID), 1) ?>
+<?= nc_int_field('litRat', "maxlength='12' type='number' size='12'", ($class_id ? $class_id : $classID), 1) ?>
+<?= nc_int_field('geoRat', "maxlength='12' type='number' size='12'", ($class_id ? $class_id : $classID), 1) ?>
+
+<div class='nc-field'><?= nc_text_field('objectText', "", ($class_id ? $class_id : $classID), 1) ?></div>
+
+<div class='nc-field'><?= nc_related_field('objectTeacher1', "") ?></div>
+<div class='nc-field'><?= nc_int_field('teacher1Rat', "maxlength='12' size='12'", ($class_id ? $class_id : $classID), 1) ?></div>
+
+<div class='nc-field'><?= nc_related_field('objectTeacher2', "") ?></div>
+<div class='nc-field'><?= nc_int_field('teacher2Rat', "maxlength='12' size='12'", ($class_id ? $class_id : $classID), 1) ?></div>
+
+<div class='nc-field'><?= nc_related_field('objectTeacher3', "") ?></div>
+<div class='nc-field'><?= nc_int_field('teacher3Rat', "maxlength='12' size='12'", ($class_id ? $class_id : $classID), 1) ?></div>
+
+<div class='nc-field'><?= nc_text_field('objectTeacherText', "", ($class_id ? $class_id : $classID), 1) ?></div>
+
+<div class='nc-field'><?= nc_text_field('objectVideo', "", ($class_id ? $class_id : $classID), 1) ?></div>
+
+<div class='nc-field'><?= nc_bool_field('isMain', "", ($class_id ? $class_id : $classID ), 1) ?></div>
+
+<div class='nc-field'><?= nc_bool_field('selectEGE', "", ($class_id ? $class_id : $classID ), 1) ?></div>
+
+<div class='nc-field'><?= nc_bool_field('selectGIA', "", ($class_id ? $class_id : $classID ), 1) ?></div>
+
+<div class='nc-field'><?= nc_bool_field('selectCarousel', "", ($class_id ? $class_id : $classID ), 1) ?></div>
+
+<div class='nc-field'><?= nc_text_field('objectTextAdd', "", ($class_id ? $class_id : $classID), 1) ?></div>
+
+<hr>
+<h2>Выбрать лендинг для отображения</h2>
+<?
+
+$lp = $nc_core->db->get_var("SELECT `lp` FROM `Message2001` WHERE `Message_ID` = '".$message."'"); // получае мномера услуг
+
+$nc_core->db->query("SELECT * FROM `Subdivision` WHERE `lp` = '1'");
+$arr = $nc_core->db->last_result;
+
+// вывод результатов
+if (!empty($arr)) {
+    $i = 0;
+    foreach ($arr as $row) {
+    $i++;
+       echo '<div class="chec"><input type="checkbox" value="'.$row->Subdivision_ID.'" id="Service_'.$i.'" name="f_lp[]" onchange="jQuery.modal.nc_modal_confirm=true;undefined" '.opt(preg_match('/'.$row->Subdivision_ID.'/i', $lp),"checked").'> <label for="Service_'.$i.'">Отображать в лендинге #'.$row->Subdivision_ID.'</label></div>';
+    }
+}
+?>
+<hr>
+<div><?= NETCAT_MODERATION_INFO_REQFIELDS ?></div><br/>
+<?= nc_submit_button(NETCAT_MODERATION_BUTTON_CHANGE) ?>
+</form>

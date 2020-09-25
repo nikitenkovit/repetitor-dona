@@ -1,0 +1,29 @@
+<!-- FormPrefix --><div class="tpl-block-hero">
+    <div class="tpl-layout-page-center">
+        <div class="tpl-block-prevnext">
+            <div class="tpl-link-prev"></div>
+            <div class="tpl-link-next"></div>
+        </div>
+        <div class="tpl-block-admin-common"><?= $f_AdminCommon; ?></div>
+    </div>
+    <div class="tpl-block-hero-slider">
+<!-- /FormPrefix -->
+
+<!-- RecordTemplate --><div class="tpl-block-hero-item">
+    <div class="tpl-block-admin"><?= $f_AdminButtons; ?></div>        
+    <a href="<?= $f_Link ?>">
+		<div class="s-circle"></div>
+        <div class="s-product"><img src="<?= $f_Image ?>" alt="" <? if ($inside_admin): ?>height="200"<? endif; ?>></div>
+        <div class="s-info">
+            <div class="s-cost">
+                <?= $f_Price ?>
+                <?= (!preg_match("/[^\d\s]/", $f_Price) ? '<span class="rouble">Р</span>' : '') ?>
+                <div class="s-title"><?= $f_Text ?></div>
+            </div>
+        </div>        
+    </a>
+</div><!-- /RecordTemplate -->
+
+<!-- FormSuffix -->    </div>
+</div>
+<!-- /FormSuffix -->

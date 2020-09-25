@@ -1,0 +1,28 @@
+.tpl-block-dropdown
+  ul
+    display: none
+    position: absolute
+    background: #EAEFF2
+    padding: 0
+    top: -4px
+    margin: 0 0 0 -20px
+    z-index: 2
+
+  li
+    list-style-type none
+    padding: 0
+    line-height: 30px
+    margin: 0
+    a
+      display: block
+      padding: 6px 20px
+      text-decoration: none
+      theme(color 'base')
+
+      &:hover
+        theme(background 'accent-1')
+        color: white
+
+  // li.tpl-state-active a
+  //   color: #999
+  //   background: #ddd

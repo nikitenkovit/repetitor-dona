@@ -1,0 +1,230 @@
+
+.tpl-block-hero
+  position: absolute
+  height: 455px
+  width: 100%
+  top: 250px
+  
+  .tpl-block-admin-common
+    z-index 30
+    position absolute
+    left 348px
+    top 15px
+
+  @media min
+    height: 700px
+    width: 640px
+    top: 295px
+    border-top: 1px solid #B9C2C5
+    &-item
+      position: absolute
+      width: 640px
+      height: auto
+      overflow: visible
+    .tpl-block-prevnext
+      height: auto
+      top: 0
+      left: 0 !important
+      overflow: visible
+      position: absolute
+      width: 100% !important
+      height: 0 !important
+      .tpl-link-prev, .tpl-link-next
+        position: absolute
+        top: 539px
+        height: 90px !important
+        width: 50px !important
+        line-height: 80px !important
+        background: transparent !important
+        display: block
+        mlink()
+        &:before
+          font-size: 30px !important
+        &:hover
+          theme(color 'white') !important
+        &:active
+          theme(color 'accent-2') !important
+      .tpl-link-prev
+        left: 0
+      .tpl-link-next
+        right: 0
+
+  &-slider
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+    opacity: 0
+    transition: opacity 0.5s
+    &.fotorama
+      opacity: 1
+    @media min
+      height: 630px
+      width: 640px
+
+  &-item
+    @extend .tpl-layout-page-center
+    width: 100%
+    height: 100%
+    box-sizing: border-box
+    *, &:after, &:before
+      box-sizing: border-box
+  .tpl-block-prevnext
+    position: absolute
+    left: 22%
+    top: 20px
+    z-index: 15
+    .tpl-link-prev, .tpl-link-next
+      width: 40px
+      height: 40px
+      theme(color 'white')
+      background: black
+      border: none
+      margin: 0
+      &:before
+        font-size: 25px
+        line-height: 35px
+      &:hover
+        theme(color 'white')
+        theme(background 'accent-1')
+
+    @media min
+      width: 640px
+      position: absolute
+      top: auto
+      bottom: 0
+      background: pink
+
+
+.tpl-block-hero-item
+  height: 455px;
+
+  .tpl-block-admin
+    position absolute
+    right 15px
+    top 15px
+    z-index 20
+    .nc-toolbar
+      float: right
+
+  .s-product
+    width: 545px;
+    height: 388px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+
+  .s-circle
+    width: 506px;
+    height: 388px;
+    position: absolute;
+    top: 0;
+    left: 180px;
+    background: url(../i/hero-1-circle.png) 0 0 no-repeat;
+    z-index: 1;
+    opacity: .9;
+
+  .s-product
+    img
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute;
+      bottom: 0;
+
+  .s-info
+    position: absolute;
+    top: 80px;
+    left: 230px;
+    width: 400px;
+    text-align: center;
+    z-index: 1;
+
+  .s-cost
+    theme(color 'white');
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 93px;
+
+  .s-title
+    theme(color 'base')
+    font-size: 34px
+    line-height: 35px
+    font-weight: 300
+    opacity: .9
+
+    p
+      margin 0
+
+    strong
+      font-weight: 500;
+
+
+
+
+@media min {
+  .tpl-block-hero-item {
+    height: 630px;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .tpl-block-hero-item .s-circle {
+    display: none;
+  }
+
+  .tpl-block-hero-item .s-product {
+    left: 0;
+    top: 45px;
+    width: 640px;
+    text-align: center;
+    padding: 0;
+    right: auto;
+  }
+  .tpl-block-hero-item .s-product img {
+    position: static;
+  }
+
+  .tpl-block-hero-item .s-info {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+  }
+  .tpl-block-hero-item .s-cost {
+    position: absolute;
+    bottom: 0;
+    /*top: 540px;*/
+    left: 0;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    font-size: 71px;
+    theme(background 'base');
+    theme(color 'white');
+    text-align: center;
+    font-weight: 300;
+    white-space: nowrap;
+  }
+
+  .tpl-block-hero-item .s-title {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #8f8f8f;
+  }
+
+  .tpl-block-hero-item .s-title strong {
+    font-weight: 100;
+    font-size: 60px;
+    line-height: 60px;
+    theme(color 'base');
+  }
+}

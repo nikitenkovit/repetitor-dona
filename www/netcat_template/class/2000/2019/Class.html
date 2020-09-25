@@ -1,0 +1,17 @@
+<!-- FormPrefix --><table class="table table-striped">
+<tr>
+    <th width="100px"></th>
+    <th width="400px"></th>    
+    <th></th>
+</tr>
+</table><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><table class="table table-striped">
+<tr>
+    <th width="100px"><?=$f_objectPic ? "<img src='$f_objectPic' width='100px' alt=''>" : NULL?></th>
+    <td width="400px"><?=$f_objectName?></td>    
+    <td><? echo $f_AdminButtons; ?></td>
+</tr>
+</table><!-- /RecordTemplate -->
+
+<!-- FormSuffix --><? require_once $nc_parent_field_path; ?><!-- /FormSuffix -->

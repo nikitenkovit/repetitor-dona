@@ -1,0 +1,77 @@
+<? if (!$isNaked) : ?>
+<?= $f_AdminCommon; ?>
+<script src="/js/jquery.jscroll.min.js"></script>
+<script type="text/javascript">
+
+		$(document).ready(function () {
+			$('.scroll').jscroll({
+                autoTrigger: true,
+                loadingHtml: '<img src="/css/images/loading.gif" alt="Loading" /> Загрузка...'
+            });
+		});
+
+	</script>
+
+<div class="wrapper reviews">
+    <div class="loginPan">
+              <?=!$current_user['Login'] ? "
+                  <a href='/netcat/modules/auth/' class='enter logIn'>Войти</a>
+                  " : "
+                  <a href='/lk/' class='enter'>Личный Кабинет</a> / 
+                  <a href='/netcat/modules/auth/?logoff=1&REQUESTED_FROM=".$REQUEST_URI."&REQUESTED_BY=".$REQUEST_METHOD."' class='enter'>Выйти</a>
+              "?>
+     </div>
+	
+
+	<h1 class="h2 redFont">Результаты и отзывы наших учеников</h1>
+	<p>Успех на экзамене — главная цель нашей подготовки. Мы достигаем этой цели.</p>
+	<p>Наши ученики приходят на экзамен спокойными и уверенными в себе. У них есть необходимые знания и умения, полученные в результате кропотливой работы. Позади — регулярные занятия, сотни решённых задач, разобранных заданий, прояснённых вопросов. Эти ребята сами добиваются успеха, а мы — искренне радуемся за них!</p>
+</div>	
+
+<table class="reviewsWrapper">
+			<tr>
+				<td></td>
+				<td class="reviewsTabs">
+					<a <?= !$isVideo ? "class='active'" : NULL?> href="?isReview=1">Отзывы</a>
+					<a <?= $isVideo ? "class='active'" : NULL?> href="?isVideo=1">Видео выпускников</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="reviewsMenu">
+                <? if(!$isVideo) : ?>
+					<ul>
+						<li class='matter1'><a href="/otzyvy-i-rezultaty/?srchPat[4]=13">Математика</a></li>
+                        <li class='matter4'><a href="/otzyvy-i-rezultaty/?srchPat[4]=4">Обществознание</a></li>
+                        <li class='matter3'><a href="/otzyvy-i-rezultaty/?srchPat[4]=3">Информатика</a></li>
+                        <li class='matter2'><a href="/otzyvy-i-rezultaty/?srchPat[4]=2">Физика</a></li>
+                        <li class='matter5'><a href="/otzyvy-i-rezultaty/?srchPat[4]=6">Русский язык</a></li>
+                        <li class='matter7'><a href="/otzyvy-i-rezultaty/?srchPat[4]=7">Английский язык</a></li>
+                        <li class='matter8'><a href="/otzyvy-i-rezultaty/?srchPat[4]=8">Биология</a></li>
+                        <li class='matter9'><a href="/otzyvy-i-rezultaty/?srchPat[4]=9">История</a></li>
+                        <li class='matter10'><a href="/otzyvy-i-rezultaty/?srchPat[4]=10">Химия</a></li>
+                        <li class='matter11'><a href="/otzyvy-i-rezultaty/?srchPat[4]=11">Литература</a></li>
+                        <li class='matter12'><a href="/otzyvy-i-rezultaty/?srchPat[4]=12">География</a></li>
+					    <li><a href="/otzyvy-i-rezultaty/">Все предметы</a></li>
+                    </ul>
+                    <? endif; ?>
+                    <? if($isVideo) : ?>
+					<ul>
+						<li class='matter1'><a href="/otzyvy-i-rezultaty/?srchPat[4]=13&isVideo=1">Математика</a></li>
+                        <li class='matter4'><a href="/otzyvy-i-rezultaty/?srchPat[4]=4&isVideo=1">Обществознание</a></li>
+                        <li class='matter3'><a href="/otzyvy-i-rezultaty/?srchPat[4]=3&isVideo=1">Информатика</a></li>
+                        <li class='matter2'><a href="/otzyvy-i-rezultaty/?srchPat[4]=2&isVideo=1">Физика</a></li>
+                        <li class='matter5'><a href="/otzyvy-i-rezultaty/?srchPat[4]=6&isVideo=1">Русский язык</a></li>
+                        <li class='matter7'><a href="/otzyvy-i-rezultaty/?srchPat[4]=7&isVideo=1">Английский язык</a></li>
+                        <li class='matter8'><a href="/otzyvy-i-rezultaty/?srchPat[4]=8&isVideo=1">Биология</a></li>
+                        <li class='matter9'><a href="/otzyvy-i-rezultaty/?srchPat[4]=9&isVideo=1">История</a></li>
+                        <li class='matter10'><a href="/otzyvy-i-rezultaty/?srchPat[4]=10&isVideo=1">Химия</a></li>
+                        <li class='matter11'><a href="/otzyvy-i-rezultaty/?srchPat[4]=11&isVideo=1">Литература</a></li>
+                        <li class='matter12'><a href="/otzyvy-i-rezultaty/?srchPat[4]=12&isVideo=1">География</a></li>
+					    <li><a href="/otzyvy-i-rezultaty/?isVideo=1">Все предметы</a></li>
+                    </ul>
+                    <? endif; ?>
+                    
+				</td>
+				<td class="reviewsItems">
+                <div class="pages"><?=$prevLink ? "<a href='$prevLink'><<</a>" : NULL?><?= browse_messages($cc_env, 15) ?><?=$nextLink ? "<a href='$nextLink'>>></a>" : NULL?></div>
+<? endif; ?>                

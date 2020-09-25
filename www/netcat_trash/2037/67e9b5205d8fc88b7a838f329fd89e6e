@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="25" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Lp_математика_ЕГЭ_проба</Subdivision_Name>
+      <EnglishName>lp-matematika-ege</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="60" subdivision_id="25" class_id="2037">
+      <Sub_Class_Name>Наша гордость</Sub_Class_Name>
+      <EnglishName>nasha-gordost</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2673" type_of_data_id="6">
+      <Field_Name>Foto</Field_Name>
+      <Description>Фото</Description>
+    </field>
+    <field field_id="2674" type_of_data_id="1">
+      <Field_Name>Name</Field_Name>
+      <Description>Имя</Description>
+    </field>
+    <field field_id="2675" type_of_data_id="3">
+      <Field_Name>Descript</Field_Name>
+      <Description>Описание</Description>
+    </field>
+    <field field_id="2676" type_of_data_id="11">
+      <Field_Name>Dip</Field_Name>
+      <Description>Дипломы</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="10" class_id="2037" subdivision_id="25" sub_class_id="60">
+      <User_ID>234</User_ID>
+      <Priority>1</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-05-09 20:24:29</Created>
+      <LastUpdated>2019-08-09 18:41:53</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>109.165.51.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36 OPR/62.0.3331.72</LastUserAgent>
+      <Keyword/>
+      <Foto path="/netcat_files/2673_10.jpg">1. Акопян Валерия.jpg:image/jpeg:106664</Foto>
+      <Name><![CDATA[Акопьян Валерия]]></Name>
+      <Descript><![CDATA[]]></Descript>
+      <Dip/>
+    </message>
+    <message message_id="11" class_id="2037" subdivision_id="25" sub_class_id="60">
+      <User_ID>234</User_ID>
+      <Priority>2</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-05-09 20:24:46</Created>
+      <LastUpdated>2019-08-09 18:35:48</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>109.165.51.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36 OPR/62.0.3331.72</LastUserAgent>
+      <Keyword/>
+      <Foto path="/netcat_files/2673_11.jpg">2. Андрианов Артём (2).jpg:image/jpeg:128392</Foto>
+      <Name><![CDATA[Петров Сергей]]></Name>
+      <Descript><![CDATA[]]></Descript>
+      <Dip/>
+    </message>
+    <message message_id="30" class_id="2037" subdivision_id="25" sub_class_id="60">
+      <User_ID>2</User_ID>
+      <Priority>3</Priority>
+      <Checked>1</Checked>
+      <IP>109.165.51.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36 OPR/62.0.3331.72</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-09 18:43:03</Created>
+      <LastUpdated>2019-08-09 18:59:44</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>109.165.51.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134</LastUserAgent>
+      <Keyword/>
+      <Foto path="/netcat_files/2673_30.jpg">3. Баштинская Алёна (2).jpg:image/jpeg:49080</Foto>
+      <Name><![CDATA[Баштинская Алена]]></Name>
+      <Descript><![CDATA[123]]></Descript>
+      <Dip/>
+    </message>
+    <message message_id="31" class_id="2037" subdivision_id="25" sub_class_id="60">
+      <User_ID>2</User_ID>
+      <Priority>4</Priority>
+      <Checked>1</Checked>
+      <IP>109.165.51.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36 OPR/62.0.3331.72</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-09 18:53:51</Created>
+      <LastUpdated>2019-08-09 19:01:49</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>109.165.51.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36 OPR/62.0.3331.72</LastUserAgent>
+      <Keyword/>
+      <Foto path="/netcat_files/2673_31.jpg">4. Бекетова Анастасия.jpg:image/jpeg:72170</Foto>
+      <Name><![CDATA[Бекетова]]></Name>
+      <Descript><![CDATA[Призер олимпиад по математике:
+- Межведомственная олимпиада, 3 степень
+- Олимпиада ИТМО, 3 степень]]></Descript>
+      <Dip/>
+    </message>
+    <message message_id="32" class_id="2037" subdivision_id="25" sub_class_id="60">
+      <User_ID>2</User_ID>
+      <Priority>5</Priority>
+      <Checked>1</Checked>
+      <IP>109.165.51.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36 OPR/62.0.3331.72</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-09 18:54:10</Created>
+      <LastUpdated>2019-08-09 18:54:10</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Foto path="/netcat_files/2673_32.jpg">5. Богданова Виолетта.jpg:image/jpeg:150804</Foto>
+      <Name><![CDATA[Богданова Виолетта]]></Name>
+      <Descript><![CDATA[]]></Descript>
+      <Dip/>
+    </message>
+    <message message_id="33" class_id="2037" subdivision_id="25" sub_class_id="60">
+      <User_ID>2</User_ID>
+      <Priority>6</Priority>
+      <Checked>1</Checked>
+      <IP>109.165.51.218</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36 OPR/62.0.3331.72</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-09 19:02:59</Created>
+      <LastUpdated>2019-08-09 19:45:01</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>109.165.51.218</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134</LastUserAgent>
+      <Keyword/>
+      <Foto path="/netcat_files/2673_33.jpg">2. Андрианов Артём.jpg:image/jpeg:75069</Foto>
+      <Name><![CDATA[Андрианов Артем]]></Name>
+      <Descript><![CDATA[<p>Призер олимпиад по математике:</p>
+<ul>
+<li>Межведомственная олимпиада, 3 степень</li>
+<li>Олимпиада ИТМО, 3 степень</li>
+<li>ОММО, 2 степень</li>
+<li>ФизТех, победитель</li>
+<li>СамМат, 2 степень</li></ul>
+<p>Льгота при поступлении:</p>
+<p>100 баллов по ЕГЭ в МФТИ</p>]]></Descript>
+      <Dip/>
+    </message>
+    <message message_id="74" class_id="2037" subdivision_id="25" sub_class_id="60">
+      <User_ID>2</User_ID>
+      <Priority>9</Priority>
+      <Checked>1</Checked>
+      <IP>188.170.194.113</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-09-29 16:51:26</Created>
+      <LastUpdated>2019-09-29 16:51:26</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <Foto path="/netcat_files/2673_74.jpg">7. Веретенников Максим - копия.jpg:image/jpeg:69647</Foto>
+      <Name><![CDATA[Веретенников Максим]]></Name>
+      <Descript><![CDATA[<p><strong>Призер олимпиад по математике:</strong></p>
+<ul>
+<li>СПБГУ, 2 степень</li>
+<li>ИТМО, 3 степень</li>
+<li>ОММО, 3 степень</li>
+<li>СамМат, 2 степень</li>
+<li>РосАтом, 3 степень</li>
+<li>Курчатов, 3 степень</li></ul>
+<p><strong>Льгота при поступлении:</strong></p>
+<ul>
+<li>100 баллов за ДВИ в МГУ</li></ul>]]></Descript>
+      <Dip/>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

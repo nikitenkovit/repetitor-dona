@@ -1,0 +1,47 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+<div class="wrapper">
+    <div class="loginPan">
+              <?=!$current_user['Login'] ? "
+                  <a href='/netcat/modules/auth/' class='enter logIn'>Войти</a>
+                  " : "
+                  <a href='/lk/' class='enter'>Личный Кабинет</a> / 
+                  <a href='/netcat/modules/auth/?logoff=1&REQUESTED_FROM=".$REQUEST_URI."&REQUESTED_BY=".$REQUEST_METHOD."' class='enter'>Выйти</a>
+              "?>
+     </div>
+<h1 class="h1">Занятия в мини-группах</h1>
+	<div class="greenPan optimalVariantIco" style="margin-top:20px">Оптимальный вариант по цене и качеству — это подготовка к ЕГЭ в мини-группе (3-7 человек).<br>Занятия ведёт опытный репетитор по специально разработанной методике.</div>		
+</div><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?>
+<div class="principleOfFormation">
+		<div class="h2 center"><?=$f_objectTitle1?></div>
+		<div class="block1">
+			<?=$f_objectText1?>
+		</div>
+
+		<div class="block2">
+			<?=$f_objectText2?>
+		</div>
+
+		<div class="block3">
+			<?=$f_objectText3?>
+		</div>
+	</div>
+<div class="wrapper miniGroupsAdvantages">
+    <div class="greenPanSm center"><?=$f_objectTitle2?></div>
+    <?=$f_objectText4?>   
+    <div class="greenPan proofIco"><?=$f_objectText5?></div>
+    
+    <div class="reviewLink"><a href="/otzyvy-i-rezultaty/">Отзывы учеников</a></div>
+
+		<div class="photoSlider clearfix">
+			<a href="#" class="arrow left"></a>
+			<?=$f_objectPics?>
+			<a href="#" class="arrow right"></a>
+		</div>
+		
+		<button class="takeClass bottom orange">Записаться на курс</button>
+    
+</div><!-- /RecordTemplate -->
+
+<!-- FormSuffix --><!-- /FormSuffix -->

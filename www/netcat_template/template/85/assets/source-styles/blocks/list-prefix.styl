@@ -1,0 +1,122 @@
+.tpl-block-list-prefix
+  font-weight: 400
+  clearfix()
+  position: relative
+
+  .tpl-block-breadcrumbs
+  .tpl-block-list-order
+  .tpl-block-list-per-page
+  .tpl-block-list-layout
+    float: left
+    /*margin-right: -100%*/
+    left: 0
+    position: absolute
+    transition: width 0.2s, left 0.2s
+    @media min
+      float: none
+      position: static
+      width: 100% !important
+      left: 0 !important
+
+  .tpl-block-breadcrumbs
+    left: 0
+    /*width: 33.333%*/
+    /*padding-right: 20px*/
+    padding-right: 68%
+    padding-bottom: 0.5em
+    width 100%
+    position relative
+    @media max
+      /*width: 50%*/
+      padding-right: 10px
+
+  .tpl-block-list-order
+    @media min
+      display: none
+    left: 33.333%
+    width: 30%
+    padding-left: 10px    
+
+  .tpl-block-list-per-page
+    @media min
+      display: none
+    left: 66.666%
+    width: 22%
+    padding-left: 15px   
+
+  .tpl-block-list-layout
+    left: 90%
+    text-align right
+    margin-right: 0
+    /*width: 70px*/
+    width: 10%
+    @media min
+      display: none
+    > div
+      cursor: pointer
+      /*display: block*/
+      display: inline-block
+      width: 30px
+      height: 30px
+      theme(color 'dull')
+      transition: color 0.2s, border 0.2s, opacity 0.2s
+      margin-left: 10px
+      /*float: left*/
+      line-height: 26px
+      text-align: center
+      padding-right: 2px
+      font-size: 22px
+      user-select: none
+      &:first-child
+        margin-left: 0
+      &:hover
+        theme(color 'accent-1')
+        theme(border-color 'accent-1')
+      &.tpl-state-active
+        theme(color 'accent-1')
+        pointer-events: none
+
+  h2
+    /*clear: left*/
+    float: left
+    width: 30%
+    font-size: 25px
+    font-weight: 600
+    line-height: 1.2
+    theme(color 'accent-1')
+    /*padding: 11px 0 17px*/
+    padding: 0 0 17px
+    margin: 0
+    text-transform: uppercase
+    @media min
+      font-size: 48px
+      width: 100%
+      clear: both
+      padding: 15px 0
+    @media max
+      width: 45%
+
+
+  .tpl-link-pseudo
+    margin-left: 10px
+    display: inline-block
+    u
+      theme(color 'base')
+    &:hover, &:hover u
+      theme(color 'accent-2')
+    &:first-child
+      margin-left: 0
+
+    i.icon-lowtohight
+    i.icon-highttolow
+      theme(color 'dull')
+
+    &.tpl-state-active i.icon-lowtohight
+    &.tpl-state-active i.icon-highttolow
+      theme(color 'accent-2')
+
+  .tpl-block-pagination
+    clear both
+    margin-bottom: 10px
+    padding-top: 0
+

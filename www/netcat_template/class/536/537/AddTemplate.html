@@ -1,0 +1,134 @@
+<?=( $warnText ? "<div class='warnText'>$warnText</div>" : NULL )?>
+<form name='adminForm' id='adminForm' class='nc-form' enctype='multipart/form-data' method='post' action='<?= $SUB_FOLDER ?><?= $HTTP_ROOT_PATH ?>add.php'>
+<div id='nc_moderate_form'>
+<div class='nc_clear'></div>
+<input name='admin_mode' type='hidden' value='<?= $admin_mode ?>' />
+<?= $nc_core->token->get_input() ?>
+<input name='catalogue' type='hidden' value='<?= $catalogue ?>' />
+<input name='cc' type='hidden' value='<?= $cc ?>' />
+<input name='sub' type='hidden' value='<?= $sub ?>' /><input name='posting' type='hidden' value='1' />
+<input name='curPos' type='hidden' value='<?= $curPos ?>' />
+<input name='f_Parent_Message_ID' type='hidden' value='<?= $f_Parent_Message_ID ?>' />
+<?= nc_form_moderate('add', $admin_mode, 0, $systemTableID, $current_cc, (isset($f_Checked) ? $f_Checked  : null), $f_Priority , $f_Keyword, $f_ncTitle, $f_ncKeywords, $f_ncDescription, $f_ncSMO_Title, $f_ncSMO_Description, $f_ncSMO_Image ) ?>
+</div>
+<?= nc_string_field('Name', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_string_field('Vendor', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_string_field('VariantName', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_string_field('Type', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_string_field('Article', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_text_field('Description', "", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_text_field('Details', "", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_file_field('Image', "size='50'", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_file_field('BigImage', "size='50'", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= $f_Slider->form() ?><br />
+<br />
+<?= nc_string_field('Tag', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_float_field('Price', "maxlength='12' size='12'", ( $class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_list_field('Currency', "", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_float_field('PriceMinimum', "maxlength='12' size='12'", ( $class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_list_field('CurrencyMinimum', "", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_list_field('Units', "", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_int_field('StockUnits', "maxlength='12' size='12'", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_float_field('TopSellingMultiplier', "maxlength='12' size='12'", ( $class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_int_field('TopSellingAddition', "maxlength='12' size='12'", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_float_field('Weight', "maxlength='12' size='12'", ( $class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_float_field('VAT', "maxlength='12' size='12'", ( $class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_text_field('SalesNotes', "", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_string_field('ItemID', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_int_field('ImportSourceID', "maxlength='12' size='12'", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_int_field('RateTotal', "maxlength='12' size='12'", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?= nc_int_field('RateCount', "maxlength='12' size='12'", ($class_id ? $class_id : $classID), 1) ?><br />
+<br />
+<?php if (!empty($cc_settings['Property_field1'])) : ?>
+<?= $cc_settings['Property_field1'] ?>:
+<?= nc_string_field('Property_field1', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 0) ?><br />
+<br />
+<?php endif; ?>
+<?php if (!empty($cc_settings['Property_field2'])) : ?>
+<?= $cc_settings['Property_field2'] ?>:
+<?= nc_string_field('Property_field2', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 0) ?><br />
+<br />
+<?php endif; ?>
+<?php if (!empty($cc_settings['Property_field3'])) : ?>
+<?= $cc_settings['Property_field3'] ?>:
+<?= nc_string_field('Property_field3', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 0) ?><br />
+<br />
+<?php endif; ?>
+<?php if (!empty($cc_settings['Property_field4'])) : ?>
+<?= $cc_settings['Property_field4'] ?>:
+<?= nc_string_field('Property_field4', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 0) ?><br />
+<br />
+<?php endif; ?>
+<?php if (!empty($cc_settings['Property_field5'])) : ?>
+<?= $cc_settings['Property_field5'] ?>:
+<?= nc_string_field('Property_field5', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 0) ?><br />
+<br />
+<?php endif; ?>
+<?php if (!empty($cc_settings['Property_field6'])) : ?>
+<?= $cc_settings['Property_field6'] ?>:
+<?= nc_string_field('Property_field6', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 0) ?><br />
+<br />
+<?php endif; ?>
+<?php if (!empty($cc_settings['Property_field7'])) : ?>
+<?= $cc_settings['Property_field7'] ?>:
+<?= nc_string_field('Property_field7', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 0) ?><br />
+<br />
+<?php endif; ?>
+<?php if (!empty($cc_settings['Property_field8'])) : ?>
+<?= $cc_settings['Property_field8'] ?>:
+<?= nc_string_field('Property_field8', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 0) ?><br />
+<br />
+<?php endif; ?>
+<?php if (!empty($cc_settings['Property_field9'])) : ?>
+<?= $cc_settings['Property_field9'] ?>:
+<?= nc_string_field('Property_field9', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 0) ?><br />
+<br />
+<?php endif; ?>
+<?php if (!empty($cc_settings['Property_field10'])) : ?>
+<?= $cc_settings['Property_field10'] ?>:
+<?= nc_string_field('Property_field10', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 0) ?><br />
+<br />
+<?php endif; ?>
+<?php if (!empty($cc_settings['Property_field11'])) : ?>
+<?= $cc_settings['Property_field11'] ?>:
+<?= nc_string_field('Property_field11', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 0) ?><br />
+<br />
+<?php endif; ?>
+<?php if (!empty($cc_settings['Property_field12'])) : ?>
+<?= $cc_settings['Property_field12'] ?>:
+<?= nc_string_field('Property_field12', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 0) ?><br />
+<br />
+<?php endif; ?>
+<?php if (!empty($cc_settings['Property_field13'])) : ?>
+<?= $cc_settings['Property_field13'] ?>:
+<?= nc_string_field('Property_field13', "maxlength='255' size='50'", ($class_id ? $class_id : $classID), 0) ?><br />
+<br />
+<?php endif; ?>
+<? if (!$AUTH_USER_ID && $current_cc['UseCaptcha'] && $MODULE_VARS['captcha']) { ?><?= nc_captcha_formfield() ?><br/><br/><?= NETCAT_MODERATION_CAPTCHA ?> (*):<br/><input type='text' name='nc_captcha_code' size='10'><br/><br/><? } ?>
+<div><?= NETCAT_MODERATION_INFO_REQFIELDS ?></div><br/>
+<?= nc_submit_button(NETCAT_MODERATION_BUTTON_ADD) ?>
+</form>

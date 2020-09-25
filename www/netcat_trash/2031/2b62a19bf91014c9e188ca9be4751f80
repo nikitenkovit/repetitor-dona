@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="25" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Lp_математика</Subdivision_Name>
+      <EnglishName>lp_matematika</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="53" subdivision_id="25" class_id="2031">
+      <Sub_Class_Name>Факты</Sub_Class_Name>
+      <EnglishName>lp_matematika-1</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2659" type_of_data_id="6">
+      <Field_Name>im</Field_Name>
+      <Description>Картинка</Description>
+    </field>
+    <field field_id="2660" type_of_data_id="1">
+      <Field_Name>text</Field_Name>
+      <Description>Текс</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="7" class_id="2031" subdivision_id="25" sub_class_id="53">
+      <User_ID>234</User_ID>
+      <Priority>7</Priority>
+      <Checked>1</Checked>
+      <IP>31.23.253.81</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-05-08 19:11:09</Created>
+      <LastUpdated>2019-05-08 19:15:57</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>31.23.253.81</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</LastUserAgent>
+      <Keyword/>
+      <im path="/netcat_files/2659_7.png">fact250.png:image/png:18519</im>
+      <text><![CDATA[400 учеников занимались в Репетитор Дона в 2019 году]]></text>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

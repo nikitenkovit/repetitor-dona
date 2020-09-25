@@ -1,0 +1,107 @@
+<?/* Служебная часть */for ($f_RowNum = 0; $f_RowNum < $rowCount; $f_RowNum++) {    if($fetch_row[$f_RowNum] instanceof Iterator) {        extract($fetch_row[$f_RowNum]->to_array(), EXTR_PREFIX_ALL, "f");    } else {        extract($fetch_row[$f_RowNum], EXTR_PREFIX_ALL, "f");    }    foreach($iteration_RecordTemplate[$f_RowNum] as $value) {        extract($value);    }    eval($cc_env["convert2txt"]);    ob_start();/* Конец служебной части */?>
+<?= $f_AdminButtons; ?>
+<? if (($f_objectText || $f_objectTeacherText) && !$isVideo) : ?>
+<div class="reviewsItem">
+						<div class="reviewsItemPic">
+                            <?=$f_objectPic ? "<img src='$f_objectPic_preview_url' alt=''>" : NULL?>
+                        </div>
+						<div class="reviewsItemAuthor">
+							<div class="h3"><a href="<?=$fullLink?>"><?=$f_objectName?></a></div>
+							<div class="reviewsItemDesc1">
+								<?=$f_objectRanks?>
+							</div>
+							<div class="reviewsItemDesc2">
+								<div><?=$f_objectLocation?></div>
+								<div>Год обучения: <?=$f_objectEducationPeriod?></div>
+								<div>Преподаватели: 
+                                    <? 
+                                    if ($f_objectTeacher1) {
+                                      $teacherName1 = $nc_core->db->get_var("SELECT `objectName` FROM `Message2000` WHERE `Message_ID` = '$f_objectTeacher1'");                                    
+                                      if ($teacherName1) {
+                                          echo "<a href='/prepodavateli-i-stoimost/prepodavateli-i-stoimost_$f_objectTeacher1.html'>".$teacherName1."</a>";
+                                      }
+                                    }
+                                    if ($f_objectTeacher2) {
+                                      $teacherName2 = $nc_core->db->get_var("SELECT `objectName` FROM `Message2000` WHERE `Message_ID` = '$f_objectTeacher2'");
+                                      if ($teacherName2) {
+                                          echo " и <a href='/prepodavateli-i-stoimost/prepodavateli-i-stoimost_$f_objectTeacher2.html'>".$teacherName2."</a>";
+                                      }
+                                    }
+                                    if ($f_objectTeacher3) {
+                                      $teacherName3 = $nc_core->db->get_var("SELECT `objectName` FROM `Message2000` WHERE `Message_ID` = '$f_objectTeacher3'");
+                                      if ($teacherName3) {
+                                          echo " и <a href='/prepodavateli-i-stoimost/prepodavateli-i-stoimost_$f_objectTeacher3.html'>".$teacherName3."</a>";
+                                      }
+                                    }  
+                                    ?>
+                                </div>
+							</div>	
+						</div>	
+     
+						<div class="reviewsItemText">
+                            <?=$f_objectText?>	
+                            <? if($f_objectVideo):?>
+                            <div class="reviewsItemVideo">
+                                <button class="green center">Посмотреть видео-отзыв</button>
+                                <div class="reviewsItemVideoReview"><?=$f_objectVideo?></div>
+                            </div>    
+                            <? endif; ?>
+						</div>
+   
+					</div>
+                    
+                    <? if($f_objectTeacherText) : ?>
+                        <div class="reviewsTeachersItem">
+						<span>Отзыв преподавателя</span>
+						<div class="reviewsTeachersItemText">
+							<?=$f_objectTeacherText?>
+						</div>
+					</div>                    
+                    <? endif; ?>
+<? endif; ?>
+
+<? if($isVideo) : ?>
+        <div class="reviewsItem">
+						<div class="reviewsItemPic">
+                            <?=$f_objectPic ? "<img src='$f_objectPic_preview_url' alt=''>" : NULL?>
+                        </div>
+						<div class="reviewsItemAuthor">
+							<div class="h3"><a href="<?=$fullLink?>"><?=$f_objectName?></a></div>
+							<div class="reviewsItemDesc1">
+								<?=$f_objectRanks?>
+							</div>
+							<div class="reviewsItemDesc2">
+								<div><?=$f_objectLocation?></div>
+								<div>Год обучения: <?=$f_objectEducationPeriod?></div>
+								<div>Преподаватели: 
+                                    <? 
+                                    if ($f_objectTeacher1) {
+                                      $teacherName1 = $nc_core->db->get_var("SELECT `objectName` FROM `Message2000` WHERE `Message_ID` = '$f_objectTeacher1'");                                    
+                                      if ($teacherName1) {
+                                          echo "<a href='/prepodavateli-i-stoimost/prepodavateli-i-stoimost_$f_objectTeacher1.html'>".$teacherName1."</a>";
+                                      }
+                                    }
+                                    if ($f_objectTeacher2) {
+                                      $teacherName2 = $nc_core->db->get_var("SELECT `objectName` FROM `Message2000` WHERE `Message_ID` = '$f_objectTeacher2'");
+                                      if ($teacherName2) {
+                                          echo " и <a href='/prepodavateli-i-stoimost/prepodavateli-i-stoimost_$f_objectTeacher2.html'>".$teacherName2."</a>";
+                                      }
+                                    }
+                                    if ($f_objectTeacher3) {
+                                      $teacherName3 = $nc_core->db->get_var("SELECT `objectName` FROM `Message2000` WHERE `Message_ID` = '$f_objectTeacher3'");
+                                      if ($teacherName3) {
+                                          echo " и <a href='/prepodavateli-i-stoimost/prepodavateli-i-stoimost_$f_objectTeacher3.html'>".$teacherName3."</a>";
+                                      }
+                                    }  
+                                    ?>
+                                </div>
+							</div>	
+						</div>	
+     
+						<div class="reviewsItemText">
+                            <?=$f_objectVideo?>							
+						</div>
+					</div>                    
+                    
+<? endif; ?>
+<?/* Служебная часть */    echo nc_finishing_RecordTemplate(ob_get_clean(), $inside_admin, $classID, $f_RowID, $parent_message, $cc, $cc_env["Class_Name"], $no_cache_marks);}/* Конец служебной части */?>

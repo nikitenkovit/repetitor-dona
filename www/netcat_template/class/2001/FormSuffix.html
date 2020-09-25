@@ -1,0 +1,10 @@
+<div class="pages"><?=$prevLink ? "<a href='$prevLink'><<</a>" : NULL?><?= browse_messages($cc_env, 15) ?><?=$nextLink ? "<a href='$nextLink'>>></a>" : NULL?></div>
+
+
+
+
+<? if (!$isNaked) : ?>
+</td>
+    </tr>
+</table>
+<? endif; ?>

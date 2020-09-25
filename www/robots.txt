@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /*?
+Disallow: /otzyvy-i-rezultaty/*.html
+Disallow: /install/ 
+Disallow: /links/
+Disallow: /js/
+Disallow: /netcat/
+Disallow: /netcat_files/
+Disallow: /*.swf
+Disallow: /eng/
+Disallow: /suvenir-torg.ru/
+Disallow: /i-love-henna.ru/
+Disallow: /rostov-tort.ru/
+Disallow: /link/
+Disallow: /backcatalog/
+
+Host: repetitor-dona.ru
+Sitemap: http://repetitor-dona.ru/sitemap.xml

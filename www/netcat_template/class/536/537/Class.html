@@ -1,0 +1,62 @@
+<!-- FormPrefix --><?= $f_AdminCommon ?>
+<div class="tpl-block-list tpl-component-goods">
+<!-- /FormPrefix -->
+
+<!-- RecordTemplate -->
+
+<div class="tpl-block-list tpl-component-goods">
+    <div class="tpl-block-list-object">
+        <h3><a href="<?= $fullLink ?>"><?= $f_FullName ?></a></h3>
+
+        <?= $f_AdminButtons; ?>
+
+        <?php if ($f_BigImage): ?>
+            <div class="tpl-property-big-image">
+                <a href="<?= $fullLink ?>">
+                    <img src="<?= $f_BigImage ?>" alt="<?= htmlspecialchars($f_Name, ENT_QUOTES) ?>" style="max-height: 200px" />
+                </a>
+            </div>
+        <?php endif; ?>
+
+        <div class="tpl-property-description">
+            <?= $f_Description ?>
+        </div>
+
+        <div class="tpl-block-prices">
+            <?php
+            if ($cc_settings["show_price_range"] || !$f_ItemPrice || !$f_Checked):
+                // Показываем диапазон цен, если это указано в настройках, или у товара нет цены,
+                // или товар отключён:
+
+                if ($f_ItemPriceMin != $f_OriginalPriceMin): ?>
+                    <div class="tpl-property-original-price tpl-property-original-price-range">
+                        <?= $f_OriginalPriceRange ?>
+                    </div>
+                <?php endif; ?>
+
+                <div class="tpl-property-item-price tpl-property-item-price-range"><?= $f_ItemPriceRange ?></div>
+
+            <?php else: ?>
+                <?php if ($f_ItemDiscount): ?>
+                    <div class="tpl-block-discount">
+                        <span class="tpl-property-original-price"><?= $f_OriginalPriceF ?></span>
+                        <span class="tpl-property-discount-percent">(скидка: <?= $f_DiscountPercent ?>%)</span>
+                    </div>
+                <?php endif; ?>
+                    <div class="tpl-property-item-price"><?= $f_ItemPriceF ?></div>
+            <?php endif; ?>
+        </div>
+    </div>
+</div><!-- /RecordTemplate -->
+
+<!-- FormSuffix --></div>
+<div class="tpl-block-pagination">
+    <? if (strlen($prevLink)): ?>
+        <a href="<?= $prevLink; ?>" class="tpl-link-prev" title="Предыдущая страница">Предыдущая страница</a>
+    <? endif; ?>
+    <?= nc_browse_messages($cc_env, 10, $pages_template); ?>
+    <? if (strlen($nextLink)): ?>
+        <a href="<?= $nextLink; ?>" class="tpl-link-next" title="Следующая страница">Следующая страница</a>
+    <? endif; ?>
+</div>
+<!-- /FormSuffix -->

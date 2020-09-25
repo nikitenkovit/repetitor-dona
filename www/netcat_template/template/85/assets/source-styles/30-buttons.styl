@@ -1,0 +1,54 @@
+button-colors($bg-color, $text-color, $hover-bg-color, $hover-text-color)
+  theme(background $bg-color)
+  theme(color $text-color)
+  &:hover, &:focus
+    theme(background $hover-bg-color)
+    theme(color $hover-text-color)
+
+button()
+  border: none
+  display: inline-block
+  padding: 0 20px
+  margin: 0 10px 10px 0
+  text-align: center
+  cursor: pointer
+  text-decoration: none
+  font-weight: 400
+  line-height: 40px
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+  transition: background 0.2s, color 0.2s, transform 0.2s
+  button-colors('input-bg', 'base', 'accent-1', 'white')
+  outline: none
+  &:hover
+  &:active
+    outline: none  
+
+button-transparent()
+  background: transparent
+  margin: 0
+  padding: 0
+  &:focus
+    outline thin dotted black
+  &:hover
+    background transparent
+    theme(color 'base')
+
+button-link-alike()
+  button-transparent()
+  margin-top: -2px
+
+  theme(color 'accent-1')
+  text-decoration: underline
+  outline: none
+  transition: color .2s
+  -webkit-tap-highlight-color: transparent
+  &:hover
+    theme(color 'accent-2')
+
+button
+  button()
+  &[type="submit"]
+    button-colors('accent-1', 'white', 'accent-2', 'white')
+

@@ -1,0 +1,47 @@
+<?/* Служебная часть */for ($f_RowNum = 0; $f_RowNum < $rowCount; $f_RowNum++) {    if($fetch_row[$f_RowNum] instanceof Iterator) {        extract($fetch_row[$f_RowNum]->to_array(), EXTR_PREFIX_ALL, "f");    } else {        extract($fetch_row[$f_RowNum], EXTR_PREFIX_ALL, "f");    }    foreach($iteration_RecordTemplate[$f_RowNum] as $value) {        extract($value);    }    eval($cc_env["convert2txt"]);    ob_start();/* Конец служебной части */?>
+<?= $f_AdminButtons; ?>
+<div class="requirements">
+					<div class="h2"><?=$f_objectName?></div>
+					<table>
+						<tr>
+							<td>
+								<div class="requirementsItem">
+									<div class="h3"><?=$f_objectName1?></div>
+									<?=$f_objectText1?>
+								</div>
+								<div class="requirementsItem">
+									<div class="h3"><?=$f_objectName2?></div>
+                                    <?=$f_objectText2?>
+								</div>	
+								<div class="more"><a href=""><?=$f_objectLink?></a></div>
+							</td>
+							<td>
+								<div class="requirementsItem">
+									<div class="h3"><?=$f_objectName3?></div>
+									<?=$f_objectText3?>
+								</div>
+								<div class="requirementsItem">
+									<div class="h3"><?=$f_objectName4?></div>
+                                    <?=$f_objectText4?>
+								</div>	
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="stages">
+					<div class="h2"><?=$f_objectName5?></div>
+					<table>
+						<tr>
+							<td>
+								<?=$f_objectText5?>								
+							</td>
+							<td>
+								<div class="info">
+									<div class="info1"><?=$f_objectText6?></div>
+									<div class="info2"><?=$f_objectText7?></div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+<?/* Служебная часть */    echo nc_finishing_RecordTemplate(ob_get_clean(), $inside_admin, $classID, $f_RowID, $parent_message, $cc, $cc_env["Class_Name"], $no_cache_marks);}/* Конец служебной части */?>

@@ -1,0 +1,89 @@
+<!-- FormPrefix --><? if(!$admin_mode) : ?>
+
+<?= $f_AdminCommon; ?>
+
+	<div class="matterWrapper teachers">
+		<div class="h2"><?=$cc_settings['filterName'];?></div>
+		<div class="matter">
+			<div>
+				<?=listQuery("SELECT matters_Name, matters_ID, Value FROM Classificator_matters WHERE Checked = 1 ORDER BY matters_Priority", "
+                \".(\$data[matters_ID] == 7 ? \"</div><div>\" : NULL).\"                
+                <a href='?action=index&srchPat[1]=\$data[matters_ID]'>\$data[matters_Name]</a>
+                ")?>
+                <a href="/prepodavateli-i-stoimost/">Все предметы</a></div>
+                
+                <div>
+                              <?=listQuery("SELECT teachersFilter2_Name, teachersFilter2_ID, Value FROM Classificator_teachersFilter2 WHERE Checked = 1 ORDER BY teachersFilter2_Priority",
+                "
+                \".(\$data[teachersFilter2_ID] == 5 ? \"</div><div>\" : NULL).\" 
+                <a href='?action=index&srchPat[3]=\$data[teachersFilter2_ID]'>\$data[teachersFilter2_Name]</a> &nbsp;")?>
+                </div>
+                
+                
+                
+		
+		</div>	
+        <? endif; ?><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?=$f_AdminButtons?>
+<? if(!$admin_mode) : ?>
+<div class="teacherItem">
+			<div class="teacherItemInfo">
+				<div class="teacherItemInfoPic">
+					<?=$f_objectPic ? "<img src='$f_objectPic_preview_url' alt=''>" : NULL?>
+				</div>
+				<div class="teacherItemInfoMatter">
+					<div class="h3 center"><?=$f_objectName?></div>
+				</div>
+				<div class="teacherItemInfoDetail">
+                    <ul>
+                        <?
+                            foreach($f_objectMatters as $index => $val) {
+                                if ($val) {
+                                    if ($f_objectMatters_id[$index]!=1) {
+                                    echo "<li class='matter$f_objectMatters_id[$index]'>$val</li>";  }                                  
+                                }
+                            }
+                        ?>                        
+                    </ul>
+					<div class="teacherItemInfoExperience">
+						<ul>
+							<li>Образование: <?=$f_objectEducation?></li>
+							<li>Опыт работы: <?=$f_objectSkills?></li>
+						</ul>
+					</div>	
+					<a href='#' class='teacherItemInfoWatchingVideo'>Посмотреть видео</a>			
+				</div>
+			</div>
+			<div class="teacherItemMoreInfo">
+				<div class="h2 center"><?=$f_objectName?></div>
+				<div class="h3 center"><?=$f_objectRank?></div>
+				<?=$f_objectShortDesc?>
+				<div class="teacherItemMoreInfoAddress"><strong>Район проведения занятий:</strong> <?=$f_objectLocation?></div>
+				<div class="teacherItemMoreInfoPrice"><strong>Стоимость занятий:</strong> <?=$f_objectPrice?></div>
+				<? if($f_objectAchiev) : ?>
+                  <div class="teacherItemMoreInfoAchievement">
+                      <?=$f_objectAchiev?>
+                  </div>
+                <? endif; ?>
+			</div>	
+			<div class="teacherItemMoreInfoLinks">
+				<a class="teacherItemMoreInfoMore" href="<?=$fullLink?>">Подробнее о преподавателе</a>
+                <a class="teacherItemMoreInfoReview" href="/otzyvy-i-rezultaty/?teacherID=<?=$f_RowID?>">Отзывы учеников</a>
+			</div>		
+		</div>
+<? endif; ?>        
+<? if($admin_mode) : ?>
+<div class="teacherItemInfoPic">
+					<?=$f_objectPic ? "<img src='$f_objectPic_preview_url' alt=''>" : NULL?>
+				</div>
+				<div class="teacherItemInfoMatter">
+					<div class="h3 center"><?=$f_objectName?></div>
+				</div>
+<? endif; ?><!-- /RecordTemplate -->
+
+<!-- FormSuffix --><?=!$totRows ? "<p>Ничего не найдено!</p>" : NULL?>
+<? if(!$admin_mode) : ?>
+
+</div>
+<? endif; ?><!-- /FormSuffix -->

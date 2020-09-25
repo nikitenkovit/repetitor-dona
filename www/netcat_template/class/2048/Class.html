@@ -1,0 +1,42 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+
+
+  <!-- Акция -->
+  <div class="stock-gh">
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="j1"><?=$cc_settings['title1']?></div>
+          <div class="j2"><?=$cc_settings['title2']?></div>
+          <div class="k1"><?=$cc_settings['Textk1']?></div>
+          <div class="k2"><?=$cc_settings['Textk2']?></div>
+          <div class="k3"><?=$cc_settings['Textk3']?></div>
+        </div>
+        <div class="col-md-5">
+          <form class="ajaxForm form-courses" enctype="multipart/form-data" method="post" action="/netcat/add.php?isNaked=1">
+            <input name="catalogue" type="hidden" value="<?=$catalogue?>">
+            <input name="cc" type="hidden" value="<?=$cc?>">
+            <input name="sub" type="hidden" value="<?=$sub?>">
+            <input name="posting" type="hidden" value="1">
+            <input name="curPos" type="hidden" value="0">
+            <input name="f_Parent_Message_ID" type="hidden" value="">
+            
+            <div class="title"><?=$cc_settings['titleform']?></div>
+            
+            <div class="warnText b"></div>
+
+            <input type="text" placeholder="Ваше имя" name="f_Name" required>
+            <input type="text" placeholder="Ваш телефон" name="f_Phone" required>
+            <input type="text" placeholder="Удобное время для звонка" name="f_Time" required>
+            <input type="submit" value="ЗАПИСАТЬСЯ">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?><!-- /RecordTemplate -->
+
+<!-- FormSuffix --><!-- /FormSuffix -->

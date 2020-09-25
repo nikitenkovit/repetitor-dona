@@ -1,0 +1,20 @@
+<form method="post" action="<?= $SUB_FOLDER.$HTTP_ROOT_PATH ?>modules/auth/index.php" class="tpl-block-auth-form tpl-block-popup" >
+    <input type='hidden' name='loginsave' value='1' />
+    <div class="tpl-block-auth-form-title">Вход на сайт</div>
+    <? if ($AUTH_USER): ?>
+       <div class="tpl-block-message tpl-state-error">Неправильный E-mail или пароль.</div>
+    <? endif; ?>
+    <p><input name="AUTH_USER" type="text" placeholder="E-mail" value='<?= htmlspecialchars($AUTH_USER, ENT_QUOTES) ?>'></p>
+    <p><input name="AUTH_PW" type="password" placeholder="<?=NETCAT_MODULE_AUTH_PASSWORD ?>"></p>
+    <div class="tpl-block-auth-form-actions">
+        <a href="/netcat/modules/auth/password_recovery.php" class="tpl-link-password-recovery">Забыли пароль?</a>
+        <button type="submit">Войти</button>
+    </div>
+
+    <input type='hidden' name='AuthPhase' value='1' />
+    <input type='hidden' name='REQUESTED_FROM' value='<?= htmlspecialchars($REQUESTED_FROM, ENT_QUOTES) ?>' />
+    <input type='hidden' name='REQUESTED_BY' value='<?= htmlspecialchars($REQUESTED_BY, ENT_QUOTES) ?>' />
+    <input type='hidden' name='catalogue' value='<?= $catalogue ?>' />
+    <input type='hidden' name='sub' value='<?= $sub ?>' />
+    <input type='hidden' name='cc' value='<?= $cc ?>' />
+</form>

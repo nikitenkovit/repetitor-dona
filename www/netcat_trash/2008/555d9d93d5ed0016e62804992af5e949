@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="10" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Фотографии</Subdivision_Name>
+      <EnglishName>fotografii</EnglishName>
+      <Checked>1</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="10" subdivision_id="10" class_id="2008">
+      <Sub_Class_Name>Фотографии</Sub_Class_Name>
+      <EnglishName>fotografii</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2611" type_of_data_id="1">
+      <Field_Name>objectName</Field_Name>
+      <Description>Название альбома</Description>
+    </field>
+    <field field_id="2612" type_of_data_id="11">
+      <Field_Name>objectPics</Field_Name>
+      <Description>Фотографии</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="1" class_id="2008" subdivision_id="10" sub_class_id="10">
+      <User_ID>1</User_ID>
+      <Priority>1</Priority>
+      <Checked>1</Checked>
+      <IP>127.0.0.1</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-09-09 20:23:25</Created>
+      <LastUpdated>2015-09-09 19:23:25</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectName><![CDATA[Как проходят наши занятия]]></objectName>
+      <objectPics/>
+    </message>
+    <message message_id="2" class_id="2008" subdivision_id="10" sub_class_id="10">
+      <User_ID>1</User_ID>
+      <Priority>2</Priority>
+      <Checked>1</Checked>
+      <IP>127.0.0.1</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2015-09-10 14:43:12</Created>
+      <LastUpdated>2015-09-10 14:43:12</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP>127.0.0.1</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Как проходят наши занятия]]></objectName>
+      <objectPics/>
+    </message>
+    <message message_id="12" class_id="2008" subdivision_id="10" sub_class_id="10">
+      <User_ID>2</User_ID>
+      <Priority>15</Priority>
+      <Checked>0</Checked>
+      <IP>84.51.193.139</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36 OPR/62.0.3331.72</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2019-08-06 03:02:22</Created>
+      <LastUpdated>2019-12-15 19:01:02</LastUpdated>
+      <LastUser_ID>2</LastUser_ID>
+      <LastIP>31.23.17.114</LastIP>
+      <LastUserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36 OPR/65.0.3467.62</LastUserAgent>
+      <Keyword/>
+      <objectName><![CDATA[Офис на Космонавтов]]></objectName>
+      <objectPics/>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

@@ -1,0 +1,16 @@
+<?
+$shop_mode = $nc_core->get_settings('nc_shop_mode');
+
+if (!$shop_mode) {
+    $orders_href = $db->get_var("SELECT Hidden_URL FROM Subdivision where Subdivision_ID = ".+$cc_settings['OrderSub']);
+}
+
+require_once $nc_class_agregator_path;
+
+$agregator_settings = new nc_class_aggregator_setting();
+
+$agregator_settings->register_fields('Name', 'BigImage', 'Price');
+
+$agregator_settings->add_class(536)->register_fields('Name', 'Image', 'Price')->field_as_message_name('Name');
+
+

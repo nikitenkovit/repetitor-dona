@@ -1,0 +1,23 @@
+<?$counter=0;?>
+<div class="h2">Отзывы наших  учеников:</div>	 
+<div id="caruselReview" class="carousel slide" data-ride="carousel" data-interval="10000">
+<ol class="carousel-indicators">
+
+<?php
+    $nc_core = nc_Core::get_object();
+    $item = $nc_core->db->get_col("SELECT Message_ID FROM Message2001 WHERE isMain = 1 LIMIT 5", ARRAY_A); 
+    if (!empty($item)) {
+        $n = 0;
+        foreach ($item as $row) {
+        if($n==0) { echo "<li class='active' data-target='#caruselReview' data-slide-to='0'></li>"; }
+                        else { echo "<li data-target='#caruselReview' data-slide-to='$n'></li>";}  
+                        $n++;
+                    }
+                }
+ 
+ ?>
+
+
+</ol>
+<div class="carousel-inner" role="listbox"> 		
+		    	

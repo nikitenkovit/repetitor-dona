@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcatml>
+  <subdivisions>
+    <subdivision subdivision_id="19" catalogue_id="1" parent_sub_id="0">
+      <Subdivision_Name>Баннеры</Subdivision_Name>
+      <EnglishName>bannery</EnglishName>
+      <Checked>0</Checked>
+    </subdivision>
+  </subdivisions>
+  <sub_classes>
+    <sub_class sub_class_id="20" subdivision_id="19" class_id="2024">
+      <Sub_Class_Name>Баннеры</Sub_Class_Name>
+      <EnglishName>bannery</EnglishName>
+      <Checked>1</Checked>
+    </sub_class>
+  </sub_classes>
+  <fields>
+    <field field_id="2650" type_of_data_id="6">
+      <Field_Name>objectPic</Field_Name>
+      <Description>Картинка</Description>
+    </field>
+    <field field_id="2651" type_of_data_id="1">
+      <Field_Name>objectUrl</Field_Name>
+      <Description>Url</Description>
+    </field>
+  </fields>
+  <messages>
+    <message message_id="5" class_id="2024" subdivision_id="19" sub_class_id="20">
+      <User_ID>2</User_ID>
+      <Priority>5</Priority>
+      <Checked>1</Checked>
+      <IP>188.114.38.178</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2017-09-02 13:45:04</Created>
+      <LastUpdated>2017-09-02 13:45:04</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectPic path="/netcat_files/19/20/940x122_0.jpg">940x122.jpg:image/jpeg:55192:19/20/940x122_0.jpg</objectPic>
+      <objectUrl><![CDATA[]]></objectUrl>
+    </message>
+    <message message_id="4" class_id="2024" subdivision_id="19" sub_class_id="20">
+      <User_ID>2</User_ID>
+      <Priority>4</Priority>
+      <Checked>1</Checked>
+      <IP>188.114.38.178</IP>
+      <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</UserAgent>
+      <Parent_Message_ID>0</Parent_Message_ID>
+      <Created>2017-09-02 13:42:41</Created>
+      <LastUpdated>2017-09-02 13:42:41</LastUpdated>
+      <LastUser_ID>0</LastUser_ID>
+      <LastIP/>
+      <LastUserAgent/>
+      <Keyword/>
+      <objectPic path="/netcat_files/19/20/940x122.jpg">940x122.jpg:image/jpeg:55192:19/20/940x122.jpg</objectPic>
+      <objectUrl><![CDATA[]]></objectUrl>
+    </message>
+  </messages>
+  <comments/>
+</netcatml>

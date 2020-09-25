@@ -1,0 +1,31 @@
+<!-- FormPrefix --><table class="table table-striped">
+<tr>
+    <th width="100px"></th>
+    <th width="400px"></th>    
+    <th>Рейтинг</th>
+    <th></th>
+</tr>
+</table><!-- /FormPrefix -->
+
+<!-- RecordTemplate --><table class="table table-striped">
+<tr>
+    <th width="100px"><?=$f_objectPic ? "<img src='$f_objectPic' width='100px' alt=''>" : NULL?></th>
+    <td width="400px"><?=$f_objectName?></td>   
+    <td width="400px">
+       <?=$f_mathRat ? "Математика: $f_mathRat <br>" : NULL?> 
+       <?=$f_obshRat ? "Обществознание: $f_obshRat <br>" : NULL?>
+       <?=$f_infoRat ? "Информатика: $f_infoRat <br>" : NULL?>
+       <?=$f_physRat ? "Физика: $f_physRat <br>" : NULL?>
+       <?=$f_rusRat ? "Русский: $f_rusRat <br>" : NULL?> 
+       <?=$f_engRat ? "Английский: $f_engRat <br>" : NULL?>
+       <?=$f_bioRat ? "Биология: $f_bioRat <br>" : NULL?>
+       <?=$f_historyRat ? "История: $f_historyRat <br>" : NULL?>
+       <?=$f_himRat ? "Химия: $f_himRat <br>" : NULL?>
+       <?=$f_litRat ? "Литература: $f_litRat <br>" : NULL?>
+       <?=$f_geoRat ? "География: $f_geoRat <br>" : NULL?>
+    </td> 
+    <td><? echo $f_AdminButtons; ?></td>
+</tr>
+</table><!-- /RecordTemplate -->
+
+<!-- FormSuffix --><? require_once $nc_parent_field_path; ?><!-- /FormSuffix -->

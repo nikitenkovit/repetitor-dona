@@ -1,0 +1,43 @@
+<!-- FormPrefix --><?= $f_AdminCommon; ?>
+<!-- Запишитесь на бесплатный тест -->
+
+  <div class="form-order">
+    <div class="wrapper">
+      <div class="text-h-o1"><?=$cc_settings['tet1']?></div>
+      <div class="text-h-o2"><?=$cc_settings['tet2']?></div>
+      
+      <form class="ajaxForm form-courses" enctype="multipart/form-data" method="post" action="/netcat/add.php?isNaked=1">
+        <input name="catalogue" type="hidden" value="<?=$catalogue?>">
+        <input name="cc" type="hidden" value="<?=$cc?>">
+        <input name="sub" type="hidden" value="<?=$sub?>">
+        <input name="posting" type="hidden" value="1">
+        <input name="curPos" type="hidden" value="0">
+        <input name="f_Parent_Message_ID" type="hidden" value="">
+          
+        <div class="warnText w"></div>
+      
+        <div class="input">
+          <input type="text" placeholder="Ваше имя" name="f_Name" required>
+        </div>
+        <div class="input">
+          <input type="text" placeholder="Ваш телефон" name="f_Phone" required>
+        </div>
+        <div class="input">
+          <input type="text" placeholder="Удобное время для звонка" name="f_Time" required>
+        </div>
+        <div class="submit">
+          <input type="submit" value="ХОЧУ ТАКОЙ РЕЗУЛЬТАТ">
+        </div>
+      </form>
+    </div>
+  </div>
+<!-- /FormPrefix -->
+
+<!-- RecordTemplate --><?= $f_AdminButtons; ?>
+<? if($admin_mode) : ?>
+<?=$f_Name?><br>
+<?=$f_Phone?><br>
+<?=$f_Time?>
+<? endif; ?><!-- /RecordTemplate -->
+
+<!-- FormSuffix --><!-- /FormSuffix -->
