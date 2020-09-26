@@ -1,0 +1,225 @@
+/* whyMiniGroups
+-----------------------------------------------------------------------------*/
+
+.whyMiniGroups {
+  height: 590px;
+  background: url('../img/bg-whyMiniGroups-desctop.jpg') repeat left top;
+  text-align: center;
+  font-family: 'PTSansRegular';
+  line-height: 19px;
+  font-size: 19px;
+}
+
+.whyMiniGroups .wrapper {
+  padding: 40px 0;
+}
+
+.whyMiniGroups .h1 {
+  margin: 0 0 24px 0;
+}
+
+table.why-mini-groups {
+  height: 444px;
+  background: url('../img/whyMiniGroupsMapNew.png') no-repeat center;
+}
+
+table.why-mini-groups tr td > div {
+  color: #585858;
+  max-width: 160px;
+}
+
+table.why-mini-groups h4 {
+  font-size: 19px;
+  color: #336666;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+table.why-mini-groups .why-mini-groups-5 h4 {
+  color: #cc0000;
+}
+
+.why-mini-groups-1 {
+  width: 300px;
+  height: 85px;
+}
+
+.why-mini-groups-2 {
+  width: 280px;
+}
+
+.why-mini-groups-3 {
+  width: 300px;
+}
+
+.why-mini-groups-1, .why-mini-groups-3, .why-mini-groups-5, .why-mini-groups-7, .why-mini-groups-9 {
+  height: 105px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.why-mini-groups-2, .why-mini-groups-4, .why-mini-groups-6, .why-mini-groups-8 {
+  vertical-align: middle;
+  font-size: 18px;
+  color: #595858;
+}
+
+.why-mini-groups-2 p, .why-mini-groups-4 p, .why-mini-groups-6 p, .why-mini-groups-8 p {
+  font-size: 18px;
+  max-width: 180px;
+  text-align: center;
+  margin: 0 auto;
+  text-shadow: 0px -1px 0px rgba(255, 255, 255, 0.9);
+}
+
+.why-mini-groups-1 div {
+  position: relative;
+  left: 112px;
+  top: 12px;
+}
+
+.why-mini-groups-3 div {
+  position: relative;
+  left: 112px;
+  top: 12px;
+}
+
+.why-mini-groups-5 div {
+  position: relative;
+  left: 100px;
+  top: 35px;
+}
+
+.why-mini-groups-7 div {
+  position: relative;
+  left: 112px;
+  top: 55px;
+}
+
+.why-mini-groups-9 div {
+  position: relative;
+  left: 112px;
+  top: 55px;
+}
+
+@media (max-width: 769px) {
+  .whyMiniGroups {
+    position: relative;
+    width: 100%;
+    height: 638px;
+    background: url('../img/bg-whyMiniGroups-480.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    line-height: normal;
+    font-size: 14px;
+    box-shadow: 0 5px 14px 0 rgba(1, 1, 1, 0.3);
+  }
+
+  .whyMiniGroups .wrapper {
+    width: 480px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 75px;
+    background-image: url('../img/content-whyMiniGroups-480.png');
+    background-repeat: no-repeat;
+    background-position: center 65%;
+    background-size: contain;
+  }
+
+  .whyMiniGroups .h1 {
+    margin: 0 0 24px 0;
+  }
+
+  table.why-mini-groups {
+    display: none;
+  }
+
+  table.why-mini-groups tr td > div {
+    display: none;
+  }
+
+  table.why-mini-groups h4 {
+    display: none;
+  }
+
+  table.why-mini-groups .why-mini-groups-5 h4 {
+    display: none;
+  }
+
+  .why-mini-groups-1 {
+    display: none;
+  }
+
+  .why-mini-groups-2 {
+    display: none;
+  }
+
+  .why-mini-groups-3 {
+    display: none;
+  }
+
+  .why-mini-groups-1, .why-mini-groups-3, .why-mini-groups-5, .why-mini-groups-7, .why-mini-groups-9 {
+    display: none;
+  }
+
+  .why-mini-groups-2, .why-mini-groups-4, .why-mini-groups-6, .why-mini-groups-8 {
+    display: none;
+  }
+
+  .why-mini-groups-2 p, .why-mini-groups-4 p, .why-mini-groups-6 p, .why-mini-groups-8 p {
+    display: none;
+  }
+
+  .why-mini-groups-1 div {
+    display: none;
+  }
+
+  .why-mini-groups-3 div {
+    display: none;
+  }
+
+  .why-mini-groups-5 div {
+    display: none;
+  }
+
+  .why-mini-groups-7 div {
+    display: none;
+  }
+
+  .why-mini-groups-9 div {
+    display: none;
+  }
+}
+
+@media (max-width: 479px) {
+  .whyMiniGroups {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 479px;
+    height: 730px;
+    background: url('../img/bg-whyMiniGroups-320.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    font-size: 14px;
+  }
+
+  .whyMiniGroups .wrapper {
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    padding-top: 45px;
+    background-image: url('../img/content-whyMiniGroups-320.png');
+
+  }
+
+  .whyMiniGroups .h1 {
+    margin: 0 0 45px 0;
+    font-size: 20px;
+  }
+}

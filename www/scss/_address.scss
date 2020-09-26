@@ -1,0 +1,70 @@
+/* address
+-----------------------------------------------------------------------------*/
+
+.address .wrapper {
+  width: 1042px;
+  padding: 54px 0 58px 0;
+}
+
+.address ul {
+  width: 100%;
+  font-size: 0;
+}
+
+.address li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 18px 0 0;
+}
+
+.address li:last-child {
+  margin: 0;
+}
+
+.address .h1 {
+  margin: 0 0 40px 0;
+}
+
+@media (max-width: 769px) {
+  .address .wrapper {
+    width: 480px;
+    margin: 0 auto;
+    padding: 54px 15px 58px 15px;
+  }
+
+  .address li {
+    margin-bottom: 25px;
+  }
+
+  .address li:last-child {
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .address .wrapper {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 54px 15px 58px 15px;
+  }
+
+  .address .h1 {
+    font-size: 20px;
+  }
+
+  .address li {
+    margin-bottom: 25px;
+    max-width: 290px;
+  }
+
+  .address li:last-child {
+    margin: 0 !important;
+  }
+
+  .map-code .contactsMap {
+    position: relative;
+    left: -4px;
+    max-width: 267px !important;
+  }
+}

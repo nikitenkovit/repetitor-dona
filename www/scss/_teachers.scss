@@ -1,0 +1,535 @@
+.inner .wrapper > .wrapper.teachers {
+  padding-bottom: 20px;
+}
+
+.teachers > .h1 {
+  margin: 0 0 17px 0;
+}
+
+.teachers .h2 {
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  color: #1c1716;
+  text-transform: uppercase;
+  margin: 0 0 11px 0;
+  padding: 0 0 0 25px;
+}
+
+.teachers .h3 {
+  font-family: 'PTSansBold';
+  font-size: 24px;
+  color: #333333;
+  margin: 0 0 11px 0;
+}
+
+.teachers > p {
+  font-size: 18px;
+  line-height: 30px;
+
+}
+
+.teachers > p em {
+  font-family: 'PTSansItalic';
+}
+
+.teachersRank {
+  font-size: 0;
+  color: #964b4d;
+  margin: 42px 0 0 0;
+}
+
+.teachersRank li {
+  padding: 0 0 0 78px;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 23px 0;
+  position: relative;
+}
+
+.teachersRank li:before {
+  content: '';
+  display: inline-block;
+  width: 44px;
+  position: absolute;
+  left: -1px;
+  top: -10px;
+}
+
+.teachersRank li:nth-child(1):before {
+  height: 38px;
+  background: url('../img/teachersTick.png') center top no-repeat;
+}
+
+.teachersRank li:nth-child(2):before {
+  height: 38px;
+  background: url('../img/teachersTick.png') center -46px no-repeat;
+}
+
+.teachersRank li:nth-child(3):before {
+  height: 31px;
+  top: -3px;
+  background: url('../img/teachersTick.png') center -99px no-repeat;
+}
+
+.teachersRank li:nth-child(4):before {
+  height: 41px;
+  top: -12px;
+  background: url('../img/teachersTick.png') center -137px no-repeat;
+}
+
+.teachersRank li:nth-child(5):before {
+  height: 39px;
+  background: url('../img/teachersTick.png') center -185px no-repeat;
+}
+
+.matterWrapper {
+  width: 980px;
+  margin: 0 auto;
+  padding: 0 0 75px 0;
+}
+
+.teachers .matter {
+  background: #dce6f0;
+  border-radius: 8px;
+  padding: 25px 78px 25px 80px;
+  font-size: 20px;
+}
+
+.teachers .matter > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 29px 0;
+}
+
+.teachers .matter > div:last-child {
+  margin: 0 0 0 0;
+}
+
+.teachers .matter a {
+  color: #666666;
+  text-decoration: none;
+  border-bottom: 1px solid #666666;
+}
+
+.teacherItem {
+  width: 100%;
+  background: #FFF;
+  border-width: 3px;
+  border-color: #b7b7b7;
+  border-style: solid;
+  border-radius: 8px;
+  margin: 37px 0 0 0;
+  padding: 0px 20px 20px 17px;
+  position: relative;
+}
+
+.teacherItem .teacherItemInfo {
+  display: inline-block;
+  vertical-align: top;
+  margin: 22px 0 0 0;
+  padding: 0 22px 0 0px;
+  border-right: 1px solid #cccccc;
+}
+
+.teacherItemInfoPic {
+  width: 270px;
+  overflow: hidden;
+  margin: 0 auto 10px auto;
+  text-align: center;
+}
+
+.teacherItemInfoPic img {
+  border: 3px solid #b7b7b7;
+  border-radius: 223px;
+  margin: 0 auto;
+}
+
+.teacherItemInfoMatter {
+  max-width: 270px;
+}
+
+.teacherItemInfoDetail {
+  width: 282px;
+  margin: 0 auto;
+  padding: 3px 0 0 2px;
+}
+
+.teacherItemInfoDetail > ul {
+  width: 100%;
+  padding: 0 0 7px 24px;
+  border-bottom: 1px solid #959595;
+  color: #5b7793;
+  font-family: 'PTSansBoldItalic';
+}
+
+.teacherItemInfoDetail > ul > li {
+  margin: 0 0 6px 0;
+  padding: 0 0 5px 36px;
+  line-height: 20px;
+  position: relative;
+}
+
+.teacherItemInfoDetail > ul > li:before {
+  position: absolute;
+  left: 0px;
+  content: '';
+  display: inline-block;
+  width: 27px;
+}
+
+.matter13:before {
+  top: 2px;
+  height: 17px;
+  background: url('../img/teacherItemTick.png') 0px -26px no-repeat;
+}
+
+.matter2:before {
+  top: 2px;
+  height: 17px;
+  background: url('../img/teacherItemTick.png') 0px -42px no-repeat;
+}
+
+.matter3:before {
+  top: -5px;
+  height: 26px;
+  background: url('../img/teacherItemTick.png') 0px 0px no-repeat;
+}
+
+.matter4:before {
+  top: -2px;
+  height: 21px;
+  background: url('../img/teacherItemTick.png') 0 -58px no-repeat;
+}
+
+.matter5:before {
+  top: -5px;
+  height: 26px;
+  background: url('../img/teacherItemTick.png') 0px 0px no-repeat;
+}
+
+.matter6:before {
+  top: 0px;
+  height: 22px;
+  background: url('../img/teacherItemTick.png') 0px -78px no-repeat;
+}
+
+.matter7:before {
+  top: 2px;
+  height: 26px;
+  background: url('../img/teacherItemTick.png') 0px -184px no-repeat;
+}
+
+.matter8:before {
+  top: -5px;
+  height: 30px;
+  background: url('../img/teacherItemTick.png') 0px -125px no-repeat;
+}
+
+.matter9:before {
+  top: 0px;
+  height: 25px;
+  background: url('../img/teacherItemTick.png') 0px -100px no-repeat;
+}
+
+.matter10:before {
+  top: -2px;
+  width: 32px;
+  height: 27px;
+  background: url('../img/teacherItemTick.png') 1px -157px no-repeat;
+}
+
+.matter11:before {
+  position: relative;
+  width: 20px;
+  height: 21px;
+  top: 10px;
+  background: url('../img/teacherItemTickLit.png') 10px center no-repeat;
+}
+
+.matter12:before {
+  width: 22px;
+  height: 27px;
+  background: url('../img/teacherItemTickGeo.png') center no-repeat;
+}
+
+.teacherItemInfo a.teacherItemInfoWatchingVideo {
+  display: block;
+  width: 100%;
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  color: #FFF;
+  text-align: center;
+  margin: 8px 0 0 0;
+  padding: 10px 10px;
+  border: none;
+  background: #ed1e24;
+}
+
+.teacherItemInfoExperience {
+  padding: 13px 0 15px 60px;
+  color: #333333;
+}
+
+.teacherItemInfoExperience li {
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 0 6px 0;
+}
+
+.teacherItemInfoExperience li:last-child {
+  margin: 0 0 0 0;
+}
+
+.teacherItemMoreInfo {
+  display: inline-block;
+  vertical-align: top;
+  width: 572px;
+  vertical-align: top;
+  padding: 17px 0 15px 35px;
+  position: relative;
+  font-size: 18px;
+  color: #333333;
+}
+
+.teacherItemMoreInfo p {
+  line-height: 30px;
+  margin: 0 0 8px 0;
+}
+
+.teacherItemMoreInfo > ul {
+  font-size: 0;
+  color: #333333;
+  padding: 22px 0 36px 0;
+}
+
+.teacherItemMoreInfo > ul > li {
+  line-height: 30px;
+  padding: 0 0 0 36px;
+  position: relative;
+  font-size: 18px;
+  color: #333333;
+}
+
+.teacherItemMoreInfo > ul > li:before {
+  content: '•';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.teacherItemMoreInfo strong,
+.teacherItemAbout strong {
+  font-family: 'PTSansBold';
+}
+
+.teacherItemMoreInfo p:last-child {
+  margin: 0 0 0 0;
+}
+
+.teacherItemMoreInfoAddress {
+  margin: 0 0 10px 0;
+}
+
+.teacherItemMoreInfoPrice {
+  margin: 0 0 21px 0;
+}
+
+.teacherItemMoreInfoAchievement {
+  padding: 10px 0 15px 39px;
+  border-top: 2px solid #ee292e;
+  background: url('../img/markAchievement.png') left -2px no-repeat;
+}
+
+.teacherItemMoreInfoAchievement p {
+  line-height: 24px;
+  margin: 0 0 6px 0;
+}
+
+.teacherItemMoreInfoAchievement p em {
+  color: #de5958;
+}
+
+.teacherItemMoreInfoLinks {
+  position: absolute;
+  bottom: 19px;
+  right: 18px;
+  text-align: right;
+}
+
+.teacherItemMoreInfoLinks a {
+  color: #de5958;
+  border-bottom: 1px solid #de5958;
+}
+
+.teacherItemMoreInfoLinks a:hover {
+  color: #de5958;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.teacherItemMoreInfo .h2 {
+  font-family: 'PTSansBold';
+  font-size: 24px;
+  color: #df4f3b;
+  text-transform: none;
+  margin: 0 0 9px 0;
+}
+
+.teacherItemMoreInfo .h3 {
+  font-family: 'PTSansBoldItalic';
+  font-size: 18px;
+  color: #569029;
+  text-transform: none;
+  margin: 0 0 23px 0;
+}
+
+.teacherItemMoreInfoReview {
+  margin-left: 37px;
+}
+
+.teacherItemAbout {
+  padding-top: 22px;
+  padding-bottom: 26px;
+  font-size: 18px;
+  color: #333333;
+  line-height: 20px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+.teacherItemAbout ol, .teacherItemAbout ul {
+  margin: 0 0 20px 0;
+  counter-reset: item;
+}
+
+.teacherItemAbout ol li {
+}
+
+.teacherItemAbout ol li:before {
+  content: counter(item) '. ';
+  counter-increment: item;
+  padding: 0 16px 0 37px;
+}
+
+.teacherItemAbout ul li {
+  margin: 0 0 12px 0;
+  padding: 0 0 0 55px;
+  position: relative;
+}
+
+.teacherItemAbout ul li:before {
+  content: '•';
+  padding: 0 16px 0 37px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.teacherItemAboutEducation > div,
+.teacherItemAboutEducation > div > p {
+  margin: 0 0 20px 0;
+}
+
+.teacherItemAboutEducation > div:last-child {
+  margin: 0 0 0 0;
+}
+
+.teacherItemAboutEducation > div em,
+.teacherItemAboutEducation > div > p > em,
+.teacherItemAboutItalic {
+  font-family: 'PTSansItalic';
+}
+
+.teacherItemAboutEducationPic {
+  text-align: center;
+  padding: 2px 5px 5px 0;
+  /*display: flex;
+  justify-content: space-between;*/
+}
+
+.teacherItemAboutEducationPic a {
+  margin: 0 5px 0 0;;
+}
+
+.hr {
+  margin: 0 auto 11px auto !important;
+  width: 820px;
+  border-top: 1px solid #de5958;
+}
+
+.teacherItemAboutEducation .diplomaSlider {
+  margin: -24px 0 -33px 0;
+  width: 987px;
+  height: 482px;
+  overflow: hidden;
+  padding: 50px 0 0 0;
+  background: url('../img/diplomaSliderBg.png') center top no-repeat;
+  position: relative;
+  left: -25px;
+}
+
+.diplomaSliderWrapper {
+  width: 820px;
+  position: relative;
+  vertical-align: middle;
+  height: 342px;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  display: inline-block;
+  outline: none;
+  text-align: center;
+}
+
+.slick-slide a {
+  display: table;
+  margin: 0 auto;
+}
+
+.diplomaSliderWrapper img {
+  width: auto;
+  /*height: 342px;*/
+}
+
+.diplomaSlider .slick-arrow {
+  width: 32px;
+  height: 32px;
+  background: #FFF;
+  border: 1px solid #cdcdcd;
+  position: absolute;
+  top: 155px;
+  border-radius: 16px;
+
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.diplomaSlider .slick-prev.slick-arrow {
+  left: -40px;
+  background: url('../img/diplomaSliderArrowLeft.png') center no-repeat;
+}
+
+.diplomaSlider .slick-next.slick-arrow {
+  right: -42px;
+  background: url('../img/diplomaSliderArrowRight.png') center no-repeat;
+}
+
+.teacherItemAbout .showReview a {
+  display: block;
+  width: 300px;
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 8px auto;
+  padding: 19px 17px 15px 17px;
+  border: none;
+  background: #ed1e24;
+}
+
+.teacherItemAbout .showReview a:hover {
+  background: #de5958;
+}

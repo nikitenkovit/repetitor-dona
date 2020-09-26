@@ -1,0 +1,221 @@
+/* callBackForm
+-----------------------------------------------------------------------------*/
+
+.callBackForm {
+  height: 399px;
+  padding: 35px 0;
+  background: url('../netcat_files/1/287/callBackFormBg.jpg') center no-repeat;
+}
+
+.loginPan {
+  position: absolute;
+  right: 0px;
+  top: -26px;
+}
+
+a.enter {
+  font-size: 18px;
+  color: #de5958;
+  border-bottom: 1px solid #de5958;
+}
+
+a.enter:before {
+  position: absolute;
+  left: -14px;
+  top: 0px;
+  content: url('../img/enterIco.png');
+}
+
+a.enter:hover {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.callBackForm a.enter {
+  right: 0px;
+  top: -26px;
+}
+
+.callBackForm .h1 {
+  margin: 0 0 40px 0;
+}
+
+.callBackForm form > div.formControl {
+  margin: 0 0 10px 0;
+}
+
+.callBackForm form > div.formControl.send {
+  padding: 10px 0 0 0;
+}
+
+.callBackForm input[type='text'] {
+  width: 240px;
+  height: 36px;
+  padding: 8px 10px 8px 10px;
+  border-radius: 5px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  color: #919191;
+  border: 1px solid #a4a4a4;
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: inset 0px 1px 3px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: inset 0px 1px 3px 0px rgba(50, 50, 50, 0.75);
+}
+
+.callBackForm button {
+  width: 238px;
+  cursor: pointer;
+  padding: 13px 0;
+  font-size: 18px;
+  position: relative;
+
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.6);
+}
+
+.formInfo {
+  width: 286px;
+  padding: 6px 0 0 0;
+  font-size: 11.87px;
+  color: #484848;
+  line-height: 14px;
+}
+
+.callBackForm .warnText {
+  font-family: 'PTSansBold';
+  color: #538d28;
+  font-size: 16px;
+}
+
+.br__320px {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .callBackForm {
+    position: relative;
+    width: 100%;
+    height: 645px;
+    margin: 0;
+    padding: 0;
+    background: url('../netcat_files/1/287/callBackFormBg-480.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .callBackForm .wrapper {
+    position: static;
+    display: flex;
+    width: 480px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    padding-top: 85px;
+    margin: 0 auto;
+  }
+
+  .callBackForm .h1 {
+    margin: 0;
+    width: 425px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 1.237;
+  }
+
+  .loginPan {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    width: auto;
+  }
+
+  .ajaxForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a.enter {
+    font-size: 18px;
+  }
+
+  a.enter:before {
+    position: static;
+    margin-right: 5px;
+  }
+
+  .callBackForm a.enter {
+    position: static;
+  }
+
+  .callBackForm form > div.formControl {
+    margin: 0;
+  }
+
+  .callBackForm form > div.formControl.send {
+    padding: 0;
+  }
+
+  .callBackForm input[type='text'] {
+    width: 350px;
+    height: 60px;
+    margin-bottom: 13px;
+    padding: 15px;
+    font-size: 17px;
+  }
+
+  .callBackForm button {
+    height: 60px;
+    width: 350px;
+    padding: 15px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(152, 222, 76);
+    border-radius: 7px;
+  }
+
+  .formInfo {
+    width: 286px;
+    padding: 0;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .callBackForm {
+    min-width: 320px;
+    max-width: 479px;
+    height: 618px;
+  }
+
+  .callBackForm .wrapper {
+    width: 320px;
+  }
+
+  .callBackForm .h1 {
+    width: 290px;
+    font-size: 19px;
+  }
+
+  .br__480px {
+    display: none;
+  }
+
+  .br__320px {
+    display: block;
+  }
+
+  .callBackForm input[type='text'] {
+    width: 290px;
+  }
+
+  .callBackForm button {
+    width: 290px;
+  }
+}

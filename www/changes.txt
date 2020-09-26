@@ -23,8 +23,8 @@ index.html
                                </div>
                              </div>
 91 - переместил инлайновые стили из html в css  <div class="callBackForm">
-93 - изменен текст <h1 class="h1 center textCompressed">Компания «Репетитор Дона» объявляет набор в мини-группы <br>по подготовке к
-        ЕГЭ и ГИА (ОГЭ) на 2020–2021 год по всем предметам</h1>
+93 - изменен текст и добавил один новый br и класс к существующему  <h1 class="h1 center textCompressed">Компания «Репетитор Дона» объявляет набор в <br class="br__320px"> мини-группы <br class="br__480px">по подготовке к
+                                                                           ЕГЭ и ГИА (ОГЭ) на 2020–2021 год по всем предметам</h1>
 126 - изменен тест <div class="h1 center textCompressed">
                            Почему готовиться к ЕГЭ и ГИА (ОГЭ) лучше всего с командой<br>«Репетитор дона»?
                          </div>
@@ -36,17 +36,25 @@ index.html
 img
 
 оптимизировал на 90% headerBg.jpg
-Добавил logo-320.png
-Добавил logo-480.png
-добавил bg-480.jpg
-добавил basicCompose-480.jpg
-добавил bg-whyMiniGroups-480.jpg
-добавил content-whyMiniGroups-480.png
-добавил howDoWeWorkNew-480.png
+logo-320.png
+logo-480.png
+bg-320.jpg
+bg-480.jpg
+basicCompose-320.jpg
+basicCompose-480.jpg
+bg-whyMiniGroups-320.jpg
+bg-whyMiniGroups-480.jpg
+content-whyMiniGroups-320.png
+content-whyMiniGroups-480.png
+howDoWeWorkNew-320.png
+howDoWeWorkNew-480.png
 inst.png
 ok.png
 vk.png
 YT.png
+basicComposeMethods-320.png
+basicComposeTeachers-320.png
+basicComposeResult-320.png
 
 netcat_files/19/20 добавил banner-tochilka-480.jpg
 netcat_files/19/20 добавил banner-prevedi-druga-480.jpg
@@ -63,6 +71,8 @@ js
 планшет max-width: 769px
 мобила max-width: 479px
 
+в basicCompose на десктопе уменьшил высоту родителя на 5 пикселей до 555
+whyMiniGroups на десктопе отсутсвовал бэкграунд сделал новый
 обратить внимание на шрифты в форме!
 в преимуществах не совпадает текст (дебильный)
 нахрена селекторы .courses-title h4 и .courses-title если их нет в html? и еще куча не существующих селекторов (например в слайдере)

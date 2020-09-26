@@ -1,0 +1,201 @@
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+  height: 256px;
+  background: #e3eaf1;
+}
+
+.footer table {
+  width: 100%;
+}
+
+.footer .social {
+  width: 50%;
+}
+
+.footer .social > div {
+  font-family: 'PTSansBold';
+  font-size: 14px;
+  color: #666666;
+  padding: 50px 0 22px 166px;
+}
+
+.footer .social ul {
+  font-size: 0;
+  margin: 0 0 0 62px;
+}
+
+.footer .social li {
+  display: inline-block;
+  margin: 0 18px 0 0;
+}
+
+.footer .social a {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 19px;
+}
+
+.footer .social a.odn {
+  background-image: url('../img/ok.png');
+}
+
+.footer .social a.vk {
+  background-image: url('../img/vk.png');
+}
+
+.footer .social a.fb {
+  background-image: url('../img/YT.png');
+}
+
+.footer .social a.tw {
+  background-image: url('../img/inst.png');
+}
+
+.footerMenu ul {
+  margin: 0 0 0 11px;
+  background: url('../img/footerMenuLine.png') 219px 10px no-repeat;
+}
+
+.footerMenu li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: #666666;
+}
+
+.footerMenu li:nth-child(odd) {
+  width: 220px;
+}
+
+.footerMenu li:nth-child(even) {
+  width: 220px;
+  padding: 0 0 0 54px;
+}
+
+.footerMenu a {
+  font-size: 14px;
+  color: #666666;
+}
+
+@media (max-width: 769px) {
+  .footer {
+    height: 594px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer .wrapper {
+    width: 480px;
+    margin: 0 auto;
+  }
+
+  .footer table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer table td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer table tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer .social {
+    width: auto;
+  }
+
+  .footer .social > div {
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  .footer .footerMenu {
+    margin-top: 40px;
+  }
+
+  .footer .social ul {
+    font-size: 0;
+    margin: 0;
+  }
+
+  .footer .social a {
+    width: 54px;
+    height: 54px;
+  }
+
+  .footerMenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background: none;
+  }
+
+  .footerMenu li {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 23px;
+  }
+
+  .footerMenu li:nth-child(odd) {
+    width: 220px;
+  }
+
+  .footerMenu li:nth-child(even) {
+    width: 220px;
+    padding: 0;
+  }
+
+  .footerMenu a {
+    font-size: 14px;
+    color: #666666;
+  }
+}
+
+@media (max-width: 479px) {
+  .footer {
+    width: 100%;
+    min-width: 320px;
+    max-width: 479px;
+    height: 580px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer .wrapper {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+
+  .footer .social a {
+    width: 49px;
+    height: 49px;
+  }
+
+  .footer .footerMenu {
+    margin-top: 35px;
+  }
+}

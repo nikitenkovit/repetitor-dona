@@ -1,0 +1,55 @@
+.photoSlider {
+  width: 100%;
+  height: 332px;
+  margin: 49px auto 0 auto;
+  padding: 0;
+  background: #FFF;
+  font-size: 0;
+}
+
+.photoSlider ul {
+  height: 332px;
+  float: left;
+}
+
+.photoSlider li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.photoSlider li img {
+  height: 332px;
+}
+
+.photoSlider li:nth-child(odd) {
+  margin: 0 20px 0 0;
+}
+
+.photoSlider li:nth-child(even) {
+  margin: 0 0 0 0;
+}
+
+.photoSlider .arrow {
+  width: 60px;
+  height: 332px;
+  background: #FFF;
+}
+
+.photoSlider .arrow.left {
+  float: left;
+  background: #FFF url('../img/photoSliderArrowLeft.png') 15px center no-repeat;
+}
+
+.photoSlider .arrow.right {
+  float: right;
+  background: #FFF url('../img/photoSliderArrowRight.png') 15px center no-repeat;
+}
+
+.photoSlider .arrow.left:hover {
+  background: #dce6f0 url('../img/photoSliderArrowLeft.png') 15px center no-repeat;
+}
+
+.photoSlider .arrow.right:hover {
+  float: right;
+  background: #dce6f0 url('../img/photoSliderArrowRight.png') 15px center no-repeat;
+}

@@ -1,0 +1,341 @@
+@font-face {
+  font-family: 'PTSansCaptionBold';
+  src: url('../fonts/PTSans/ptc75f.eot');
+  src: url('../fonts/PTSans/ptc75f.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PTSans/ptc75f.woff') format('woff'),
+  url('../fonts/PTSans/ptc75f.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSansCaption';
+  src: url('../fonts/PTSans/ptc55f.eot');
+  src: url('../fonts/PTSans/ptc55f.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PTSans/ptc55f.woff') format('woff'),
+  url('../fonts/PTSans/ptc55f.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSansNarrowRegular';
+  src: url('../fonts/PTSans/ptn57f.eot');
+  src: url('../fonts/PTSans/ptn57f.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PTSans/ptn57f.woff') format('woff'),
+  url('../fonts/PTSans/ptn57f.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'PTSansNarrowBold';
+  src: url('../fonts/PTSans/ptn77f.eot');
+  src: url('../fonts/PTSans/ptn77f.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PTSans/ptn77f.woff') format('woff'),
+  url('../fonts/PTSans/ptn77f.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'PTSansItalic';
+  src: url('../fonts/PTSans/pts56f.eot');
+  src: url('../fonts/PTSans/pts56f.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PTSans/pts56f.woff') format('woff'),
+  url('../fonts/PTSans/pts56f.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'PTSansBoldItalic';
+  src: url('../fonts/PTSans/pts76f.eot');
+  src: url('../fonts/PTSans/pts76f.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PTSans/pts76f.woff') format('woff'),
+  url('../fonts/PTSans/pts76f.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSansBold';
+  src: url('../fonts/PTSans/pts75f.eot');
+  src: url('../fonts/PTSans/pts75f.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PTSans/pts75f.woff') format('woff'),
+  url('../fonts/PTSans/pts75f.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSansRegular';
+  src: url('../fonts/PTSans/pts55f.eot');
+  src: url('../fonts/PTSans/pts55f.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PTSans/pts55f.woff') format('woff'),
+  url('../fonts/PTSans/pts55f.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Glober Regular';
+  src: url('../fonts/glober/GloberRegular.eot');
+  src: local('☺'), url('../fonts/glober/GloberRegular.woff') format('woff'), url('../fonts/glober/GloberRegular.ttf') format('truetype'), url('../fonts/glober/GloberRegular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Odessa Regular';
+  src: url('../fonts/odessa/odessaScriptRegular.eot');
+  src: local('☺'), url('../fonts/odessa/odessaScriptRegular.woff') format('woff'), url('../fonts/odessa/odessaScriptRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End of Eric Meyer's CSS Reset */
+input {
+  outline: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+body {
+  font: 12px/18px, sans-serif;
+  font-family: 'PTSansRegular';
+}
+
+.wrapper .wrapper {
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.h1, .h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.h1 {
+  font-family: 'PTSansCaptionBold';
+  font-size: 24px;
+  font-style: bold;
+  color: #333333;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-family: 'PTSansRegular';
+  font-size: 24px;
+  line-height: 29px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.whiteFont {
+  font-family: 'PTSansRegular';
+  color: #FFF;
+}
+
+.orange {
+  color: #fffefe;
+  background: #de5958;
+}
+
+.orange:hover {
+  background: #e86a6a;
+}
+
+.orange:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.green {
+  color: #fff;
+  border: 1px solid #98de4c;
+  border-radius: 4px;
+
+  background: #90d545; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzkwZDU0NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM1JSIgc3RvcC1jb2xvcj0iIzg1Yzg0MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iIzZlYWQzNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0Yjg0MjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #90d545 0%, #85c840 35%, #6ead35 67%, #4b8424 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #90d545), color-stop(35%, #85c840), color-stop(67%, #6ead35), color-stop(100%, #4b8424)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #90d545 0%, #85c840 35%, #6ead35 67%, #4b8424 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #90d545 0%, #85c840 35%, #6ead35 67%, #4b8424 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #90d545 0%, #85c840 35%, #6ead35 67%, #4b8424 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #90d545 0%, #85c840 35%, #6ead35 67%, #4b8424 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#90d545', endColorstr='#4b8424', GradientType=0); /* IE6-8 */
+}
+
+.green:hover {
+  background: #498023; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ5ODAyMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM2JSIgc3RvcC1jb2xvcj0iIzZhYTgzMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY4JSIgc3RvcC1jb2xvcj0iIzgyYzQzZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4ZGQxNDMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #498023 0%, #6aa833 36%, #82c43e 68%, #8dd143 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #498023), color-stop(36%, #6aa833), color-stop(68%, #82c43e), color-stop(100%, #8dd143)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #498023 0%, #6aa833 36%, #82c43e 68%, #8dd143 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #498023 0%, #6aa833 36%, #82c43e 68%, #8dd143 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #498023 0%, #6aa833 36%, #82c43e 68%, #8dd143 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #498023 0%, #6aa833 36%, #82c43e 68%, #8dd143 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#498023', endColorstr='#8dd143', GradientType=0); /* IE6-8 */
+}
+
+.red {
+  color: #fff;
+  border: 2px solid #ef7271;
+  border-radius: 4px;
+
+  background: #de5857; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RlNTg1NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM0JSIgc3RvcC1jb2xvcj0iI2Q5NTM1MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY2JSIgc3RvcC1jb2xvcj0iI2M3NDM0MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiMTMyMzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #de5857 0%, #d95352 34%, #c74343 66%, #b13232 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #de5857), color-stop(34%, #d95352), color-stop(66%, #c74343), color-stop(100%, #b13232)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #de5857 0%, #d95352 34%, #c74343 66%, #b13232 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #de5857 0%, #d95352 34%, #c74343 66%, #b13232 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #de5857 0%, #d95352 34%, #c74343 66%, #b13232 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #de5857 0%, #d95352 34%, #c74343 66%, #b13232 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#de5857', endColorstr='#b13232', GradientType=0); /* IE6-8 */
+
+}
+
+.red:hover {
+  background: #b03131; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IwMzEzMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM4JSIgc3RvcC1jb2xvcj0iI2M1NDI0MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iI2Q3NTE1MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZTU4NTciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #b03131 0%, #c54241 38%, #d75150 67%, #de5857 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b03131), color-stop(38%, #c54241), color-stop(67%, #d75150), color-stop(100%, #de5857)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #b03131 0%, #c54241 38%, #d75150 67%, #de5857 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #b03131 0%, #c54241 38%, #d75150 67%, #de5857 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #b03131 0%, #c54241 38%, #d75150 67%, #de5857 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #b03131 0%, #c54241 38%, #d75150 67%, #de5857 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b03131', endColorstr='#de5857', GradientType=0); /* IE6-8 */
+
+}
+
+a.bordered:hover {
+  border-bottom: 1px solid #FFF;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.textCompressed {
+  letter-spacing: -1px;
+}
+
+button {
+  outline: none;
+}
+
+.h2.redFont, .h2.redFont > a {
+  font-family: 'PTSansBold';
+  color: #de5958;
+  text-transform: uppercase;
+  line-height: 21px;
+}
+
+@media (max-width: 769px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body > div {
+    width: 100%;
+    max-width: 769px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 479px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body > div {
+    width: 100%;
+    min-width: 320px;
+    max-width: 479px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}

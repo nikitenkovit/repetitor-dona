@@ -1,0 +1,71 @@
+/* Banner
+-----------------------------------------------------------------------------*/
+
+.banner {
+  padding: 7px 0 5px 0;
+  height: 132px;
+}
+
+.banner ul {
+  position: relative;
+}
+
+.banner li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+
+@media (max-width: 769px) {
+  .banner {
+    height: 200px;
+  }
+
+  .banner .wrapper {
+    width: 480px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .banner ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+  }
+
+  .banner li {
+    display: block;
+    position: static;
+  }
+}
+
+@media (max-width: 479px) {
+  .banner {
+    min-width: 320px;
+    width: 100%;
+    height: 160px;
+  }
+
+  .banner .wrapper {
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .banner ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+  }
+
+  .banner li {
+    display: block;
+    position: static;
+  }
+}

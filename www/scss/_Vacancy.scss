@@ -1,0 +1,561 @@
+.vacancy .block1 {
+  height: 157px;
+  background: url('../img/vacancyTopPic.jpg') center top no-repeat;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+}
+
+.vacancy .block1 .h1 {
+  font-size: 30px;
+  padding-top: 50px;
+}
+
+.vacancy .block1 .h2 {
+  font-size: 24px;
+  padding-top: 12px;
+}
+
+.vacancy .block2 {
+  height: 400px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ed1e24;
+}
+
+.vacancy .block2 .wrapper {
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.vacancy .block2 .wrapper:before {
+  content: url('../img/vacancyTeacher.png');
+  position: absolute;
+  left: -230px;
+  bottom: -328px;
+  z-index: 1;
+}
+
+.vacancy .block2 .wrapper:after {
+  content: url('../img/vacancyStudent.png');
+  position: absolute;
+  right: -210px;
+  bottom: -328px;
+  z-index: 1;
+}
+
+.vacancy .block2 .info {
+  width: 366px;
+  height: 260px;
+  margin: 25px auto 0 auto;
+  padding: 23px 0 0 0;
+  border: 5px solid #e1e1e1;
+  background: #FFF;
+  position: relative;
+  z-index: 2;
+}
+
+.vacancy .block2 .h5 {
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0 0 37px 0;
+}
+
+.vacancy .block2 ul {
+  font-size: 0;
+}
+
+.vacancy .block2 li {
+  color: #333333;
+  font-size: 24px;
+  margin: 0 0 19px 0;
+}
+
+.vacancy .block2 ul span {
+  font-size: 30px;
+  color: #ed1e24;
+}
+
+.vacancy .block3 {
+  min-height: 525px;
+  padding: 40px 0 30px 0;
+  background: #b2d8cf;
+}
+
+.vacancy .block3 .wrapper {
+  width: 942px;
+  margin: 0 auto;
+}
+
+.vacancy .block3 .h1 {
+  font-size: 30px;
+  color: #FFF;
+  margin: 0 0 33px 0;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.vacancy .block3 .h3 {
+  font-size: 30px;
+  color: #de361e;
+  margin: 0 0 27px 0;
+}
+
+.vacancy .block3 li {
+  position: relative;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0 0 0 0;
+}
+
+.vacancy .block3 li:before {
+  position: absolute;
+  top: 12px;
+  left: -23px;
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #8dc63f;
+}
+
+.vacancy .block3Left {
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.vacancy .block3Right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.vacancy .block3Item {
+  width: 458px;
+  padding: 31px 31px 27px 59px;
+  background: #e8f3f1;
+}
+
+.vacancy .block3Item:last-child {
+  margin-right: 0px;
+}
+
+.vacancy .block3ItemTeacher {
+  width: 458px;
+  margin: 18px 0 0 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.vacancy .block3ItemTeacherLeft {
+  float: left;
+  width: 180px;
+  height: 170px;
+  background: url('../img/vacancyBarantsov.png') left top no-repeat;
+}
+
+.vacancy .block3ItemTeacherRight {
+  float: right;
+  width: 270px;
+  text-align: center;
+}
+
+.vacancy .block3ItemTeacherRight blockquote {
+  width: 265px;
+  padding: 12px 14px 13px 14px;
+  line-height: 22px;
+  background: #FFF;
+  border-radius: 10px;
+  font-style: italic;
+  position: relative;
+  right: -5px;
+}
+
+.vacancy .block3ItemTeacherRight blockquote:before {
+  content: url('../img/vacancyBuble.png');
+  position: absolute;
+  top: 24px;
+  left: -15px;
+}
+
+.vacancy .block3ItemTeacherRight p {
+  font-family: 'PTSansItalic';
+  font-size: 14px;
+  line-height: 17px;
+  margin: 11px 0 12px 0;
+}
+
+.vacancy .block3ItemTeacherRight .btn {
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  color: #FFF;
+  text-transform: uppercase;
+  display: block;
+  height: 44px;
+  line-height: 38px;
+  background: #de5958;
+  border-radius: 0;
+  text-shadow: 0px -1px 0px rgba(173, 43, 42, 1);
+}
+
+.vacancy .block4 {
+  min-height: 468px;
+}
+
+.vacancy .block4 .wrapper {
+  width: 980px;
+  padding: 45px 0 43px 0;
+  margin: 0 auto;
+}
+
+.vacancy .block4 .matters {
+  min-height: 203px;
+  background: url('../img/vacancyMatterBG.jpg');
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.vacancy .block4 .matters .h2 {
+  display: table;
+  padding: 10px 26px 5px 26px;
+  margin: 0 auto;
+  position: relative;
+  top: -18px;
+  text-align: center;
+  background: #a3bbd3;
+  font-family: 'PTSansBold';
+  color: #FFF;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+
+  -webkit-box-shadow: -2px 0px 1px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -2px 0px 1px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -2px 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.vacancy .block4 table {
+  width: 772px;
+  margin: 11px auto 0 auto;
+  vertical-align: top;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+.vacancy .block4 td:nth-child(1) {
+  width: 318px;
+}
+
+.vacancy .block4 td:nth-child(2) {
+  width: 300px;
+}
+
+.vacancy .block4 td:nth-child(3) {
+
+}
+
+.vacancy .block4 td > div {
+  margin: 0 0 18px 0;
+}
+
+.vacancy .block4 .hotVacancy {
+  width: 818px;
+  margin: 0 auto;
+  height: 248px;
+  padding: 23px 0 0 214px;
+  color: #FFF;
+  background-color: #de5958;
+  background-image: url('../img/vacancyHotVacancy.png');
+  background-repeat: no-repeat;
+  background-position: 26px 19px;
+}
+
+.vacancy .block4 .hotVacancy .h2 {
+  font-size: 24px;
+  font-family: 'PTSansBold';
+  text-transform: uppercase;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  margin: 0 0 8px 84px;
+}
+
+.vacancy .block4 .hotVacancy .h3 {
+  font-size: 24px;
+  margin: 0 0 27px 0;
+}
+
+.vacancy .block4 .hotVacancy ul {
+  font-size: 0px;
+  margin: 0 0 0 25px;
+}
+
+.vacancy .block4 .hotVacancy li {
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 0 12px 0;
+  position: relative;
+}
+
+.vacancy .block4 .hotVacancy li:before {
+  position: absolute;
+  left: -23px;
+  top: 4px;
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #FFF;
+}
+
+.vacancy .block5 {
+  height: 1400px;
+  padding: 54px 0;
+  background: url('../img/vacancyBottomPic.jpg') center top no-repeat;
+  background-size: cover;
+}
+
+.vacancy .block5 .wrapper {
+  width: 942px;
+  margin: 0 auto;
+}
+
+.vacancy .block5 .h2 {
+  font-size: 24px;
+  letter-spacing: -1px;
+  margin: 0 0 40px 0;
+}
+
+.vacancy .block5 .h2 strong {
+  font-family: 'PTSansBold';
+  color: #ea1c1b;
+  text-transform: uppercase;
+}
+
+.vacancy .block5 .h3 {
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ea1c1b;
+  margin: 0 0 23px 0;
+}
+
+.vacancy .block5Item {
+  width: 460px;
+  height: 1200px;
+  padding: 32px 16px 0px 28px;
+  background: rgba(252, 252, 252, 0.8);
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.vacancy .block5 td {
+  width: 460px;
+  padding: 32px 16px 0px 28px;
+  vertical-align: top;
+  background: rgba(252, 252, 252, 0.8);
+}
+
+.vacancy .block5 td:last-child {
+  position: relative;
+  left: 18px;
+}
+
+.vacancy .block5 .item {
+  min-height: 180px;
+  margin: 0 0 23px 0;
+}
+
+.vacancy .block5 .h3 {
+  position: relative;
+  padding: 0 0 0 40px;
+  letter-spacing: -0.5px;
+}
+
+.vacancy .block5 .h3 span {
+  display: inline-block;
+  vertical-align: top;
+  width: 61px;
+  height: 40px;
+  position: absolute;
+  background: url('../img/vacancyGreenFlag.png') center top no-repeat;
+  left: -33px;
+  top: -15px;
+  font-size: 24px;
+  color: #FFF;
+  line-height: 50px;
+  text-align: center;
+}
+
+.vacancy .block5 p {
+  font-size: 18px;
+  line-height: 22px;
+  width: 400px;
+  letter-spacing: -0.5px;
+}
+
+.vacancy .block6 .wrapper {
+  width: 960px;
+  margin: 0 auto;
+  padding: 40px 0 10px 0;
+}
+
+.vacancy .block6 .requirements {
+  padding: 24px 78px 28px 78px;
+  background: #FFF;
+  border: 3px solid #e1e1e1;
+}
+
+.vacancy .block6 .requirements table {
+  width: 850px;
+  margin: 0 auto;
+}
+
+.vacancy .block6 .requirements td {
+  padding: 0 20px 0 0px;
+  vertical-align: top;
+}
+
+.vacancy .block6 .requirements td:first-child {
+  width: 409px;
+  border-right: 1px solid #d7d7d7;
+}
+
+.vacancy .block6 .requirements td:last-child {
+  padding-left: 70px;
+}
+
+.vacancy .block6 .requirementsItem {
+  margin: 0 0 33px 0;
+}
+
+.vacancy .block6 .h2 {
+  font-family: 'PTSansBold';
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #6db337;
+  text-align: center;
+  margin: 0 0 38px 0;
+}
+
+.vacancy .block6 .h3 {
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  color: #ea1c1b;
+  position: relative;
+  margin: 0 0 28px 82px;
+}
+
+.vacancy .block6 .h3:before {
+  position: absolute;
+  left: -45px;
+  top: -5px;
+  content: url('../img/tickGreenSmall.png');
+}
+
+.vacancy .block6 p {
+  font-size: 18px;
+  line-height: 21px;
+  font-family: 'PTSansItalic';
+}
+
+.vacancy .block6 .more {
+  margin: -14px 0 -20px 0;
+}
+
+.vacancy .block6 .more a {
+  font-family: 'PTSansItalic';
+  font-size: 18px;
+  color: #de5958;
+  border-bottom: 1px solid #f3c8c8;
+}
+
+.vacancy .block6 .stages {
+  padding: 32px 0;
+}
+
+.vacancy .block6 .stages td:first-child {
+  width: 640px;
+  padding: 0 20px 0 0;
+}
+
+.vacancy .block6 .stages .h2 {
+  margin: 0 0 24px 0;
+}
+
+.vacancy .block6 ol {
+  counter-reset: num;
+  margin: 0 0 0 40px;
+  position: relative;
+  top: -20px;
+}
+
+.vacancy .block6 ol li {
+  font-size: 18px;
+  line-height: 21px;
+  padding: 0 0 0 38px;
+  margin: 0 0 37px 0;
+  position: relative;
+}
+
+.vacancy .block6 ol li:before {
+  font-family: 'PTSansBold';
+  font-size: 48px;
+  content: counter(num) ' ';
+  counter-increment: num;
+  color: #de5958;
+  position: absolute;
+  left: 0;
+  top: 15px;
+}
+
+.vacancy .block6 li strong {
+  font-family: 'PTSansBold';
+}
+
+.vacancy .block6 a.takeInterview {
+  display: block;
+  width: 320px;
+  height: 37px;
+  line-height: 39px;
+  margin: 0 auto;
+  text-align: center;
+  background: #699d41;
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-shadow: 0px -1px 0px rgba(0, 51, 0, 1);
+  position: relative;
+  top: -20px;
+}
+
+.vacancy .block6 .info {
+  background: #de5958;
+  padding: 19px 20px 17px 20px;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.vacancy .block6 .info1 {
+  font-family: 'PTSansBold';
+  text-align: center;
+  position: relative;
+  padding: 0 0 10px 0;
+}
+
+.vacancy .block6 .info1:after {
+  position: absolute;
+  bottom: -1px;
+  left: 92px;
+  content: '';
+  width: 92px;
+  height: 1px;
+  border-bottom: 1px solid #FFF;
+}
+
+.vacancy .block6 .info2 {
+  padding: 14px 0 0 0;
+  font-family: 'PTSansItalic';
+}

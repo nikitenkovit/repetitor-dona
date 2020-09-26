@@ -306,9 +306,23 @@ button {
         box-sizing: border-box;
     }
 
-    body div {
+    body > div {
         width: 100%;
         max-width: 769px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 479px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body > div {
+        width: 100%;
+        min-width: 320px;
+        max-width: 479px;
         box-sizing: border-box;
         overflow: hidden;
     }
@@ -397,20 +411,17 @@ a.callBack:hover {
     .header > .wrapper {
         width: 93.75%;
         max-width: 93.75%;
-        height: 97px;
         margin: 0 auto;
     }
 
     .logo {
         position: absolute;
-        top: 35px;
+        top: 20px;
         left: 0;
         background: url('../img/logo-480.png') center no-repeat;
         background-size: cover;
         width: 204px;
         height: 48px;
-        margin-top: -15px;
-
     }
 
     .phones {
@@ -442,6 +453,65 @@ a.callBack:hover {
         width: 13px;
         height: 13px;
         left: -20px;
+        top: -1px;
+        background-image: url("../img/callBackIco.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 479px) {
+    .header {
+        height: 90px;
+        min-width: 320px;
+        max-width: 479px;
+        background: url('../img/bg-320.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .header > .wrapper {
+        width: 93.75%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .logo {
+        top: 27px;
+        background: url('../img/logo-320.png') center no-repeat;
+        background-size: contain;
+        width: 127px;
+        max-width: 127px;
+        height: 31px;
+    }
+
+    .phones {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        font-size: 15px;
+    }
+
+    .phones div:first-child {
+        margin-bottom: 10px;
+    }
+
+    a.callBack {
+        position: absolute;
+        right: 0;
+        top: 68px;
+        width: 117px;
+        font-size: 10px;
+        text-decoration: none;
+        border-bottom: 1.5px solid #ffffff;
+    }
+
+    a.callBack:before {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        left: -17px;
         top: -1px;
         background-image: url("../img/callBackIco.png");
         background-repeat: no-repeat;
@@ -705,33 +775,139 @@ nav {
     }
 
     .menuTop li {
-        display: inline;
         font-size: 14px;
-        font-family: 'PTSansBold';
-        text-transform: uppercase;
-    }
-
-    .menuTop a {
-        color: #333333;
     }
 
     .menuBottom {
         padding: 0;
         font-size: 15px;
-        font-family: 'PTSansItalic';
         text-align: right;
     }
+}
 
-    .menuBottom a {
-        color: #333333;
+@media (max-width: 479px) {
+    nav {
+        height: 115px;
     }
 
-    .menuBottom a:hover {
-        color: #ed1e24;
+    nav .wrapper {
+        flex-direction: column;
+        justify-content: center;
     }
 
-    .menuTop .active, .menuBottom .active {
-        color: #ed1e24;
+    .nav__wrapper--visible {
+        overflow: visible;
+    }
+
+    .shedule {
+        margin-bottom: 13px;
+    }
+
+    .takeClass {
+        width: 193px;
+        font-size: 15.8px;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .nav__toggle-button {
+        position: absolute;
+        top: 24px;
+        right: 0;
+        width: 30px;
+        height: 21px;
+    }
+
+    .nav__toggle-button::before {
+        width: 30px;
+    }
+
+    .nav__toggle-button::after {
+        width: 30px;
+        box-shadow: 0 -9px 0 0 #de5958;
+    }
+
+    .nav__toggle-button--open::before {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    .nav__toggle-button--open::after {
+        top: 50%;
+        transform: rotate(-45deg);
+        box-shadow: none;
+    }
+
+    .menu {
+        position: absolute;
+        bottom: -220px;
+        left: -3.3%;
+        display: flex;
+        float: none;
+        width: 106.65%;
+        height: 0;
+        margin: 0;
+        padding: 10px 15px;
+        z-index: 10;
+    }
+
+    .menu--open {
+        height: 280px;
+    }
+
+    .menuTop, .menuBottom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menuBottom {
+        margin-top: 10px;
+    }
+
+    .menuTop {
+        position: relative;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .menuTop::before {
+        top: 0;
+        right: -15px;
+        height: 220px;
+        width: 1px;
+    }
+
+    .menuTop li {
+        margin-bottom: 25px;
+        max-width: 110px;
+    }
+
+    .menuTop li:nth-child(3) {
+        margin-bottom: 35px;
+    }
+
+    .menuTop li:last-child {
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+
+    .menuBottom li {
+        margin-bottom: 30px;
+        max-width: 85px;
+        margin-left: auto;
+    }
+
+    .menuBottom li:first-child {
+        margin-top: -5px;
+    }
+
+    .menuBottom li:nth-child(2) {
+        margin-bottom: 37px;
+    }
+
+    .menuBottom li:last-child {
+        margin-bottom: 0;
     }
 }
 
@@ -778,6 +954,33 @@ nav {
     }
 }
 
+@media (max-width: 479px) {
+    .banner {
+        min-width: 320px;
+        width: 100%;
+        height: 160px;
+    }
+
+    .banner .wrapper {
+        width: 100%;
+        max-width: 320px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .banner ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    .banner li {
+        display: block;
+        position: static;
+    }
+}
 /* callBackForm
 -----------------------------------------------------------------------------*/
 .callBackForm {
@@ -867,6 +1070,10 @@ a.enter:hover {
     font-size: 16px;
 }
 
+.br__320px {
+    display: none;
+}
+
 @media (max-width: 769px) {
     .callBackForm {
         position: relative;
@@ -938,8 +1145,6 @@ a.enter:hover {
         height: 60px;
         margin-bottom: 13px;
         padding: 15px;
-        border-radius: 5px;
-        font-family: 'PT Sans', sans-serif;
         font-size: 17px;
     }
 
@@ -961,6 +1166,39 @@ a.enter:hover {
         padding: 0;
         font-size: 12px;
         text-align: center;
+    }
+}
+
+@media (max-width: 479px) {
+    .callBackForm {
+        min-width: 320px;
+        max-width: 479px;
+        height: 618px;
+    }
+
+    .callBackForm .wrapper {
+        width: 320px;
+    }
+
+    .callBackForm .h1 {
+        width: 290px;
+        font-size: 19px;
+    }
+
+    .br__480px {
+        display: none;
+    }
+
+    .br__320px {
+        display: block;
+    }
+
+    .callBackForm input[type='text'] {
+        width: 290px;
+    }
+
+    .callBackForm button {
+        width: 290px;
     }
 }
 
@@ -1064,10 +1302,11 @@ a.enter:hover {
         width: 480px;
         margin: 0 auto;
         padding: 0 15px;
+        padding-top: 75px;
     }
 
     .advantages .h1 {
-        margin-top: 75px;
+        margin-top: 0;
     }
 
     .advantages ul {
@@ -1103,6 +1342,50 @@ a.enter:hover {
         width: 50%;
         margin: 0;
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 479px) {
+    .advantages {
+        height: 1584px;
+        padding: 0 15px;
+    }
+
+    .advantages .wrapper {
+        width: auto;
+        max-width: 320px;
+        padding-top: 75px;
+    }
+
+    .advantages .h1 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .advantages ul {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .advantages li {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    .advantages li:nth-child(5) {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    .advantages li:nth-child(6) {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    .advantages li:nth-child(7) {
+        width: 250px;
+        margin-bottom: 48px;
     }
 }
 
@@ -1253,7 +1536,6 @@ a.enter:hover {
     .courses {
         width: 100%;
         height: 367px;
-        background: #dce6f0;
     }
 
     .courses .wrapper {
@@ -1275,17 +1557,14 @@ a.enter:hover {
     }
 
     .courses .mainItems a {
-        display: block;
         width: 210px;
         text-align: center;
         height: 55px;
         line-height: 55px;
-        font-family: 'PTSansBold';
         font-size: 15px;
     }
 
     .courses .mainItems li {
-        display: block;
         width: 210px;
         text-align: center;
         height: 55px;
@@ -1312,6 +1591,64 @@ a.enter:hover {
         font-size: 17px;
         margin: 0;
         margin-bottom: 22px;
+    }
+}
+
+@media (max-width: 479px) {
+    .courses {
+        min-width: 320px;
+        max-width: 479px;
+        height: 335px;
+        padding: 8px 15px;
+    }
+
+    .courses .wrapper {
+        width: 100%;
+        max-width: 290px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .courses .mainItems {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 37px;
+    }
+
+    .courses .mainItems a {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 137px;
+        text-align: center;
+        font-size: 14px;
+        padding: 5px;
+        line-height: normal;
+    }
+
+    .courses .mainItems li {
+        width: 137px;
+        text-align: center;
+        font-size: 14px;
+        padding: 0;
+        line-height: normal;
+    }
+
+    .courses .mainItems li:first-child {
+        margin: 0;
+        margin-right: 16px;
+    }
+
+    .courses .items {
+        height: 250px;
+    }
+
+    .courses .items li {
+        width: 140px;
+        max-width: 140px;
+        font-size: 14px;
     }
 }
 

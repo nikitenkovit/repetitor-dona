@@ -1,0 +1,199 @@
+.gia .h2 {
+  text-transform: uppercase;
+}
+
+.gia .block2 {
+  height: 335px;
+  background: url('../img/giaBlock2Pic.jpg') center top no-repeat;
+  position: relative;
+}
+
+.gia .block3 {
+  height: 886px;
+  padding: 106px 0 40px 0;
+  background: #FFF;
+}
+
+.gia .block3 ul.stat {
+  display: table;
+  white-space: nowrap;
+  width: 834px;
+  margin: -14px auto 0 auto;
+  text-align: center;
+}
+
+.gia .block3 ul.stat li {
+  display: table-cell;
+  width: 33.3%;
+  position: relative;
+
+}
+
+.gia .block3 ul.stat li:before {
+  content: '';
+  display: block;
+  width: 260px;
+  height: 262px;
+  margin: 0 auto 13px auto;
+}
+
+.gia .block3 ul.stat li:nth-child(1):before {
+  background: url('../img/giaBlock3Pic1.png') center no-repeat;
+}
+
+.gia .block3 ul.stat li:nth-child(2):before {
+  background: url('../img/giaBlock3Pic2.png') center no-repeat;
+}
+
+.gia .block3 ul.stat li:nth-child(3):before {
+  background: url('../img/giaBlock3Pic3.png') right center no-repeat;
+}
+
+.gia .block3 .text-ico {
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  color: #FFF;
+  line-height: 22px;
+  white-space: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  text-transform: uppercase;
+  width: 200px;
+  height: 200px;
+}
+
+.gia .block3 ul.stat li:nth-child(2) .text-ico {
+  left: 30px;
+}
+
+.gia .block5 {
+  background: #FFF;
+  height: 656px;
+}
+
+.gia .block5 table {
+  width: 100%;
+  margin: 50px 0 0 0;
+}
+
+.gia .block5 td {
+  text-align: center;
+  vertical-align: top;
+  padding: 0 12px 28px 12px;
+  font-size: 18px;
+  line-height: 21px;
+  position: relative;
+}
+
+.gia .block5 td:before {
+  content: '';
+  display: block;
+  width: 141px;
+  height: 157px;
+  margin: 0 auto;
+}
+
+.gia .block5 .item1 {
+  width: 278px;
+}
+
+.gia .block5 .item1:before {
+  background: url('../img/giaBlock5ItemsPic.png') no-repeat left top;
+}
+
+.gia .block5 .item2, .gia .block5 .item5 {
+  width: 260px;
+  left: 19px;
+}
+
+.gia .block5 .item2:before {
+  background: url('../img/giaBlock5ItemsPic.png') no-repeat -141px top;
+}
+
+.gia .block5 .item3, .gia .block5 .item6 {
+  width: 292px;
+  left: 19px;
+}
+
+.gia .block5 .item3:before {
+  background: url('../img/giaBlock5ItemsPic.png') no-repeat -282px top;
+}
+
+.gia .block5 .item4 {
+  width: 237px;
+}
+
+.gia .block5 .item4:before {
+  background: url('../img/giaBlock5ItemsPic.png') no-repeat -423px top;
+}
+
+.gia .block5 .item5:before {
+  background: url('../img/giaBlock5ItemsPic.png') no-repeat -564px top;
+}
+
+.gia .block5 .item6:before {
+  background: url('../img/giaBlock5ItemsPic.png') no-repeat -705px top;
+}
+
+.gia .block6 {
+  height: 1509px;
+  background: url('../img/giaBlock6BG.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.gia .block8 {
+  height: 894px;
+  background: #FFF;
+}
+
+.gia .block8 .review {
+  width: 959px;
+  height: 725px;
+  margin: 27px 0 0 0;
+  padding: 83px 68px 68px 62px;
+  background: url('../img/giaBlock8BGPic.png') no-repeat center top;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.gia .block8 .review p {
+  margin: 0 0 20px 0;
+  text-indent: 35px;
+  position: relative;
+}
+
+.gia .block8 .review p:last-child {
+  margin: 0 0 0 0;
+}
+
+.gia .block8 p:first-child:before {
+  content: url('../img/giaBlock8Quotes.png');
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 2;
+  top: -14px;
+  left: 150px;
+}
+
+.gia .block8 .review img {
+  float: left;
+  margin: 12px 52px 47px 0;
+  position: relative;
+}
+
+.gia .block8 .review strong {
+  font-family: 'PTSansBold';
+}
+
+.gia .block8 .author {
+  float: right;
+  font-family: 'PTSansItalic';
+  font-size: 24px;
+  color: #333333;
+}

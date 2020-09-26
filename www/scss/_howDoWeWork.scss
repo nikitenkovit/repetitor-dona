@@ -1,0 +1,283 @@
+/* howDoWeWork
+-----------------------------------------------------------------------------*/
+
+.howDoWeWork {
+  height: 514px;
+  background: #eef6f2 url('../img/whiteWaves.png') bottom left repeat-x;
+  text-align: center;
+}
+
+.howDoWeWork .wrapper {
+  padding: 46px 0;
+}
+
+.howDoWeWork .h1 {
+  margin: 0 0 0 0;
+}
+
+.howDoWeWork img {
+  padding: 0 0 35px 0;
+}
+
+.howDoWeWork a {
+  display: block;
+  width: 138px;
+  cursor: pointer;
+  padding: 13px 0;
+  font-size: 18px;
+  position: relative;
+  top: 60px;
+
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.6);
+}
+
+.howDoWeWork a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.howDoWeWorkBg {
+  height: 275px;
+  width: 980px;
+  background: url('../img/howDoWeWorkNew.png') center center no-repeat;
+}
+
+.howDoWeWork table {
+  text-align: center;
+  width: 980px;
+}
+
+.howDoWeWork-1 {
+  width: 145px;
+}
+
+.howDoWeWork-2 {
+  width: 256px;
+}
+
+.howDoWeWork-3 {
+  width: 223px;
+
+}
+
+.howDoWeWork-4 {
+  width: 225px;
+
+}
+
+.howDoWeWork-5 {
+  width: 130px;
+}
+
+.howDoWeWork-21 {
+  width: 147px;
+}
+
+.howDoWeWork-23 {
+  width: 190px;
+}
+
+.howDoWeWork table div {
+  font-family: 'PTSansRegular';
+  max-width: 245px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #666666;
+  text-transform: uppercase;
+  line-height: 22px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+
+.howDoWeWork-1 div, .howDoWeWork-3 div, .howDoWeWork-5 div {
+  position: relative;
+  top: 160px;
+}
+
+.howDoWeWork-1 div {
+  left: -15px;
+}
+
+.howDoWeWork-3 div {
+  left: -10px;
+}
+
+.howDoWeWork-2 div, .howDoWeWork-4 div {
+  position: relative;
+  top: 207px;
+}
+
+@media (max-width: 769px) {
+  .howDoWeWork {
+    width: 100%;
+    height: 1055px;
+    background: #eef6f2 url('../img/whiteWaves.png') bottom left repeat-x;
+    text-align: center;
+  }
+
+  .howDoWeWork .wrapper {
+    position: relative;
+    width: 480px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 80px;
+    background: url('../img/howDoWeWorkNew-480.png') no-repeat;
+    background-position: center 145px;
+  }
+
+  .howDoWeWork .h1 {
+    margin: 0;
+  }
+
+  .howDoWeWork a {
+    position: absolute;
+    top: auto;
+    bottom: 88px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .howDoWeWork a:hover {
+    color: #FFF;
+    text-decoration: none;
+  }
+
+  .howDoWeWorkBg {
+    background: none;
+  }
+
+  .howDoWeWork table {
+    position: static;
+    text-align: center;
+    width: 100%;
+  }
+
+  .howDoWeWork table td {
+    position: absolute;
+  }
+
+  .howDoWeWork table div {
+    position: static;
+  }
+
+  .howDoWeWork-1 {
+    top: 270px;
+    left: 50px;
+    width: 155px;
+  }
+
+  .howDoWeWork-2 {
+    top: 345px;
+    right: 40px;
+    width: 165px;
+  }
+
+  .howDoWeWork-3 {
+    top: 550px;
+    left: 50px;
+    width: 155px;
+
+  }
+
+  .howDoWeWork-4 {
+    top: 680px;
+    right: 70px;
+    width: 115px;
+  }
+
+  .howDoWeWork-5 {
+    top: 825px;
+    left: 70px;
+    width: 115px;
+  }
+
+  .howDoWeWork-21 {
+    width: auto;
+  }
+
+  .howDoWeWork-23 {
+    width: auto;
+  }
+
+  .howDoWeWork-1 div, .howDoWeWork-3 div, .howDoWeWork-5 div {
+    position: static;
+    top: auto;
+  }
+
+  .howDoWeWork-1 div {
+    left: auto;
+  }
+
+  .howDoWeWork-3 div {
+    left: auto;
+  }
+
+  .howDoWeWork-2 div, .howDoWeWork-4 div {
+    position: static;
+    top: auto;
+  }
+}
+
+@media (max-width: 479px) {
+  .howDoWeWork {
+    width: 100%;
+    min-width: 320px;
+    max-width: 479px;
+    height: 1130px;
+  }
+
+  .howDoWeWork .wrapper {
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    background: url('../img/howDoWeWorkNew-320.png') no-repeat;
+    background-position: center 145px;
+  }
+
+  .howDoWeWork .h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .howDoWeWork a {
+    bottom: 70px;
+  }
+
+  .howDoWeWork table div {
+    font-size: 16px;
+  }
+
+  .howDoWeWork-1 {
+    top: 265px;
+    left: 20px;
+    width: 155px;
+  }
+
+  .howDoWeWork-2 {
+    top: 395px;
+    right: 10px;
+    width: 160px;
+  }
+
+  .howDoWeWork-3 {
+    top: 590px;
+    left: 15px;
+    width: 155px;
+
+  }
+
+  .howDoWeWork-4 {
+    top: 795px;
+    right: 40px;
+    width: 115px;
+  }
+
+  .howDoWeWork-5 {
+    top: 945px;
+    left: 45px;
+    width: 115px;
+  }
+}

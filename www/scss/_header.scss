@@ -1,0 +1,179 @@
+/* Header
+-----------------------------------------------------------------------------*/
+
+.header {
+  height: 170px;
+  width: 100%;
+  background: url('../img/headerBg.jpg') center top no-repeat;
+  border-bottom: 2px solid #ed1e24;
+}
+
+.header > .wrapper {
+  height: 168px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.logo {
+  background: url('../img/logo.png') center no-repeat;
+  width: 514px;
+  height: 123px;
+  position: absolute;
+  left: 0px;
+  top: 20px;
+}
+
+.phones {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  font-family: 'PTSansRegular';
+  font-size: 32px;
+  line-height: 45px;
+  color: #FFF;
+  text-align: right;
+}
+
+a.callBack {
+  position: absolute;
+  right: 0px;
+  top: 125px;
+  font-size: 18px;
+  font-style: italic;
+  text-decoration: none;
+  border-bottom: 1px solid #FFF;
+}
+
+a.callBack:before {
+  content: url('../img/callBackIco.png');
+  position: absolute;
+  left: -25px;
+  top: -1px;
+}
+
+a.callBack:hover {
+  color: #FFF;
+  text-decoration: none;
+  border-bottom: 1px solid #ed1e24;
+}
+
+@media (max-width: 769px) {
+  .header {
+    height: 97px;
+    width: 100%;
+    background-position: 60%;
+    background-size: cover;
+    border-bottom: none;
+  }
+
+  .header > .wrapper {
+    width: 93.75%;
+    max-width: 93.75%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: url('../img/logo-480.png') center no-repeat;
+    background-size: cover;
+    width: 204px;
+    height: 48px;
+  }
+
+  .phones {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    font-size: 20px;
+    line-height: 100%;
+    z-index: 0;
+  }
+
+  .phones div:first-child {
+    margin-bottom: 10px;
+  }
+
+  a.callBack {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 140px;
+    font-size: 12px;
+    text-decoration: none;
+    border-bottom: 1.5px solid #ffffff;
+  }
+
+  a.callBack:before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: -20px;
+    top: -1px;
+    background-image: url("../img/callBackIco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 479px) {
+  .header {
+    height: 90px;
+    min-width: 320px;
+    max-width: 479px;
+    background: url('../img/bg-320.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .header > .wrapper {
+    width: 93.75%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    top: 27px;
+    background: url('../img/logo-320.png') center no-repeat;
+    background-size: contain;
+    width: 127px;
+    max-width: 127px;
+    height: 31px;
+  }
+
+  .phones {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 15px;
+  }
+
+  .phones div:first-child {
+    margin-bottom: 10px;
+  }
+
+  a.callBack {
+    position: absolute;
+    right: 0;
+    top: 68px;
+    width: 117px;
+    font-size: 10px;
+    text-decoration: none;
+    border-bottom: 1.5px solid #ffffff;
+  }
+
+  a.callBack:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: -17px;
+    top: -1px;
+    background-image: url("../img/callBackIco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

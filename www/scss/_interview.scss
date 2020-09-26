@@ -1,0 +1,137 @@
+.interview {
+  position: fixed;
+  z-index: 100;
+  top: 10px;
+  right: -330px;
+  width: 330px;
+  background: #dce6f0;
+  transition: all 0.1s;
+
+  -webkit-box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.5);
+}
+
+.interview.active {
+  right: 0px;
+  transition: all 0.1s;
+}
+
+.interviewHeader {
+  position: relative;
+  top: -10px;
+  text-align: right;
+}
+
+.closeInterview {
+  font-family: 'PTSansRegular';
+  content: '×';
+  z-index: 2;
+  color: #999999;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.interview .wrapper {
+  padding: 15px 22px 6px 22px;
+}
+
+.interview .wrapper:first-child {
+  border-bottom: 1px solid #97abc0;
+}
+
+.interview .wrapper:last-child {
+  padding: 13px 22px 8px 22px;
+}
+
+.interview .showInterview {
+  width: 48px;
+  height: 365px;
+  position: absolute;
+  right: 330px;
+  top: 70px;
+  background: url('../img/interview.png') center no-repeat;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.interview .h2 {
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  color: #333333;
+  line-height: 24px;
+}
+
+.interview .h2 span {
+  color: #de5958;
+}
+
+.interview form {
+  margin: 20px 0 0 0;
+}
+
+.interview .formControl {
+  margin: 0 0 14px 0;
+}
+
+.interview label {
+  width: 55px;
+  font-family: 'PTSansItalic';
+  font-size: 16px;
+  color: #333333;
+  position: relative;
+  top: 6px;
+}
+
+.interview .formControl input[type='text'] {
+  width: 216px;
+  margin: 0 0 0 10px;
+  height: 36px;
+  border: 1px solid #a4a4a4;
+  padding: 3px 5px;
+}
+
+.interview .formControl button {
+  width: 100%;
+  height: 57px;
+  line-height: 57px;
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 8px 0 0 0;
+  border: none;
+  position: relative;
+}
+
+.greenModal {
+  text-shadow: 0px -1px 0px rgba(78, 135, 37, 1);
+  background: #6db337;
+}
+
+.redModal {
+  text-shadow: 0px -1px 0px rgba(173, 43, 42, 1);
+  background: #de5958;
+}
+
+.interview .warnText {
+  position: absolute;
+  z-index: 5;
+  top: 18%;
+  left: 0px;
+  width: 100%;
+  background: white;
+  border: 1px solid #6db337;
+  padding: 20px;
+  color: #000;
+  text-align: center;
+  display: none;
+}
+
+.interview .formControl button .preloader {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}

@@ -1,0 +1,392 @@
+/* caruselReview
+-----------------------------------------------------------------------------*/
+
+.review {
+  height: 353px;
+  font-family: 'PT Sans', sans-serif;
+  padding: 8px 99px 20px 98px;
+}
+
+.review .wrapper {
+  padding: 12px 0 32px 0;
+}
+
+.review .h2 {
+  padding: 0 0 0 110px;
+}
+
+.review .carousel {
+  width: 726px;
+  height: 230px;
+  margin: 0 auto;
+  position: relative;
+  padding: 12px 0 0 0;
+}
+
+.review dl {
+  margin: 20px 0 0 0;
+}
+
+.review dt {
+  width: 198px;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  margin: -6px 0 0 -10px;
+}
+
+.review dt em {
+  display: block;
+  font-family: 'PTSansItalic';
+  font-size: 18px;
+  color: #494949;
+  padding: 10px 0 0 0;
+}
+
+.review dt img {
+  border-radius: 88px;
+  height: 177px;
+}
+
+.review-avatar {
+  border-radius: 81px;
+}
+
+.review dd {
+  display: inline-block;
+  vertical-align: top;
+  width: 484px;
+  margin: 0px 0 0 30px;
+  padding: 12px 0 0 0;
+  font-family: 'PTSansRegular';
+  font-size: 17px;
+  line-height: 20px;
+  position: relative;
+}
+
+.review blockquote {
+  margin: 0 0 11px 0;
+  padding: 0 0 5px 0;
+  color: #585857;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.review dd em {
+  color: #bd321f;
+}
+
+.review dd em > p {
+  display: inline;
+}
+
+.review .carousel-control.left, .review .carousel-control.right {
+  background: none;
+  width: 28px;
+  height: 187px;
+}
+
+.review .carousel-control.left {
+  background: url('../img/reviewArrows.png') left center no-repeat;
+  position: absolute;
+  left: -104px;
+  top: 36px;
+}
+
+.review .carousel-control.left:hover {
+  background: url('../img/reviewArrows.png') -30px center no-repeat;
+}
+
+.review .carousel-control.right {
+  background: url('../img/reviewArrows.png') -88px center no-repeat;
+  position: absolute;
+  right: -106px;
+  top: 36px;
+}
+
+.review .carousel-control.right:hover {
+  background: url('../img/reviewArrows.png') -58px center no-repeat;
+}
+
+.review .carousel-indicators {
+  bottom: -44px;
+}
+
+.review .carousel-indicators li {
+  border: 1px solid #eb6a59;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  margin: 0 13px 0 0;
+}
+
+.review .carousel-indicators li.active {
+  background-color: #eb6a59;
+}
+
+.review .allReviews {
+  position: absolute;
+  right: 10px;
+  bottom: -43px;
+  font-weight: normal;
+  color: #cb766c;
+  font-size: 17px;
+  text-decoration: none;
+  border-bottom: 1px solid #dba09a;
+}
+
+.review .allReviews:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.pages {
+  font-size: 18px;
+  padding: 15px 0;
+}
+
+.pages a {
+  font-size: 18px;
+  padding: 0 3px;
+}
+
+@media (max-width: 769px) {
+  .review {
+    width: 100%;
+    height: 680px;
+    padding: 0;
+  }
+
+  .review .wrapper {
+    width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .review .h2 {
+    margin-top: 45px;
+    margin-bottom: 35px;
+    padding: 0;
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+  }
+
+  .review .carousel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 726px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .review dl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .review dt {
+    width: auto;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+  }
+
+  .review dt em {
+    display: block;
+    font-size: 18px;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .review dt img {
+    border-radius: 50%;
+    height: 112px;
+  }
+
+  .review dd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: center;
+    width: 365px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 140%;
+    position: relative;
+  }
+
+  .review blockquote {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .review blockquote::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 290px;
+    height: 1px;
+    background-color: #c8c8c8;
+  }
+
+  blockquote p {
+    text-align: center;
+  }
+
+  .review dd em > p {
+    display: block;
+  }
+
+  .review dd em {
+    padding-top: 10px;
+    margin-top: 15px;
+    height: 75px;
+  }
+
+  .review .carousel-control.left, .review .carousel-control.right {
+    background: none;
+    width: 28px;
+    height: 187px;
+  }
+
+  .review .carousel-control.left {
+    background: url('../img/reviewArrows.png') left center no-repeat;
+    position: absolute;
+    left: 0;
+    top: 145px;
+  }
+
+  .review .carousel-control.left:hover {
+    background: url('../img/reviewArrows.png') -30px center no-repeat;
+  }
+
+  .review .carousel-control.right {
+    background: url('../img/reviewArrows.png') -88px center no-repeat;
+    position: absolute;
+    right: 0;
+    top: 145px;
+  }
+
+  .review .carousel-control.right:hover {
+    background: url('../img/reviewArrows.png') -58px center no-repeat;
+  }
+
+  .review .carousel-indicators {
+    position: static;
+    bottom: 0;
+    order: 2;
+    width: 165px;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .review .allReviews {
+    position: static;
+    margin-top: 30px;
+    font-size: 17px;
+    order: 3;
+  }
+}
+
+@media (max-width: 479px) {
+  .review {
+    width: 100%;
+    min-width: 320px;
+    max-width: 479px;
+    padding: 0 15px;
+  }
+
+  .review .wrapper {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .review .h2 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .review .carousel {
+    max-width: 479px;
+  }
+
+  .review dt em {
+    font-size: 16px;
+  }
+
+  .review dd {
+    width: 265px;
+    font-size: 16px;
+  }
+
+  .review blockquote {
+    font-size: 14px;
+  }
+
+  .review blockquote p {
+    margin: 0;
+    padding: 0 5px;
+  }
+
+  .review blockquote::before {
+    bottom: -15px;
+    width: 210px;
+  }
+
+  .review .carousel-control.left, .review .carousel-control.right {
+    background: none;
+    width: 28px;
+    height: 160px;
+  }
+
+  .review .carousel-control.left {
+    background: url('../img/reviewArrows.png') left center no-repeat;
+    left: -28px;
+    top: 180px;
+  }
+
+  .review .carousel-control.left:hover {
+    background: url('../img/reviewArrows.png') -30px center no-repeat;
+  }
+
+  .review .carousel-control.right {
+    background: url('../img/reviewArrows.png') -88px center no-repeat;
+    right: -28px;
+    top: 180px;
+  }
+
+  .review .carousel-control.right:hover {
+    background: url('../img/reviewArrows.png') -58px center no-repeat;
+  }
+
+  .review .carousel-indicators {
+    position: static;
+    bottom: 0;
+    order: 2;
+    width: 165px;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .review .allReviews {
+    position: static;
+    margin-top: 30px;
+    font-size: 17px;
+    order: 3;
+  }
+}

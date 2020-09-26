@@ -1,0 +1,239 @@
+/* basicCompose
+-----------------------------------------------------------------------------*/
+
+.basicCompose {
+  height: 555px;
+  background: url('../img/basicCompose.jpg') no-repeat center top;
+}
+
+.basicCompose > .wrapper {
+  padding: 38px 0 0 0;
+}
+
+.basicCompose ul {
+  font-size: 0;
+  font-family: 'PTSansRegular';
+  color: #343434;
+  margin: 43px 0 0 0;
+}
+
+.basicCompose li {
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+  font-size: 18px;
+  margin: 0 20px 0 0;
+  text-align: center;
+}
+
+.basicCompose .h3 {
+  font-family: 'PTSansRegular';
+  color: #dc2a12;
+  font-size: 27.5px;
+  text-transform: uppercase;
+  padding: 0 0 20px 0;
+}
+
+.basicCompose li p {
+  position: relative;
+  background: #FFF;
+  padding: 30px 9px;
+  margin: 202px 0 0 0;
+  height: 153px;
+  line-height: 18px;
+}
+
+.basicCompose li:last-child {
+  margin: 0;
+}
+
+.basicCompose li p:before {
+  display: block;
+  width: 203px;
+  height: 202px;
+  position: absolute;
+}
+
+.basicCompose li:nth-child(1) p:before {
+  content: url('../img/basicComposeMethods.png');
+  top: -184px;
+  left: 50%;
+  margin-left: -114px;
+}
+
+.basicCompose li:nth-child(2) p:before {
+  content: url('../img/basicComposeTeachers.png');
+  top: -180px;
+  left: 50%;
+  margin-left: -103px;
+}
+
+.basicCompose li:nth-child(3) p:before {
+  content: url('../img/basicComposeResult.png');
+  top: -218px;
+  left: 50%;
+  margin-left: -103px;
+}
+
+.basicCompose .readMore {
+  font-size: 14px;
+  color: #cb766c;
+  text-align: right;
+  text-decoration: none;
+  border-bottom: 1px solid #e6c2be;
+  position: absolute;
+  bottom: 9px;
+  right: 12px;
+}
+
+@media (max-width: 769px) {
+  .basicCompose {
+    width: 100%;
+    height: 1510px;
+    background: url('../img/basicCompose-480.jpg') no-repeat center bottom;
+    background-size: cover;
+    padding: 35px 15px;
+  }
+
+  .basicCompose > .wrapper {
+    display: flex;
+    width: 480px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .basicCompose .h1 {
+    max-width: 335px;
+  }
+
+  .basicCompose ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .basicCompose li {
+    width: 300px;
+    font-size: 18px;
+    margin: 0;
+    margin-top: 55px;
+  }
+
+  .basicCompose .h3 {
+    font-size: 26px;
+    padding: 0;
+  }
+
+  .basicCompose li p {
+    width: 325px;
+    padding: 30px 0;
+  }
+
+  .basicCompose li:last-child p {
+    margin: 232px 0 0 0;
+  }
+
+  .basicCompose li:last-child {
+    margin: 0;
+    margin-top: 55px;
+  }
+
+  .basicCompose li p:before {
+    width: 167px;
+    height: 169px;
+  }
+}
+
+@media (max-width: 479px) {
+  .basicCompose {
+    width: 100%;
+    min-width: 320px;
+    max-width: 479px;
+    height: 1380px;
+    background: url('../img/basicCompose-320.jpg') no-repeat center bottom;
+    background-size: cover;
+    padding: 35px 15px;
+  }
+
+  .basicCompose > .wrapper {
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    padding: 0;
+  }
+
+  .basicCompose .h1 {
+    max-width: 265px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 55px;
+  }
+
+  .basicCompose ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .basicCompose li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 70px;
+  }
+
+  .basicCompose .h3 {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .basicCompose li p {
+    width: 280px;
+    padding: 30px 0;
+    margin: 140px 0 0 0;
+    font-size: 16px;
+  }
+
+  .basicCompose li p:before {
+    width: 130px;
+    height: 132px;
+  }
+
+  .basicCompose li:nth-child(1) p:before {
+    content: url('../img/basicComposeMethods-320.png');
+    top: -110px;
+    left: 70px;
+    margin-left: 0;
+  }
+
+  .basicCompose li:nth-child(2) p:before {
+    content: url('../img/basicComposeTeachers-320.png');
+    top: -110px;
+    left: 70px;
+    margin-left: 0;
+  }
+
+  .basicCompose li:nth-child(3) p:before {
+    content: url('../img/basicComposeResult-320.png');
+    top: -140px;
+    left: 70px;
+    margin-left: 0;
+  }
+
+  .basicCompose li:last-child p {
+    margin: 170px 0 0 0;
+  }
+
+  .basicCompose li:last-child {
+    margin: 0;
+  }
+}

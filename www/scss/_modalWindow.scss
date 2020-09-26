@@ -1,0 +1,132 @@
+.modalWindow {
+  position: fixed;
+  z-index: 10000;
+  left: 50%;
+  margin-left: -170px;
+  top: 40%;
+  width: 340px;
+  padding: 40px 0 40px 0;
+  background: url('../img/authBoxBg.jpg') center top;
+  opacity: 0;
+  display: none;
+  font-family: 'Glober Regular';
+  text-align: center;
+  font-size: 18px;
+}
+
+.type_block {
+  position: relative;
+  z-index: 10000;
+}
+
+.closeModalWindow {
+  font-family: 'PTSansRegular';
+  content: '×';
+  position: absolute;
+  z-index: 2;
+  top: -35px;
+  right: 15px;
+  color: #999999;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.modalWindow.active {
+  position: fixed;
+  opacity: 1;
+  display: block;
+  z-index: 10000;
+}
+
+.modalWindow form, .modalWindow .title {
+  width: 247px;
+  margin: 0 auto;
+}
+
+#cboxOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modalWindow .block {
+  margin: 0 0 25px 0;
+}
+
+.modalWindow .title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0 auto 33px auto;
+}
+
+.modalWindow input[type="text"],
+.modalWindow input[type="password"] {
+  height: 35px;
+  line-height: 36px;
+  width: 100%;
+  padding: 0 12px;
+  font-size: 14px;
+  color: #999999;
+  border: 1px solid #a4a4a4;
+  border-radius: 4px;
+}
+
+.modalWindow button {
+  height: 28px;
+  line-height: 31px;
+  width: 100px;
+  text-align: center;
+  font-size: 18px;
+  color: #fffefe;
+  background: #6db337;
+  border: none;
+  margin-left: -5px;
+  margin-top: -1px;
+  position: relative;
+}
+
+.modalWindow.getCall button {
+  height: 37px;
+  line-height: 40px;
+  width: 100%;
+  margin-left: 0px;
+  margin-top: -1px;
+}
+
+.modalWindow .save {
+  margin: -3px 0 0 -18px;
+  padding: 0 0 40px 0;
+}
+
+.modalWindow .save input[type='checkbox'] {
+  position: relative;
+  left: 16px;
+}
+
+.modalWindow a.remindPwd {
+  font-size: 18px;
+  color: #cc3333;
+  text-decoration: underline;
+  margin-left: 14px;
+  position: relative;
+  top: 6px;
+}
+
+.hideText {
+  position: relative;
+  left: -25px;
+  top: 2px;
+}
+
+.modalWindow.getCall .title {
+  margin: 0 auto 28px auto;
+}
+
+.modalWindow.getCall .block {
+  margin: 0 0 21px 0;
+}
