@@ -1,10 +1,14 @@
 Нумерация строк примерная. Из-за постепенного добавления элементов, возможен сдвиг на 5-10 строк в большую сторону.
 
-index.html
+--------------------во всех html файлах:-------------------------
 
+убрал ФфПЕЗДУ:) <button class="showInterview"></button>
 5 - Добавил <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 17 - заменил  style.css на <link href="css/style.min.css" rel="stylesheet">
-22 - добавил <script src="js/script.js" defer></script>
+22 - добавил <script src="js/script.js" defer></script> атрибут defer обязателен!
+
+------------------только index.html:----------------------------
+временно изменил адреса html ссылок в nav, для возможности моей работы.
 53- добавил <button class="nav__toggle-button" aria-label="Открыть меню"></button>
 78- удалил <li class='show'><a href=''>
                      <img src='./netcat_files/19/20/bannerTop_0.jpg' alt=''>
@@ -29,9 +33,15 @@ index.html
                            Почему готовиться к ЕГЭ и ГИА (ОГЭ) лучше всего с командой<br>«Репетитор дона»?
                          </div>
 131 - добавил тег br <li>Стоимость <br>от 350 руб./60 минут</li>
-565 - убрал ФфПЕЗДУ:) <button class="showInterview"></button>
+319 - добавил br с классом  <p>Соревновательное начало повышает мотивацию<br class="br__320px"> в обучении</p></td>
+328 - добавил br с классом  <p>Участвуют <br class="br__480px">в обучающих играх</p>
 
+-------------------prepodavateli-i-stoimost.html------------------------
 
+80 -  разделил на два параграфа и добавил грёбаные классы <p class="teachers__description teachers__description--1"><em>Занятия в наших мини-группах подготовки к ЕГЭ и ОГЭ ведут лучшие репетиторы Ростова-на-Дону.</em></p>
+    <p class="teachers__description teachers__description--2"><em>В нашей команде только профессионалы своего дела</em></p>
+87 - Добавил br <li>Опыт репетиторской работы наших преподавателей &ndash;<br class="br__480px br__320px"> от 8 до 40 лет.</li>
+87 - Добавил br <li>Главный результат<br class="br__480px br__320px"> работы &mdash; десятки учеников, поступивших в вузы Ростова, Москвы, Санкт-Петербурга.
 //////////////////////////////////////
 img
 
@@ -44,8 +54,8 @@ basicCompose-320.jpg
 basicCompose-480.jpg
 bg-whyMiniGroups-320.jpg
 bg-whyMiniGroups-480.jpg
-content-whyMiniGroups-320.png
-content-whyMiniGroups-480.png
+whyMiniGroups-320.png
+whyMiniGroups-480.png
 howDoWeWorkNew-320.png
 howDoWeWorkNew-480.png
 inst.png

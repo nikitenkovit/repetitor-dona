@@ -14,6 +14,13 @@
   top: 10px;
 }
 
+@media (max-width: 769px) {
+  .inner .loginPan {
+    right: 15px;
+    top: 25px;
+  }
+}
+
 .greenPan {
   width: 100%;
   padding: 15px 0 19px 138px;

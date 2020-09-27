@@ -1,3 +1,6 @@
+/* Teachers
+-----------------------------------------------------------------------------*/
+
 .inner .wrapper > .wrapper.teachers {
   padding-bottom: 20px;
 }
@@ -6,30 +9,10 @@
   margin: 0 0 17px 0;
 }
 
-.teachers .h2 {
-  font-family: 'PTSansBold';
-  font-size: 18px;
-  color: #1c1716;
-  text-transform: uppercase;
-  margin: 0 0 11px 0;
-  padding: 0 0 0 25px;
-}
-
-.teachers .h3 {
-  font-family: 'PTSansBold';
-  font-size: 24px;
-  color: #333333;
-  margin: 0 0 11px 0;
-}
-
-.teachers > p {
-  font-size: 18px;
-  line-height: 30px;
-
-}
-
-.teachers > p em {
+.teachers__description {
   font-family: 'PTSansItalic';
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .teachersRank {
@@ -82,6 +65,99 @@
   background: url('../img/teachersTick.png') center -185px no-repeat;
 }
 
+@media (max-width: 769px) {
+  .inner .wrapper > .wrapper.teachers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 730px;
+    width: 480px;
+    max-width: 480px;
+    padding: 70px 15px 20px 15px;
+    margin: 0 auto;
+  }
+
+  .teachers > .h1 {
+    margin: 0 0 17px 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .teachers__description {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #333333;
+  }
+
+  .teachers__description--1 {
+    width: 390px;
+    margin-bottom: 15px;
+  }
+
+  .teachers__description--2 {
+    width: 290px;
+  }
+
+  .teachersRank {
+    font-size: 0;
+    color: #964b4d;
+    margin: 25px 0 0 0;
+  }
+
+  .teachersRank ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 450px;
+    height: 455px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .teachersRank li {
+    max-width: 190px;
+    padding: 0;
+    padding-top: 45px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 0 23px 0;
+    position: relative;
+  }
+
+  .teachersRank li:before {
+    content: '';
+    display: inline-block;
+    width: 44px;
+    position: absolute;
+    left: 70px;
+    top: 10px;
+  }
+
+  .teachersRank li:nth-child(1):before {
+    top: 5px;
+  }
+
+  .teachersRank li:nth-child(2):before {
+    top: 5px;
+  }
+
+  .teachersRank li:nth-child(3):before {
+    top: 5px;
+  }
+
+  .teachersRank li:nth-child(4):before {
+    top: 0;
+  }
+
+  .teachersRank li:nth-child(5):before {
+    top: 0;
+  }
+}
+
+/*-----------------MATER---------------*/
+
 .matterWrapper {
   width: 980px;
   margin: 0 auto;
@@ -93,6 +169,15 @@
   border-radius: 8px;
   padding: 25px 78px 25px 80px;
   font-size: 20px;
+}
+
+.teachers .h2 {
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  color: #1c1716;
+  text-transform: uppercase;
+  margin: 0 0 11px 0;
+  padding: 0 0 0 25px;
 }
 
 .teachers .matter > div {
@@ -111,6 +196,56 @@
   border-bottom: 1px solid #666666;
 }
 
+@media (max-width: 769px) {
+  .matterWrapper {
+    width: 450px;
+    margin: 0 auto;
+    padding: 0;
+    outline: 1px solid orange;
+  }
+
+  .teachers .matter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 450px;
+    height: 400px;
+    background: #dce6f0;
+    border-radius: 8px;
+    padding: 0;
+    font-size: 16px;
+    outline: 1px solid red;
+  }
+
+  .teachers .h2 {
+    font-size: 18px;
+    color: #1c1716;
+    margin: 0 0 11px 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .teachers .matter > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 29px 0;
+  }
+
+  .teachers .matter > div:last-child {
+    margin: 0 0 0 0;
+  }
+
+  .teachers .matter a {
+    width: auto;
+    color: #666666;
+    text-decoration: none;
+    border-bottom: 1px solid #666666;
+  }
+}
+
+/*-------------teacherItem-----------------------*/
+
 .teacherItem {
   width: 100%;
   background: #FFF;
@@ -121,6 +256,11 @@
   margin: 37px 0 0 0;
   padding: 0px 20px 20px 17px;
   position: relative;
+}
+
+.teachers .h3 {
+  font-size: 24px;
+  margin: 0 0 11px 0;
 }
 
 .teacherItem .teacherItemInfo {

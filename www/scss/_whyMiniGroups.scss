@@ -109,6 +109,7 @@ table.why-mini-groups .why-mini-groups-5 h4 {
     position: relative;
     width: 100%;
     height: 638px;
+    padding: 0 15px;
     background: url('../img/bg-whyMiniGroups-480.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -119,12 +120,12 @@ table.why-mini-groups .why-mini-groups-5 h4 {
   }
 
   .whyMiniGroups .wrapper {
-    width: 480px;
+    width: 450xp;
+    max-width: 450px;
     height: 100%;
     margin: 0 auto;
-    padding: 0 15px;
     padding-top: 75px;
-    background-image: url('../img/content-whyMiniGroups-480.png');
+    background-image: url('../img/whyMiniGroups-480.png');
     background-repeat: no-repeat;
     background-position: center 65%;
     background-size: contain;
@@ -135,63 +136,125 @@ table.why-mini-groups .why-mini-groups-5 h4 {
   }
 
   table.why-mini-groups {
-    display: none;
+    position: relative;
+    height: auto;
+    background: none;
   }
 
   table.why-mini-groups tr td > div {
-    display: none;
+    max-width: 115px;
   }
 
   table.why-mini-groups h4 {
-    display: none;
-  }
-
-  table.why-mini-groups .why-mini-groups-5 h4 {
-    display: none;
+    font-size: 15px;
+    padding-bottom: 3px;
+    letter-spacing: normal;
   }
 
   .why-mini-groups-1 {
-    display: none;
+    width: auto;
+    height: auto;
   }
 
   .why-mini-groups-2 {
-    display: none;
+    width: auto;
   }
 
   .why-mini-groups-3 {
-    display: none;
+    width: auto;
   }
 
   .why-mini-groups-1, .why-mini-groups-3, .why-mini-groups-5, .why-mini-groups-7, .why-mini-groups-9 {
-    display: none;
+    position: absolute;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
   }
 
   .why-mini-groups-2, .why-mini-groups-4, .why-mini-groups-6, .why-mini-groups-8 {
-    display: none;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
   }
 
   .why-mini-groups-2 p, .why-mini-groups-4 p, .why-mini-groups-6 p, .why-mini-groups-8 p {
-    display: none;
+    font-size: 14px;
+    max-width: 180px;
+    text-align: center;
+    margin: 0 auto;
   }
 
-  .why-mini-groups-1 div {
-    display: none;
+  .why-mini-groups div {
+    position: static;
+    left: auto;
+    top: auto;
   }
 
-  .why-mini-groups-3 div {
-    display: none;
+  .why-mini-groups-1 {
+    top: 83px;
+    left: 14px;
+  }
+
+  .why-mini-groups-2 {
+    top: 80px;
+    left: 140px;
+    width: 160px;
+  }
+
+  .why-mini-groups-3 {
+    top: 82px;
+    left: 340px;
+    width: 100px;
+  }
+
+  .why-mini-groups-4 {
+    top: 200px;
+    left: 40px;
+    width: 100px;
+  }
+
+  .why-mini-groups-5 {
+    top: 210px;
+    left: 165px;
+    width: 100px;
   }
 
   .why-mini-groups-5 div {
-    display: none;
+    position: relative;
+    top: auto;
+    left: auto;
   }
 
-  .why-mini-groups-7 div {
-    display: none;
+  .why-mini-groups-5 p {
+    position: absolute;
+    left: 18px;
+    width: 80px;
+    margin: 0;
   }
 
-  .why-mini-groups-9 div {
-    display: none;
+  .why-mini-groups-6 {
+    top: 190px;
+    left: 310px;
+    width: 120px;
+  }
+
+  .why-mini-groups-7 {
+    top: 350px;
+    left: 13px;
+    width: 100px;
+  }
+
+  .why-mini-groups-8 {
+    top: 330px;
+    left: 150px;
+    width: 150px;
+  }
+
+  .why-mini-groups-9 {
+    top: 350px;
+    left: 340px;
+    width: 100px;
   }
 }
 
@@ -207,19 +270,102 @@ table.why-mini-groups .why-mini-groups-5 h4 {
     background-position: center bottom;
     background-size: cover;
     font-size: 14px;
+    padding: 0;
   }
 
   .whyMiniGroups .wrapper {
-    width: 100%;
+    width: 320px;
     max-width: 320px;
     height: 100%;
     padding-top: 45px;
-    background-image: url('../img/content-whyMiniGroups-320.png');
+    background-image: url('../img/whyMiniGroups-320.png');
 
   }
 
   .whyMiniGroups .h1 {
     margin: 0 0 45px 0;
     font-size: 20px;
+  }
+
+  table.why-mini-groups h4 {
+    font-size: 12px;
+  }
+
+  .why-mini-groups-1, .why-mini-groups-3, .why-mini-groups-5, .why-mini-groups-7, .why-mini-groups-9 {
+    font-size: 12px;
+  }
+
+  .why-mini-groups-2, .why-mini-groups-4, .why-mini-groups-6, .why-mini-groups-8 {
+    font-size: 12px;
+  }
+
+  .why-mini-groups-2 p, .why-mini-groups-4 p, .why-mini-groups-6 p, .why-mini-groups-8 p {
+    font-size: 12px;
+  }
+
+  .why-mini-groups-1 {
+    top: 55px;
+    left: 27px;
+  }
+
+  .why-mini-groups-2 {
+    top: 140px;
+    left: 100px;
+    width: 130px;
+  }
+
+  .why-mini-groups-3 {
+    top: 55px;
+    left: 215px;
+    width: 80px;
+  }
+
+  .why-mini-groups-4 {
+    top: 250px;
+    left: 15px;
+    width: 80px;
+  }
+
+  .why-mini-groups-5 {
+    top: 260px;
+    left: 108px;
+    width: 100px;
+  }
+
+  .why-mini-groups-5 div {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .why-mini-groups-5 p {
+    position: absolute;
+    left: 10px;
+    width: 80px;
+    margin: 0;
+  }
+
+  .why-mini-groups-6 {
+    top: 230px;
+    left: 225px;
+    width: 80px;
+  }
+
+  .why-mini-groups-7 {
+    top: 480px;
+    left: 15px;
+    width: 100px;
+  }
+
+  .why-mini-groups-8 {
+    top: 360px;
+    left: 100px;
+    width: 130px;
+  }
+
+  .why-mini-groups-9 {
+    top: 480px;
+    left: 205px;
+    width: 100px;
   }
 }

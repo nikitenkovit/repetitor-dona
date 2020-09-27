@@ -301,6 +301,10 @@ button {
   line-height: 21px;
 }
 
+.br__320px {
+  display: none;
+}
+
 @media (max-width: 769px) {
   * {
     box-sizing: border-box;
@@ -311,6 +315,9 @@ button {
     max-width: 769px;
     box-sizing: border-box;
     overflow: hidden;
+  }
+  .br__480px {
+    display: block;
   }
 }
 
@@ -326,6 +333,12 @@ button {
     box-sizing: border-box;
     overflow: hidden;
   }
+  .br__320px {
+    display: block;
+  }
+  .br__480px {
+    display: none;
+  }
 }
 
 
@@ -339,3 +352,4 @@ button {
   border: 0;
   clip: rect(0 0 0 0)
 }
+
