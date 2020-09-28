@@ -156,7 +156,7 @@
   }
 }
 
-/*-----------------MATER---------------*/
+/*-----------------MATER (синие облако с сылками)---------------*/
 
 .matterWrapper {
   width: 980px;
@@ -201,7 +201,6 @@
     width: 450px;
     margin: 0 auto;
     padding: 0;
-    outline: 1px solid orange;
   }
 
   .teachers .matter {
@@ -210,17 +209,15 @@
     justify-content: space-around;
     width: 450px;
     height: 400px;
-    background: #dce6f0;
-    border-radius: 8px;
+    margin-bottom: 22px;
     padding: 0;
     font-size: 16px;
-    outline: 1px solid red;
   }
 
   .teachers .h2 {
     font-size: 18px;
     color: #1c1716;
-    margin: 0 0 11px 0;
+    margin: 0 0 20px 0;
     padding: 0;
     text-align: center;
   }
@@ -229,22 +226,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 0 29px 0;
+    margin: 0;
+    padding: 0;
   }
 
   .teachers .matter > div:last-child {
-    margin: 0 0 0 0;
+    margin: 0;
   }
 
   .teachers .matter a {
-    width: auto;
-    color: #666666;
-    text-decoration: none;
-    border-bottom: 1px solid #666666;
   }
 }
 
-/*-------------teacherItem-----------------------*/
+/*-------------teacherItem (карточка препода - верняя часть карточки)-----------------------*/
 
 .teacherItem {
   width: 100%;
@@ -420,6 +414,197 @@
   margin: 0 0 0 0;
 }
 
+@media (max-width: 769px) {
+  .teacherItem {
+    position: relative;
+    margin: 0;
+    margin-bottom: 22px;
+    padding: 0 17px;
+  }
+  .teacherItemInfoMatter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 250px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .teachers .h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+
+  .teacherItem .teacherItemInfo {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    vertical-align: top;
+    margin: 22px 0 0 0;
+    padding: 0;
+    border-right: none;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  .teacherItemInfoPic {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .teacherItemInfoPic img {
+    width: 185px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .teacherItemInfoDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 182px;
+    margin: 40px auto 37px auto;
+    padding: 0;
+  }
+
+  .teacherItemInfoDetail > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 175px;
+    padding: 0;
+    border-bottom: 1px solid #959595;
+  }
+
+  .teacherItemInfoDetail > ul > li {
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    padding-left: 35px;
+    font-size: 14px;
+    line-height: 30px;
+    position: relative;
+  }
+
+  .teacherItemInfoDetail > ul > li:last-child {
+    margin-bottom: 7px;
+  }
+
+  .teacherItemInfoDetail > ul > li:before {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 26px;
+  }
+
+  .matter13:before {
+    top: 5px;
+    width: 16px;
+    height: 17px;
+  }
+
+  .matter2:before {
+    top: 5px;
+    height: 17px;
+    background: url('../img/teacherItemTick.png') -4px -42px no-repeat;
+  }
+
+  .matter3:before {
+    top: 0;
+    height: 25px;
+    background: url('../img/teacherItemTick.png') 0 2px no-repeat;
+  }
+
+  .matter4:before {
+    width: 26px;
+    max-width: 26px;
+    top: 2px;
+    height: 21px;
+    background: url('../img/teacherItemTick.png') 0 -58px no-repeat;
+  }
+
+  .matter5:before {
+    top: 0;
+    height: 26px;
+    background: url('../img/teacherItemTick.png') 0 2px no-repeat;
+  }
+
+  .matter6:before {
+    top: 5px;
+    height: 22px;
+    background: url('../img/teacherItemTick.png') 0px -78px no-repeat;
+  }
+
+  .matter7:before {
+    top: 3px;
+    height: 22px;
+    background: url('../img/teacherItemTick.png') -2px -180px no-repeat;
+  }
+
+  .matter8:before {
+    top: -3px;
+    height: 30px;
+    background: url('../img/teacherItemTick.png') 0px -125px no-repeat;
+  }
+
+  .matter9:before {
+    top: 4px;
+    height: 23px;
+    background: url('../img/teacherItemTick.png') 0px -99px no-repeat;
+  }
+
+  .matter10:before {
+    top: 2px;
+    width: 32px;
+    height: 25px;
+    background: url('../img/teacherItemTick.png') 1px -155px no-repeat;
+  }
+
+  .matter11:before {
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    top: 2px;
+    background: url('../img/teacherItemTickLit.png') 5px center no-repeat;
+  }
+
+  .matter12:before {
+    width: 22px;
+    height: 27px;
+    background: url('../img/teacherItemTickGeo.png') center no-repeat;
+  }
+
+  .teacherItemInfo a.teacherItemInfoWatchingVideo {
+    width: 160px;
+    font-size: 13.8px;
+  }
+
+  .teacherItemInfoExperience {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .teacherItemInfoExperience li {
+    max-width: 180px;
+    font-size: 14px;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 6px;
+  }
+}
+
+/*-------------------teacherItemMoreInfo (подробная информация о преподе - нижняя часть карточки)*/
+
 .teacherItemMoreInfo {
   display: inline-block;
   vertical-align: top;
@@ -526,6 +711,117 @@
 .teacherItemMoreInfoReview {
   margin-left: 37px;
 }
+
+@media (max-width: 769px) {
+  .teacherItemMoreInfo {
+    width: 100%;
+    margin-top: 30px;
+    padding: 0;
+    position: relative;
+    font-size: 18px;
+    color: #333333;
+  }
+
+  .teacherItemMoreInfo .h2 {
+    font-size: 20px;
+    text-transform: none;
+    color: #df4f3b;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .teacherItemMoreInfo .h3 {
+    font-size: 16px;
+    color: #569029;
+    text-transform: none;
+    margin: 0 0 23px 0;
+  }
+
+  .teacherItemMoreInfo p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .teacherItemMoreInfo > ul {
+    margin-top: 20px;
+    padding: 0;
+    list-style: initial;
+    list-style-position: inside;
+  }
+
+  .teacherItemMoreInfo > ul > li {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .teacherItemMoreInfo > ul > li p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+
+  .teacherItemMoreInfo > ul > li:before {
+  display: none;
+  }
+
+  .teacherItemMoreInfo strong,
+  .teacherItemAbout strong {
+    font-family: 'PTSansBold';
+  }
+
+  .teacherItemMoreInfo p:last-child {
+    margin: 0 0 0 0;
+  }
+
+  .teacherItemMoreInfoAddress {
+    max-width: 290px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 23px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .teacherItemMoreInfoPrice {
+    max-width: 290px;
+    margin: 13px auto 25px auto;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .teacherItemMoreInfoAchievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 35px 0 30px 0;
+    text-align: center;
+  }
+
+  .teacherItemMoreInfoAchievement p {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .teacherItemMoreInfoLinks {
+    position: static;
+    margin-bottom: 35px;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+/*---------------teacherItemMoreInfo (страница Подробнее о преподователе)*/
 
 .teacherItemAbout {
   padding-top: 22px;

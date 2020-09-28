@@ -6,10 +6,11 @@
 5 - Добавил <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 17 - заменил  style.css на <link href="css/style.min.css" rel="stylesheet">
 22 - добавил <script src="js/script.js" defer></script> атрибут defer обязателен!
+53- добавил <button class="nav__toggle-button" aria-label="Открыть меню"></button>
+
 
 ------------------только index.html:----------------------------
 временно изменил адреса html ссылок в nav, для возможности моей работы.
-53- добавил <button class="nav__toggle-button" aria-label="Открыть меню"></button>
 78- удалил <li class='show'><a href=''>
                      <img src='./netcat_files/19/20/bannerTop_0.jpg' alt=''>
                    </a></li>
@@ -37,6 +38,7 @@
 328 - добавил br с классом  <p>Участвуют <br class="br__480px">в обучающих играх</p>
 
 -------------------prepodavateli-i-stoimost.html------------------------
+
 
 80 -  разделил на два параграфа и добавил грёбаные классы <p class="teachers__description teachers__description--1"><em>Занятия в наших мини-группах подготовки к ЕГЭ и ОГЭ ведут лучшие репетиторы Ростова-на-Дону.</em></p>
     <p class="teachers__description teachers__description--2"><em>В нашей команде только профессионалы своего дела</em></p>
@@ -81,8 +83,13 @@ js
 планшет max-width: 769px
 мобила max-width: 479px
 
+
 в basicCompose на десктопе уменьшил высоту родителя на 5 пикселей до 555
 whyMiniGroups на десктопе отсутсвовал бэкграунд сделал новый
 обратить внимание на шрифты в форме!
 в преимуществах не совпадает текст (дебильный)
 нахрена селекторы .courses-title h4 и .courses-title если их нет в html? и еще куча не существующих селекторов (например в слайдере)
+
+проблеммы:
+
+teachers карточка фотка по вертикале
