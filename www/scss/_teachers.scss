@@ -100,8 +100,6 @@
   }
 
   .teachersRank {
-    font-size: 0;
-    color: #964b4d;
     margin: 25px 0 0 0;
   }
 
@@ -124,6 +122,9 @@
     text-align: center;
     margin: 0 0 23px 0;
     position: relative;
+    & .br__320px {
+      display: block;
+    }
   }
 
   .teachersRank li:before {
@@ -153,6 +154,67 @@
 
   .teachersRank li:nth-child(5):before {
     top: 0;
+  }
+}
+
+
+@media (max-width: 479px) {
+  .inner .wrapper > .wrapper.teachers {
+    height: auto;
+    width: 320px;
+    max-width: 320px;
+  }
+
+  .teachers > .h1 {
+    width: 290px;
+    margin: 0 0 17px 0;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .teachers__description {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .teachers__description--1 {
+    width: 290px;
+  }
+
+  .teachers__description--2 {
+    width: 290px;
+  }
+
+  .teachersRank ul {
+    width: 320px;
+    height: 415px;
+    padding: 0 15px;
+  }
+
+  .teachersRank li {
+    max-width: 50%;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .teachersRank li:nth-child(1):before {
+    left: 50px;
+  }
+
+  .teachersRank li:nth-child(2):before {
+    left: 50px;
+  }
+
+  .teachersRank li:nth-child(3):before {
+    left: 50px;
+  }
+
+  .teachersRank li:nth-child(4):before {
+    left: 50px;
+  }
+
+  .teachersRank li:nth-child(5):before {
+    left: 50px;
   }
 }
 
@@ -235,6 +297,50 @@
   }
 
   .teachers .matter a {
+  }
+}
+
+@media (max-width: 479px) {
+  .matterWrapper {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .teachers .matter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 290px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .teachers .h2 {
+    font-size: 18px;
+    color: #1c1716;
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .teachers .matter > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .teachers .matter > div:last-child {
+    margin: 0;
+  }
+
+  .teachers .matter a {
+    font-size: 15px;
   }
 }
 
@@ -603,6 +709,61 @@
   }
 }
 
+@media (max-width: 479px) {
+  .teacherItem {
+    position: relative;
+    width: 290px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    padding: 0 10px;
+  }
+  .teacherItemInfoMatter {
+    position: static;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .teachers .h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+
+  .teacherItem .teacherItemInfo {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 13px 0 0 0;
+  }
+
+  .teacherItemInfoPic {
+    width: auto;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .teacherItemInfoPic img {
+    width: 145px;
+  }
+
+  .teacherItemInfoDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 15px auto 27px auto;
+  }
+
+  .teacherItemInfoExperience {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
+
 /*-------------------teacherItemMoreInfo (подробная информация о преподе - нижняя часть карточки)*/
 
 .teacherItemMoreInfo {
@@ -768,7 +929,7 @@
   }
 
   .teacherItemMoreInfo > ul > li:before {
-  display: none;
+    display: none;
   }
 
   .teacherItemMoreInfo strong,
@@ -809,7 +970,7 @@
     max-width: 350px;
     margin: 0 auto;
     padding: 0;
-    line-height: normal;
+    line-height: 20px;
     text-align: center;
   }
 
@@ -818,6 +979,57 @@
     margin-bottom: 35px;
     font-size: 15px;
     text-align: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .teacherItemMoreInfo {
+    width: 100%;
+    margin-top: 23px;
+    padding: 0;
+    position: relative;
+    font-size: 18px;
+    color: #333333;
+  }
+
+  .teacherItemMoreInfo .h2 {
+    font-size: 18px;
+    text-transform: none;
+    color: #df4f3b;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .teacherItemMoreInfoAchievement p {
+    width: auto;
+    max-width: 290px;
+    margin: 0 auto;
+    padding: 0 1px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .teacherItemMoreInfoLinks {
+    position: static;
+    width: 100%;
+    margin-bottom: 35px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .teacherItemMoreInfoLinks a {
+    display: block;
+  }
+
+  .teacherItemMoreInfoMore {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .teacherItemMoreInfoReview {
+    width: 120px;
+    margin: 0 auto;
   }
 }
 
