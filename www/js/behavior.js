@@ -71,9 +71,9 @@ $(function () {
       return null;
   }
 
-  //set_cookie ( "rightModalWindow", "0" );
+  set_cookie ( "rightModalWindow", "0" );
 
-  //var rightModalWindow = get_cookie ( "rightModalWindow" );
+  var rightModalWindow = get_cookie ( "rightModalWindow" );
 
   function showInterview() {
     var button = $('.showInterview, .takeInterview, .takeClass, .takeResult'),
@@ -95,7 +95,7 @@ $(function () {
 
     $('.interview').addClass('active');
 
-  }, 60000);
+  }, 0);
 
   function closeWindow() {
     $('#cboxOverlay, .closeModalWindow').on('click', function () {
