@@ -1,7 +1,5 @@
-.reviewsWrapper {
-  width: 980px;
-  margin: 0 auto 40px auto;
-}
+/* Reviews
+-----------------------------------------------------------------------------*/
 
 .reviewsWrapper .h2, .wrapper.reviews .h2 {
   font-size: 18px;
@@ -19,12 +17,102 @@
   margin: 0 0 0 0;
 }
 
-.reviewsWrapper td.reviewsMenu,
-.reviewsWrapper td.reviewsItems {
-  background: #e8f3ed;
-  padding: 27px 20px;
-  vertical-align: top;
+/*--------верхняя часть с заголовком и описанием------------*/
+
+@media (max-width: 769px) {
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    max-width: 450px;
+    margin: 0 auto;
+    padding-bottom: 10px !important;
+    text-align: center;
+
+    & p {
+      font-size: 16px !important;
+    }
+
+    & h1 {
+      font-size: 20px !important;
+      margin-top: 30px !important;
+    }
+
+    & h1 + p {
+      max-width: 380px;
+      margin: 0;
+      padding: 0;
+    }
+
+    & p + p {
+      max-width: 437px;
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
+
+@media (max-width: 479px) {
+  .reviews {
+    width: 290px;
+    max-width: 290px;
+
+    & p {
+      font-size: 16px !important;
+    }
+
+    & h1 {
+      font-size: 18px !important;
+      margin-top: 30px !important;
+    }
+
+    & h1 + p {
+      max-width: 288px;
+    }
+
+    & p + p {
+      max-width: 288px;
+    }
+  }
+}
+
+/*--------общий враппер на всё ниже заголовка с описанием---------*/
+
+.reviewsWrapper {
+  width: 980px;
+  margin: 0 auto 40px auto;
+}
+
+@media (max-width: 769px) {
+  .reviewsWrapper {
+    display: block;
+    width: 450px;
+    max-width: 450px;
+    margin: 0 auto 49px auto;
+  }
+  .reviewsWrapper tr:nth-child(1) {
+    display: flex;
+    justify-content: center;
+  }
+  .reviewsWrapper tr:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 13px;
+    background: #e8f3ed;
+  }
+}
+
+@media (max-width: 479px) {
+  .reviewsWrapper {
+    width: 320px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+/*---------Две вкладки ОТЗЫВЫ и ВИДЕО ВЫПУСКНИКОВ-------------*/
 
 .reviewsTabs {
   padding: 0 0 0 20px;
@@ -89,6 +177,26 @@
 
 .reviewsTabs a.active:last-child:before {
   background: url('../img/reviewTabsIco.png') -46px 0 no-repeat;
+}
+
+@media (max-width: 679px) {
+  .reviewsTabs {
+    padding: 0;
+  }
+
+  .reviewsTabs a {
+    padding: 0 30px 0 55px;
+    margin: 0 3px 0 0;
+    font-size: 18px;
+  }
+}
+
+/*--------------Меню с предметами--------------------*/
+
+.reviewsWrapper td.reviewsMenu {
+  background: #e8f3ed;
+  padding: 27px 20px;
+  vertical-align: top;
 }
 
 .reviewsWrapper .reviewsMenu {
@@ -173,6 +281,116 @@
   margin: 0 0 0 38px;
   text-decoration: none;
 }
+
+@media (max-width: 679px) {
+  .reviewsWrapper td.reviewsMenu {
+    background: none;
+    padding: 0;
+  }
+
+  .reviewsWrapper .reviewsMenu {
+    width: 100%;
+  }
+
+  .reviewsMenu ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .reviewsMenu li {
+    font-size: 14px;
+    padding: 10px 0;
+    position: relative;
+    outline: 1px solid orange;
+  }
+
+  .reviewsMenu .active, .reviewsMenu li:hover {
+    background: #FFF;
+  }
+
+  .reviewsMenu li:before {
+    top: 7px;
+    width: 20px;
+    height: 22px;
+  }
+
+  .reviewsMenu li.matter1:before {
+    background: url('../img/courseItemsIco.png') -2px -10px no-repeat;
+  }
+
+  .reviewsMenu li.matter2:before {
+    background: url('../img/courseItemsIco.png') -62px -8px no-repeat;
+  }
+
+  .reviewsMenu li.matter3:before {
+    background: url('../img/courseItemsIco.png') -121px -46px no-repeat;
+  }
+
+  .reviewsMenu li.matter4:before {
+    width: 25px;
+    background: url('../img/courseItemsIco.png') -2px -91px no-repeat;
+  }
+
+  .reviewsMenu li.matter5:before {
+    width: 22px;
+    background: url('../img/courseItemsIco.png') -2px -46px no-repeat;
+  }
+
+  .reviewsMenu li.matter6:before {
+    background: url('../img/courseItemsIco.png') left no-repeat;
+  }
+
+  .reviewsMenu li.matter7:before {
+    width: 24px;
+    background: url('../img/courseItemsIco.png') -122px -92px no-repeat;
+  }
+
+  .reviewsMenu li.matter8:before {
+    top: 3px;
+    left: 3px;
+    height: 28px;
+    background: url('../img/courseItemsIco.png') -64px -81px no-repeat;
+  }
+
+  .reviewsMenu li.matter9:before {
+    width: 22px;
+    background: url('../img/courseItemsIco.png') -60px -49px no-repeat;
+  }
+
+  .reviewsMenu li.matter10:before {
+    background: url('../img/courseItemsIco.png') -123px -7px no-repeat;
+  }
+
+  .reviewsMenu li.matter11:before {
+    background-position: 0 0;
+  }
+  
+  .reviewsMenu a, .reviewsMenu span {
+    margin: 0 0 0 28px;
+  }
+}
+
+
+/*-----------------------контейнер на все карточки с отзывом-----------------------------------*/
+.reviewsWrapper td.reviewsItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  background: none;
+  padding: 27px 20px;
+  vertical-align: top;
+}
+
+/*----------------------Пагинация-----------------------------------*/
+
+.reviewsItems .pages {
+
+}
+
+/*-----------------------Карточка с отзывом-----------------------------------*/
 
 .reviewsItem {
   background: #FFF;
@@ -308,4 +526,143 @@
   margin: 0 0 15px 0;
   border-radius: 8px;
   padding: 12px 18px 16px 18px;
+}
+
+@media (max-width: 679px) {
+  .reviewsItem {
+    max-width: 422px;
+    background: #FFF;
+    border: 2px solid #c2c2c2;
+    margin: 0 0 15px 0;
+  }
+
+  .reviewsItem:last-child {
+    margin: 0 0 0 0;
+  }
+
+  .reviewsItemPic {
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+    padding: 18px 0 18px 0;
+    text-align: center;
+    background: url('../img/reviewVerticalLine.gif') right 50px no-repeat;
+  }
+
+  .reviewsItemPic img {
+    border-width: 2px;
+    border-color: #c2c2c2;
+    border-style: solid;
+    border-radius: 108px;
+  }
+
+  .reviewsItemAuthor {
+    display: inline-block;
+    vertical-align: top;
+    width: 318px;
+    padding: 16px 0 0 55px;
+    font-family: 'PTSansItalic';
+    color: #333333;
+  }
+
+  .reviewsItemAuthor .h3 {
+    font-family: 'PTSansBoldItalic';
+    font-size: 19.5px;
+    text-transform: none;
+    margin: 0 0 14px 22px;
+  }
+
+  .reviewsItemAuthor .h3 a {
+    color: #ed1e24;
+    text-decoration: underline;
+  }
+
+  .reviewsItemDesc1 {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 15px 0;
+  }
+
+  .reviewsItemDesc1 > p {
+    margin: 0 0 0 0;
+  }
+
+  .reviewsItemDesc2 {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+  }
+
+  .reviewsItemDesc2 > div {
+    margin: 0 0 13px 0;
+  }
+
+  .reviewsItemDesc1 a, .reviewsItemDesc2 a {
+    color: #de5958;
+    border-bottom: 1px solid #de5958;
+    text-decoration: none;
+  }
+
+  .reviewsItemText {
+    border-top: 2px solid #c2c2c2;
+    padding: 16px 18px;
+    position: relative;
+  }
+
+  .reviewsItemText strong {
+    font-family: 'PTSansBold';
+  }
+
+  .reviewsItemText:before {
+    position: absolute;
+    content: url('../img/reviewHorizontallLineArrow.png');
+    top: -24px;
+    left: 203px;
+  }
+
+  .reviewsItemVideo button {
+    display: table;
+    padding: 10px 14px;
+  }
+
+  .reviewsItemVideoReview {
+    display: none;
+    margin: 15px auto 0 auto;
+    transition: all 0.2s;
+  }
+
+  .reviewsItemVideoReview.active {
+    display: table;
+  }
+
+  .reviewsTeachersItem > span {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 31px;
+    text-align: center;
+    margin: 0 0 0 20px;
+    font-size: 18px;
+    color: #FFF;
+
+    background: #de5958; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RlNTk1OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2RkNTk1OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjNjRmNGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #de5958 0%, #dd5958 50%, #c64f4e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #de5958), color-stop(50%, #dd5958), color-stop(100%, #c64f4e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #de5958 0%, #dd5958 50%, #c64f4e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #de5958 0%, #dd5958 50%, #c64f4e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #de5958 0%, #dd5958 50%, #c64f4e 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #de5958 0%, #dd5958 50%, #c64f4e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#de5958', endColorstr='#c64f4e', GradientType=0); /* IE6-8 */
+
+  }
+
+  .reviewsTeachersItemText {
+    background: #FFF;
+    border: 2px solid #c2c2c2;
+    margin: 0 0 15px 0;
+    border-radius: 8px;
+    padding: 12px 18px 16px 18px;
+  }
 }
