@@ -52,8 +52,9 @@
 фотка - белый фон в слайдере! СЕРЬЁЗНО!?)))))
 
 
-
-
+-------------------otzivi.html------------------------
+меню с предметами на синем фоне в ИЕ11(только в нем) чуть уже.
+решил сделать сам текст отзыва курсивом (font-family: 'PTSansItalic')
 
 //////////////////////////////////////
 img
@@ -78,6 +79,10 @@ YT.png
 basicComposeMethods-320.png
 basicComposeTeachers-320.png
 basicComposeResult-320.png
+ico-video-320-active.png
+ico-video-320.png
+ico-otzivi-320-active.png
+ico-otzivi-320.png
 
 netcat_files/19/20 добавил banner-tochilka-480.jpg
 netcat_files/19/20 добавил banner-prevedi-druga-480.jpg
