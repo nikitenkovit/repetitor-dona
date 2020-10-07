@@ -290,7 +290,8 @@
 
 /*--------------Меню с предметами--------------------*/
 
-.reviewsWrapper td.reviewsMenu {
+.reviewsWrapper td.reviewsMenu,
+.reviewsWrapper td.reviewsItems {
   background: #e8f3ed;
   padding: 27px 20px;
   vertical-align: top;

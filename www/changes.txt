@@ -2,7 +2,6 @@
 
 --------------------во всех html файлах:-------------------------
 
-убрал ФфПЕЗДУ:) <button class="showInterview"></button>
 5 - Добавил <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 17 - заменил  style.css на <link href="css/style.min.css" rel="stylesheet">
 22 - добавил <script src="js/script.js" defer></script> атрибут defer обязателен!
@@ -56,10 +55,28 @@
 меню с предметами на синем фоне в ИЕ11(только в нем) чуть уже.
 решил сделать сам текст отзыва курсивом (font-family: 'PTSansItalic')
 
+-------------------ege.html------------------------
+
+2й блок картинка на 480пх не соответсвует шабоону (рамка) для респонсвив дизайна
+
+****ПОЧЕМУ В 5 БЛОКЕ В ОПИСАНИИ УЧЕНИКОВ НЕТ ИНФОРМАЦИИ О ДОСТИЖЕНИЯХ?****
+
+ПЕРЕДАЛАТЬ СЛАЙДЕР!
+
+добавил br  <h1 class="h1 center"><p>Курсы подготовки к ЕГЭ <br class="br__480px">и олимпиадам в Ростове-на-Дону<br />
+          для 10-11 класса</p></h1>
+добавил br   <p>120 учеников<br class="br__480px"> из 120 поступили в вуз в<br />
+                      2015 году</p>
+добавил br <li><div class="text-ico"><p>от 370 рублей в час<br />
+271 строка добавил br с классом <div class="h2 center">ПРОБЛЕМЫ, С КОТОРЫМИ СТАЛКИВАЮТСЯ ШКОЛЬНИКИ  ПРИ ПОДГОТОВКЕ К ЕГЭ <br class="br__480px"> И ПОСТУПЛЕНИЮ В ВУЗ</div>
+333  строка добавил br с классом <div class="h4">ГОТОВИМ ПО ВСЕМ <br class="br__320px"> ЧАСТЯМ ЕГЭ</div>
+339  строка добавил br с классом <div class="h4">УВЕЛИЧИВАЕМ ЗНАНИЯ <br class="br__320px"> В 2 РАЗА</div>
+363  строка добавил br с классом <div class="h4">СРЕДНИЙ БАЛЛ <br class="br__320px"> В 2015 ГОДУ 72,3</div>
+
 //////////////////////////////////////
 img
 
-оптимизировал на 90% headerBg.jpg
+оптимизировал на 90% размер headerBg.jpg
 logo-320.png
 logo-480.png
 bg-320.jpg
@@ -83,6 +100,25 @@ ico-video-320-active.png
 ico-video-320.png
 ico-otzivi-320-active.png
 ico-otzivi-320.png
+сильно оптимизировал размер egeTopPic.jpg
+egeTopPic-480.jpg
+сильно оптимизировал размер egeBlock2Pic.jpg
+egeBlock2Pic-480.jpg
+egeBlock2Arrow-480.png
+egeBlock2Arrow-320.png
+egeBlock4BG-480.jpg
+egeBlock5ResultPic-480.png
+egeBlock6ItemsPic-1.png
+egeBlock6ItemsPic-2.png
+egeBlock6ItemsPic-3.png
+egeBlock6ItemsPic-4.png
+egeBlock6ItemsPic-5.png
+egeBlock6ItemsPic-6.png
+egeBlock6ItemsPic-7.png
+egeBlock6ItemsPic-8.png
+egeBlock7BG-480.jpg
+оптимизировал egeBlock9bG.jpg
+egeBlock9bG-480.jpg
 
 netcat_files/19/20 добавил banner-tochilka-480.jpg
 netcat_files/19/20 добавил banner-prevedi-druga-480.jpg
