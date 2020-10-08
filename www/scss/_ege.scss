@@ -362,7 +362,7 @@
   }
 
   .gia .block3 .items li {
-    width: 33.3%;
+    width: 190px;
   }
 
   .ege .block3 .h3, .gia .block3 .h3 {
@@ -486,7 +486,15 @@
   }
 
   .gia .block3 .items li {
-    width: 33.3%;
+    width: 130px;
+  }
+
+  .gia .block3 .items li:nth-child(6) {
+    margin-bottom: 15px;
+
+    &::before {
+      top: 0;
+    }
   }
 
   .ege .block3 .h3, .gia .block3 .h3 {
@@ -1478,7 +1486,7 @@
 
 @media (max-width: 479px) {
   .ege .block7 {
-    height: 2090px;
+    height: 2060px;
     background: url('../img/egeBlock7BG-480.jpg') center center no-repeat;
     background-size: cover;
   }
@@ -1632,7 +1640,7 @@
     margin-top: 35px;
   }
 
-  .ege .block8 tr:last-child td:first-child, .gia .block7 tr:last-child td:first-child {
+  .ege .block8 tr:last-child td:first-child, {
     order: 1;
     margin-top: 10px;
     margin-bottom: 25px;
@@ -1930,7 +1938,7 @@
 @media (max-width: 479px) {
   .ege .block9, .gia .block9 {
     min-height: 685px;
-    padding-bottom: 68px;
+    padding-bottom: 50px;
   }
 
   .ege .block9 .wrapper, .gia .block9 .wrapper {
