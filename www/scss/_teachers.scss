@@ -227,9 +227,16 @@
 }
 
 .teachers .matter {
+  height: 221px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 30px;
   background: #dce6f0;
   border-radius: 8px;
-  padding: 25px 78px 25px 80px;
+  padding: 25px 80px;
   font-size: 20px;
 }
 
@@ -242,20 +249,19 @@
   padding: 0 0 0 25px;
 }
 
-.teachers .matter > div {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 0 29px 0;
-}
-
-.teachers .matter > div:last-child {
-  margin: 0 0 0 0;
-}
 
 .teachers .matter a {
+  display: block;
+  margin: 0;
+  margin-right: 30px;
+  margin-bottom: 25px;
+  padding: 0;
   color: #666666;
   text-decoration: none;
   border-bottom: 1px solid #666666;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 769px) {
@@ -268,11 +274,11 @@
   .teachers .matter {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     width: 450px;
     height: 400px;
     margin-bottom: 22px;
-    padding: 0;
+    padding: 20px 30px;
     font-size: 16px;
   }
 
@@ -284,19 +290,12 @@
     text-align: center;
   }
 
-  .teachers .matter > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-  }
-
-  .teachers .matter > div:last-child {
-    margin: 0;
-  }
-
   .teachers .matter a {
+    display: block;
+    margin: 0;
+    min-width: 180px;
+    text-align: center;
+    border: 0;
   }
 }
 
@@ -310,13 +309,28 @@
   .teachers .matter {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     width: 290px;
     height: 400px;
     margin: 0 auto;
     margin-bottom: 22px;
-    padding: 0;
+    padding: 20px 10px;
     font-size: 16px;
+  }
+
+  .teachers .h2 {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .teachers .matter a {
+    display: block;
+    margin: 0;
+    min-width: 120px;
+    text-align: center;
+    border: 0;
   }
 
   .teachers .h2 {
@@ -325,18 +339,6 @@
     margin: 0 0 20px 0;
     padding: 0;
     text-align: center;
-  }
-
-  .teachers .matter > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-  }
-
-  .teachers .matter > div:last-child {
-    margin: 0;
   }
 
   .teachers .matter a {

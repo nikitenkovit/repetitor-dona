@@ -1,3 +1,8 @@
+/* VACANCY
+-----------------------------------------------------------------------------*/
+
+/*--------------block-1----------------*/
+
 .vacancy .block1 {
   height: 157px;
   background: url('../img/vacancyTopPic.jpg') center top no-repeat;
@@ -15,6 +20,65 @@
   font-size: 24px;
   padding-top: 12px;
 }
+
+@media (max-width: 769px) {
+  .vacancy .block1 {
+    height: 225px;
+    background: url('../img/vacancyTopPic.jpg') left top no-repeat;
+    background-size: cover;
+  }
+
+  .vacancy .block1 .wrapper {
+    position: relative;
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .vacancy .block1 .loginPan {
+    right: 0;
+  }
+
+  .vacancy .block1 .h1 {
+    width: 430px;
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 70px;
+  }
+
+  .vacancy .block1 .h2 {
+    width: 275px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 479px) {
+  .vacancy .block1 {
+    background: url('../img/vacancyTopPic-320.jpg') center bottom no-repeat;
+    background-size: cover;
+    height: 231px;
+  }
+
+  .vacancy .block1 .wrapper {
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .vacancy .block1 .h1 {
+    width: 245px;
+    font-size: 20px;
+    line-height: 23px;
+    padding-top: 70px;
+  }
+
+  .vacancy .block1 .h2 {
+    width: 250px;
+    font-size: 17px;
+    line-height: 21px;
+  }
+}
+
+/*--------------block-2----------------*/
 
 .vacancy .block2 {
   height: 400px;
@@ -78,6 +142,187 @@
   font-size: 30px;
   color: #ed1e24;
 }
+
+@media (max-width: 769px) {
+  .vacancy .block2 {
+    position: relative;
+    height: 387px;
+    padding: 43px 0;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 254px;
+      height: 234px;
+      background-image: url("../img/vacancyStudent-480.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 254px;
+      height: 234px;
+      background-image: url("../img/vacancyTeacher-480.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  .vacancy .block2 .wrapper {
+    width: 450px;
+    margin: 0 auto;
+    position: static;
+  }
+
+  .vacancy .block2 .h4 {
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .vacancy .block2 .wrapper:before {
+    display: none;
+  }
+
+  .vacancy .block2 .wrapper:after {
+    display: none;
+  }
+
+  .vacancy .block2 .info {
+    width: 230px;
+    height: 215px;
+    margin: 25px auto 0 auto;
+    padding: 30px 0 0;
+    border: 4px solid #e1e1e1;
+    position: relative;
+    z-index: 2;
+  }
+
+  .vacancy .block2 .h5 {
+    color: #333333;
+    text-transform: uppercase;
+    margin: 0 0 26px 0;
+    font-size: 21px;
+    line-height: 14px;
+  }
+
+  .vacancy .block2 ul {
+    width: 190px;
+    margin: 0 auto;
+    padding-left: 5px;
+  }
+
+  .vacancy .block2 li {
+    display: flex;
+    align-items: center;
+    color: #333333;
+    font-size: 18px;
+    line-height: 14px;
+    margin: 0 0 30px 0;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .vacancy .block2 ul span {
+    font-size: 24px;
+    line-height: 14px;
+    margin-right: 13px;
+  }
+  .vacancy .block2 li:nth-child(2) span {
+    margin-left: 7px;
+    margin-right: 19px;
+  }
+  .vacancy .block2 li:nth-child(3) span {
+    margin-left: 13px;
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 479px) {
+  .vacancy .block2 {
+    position: relative;
+    height: 484px;
+    padding: 38px 0;
+    font-size: 18px;
+    line-height: 22px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 163px;
+      height: 129px;
+      background-image: url("../img/vacancyStudent-320.png");
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 150px;
+      height: 122px;
+      background-image: url("../img/vacancyTeacher-320.png");
+    }
+  }
+
+  .vacancy .block2 .wrapper {
+    width: 290px;
+  }
+
+  .vacancy .block2 .h4 {
+    width: 230px;
+  }
+
+  .vacancy .block2 .info {
+    width: 227px;
+    height: 206px;
+    margin: 27px auto 0 auto;
+    padding: 29px 0 0;
+    border: 3px solid #e1e1e1;
+    background: #FFF;
+    position: relative;
+    z-index: 2;
+  }
+
+  .vacancy .block2 .h5 {
+    color: #333333;
+    text-transform: uppercase;
+    margin: 0 0 33px 0;
+    font-size: 20px;
+    line-height: 14px;
+  }
+
+  .vacancy .block2 ul {
+    width: 190px;
+    margin: 0 auto;
+    padding-left: 5px;
+  }
+
+  .vacancy .block2 li {
+    margin: 0 0 27px 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .vacancy .block2 ul span {
+    font-size: 23px;
+  }
+}
+
+/*--------------block-3----------------*/
 
 .vacancy .block3 {
   min-height: 525px;
@@ -201,6 +446,164 @@
   text-shadow: 0px -1px 0px rgba(173, 43, 42, 1);
 }
 
+@media (max-width: 769px) {
+  .vacancy .block3 {
+    min-height: 1093px;
+    height: 1093px;
+    padding: 45px 0 0 0;
+  }
+
+  .vacancy .block3 .wrapper {
+    width: 450px;
+  }
+
+  .vacancy .block3 .h1 {
+    width: 370px;
+    font-size: 24px;
+    line-height: 14px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .vacancy .block3 .h3 {
+    font-size: 24px;
+    line-height: 14px;
+    margin: 0 0 21px 0;
+  }
+
+  .vacancy .block3 strong {
+    font-weight: 700;
+  }
+
+  .vacancy .block3Left {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 26px;
+  }
+
+  .vacancy .block3Right {
+    display: block;
+  }
+
+  .vacancy .block3Item {
+    width: 100%;
+  }
+
+  .vacancy .block3ItemTeacher {
+    width: 100%;
+    margin: 40px 0 0 0;
+    display: block;
+  }
+}
+
+@media (max-width: 479px) {
+  .vacancy .block3 {
+    min-height: 1018px;
+    height: 1018px;
+    padding: 49px 0 0 0;
+  }
+
+  .vacancy .block3 .wrapper {
+    width: 290px;
+  }
+
+  .vacancy .block3 .h1 {
+    width: 100%;
+    font-size: 19px;
+    margin-bottom: 25px;
+  }
+
+  .vacancy .block3 .h3 {
+    font-size: 20px;
+    margin: 0 0 15px 0;
+  }
+
+  .vacancy .block3Item {
+    width: 100%;
+    padding-left: 34px;
+    padding-right: 19px;
+    padding-bottom: 30px;
+  }
+
+  .vacancy .block3 li {
+    font-size: 15px;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+
+  .vacancy .block3 li:before {
+    top: 3px;
+    left: -23px;
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #8dc63f;
+  }
+
+  .vacancy .block3ItemTeacher {
+    width: 100%;
+    margin: 50px 0 0 0;
+    display: inline-block;
+  }
+
+  .vacancy .block3ItemTeacherLeft {
+    float: left;
+    width: 102px;
+    height: 102px;
+    background: url('../img/vacancyBarantsov-320.png') left top no-repeat;
+  }
+
+  .vacancy .block3ItemTeacherRight {
+    position: relative;
+    width: 180px;
+  }
+
+  .vacancy .block3ItemTeacherRight blockquote {
+    display: flex;
+    align-items: center;
+    width: 174px;
+    height: 62px;
+    padding: 0 5px;
+    padding-left: 7px;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 10px;
+  }
+
+  .vacancy .block3ItemTeacherRight blockquote:before {
+    content: url('../img/vacancyBuble.png');
+    position: absolute;
+    top: 20px;
+    left: -12px;
+  }
+
+  .vacancy .block3ItemTeacherRight p {
+    font-family: 'PTSansItalic';
+    font-size: 12px;
+    line-height: 13px;
+    margin: 7px 0 12px 0;
+  }
+
+  .vacancy .block3ItemTeacherRight .btn {
+    position: absolute;
+    bottom: -37px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 225px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 14px;
+    height: 37px;
+    line-height: normal;
+  }
+}
+
+/*--------------block-4----------------*/
+
 .vacancy .block4 {
   min-height: 468px;
 }
@@ -308,6 +711,240 @@
   background: #FFF;
 }
 
+@media (max-width: 769px) {
+  .vacancy .block4 {
+    min-height: 779px;
+  }
+
+  .vacancy .block4 .wrapper {
+    width: 450px;
+    padding: 75px 0 70px 0;
+  }
+
+  /*------------синей блок с предметами-------------*/
+
+  .vacancy .block4 .matters {
+    width: 100%;
+    min-height: 203px;
+    background: url('../img/vacancyMatterBG-480.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .vacancy .block4 .matters .h2 {
+    display: table;
+    padding: 10px 26px 5px 26px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: normal;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px 2px 2px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  .vacancy .block4 table {
+    width: 100%;
+    margin: 20px auto 0 auto;
+    font-size: 16px;
+  }
+
+  .vacancy .block4 td {
+    padding-left: 15px;
+  }
+
+  .vacancy .block4 td:nth-child(1) {
+    width: 130px;
+  }
+
+  .vacancy .block4 td:nth-child(2) {
+    width: 130px;
+  }
+
+  .vacancy .block4 td:nth-child(3) {
+    width: 130px;
+  }
+
+  .vacancy .block4 td > div {
+    margin: 0 0 18px 0;
+  }
+
+  /*------------красный блок-------------*/
+
+  .vacancy .block4 .hotVacancy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 366px;
+    height: 445px;
+    padding: 15px 0 0 0;
+    background-image: none;
+  }
+
+  .vacancy .block4 .hotVacancy .h2 {
+    font-size: 24px;
+    line-height: 14px;
+    margin: 0;
+    margin-bottom: 10px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 91px;
+      height: 111px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      background-image: url('../img/vacancyHotVacancy-480.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .vacancy .block4 .hotVacancy .h3 {
+    font-size: 17px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .vacancy .block4 .hotVacancy ul {
+    margin: 0 0 0 25px;
+  }
+
+  .vacancy .block4 .hotVacancy li {
+    width: 240px;
+    font-size: 16px;
+    line-height: normal;
+    margin: 0 0 15px 0;
+    position: relative;
+  }
+
+  .vacancy .block4 .hotVacancy li:before {
+    position: absolute;
+    left: -23px;
+    top: 4px;
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #FFF;
+  }
+}
+
+@media (max-width: 479px) {
+  .vacancy .block4 .wrapper {
+    width: 297px;
+    padding: 64px 0;
+  }
+
+  /*------------синей блок с предметами-------------*/
+
+  .vacancy .block4 .matters {
+    width: 100%;
+    min-height: 230px;
+  }
+
+  .vacancy .block4 .matters .h2 {
+    padding: 10px 25px 5px 25px;
+    font-size: 20px;
+  }
+
+  .vacancy .block4 table {
+    width: 100%;
+    margin: 10px auto 0 auto;
+    font-size: 15px;
+  }
+
+  .vacancy .block4 tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .vacancy .block4 td {
+    padding-left: 20px;
+  }
+
+  .vacancy .block4 td:nth-child(1) {
+    width: 50%;
+  }
+
+  .vacancy .block4 td:nth-child(2) {
+    width: 50%;
+  }
+
+  .vacancy .block4 td:nth-child(3) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    & div:first-child {
+      width: 128px;
+    }
+    & div:nth-child(2) {
+      padding-left: 20px;
+    }
+  }
+
+  /*------------красный блок-------------*/
+
+  .vacancy .block4 .hotVacancy {
+    width: 279px;
+    height: 424px;
+    padding: 15px 0 0 0;
+  }
+
+  .vacancy .block4 .hotVacancy .h2 {
+    font-size: 20px;
+    line-height: 14px;
+    margin: 0;
+    margin-bottom: 6px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 91px;
+      height: 111px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      background-image: url('../img/vacancyHotVacancy-480.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .vacancy .block4 .hotVacancy .h3 {
+    font-size: 16px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 17px;
+  }
+
+  .vacancy .block4 .hotVacancy ul {
+    margin: 0 0 0 25px;
+    padding: 0 5px;
+  }
+
+  .vacancy .block4 .hotVacancy li {
+    width: 220px;
+    font-size: 15px;
+    line-height: normal;
+    margin: 0 0 15px 0;
+    position: relative;
+  }
+
+  .vacancy .block4 .hotVacancy li:before {
+    position: absolute;
+    left: -18px;
+    top: 4px;
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #FFF;
+  }
+}
+
+/*--------------block-5----------------*/
+
 .vacancy .block5 {
   height: 1400px;
   padding: 54px 0;
@@ -393,6 +1030,8 @@
   width: 400px;
   letter-spacing: -0.5px;
 }
+
+/*--------------block-6----------------*/
 
 .vacancy .block6 .wrapper {
   width: 960px;
