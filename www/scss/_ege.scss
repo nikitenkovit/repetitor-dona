@@ -1486,9 +1486,12 @@
 
 @media (max-width: 479px) {
   .ege .block7 {
-    height: 2060px;
+    height: auto;
+    min-height: 2060px;
+    max-height: 2160px;
     background: url('../img/egeBlock7BG-480.jpg') center center no-repeat;
     background-size: cover;
+    padding-bottom: 60px;
   }
 
   .ege .block7 .wrapper, .gia .block6 .wrapper {

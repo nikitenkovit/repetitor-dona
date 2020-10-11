@@ -117,7 +117,15 @@
 
 -------------------vacancy.html------------------------
 
-136 строка br с классом   <blockquote>Хотите стать частью <br class="br__320px">нашей дружной команды?</blockquote>
+136 строка br с классом <blockquote>Хотите стать частью <br class="br__320px">нашей дружной команды?</blockquote>
+185 строка br с классом <div class="h2 center"><strong>12 ПРИЧИН,</strong> почему работа в нашей компании лучше репетиторства <br class="br__480px"> или работы в школе</div>
+192 строка br с классом <div class="h3"><span>1</span> Высокая зарплата: <br class="br__320px"> до 200 000 р. в месяц</div>
+199 строка br с классом <div class="h3"><span>2</span> Стабильная зарплата, <br class="br__320px"> чёткое расписание</div>
+205 строка br с классом <div class="h3"><span>3</span> Вам не нужно <br class="br__320px"> искать учеников</div>
+212 строка br с классом <div class="h3"><span>4</span> Административную <br class="br__320px"> работу берем на себя</div>
+247 строка br с классом <div class="h3"><span>9</span> Заключение договора <br class="br__320px"> с клиентами</div>
+264 строка br с классом <div class="h3"><span>12</span> Совмещение нашей <br class="br__320px"> работы с основной</div>
+
 
 //////////////////////////////////////
 img
@@ -185,6 +193,8 @@ vacancyTeacher-320.png
 vacancyTopPic-320.jpg
 vacancyMatterBG-480.jpg
 vacancyHotVacancy-480.png
+vacancyBottomPic-480.jpg
+vacancyGreenFlag-480.png
 
 netcat_files/19/20 добавил banner-tochilka-480.jpg
 netcat_files/19/20 добавил banner-prevedi-druga-480.jpg

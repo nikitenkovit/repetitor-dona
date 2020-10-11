@@ -513,7 +513,10 @@
 
 @media (max-width: 479px) {
   .gia .block6 {
-    height: 2060px;
+    height: auto;
+    min-height: 2060px;
+    max-width: 2160px;
+    padding-bottom: 60px;
     background: url('../img/egeBlock7BG-480.jpg') center center no-repeat;
     background-size: cover;
   }
@@ -653,10 +656,12 @@
     background-size: contain;
     font-size: 14px;
     line-height: normal;
+    letter-spacing: -0.3px;
+    white-space: normal;
   }
 
   .gia .block8 .review p {
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
   }
 
   .gia .block8 p:first-child {

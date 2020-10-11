@@ -498,9 +498,10 @@
 
 @media (max-width: 479px) {
   .vacancy .block3 {
+    height: auto;
     min-height: 1018px;
-    height: 1018px;
-    padding: 49px 0 0 0;
+    max-height: 1118px;
+    padding: 49px 0 93px 0;
   }
 
   .vacancy .block3 .wrapper {
@@ -580,7 +581,6 @@
   }
 
   .vacancy .block3ItemTeacherRight p {
-    font-family: 'PTSansItalic';
     font-size: 12px;
     line-height: 13px;
     margin: 7px 0 12px 0;
@@ -1031,6 +1031,155 @@
   letter-spacing: -0.5px;
 }
 
+@media (max-width: 769px) {
+  .vacancy .block5 {
+    width: 100%;
+    height: 2080px;
+    padding: 60px 0;
+    background: url('../img/vacancyBottomPic-480.jpg') center top no-repeat;
+    background-size: cover;
+  }
+
+  .vacancy .block5 .wrapper {
+    width: 450px;
+  }
+
+  .vacancy .block5 .h2 {
+    width: 390px;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: normal;
+    margin: 0 auto 40px auto;
+  }
+
+  .vacancy .block5 .h3 {
+    margin: 0 0 18px 0;
+    padding: 0 0 0 30px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+  }
+
+  .vacancy .block5 table {
+    margin: 0 auto;
+  }
+
+  .vacancy .block5 tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .vacancy .block5Item {
+    width: 100%;
+    height: auto;
+  }
+
+  .vacancy .block5 td {
+    width: 440px;
+  }
+
+  .vacancy .block5 td:last-child {
+    position: static;
+    padding-top: 0;
+  }
+
+  .vacancy .block5 .item {
+    min-height: auto;
+    margin: 0 0 40px 0;
+  }
+
+  .vacancy .block5 .h3 span {
+    width: 52px;
+    height: 37px;
+    position: absolute;
+    background: url('../img/vacancyGreenFlag-480.png') center top no-repeat;
+    background-size: cover;
+    left: -32px;
+    top: -15px;
+    font-size: 23px;
+    line-height: 46px;
+  }
+
+  .vacancy .block5 p {
+    font-size: 16px;
+    line-height: normal;
+    width: 400px;
+    letter-spacing: normal;
+  }
+}
+
+@media (max-width: 479px) {
+  .vacancy .block5 {
+    width: 100%;
+    height: auto;
+    min-height: 2330px;
+    max-height: 2430px;
+    padding: 60px 0;
+    background: url('../img/vacancyBottomPic-480.jpg') center top no-repeat;
+    background-size: cover;
+  }
+
+  .vacancy .block5 .wrapper {
+    width: 299px;
+  }
+
+  .vacancy .block5 .h2 {
+    width: 246px;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0 auto 34px auto;
+  }
+
+  .vacancy .block5 .br__480px {
+    display: block;
+  }
+
+  .vacancy .block5 .h3 {
+    margin: 0 0 18px 0;
+    padding: 0 0 0 52px;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+  }
+
+  .vacancy .block5 table {
+    margin: 0 auto;
+  }
+
+  .vacancy .block5 td {
+    width: 299px;
+    padding: 32px 16px 0px 13px;
+  }
+
+  .vacancy .block5 .item {
+    min-height: auto;
+    margin: 0 0 30px 0;
+  }
+
+  .vacancy .block5 .h3 span {
+    width: 52px;
+    height: 37px;
+    position: absolute;
+    background: url('../img/vacancyGreenFlag-480.png') center top no-repeat;
+    background-size: cover;
+    left: -17px;
+    top: -7px;
+    font-size: 23px;
+    line-height: 46px;
+  }
+
+  .vacancy .block5 td:last-child .item:first-child .h3 span {
+    top: -15px;
+  }
+
+  .vacancy .block5 p {
+    width: 280px;
+    font-size: 15px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+}
+
 /*--------------block-6----------------*/
 
 .vacancy .block6 .wrapper {
@@ -1197,4 +1346,333 @@
 .vacancy .block6 .info2 {
   padding: 14px 0 0 0;
   font-family: 'PTSansItalic';
+}
+
+@media (max-width: 769px) {
+  .vacancy .block6 .wrapper {
+    width: 450px;
+    padding: 65px 0 73px 0;
+  }
+
+  /*---------------Требования------------------*/
+
+  .vacancy .block6 .requirements {
+    width: 429px;
+    margin: 0 auto;
+    padding: 50px 15px;
+  }
+
+  .vacancy .block6 .h2 {
+    width: 282px;
+    margin: 0 auto 38px auto;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .vacancy .block6 .h3 {
+    width: auto;
+    min-width: 126px;
+    max-width: 263px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .vacancy .block6 .requirements table {
+    width: 100%;
+  }
+
+  .vacancy .block6 .requirements tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vacancy .block6 .requirements td {
+    padding: 0;
+    vertical-align: top;
+  }
+
+  .vacancy .block6 .requirements td:first-child {
+    width: 100%;
+    border-right: none;
+  }
+
+  .vacancy .block6 .requirements td:last-child {
+    padding-left: 0;
+  }
+
+  .vacancy .block6  td:first-child .requirementsItem:nth-child(2) {
+    margin-bottom: 21px;
+  }
+
+  .vacancy .block6  td:last-child .requirementsItem:first-child {
+    margin-bottom: 60px;
+  }
+
+  .vacancy .block6  td:last-child .requirementsItem:last-child {
+    margin-bottom: 0;
+  }
+
+  .vacancy .block6 .requirementsItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 35px 0;
+  }
+
+  .vacancy .block6 p {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .vacancy .block6 td:last-child p {
+    padding: 0 13px;
+  }
+
+  .vacancy .block6 .more {
+    margin: 0;
+    margin-bottom: 65px;
+    text-align: center;
+  }
+
+  .vacancy .block6 .more a {
+    font-size: 18px;
+  }
+
+  /*---------------Этапы------------------*/
+
+  .vacancy .block6 .stages {
+    padding: 50px 0;
+    padding-bottom: 0;
+  }
+
+  .vacancy .block6 .stages .h2 {
+    margin: 0 auto 30px auto;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .vacancy .block6 .stages table {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .vacancy .block6 .stages tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vacancy .block6 .stages td:first-child {
+    width: 100%;
+    padding: 0;
+  }
+
+  .vacancy .block6 ol {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+  }
+
+  .vacancy .block6 ol li {
+    font-size: 18px;
+    line-height: normal;
+    padding: 0 0 0 38px;
+    margin: 0 0 37px 0;
+    position: relative;
+  }
+
+  .vacancy .block6 ol li:before {
+    top: -3px;
+  }
+
+  .vacancy .block6 a.takeInterview {
+    margin-top: 35px;
+    margin-bottom: 58px;
+    position: static;
+  }
+
+  .vacancy .block6 .info {
+    width: 320px;
+    padding: 18px 5px 17px 5px;
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .vacancy .block6 .info1 {
+    padding: 0 25px;
+    font-weight: bolder;
+  }
+  .vacancy .block6 .info1:after {
+    display: block;
+    margin: 0 auto;
+    margin-top: 13px;
+    position: static;
+  }
+
+  .vacancy .block6 .info2 {
+    padding: 14px 0 0 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .vacancy .block6 .wrapper {
+    width: 295px;
+    padding: 56px 0 62px 0;
+  }
+
+  /*---------------Требования------------------*/
+
+  .vacancy .block6 .requirements {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 15px;
+  }
+
+  .vacancy .block6 .h2 {
+    width: 237px;
+    margin: 0 auto 32px auto;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .vacancy .block6 .h3 {
+    width: auto;
+    min-width: 121px;
+    max-width: 270px;
+    margin-left: 35px;
+    margin-bottom: 18px;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .vacancy .block6 .h3:before {
+    content: "";
+    left: -35px;
+    width: 25px;
+    height: 23px;
+    background-image: url('../img/tickGreenSmall.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .vacancy .block6 .requirements td:last-child .h3:first-child {
+    margin-left: 25px;
+  }
+
+  .vacancy .block6  td:first-child .requirementsItem:nth-child(2) {
+    margin-bottom: 25px;
+  }
+
+  .vacancy .block6  td:last-child .requirementsItem:first-child {
+    margin-bottom: 60px;
+  }
+
+  .vacancy .block6  td:last-child .requirementsItem:last-child {
+    margin-bottom: 0;
+  }
+
+  .vacancy .block6 .requirementsItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 35px auto;
+
+    & p {
+      width: 255px;
+      margin-left: -7px;
+    }
+  }
+
+  .vacancy .block6 p {
+    font-size: 15px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .vacancy .block6 td:last-child p {
+    padding: 0;
+  }
+
+  .vacancy .block6 .more {
+    width: 265px;
+    margin: 0 auto 65px auto;
+    text-align: center;
+  }
+
+  .vacancy .block6 .more a {
+    font-size: 16px;
+  }
+
+  /*---------------Этапы------------------*/
+
+  .vacancy .block6 .stages {
+    padding: 45px 0;
+    padding-bottom: 0;
+  }
+
+  .vacancy .block6 .stages .h2 {
+    margin: 0 auto 30px auto;
+    font-size: 20px;
+    line-height: normal;
+  }
+  .vacancy .block6 .stages table {
+    width: 100%;
+  }
+
+  .vacancy .block6 .stages td:first-child {
+    width: 100%;
+  }
+
+  .vacancy .block6 ol {
+    width: 100%;
+  }
+
+  .vacancy .block6 ol li {
+    width: 285px;
+    font-size: 15px;
+    padding: 0 0 0 35px;
+    margin: 0 0 30px 0;
+  }
+
+  .vacancy .block6 ol li:before {
+    top: -7px;
+  }
+
+  .vacancy .block6 a.takeInterview {
+    width: 267px;
+    //margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 39px;
+    font-size: 16px;
+  }
+
+  .vacancy .block6 .info {
+    width: 282px;
+    padding: 20px 5px 30px 5px;
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .vacancy .block6 .info1 {
+    padding: 0 15px;
+    font-weight: bolder;
+    & p {
+      font-size: 18px;
+    }
+  }
+
+  .vacancy .block6 .info1:after {
+    display: block;
+    margin: 0 auto;
+    margin-top: 13px;
+    position: static;
+  }
+
+  .vacancy .block6 .info2 p{
+    font-size: 16px;
+  }
 }
