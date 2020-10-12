@@ -127,6 +127,15 @@
 264 строка br с классом <div class="h3"><span>12</span> Совмещение нашей <br class="br__320px"> работы с основной</div>
 
 
+-------------------mini-groups.html------------------------
+
+СЛАЙДЕР!!!!
+
+59+- строка тег h1 - создал и навесил класс (_body.scss) visually-hidden, для того, что бы доступно спрятать заголовок на странице  <h1 class="h1 visually-hidden">Занятия в мини-группах</h1> Этого заголовка нет в макете и в действительности он не нужен. Класс visually-hidden известный патерн, который прячет доступно и позволяет этот заголовок прочитать скринридерам.
+60 убрал заинлайненый style="margin-top:20px" из html в scc. <div class="greenPan optimalVariantIco">Оптимальный вариант по цене и качеству — это подготовка к ЕГЭ в мини-группе (3-7 человек).<br>Занятия ведёт опытный репетитор по специально разработанной методике.</div>
+82 строка br с классом <div class="h3">Эффективнее, чем на подкурсах, <br class="br__480px"> в школе и в группах больше <br class="br__320px"> 6 человек</div>
+
+
 //////////////////////////////////////
 img
 
@@ -195,6 +204,8 @@ vacancyMatterBG-480.jpg
 vacancyHotVacancy-480.png
 vacancyBottomPic-480.jpg
 vacancyGreenFlag-480.png
+principleOfFormation-480.png
+principleOfFormation-320.png
 
 netcat_files/19/20 добавил banner-tochilka-480.jpg
 netcat_files/19/20 добавил banner-prevedi-druga-480.jpg

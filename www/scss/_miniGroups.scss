@@ -1,0 +1,667 @@
+/* mini-groups
+-----------------------------------------------------------------------------*/
+
+.greenPan {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px 0 19px 138px;
+  font-family: 'PTSansBoldItalic';
+  font-size: 18px;
+  color: #333333;
+  line-height: 24px;
+
+  -webkit-border-radius: 45px;
+  -webkit-border-top-right-radius: 9px;
+  -webkit-border-bottom-right-radius: 9px;
+  -moz-border-radius: 45px;
+  -moz-border-radius-topright: 9px;
+  -moz-border-radius-bottomright: 9px;
+  border-radius: 45px;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+
+  -webkit-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.39);
+}
+
+.optimalVariantIco {
+  background: #d3e7d6 url('../img/optimalVariantIco.png') 6px no-repeat;
+}
+
+.greenPanSm {
+  width: 580px;
+  padding: 17px 0 13px 0;
+  margin-top: -4px;
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  color: #333333;
+  text-transform: uppercase;
+  background: #d3e7d6;
+  border-radius: 45px;
+
+  -webkit-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.39);
+}
+
+.principleOfFormation {
+  width: 1144px;
+  height: 1203px;
+  padding: 65px 92px;
+  margin: 0 auto;
+  background: url('../img/principleOfFormation.png') center no-repeat;
+
+  font-family: 'PTSansItalic';
+  font-size: 18px;
+  color: #333333;
+  line-height: 24px;
+}
+
+.principleOfFormation .h2 {
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  color: #ed1e24;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.principleOfFormation p {
+  margin: 0 0 24px 0;
+}
+
+.principleOfFormation strong {
+  color: #569029;
+}
+
+.principleOfFormation .block1 {
+  width: 646px;
+  margin: 0 0 0 300px;
+  padding: 0 0 18px 0;
+}
+
+.principleOfFormation .block2 {
+  width: 638px;
+  margin: 0 0 0 0px;
+  padding: 0 0 35px 0;
+}
+
+.principleOfFormation .block3 {
+  width: 646px;
+  margin: 0 0 0 300px;
+  padding: 0 0 18px 0;
+}
+
+.miniGroupsAdvantages > ul {
+  width: 940px;
+  margin: 0 auto 45px -9px;
+  padding: 41px 0 0 0;
+}
+
+.miniGroupsAdvantages > ul > li {
+  padding: 0 0 0 60px;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 37px 0;
+  position: relative;
+}
+
+.miniGroupsAdvantages > ul > li:before {
+  position: absolute;
+  left: 0px;
+  top: -9px;
+  content: url('../img/tickGreen.png');
+}
+
+.miniGroupsAdvantages .h3 {
+  font-family: 'PTSansBold';
+  color: #ed1e24;
+  text-transform: uppercase;
+  margin: 0 0 18px 0;
+}
+
+.miniGroupsAdvantages li > p {
+  margin: 0 0 24px 0;
+}
+
+.miniGroupsAdvantages > ul > li > ul {
+  padding: 18px 0 0 0;
+  width: 880px;
+}
+
+.miniGroupsAdvantages > ul > li > ul > li {
+  padding: 0 0 0 100px;
+  position: relative;
+}
+
+.miniGroupsAdvantages > ul > li > ul > li:nth-child(3) {
+  margin: 0 0 37px 0;
+}
+
+.miniGroupsAdvantages > ul > li > ul > li:nth-child(4) {
+  margin: 0 0 35px 0;
+}
+
+.miniGroupsAdvantages > ul > li > ul > li:before {
+  content: '';
+  display: inline-block;
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  left: 20px;
+  top: -10px;
+  background: url('../img/tickEffective.png') left no-repeat;
+}
+
+.miniGroupsAdvantages > ul > li > ul > li:nth-child(2):before {
+  background: url('../img/tickEffective.png') -61px top no-repeat;
+}
+
+.miniGroupsAdvantages > ul > li > ul > li:nth-child(3):before {
+  background: url('../img/tickEffective.png') -122px top no-repeat;
+}
+
+.miniGroupsAdvantages > ul > li > ul > li:nth-child(4):before {
+  background: url('../img/tickEffective.png') -183px top no-repeat;
+}
+
+.miniGroupsAdvantages > ul > li > ul > li:nth-child(5):before {
+  background: url('../img/tickEffective.png') -244px top no-repeat;
+}
+
+.proofIco {
+  background: #d3e7d6 url('../img/proofIco.png') 6px no-repeat;
+}
+
+.reviewLink {
+  font-family: 'PTSansItalic';
+  text-align: right;
+  margin: 12px 0 0 0;
+}
+
+.reviewLink a {
+  font-size: 18px;
+  color: #de5958;
+  text-decoration: none;
+  border-bottom: 1px solid #de5958;
+  position: relative;
+}
+
+.reviewLink a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #FFF;
+}
+
+.reviewLink a:before {
+  content: url('../img/reviewIco.png');
+  position: absolute;
+  left: -28px;
+  top: 2px;
+}
+
+@media (max-width: 769px) {
+
+  /*------------зелёное облако вверху с колокольчиком--------------*/
+
+  .greenPan {
+    width: 433px;
+    margin: 0 auto;
+    margin-top: 32px;
+    padding: 11px 5px 11px 72px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .greenPan br {
+    display: none;
+  }
+
+  .optimalVariantIco {
+    background-size: 58px 58px;
+  }
+
+  /*------------Тетрадный лист - принцип формирования групп--------------*/
+
+  .principleOfFormation {
+    width: 464px;
+    height: 1079px;
+    padding: 0;
+    padding-top: 30px;
+    margin: 0 auto;
+    background: url('../img/principleOfFormation-480.png') center no-repeat;
+
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .principleOfFormation .h2 {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+
+  .principleOfFormation p {
+    margin: 0 0 13px 0;
+  }
+
+  .principleOfFormation .block1 {
+    width: 305px;
+    margin: 0 0 0 135px;
+    padding: 0;
+  }
+
+  .principleOfFormation .block2 {
+    width: 307px;
+    margin-left: 25px;
+    padding: 20px 0 22px 0;
+  }
+
+  .principleOfFormation .block3 {
+    width: 245px;
+    margin: 0 0 0 189px;
+    padding: 0;
+  }
+
+  /*------------зелёное облако - почему мы соеветуем...--------------*/
+
+  .greenPanSm {
+    width: 390px;
+    height: 63px;
+    padding: 12px 48px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  /*------------преимущества--------------*/
+
+  .miniGroupsAdvantages > ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0 0 16px;
+  }
+
+  .miniGroupsAdvantages > ul > li {
+    padding: 0 15px 0 38px;
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .miniGroupsAdvantages > ul > li:before {
+    content: "";
+    top: 0;
+    width: 28px;
+    height: 26px;
+    background: url('../img/tickGreen.png') no-repeat center;
+    background-size: cover;
+  }
+
+  .miniGroupsAdvantages .h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 10px 0;
+  }
+
+  .miniGroupsAdvantages li > p {
+    margin: 0 0 20px 0;
+  }
+
+  .miniGroupsAdvantages > ul > li > ul {
+    width: 436px;
+    margin: 0 auto;
+    margin-left: -38px;
+    padding: 18px 0 0 0;
+  }
+
+  .miniGroupsAdvantages > ul > li > ul > li {
+    padding: 0 0 0 77px;
+  }
+
+  .miniGroupsAdvantages > ul > li > ul > li:nth-child(3) {
+    margin: 0;
+    padding-right: 30px;
+  }
+
+  .miniGroupsAdvantages > ul > li > ul > li:nth-child(4) {
+    margin: 0;
+    padding-right: 64px;
+  }
+
+  .miniGroupsAdvantages > ul > li > ul > li:before {
+    left: 0;
+    top: 0;
+  }
+
+  .proofIco {
+    padding-right: 0;
+    padding-left: 75px;
+    background-size: 61px 60.41px;
+    font-size: 12.67px;
+    line-height: 16.9px;
+  }
+
+  /*------------ссылка Отзывы учеников--------------*/
+
+  .reviewLink {
+    margin: 21px 10px 0 0;
+  }
+
+  .reviewLink a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .reviewLink a:before {
+    content: "";
+    left: -25px;
+    width: 17px;
+    height: 15px;
+    background: url('../img/reviewIco.png') no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 479px) {
+
+  /*------------зелёное облако вверху с колокольчиком--------------*/
+
+  .greenPan {
+    width: 293px;
+    margin-top: 27px;
+    padding: 6px 0 6px 65px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .greenPan br {
+    display: none;
+  }
+
+  .optimalVariantIco {
+    background-size: 54px 54px;
+  }
+
+  /*------------Тетрадный лист - принцип формирования групп--------------*/
+
+  .principleOfFormation {
+    width: 312px;
+    height: 1200px;
+    padding-top: 45px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background: url('../img/principleOfFormation-320.png') center no-repeat;
+  }
+
+  .principleOfFormation .h2 {
+    text-align: left;
+  }
+  
+  .principleOfFormation p {
+    margin: 0 0 16px 0;
+  }
+
+  .principleOfFormation .block1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .principleOfFormation .block2 {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .principleOfFormation .block3 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*------------зелёное облако - почему мы соеветуем...--------------*/
+
+  .greenPanSm {
+    width: 290px;
+    height: 63px;
+    padding: 13px 15px;
+    font-size: 16px;
+  }
+
+  /*------------преимущества--------------*/
+
+  .miniGroupsAdvantages > ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 33px 0 0 0;
+  }
+
+  .miniGroupsAdvantages > ul > li {
+    padding: 0 0 0 25px;
+    font-size: 15px;
+    line-height: normal;
+  }
+
+  .miniGroupsAdvantages > ul > li:before {
+    top: 0;
+    left: -5px;
+    width: 23px;
+    height: 21px;
+  }
+
+  .miniGroupsAdvantages .h3 {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+
+  .miniGroupsAdvantages > ul > li:nth-child(3) .h3 {
+    letter-spacing: -0.6px;
+  }
+
+  .miniGroupsAdvantages li > p {
+    margin: 0 0 18px 0;
+  }
+
+  .miniGroupsAdvantages > ul > li > ul {
+    width: 290px;
+    margin-left: -25px;
+    padding: 18px 0 0 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .miniGroupsAdvantages > ul > li > ul > li {
+    padding: 0;
+  }
+
+  .miniGroupsAdvantages > ul > li > ul > li:before {
+    display: block;
+    position: static;
+    margin: 0 auto;
+    margin-bottom: 18px;
+  }
+
+  .miniGroupsAdvantages > ul > li > ul > li:nth-child(2) {
+    padding-right: 10px;
+  }
+
+  .miniGroupsAdvantages > ul > li > ul > li:nth-child(3) {
+    margin: 0;
+    padding-right: 0;
+  }
+
+  .miniGroupsAdvantages > ul > li > ul > li:nth-child(4) {
+    margin: 0;
+    padding-right: 0;
+  }
+
+  .proofIco {
+    width: 290px;
+    padding-left: 65px;
+    padding-right: 0;
+    background-size: 54px 53.68px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .proofIco br {
+    display: block;
+  }
+
+  /*------------ссылка Отзывы учеников--------------*/
+
+  .reviewLink {
+    margin: 21px 0 0 0;
+  }
+}
+
+/* PhotoSlider
+-----------------------------------------------------------------------------*/
+
+.photoSlider {
+  width: 100%;
+  height: 332px;
+  margin: 49px auto 0 auto;
+  padding: 0;
+  background: #FFF;
+  font-size: 0;
+}
+
+.photoSlider ul {
+  height: 332px;
+  float: left;
+}
+
+.photoSlider li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.photoSlider li img {
+  height: 332px;
+}
+
+.photoSlider li:nth-child(odd) {
+  margin: 0 20px 0 0;
+}
+
+.photoSlider li:nth-child(even) {
+  margin: 0 0 0 0;
+}
+
+.photoSlider .arrow {
+  width: 60px;
+  height: 332px;
+  background: #FFF;
+}
+
+.photoSlider .arrow.left {
+  float: left;
+  background: #FFF url('../img/photoSliderArrowLeft.png') 15px center no-repeat;
+}
+
+.photoSlider .arrow.right {
+  float: right;
+  background: #FFF url('../img/photoSliderArrowRight.png') 15px center no-repeat;
+}
+
+.photoSlider .arrow.left:hover {
+  background: #dce6f0 url('../img/photoSliderArrowLeft.png') 15px center no-repeat;
+}
+
+.photoSlider .arrow.right:hover {
+  float: right;
+  background: #dce6f0 url('../img/photoSliderArrowRight.png') 15px center no-repeat;
+}
+
+@media (max-width: 769px) {
+  .photoSlider {
+    display: flex;
+    width: 100%;
+    height: 140px;
+    margin: 50px auto 0 auto;
+  }
+
+  .photoSlider ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .photoSlider li {
+    margin-right: 10px !important;
+  }
+
+  .photoSlider li img {
+    height: 140px;
+  }
+
+  .photoSlider li:nth-child(odd) {
+    margin: 0;
+  }
+
+  .photoSlider li:nth-child(even) {
+    margin: 0 0 0 0;
+  }
+
+  .photoSlider .arrow {
+    width: 29px;
+    height: 140px;
+  }
+
+  .photoSlider .arrow.left {
+    background: #FFF url('../img/photoSliderArrowLeft.png') center center no-repeat;
+    background-size: 14px 121px;
+  }
+
+  .photoSlider .arrow.right {
+    background: #FFF url('../img/photoSliderArrowRight.png') center center no-repeat;
+    background-size: 14px 121px;
+  }
+
+  .photoSlider .arrow.left:hover {
+    background: #dce6f0 url('../img/photoSliderArrowLeft.png') center center no-repeat;
+    background-size: 14px 121px;
+  }
+
+  .photoSlider .arrow.right:hover {
+    background: #dce6f0 url('../img/photoSliderArrowRight.png') center center no-repeat;
+    background-size: 14px 121px;
+  }
+}
+
+@media (max-width: 479px) {
+  .photoSlider {
+    height: 89px;
+    margin: 45px auto 0 auto;
+  }
+
+  .photoSlider li {
+    margin-right: 6px !important;
+  }
+
+  .photoSlider li img {
+    height: 89px;
+  }
+
+  .photoSlider .arrow {
+    width: 19px;
+    height: 89px;
+  }
+
+  .photoSlider .arrow.left {
+    background-size: 9px 77px;
+  }
+
+  .photoSlider .arrow.right {
+    background-size: 9px 77px;
+  }
+
+  .photoSlider .arrow.left:hover {
+    background-size: 9px 77px;
+  }
+
+  .photoSlider .arrow.right:hover {
+    background-size: 9px 77px;
+  }
+}

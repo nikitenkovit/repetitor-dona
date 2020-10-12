@@ -1,3 +1,6 @@
+/* Inner
+-----------------------------------------------------------------------------*/
+
 .inner {
   background: url('../img/innerBg.jpg') 225px;
 }
@@ -15,205 +18,34 @@
 }
 
 @media (max-width: 769px) {
+  .inner {
+    background: url('../img/innerBg.jpg') 225px;
+  }
+
+  .inner .wrapper > .wrapper {
+    width: 450px;
+    margin: 0 auto;
+    padding: 45px 0;
+    position: relative;
+  }
+
   .inner .loginPan {
     right: 15px;
     top: 25px;
+    font-size: 18px;
   }
 }
 
-.greenPan {
-  width: 100%;
-  padding: 15px 0 19px 138px;
-  font-family: 'PTSansBoldItalic';
-  font-size: 18px;
-  color: #333333;
-  line-height: 24px;
+@media (max-width: 479px) {
 
-  -webkit-border-radius: 45px;
-  -webkit-border-top-right-radius: 9px;
-  -webkit-border-bottom-right-radius: 9px;
-  -moz-border-radius: 45px;
-  -moz-border-radius-topright: 9px;
-  -moz-border-radius-bottomright: 9px;
-  border-radius: 45px;
-  border-top-right-radius: 9px;
-  border-bottom-right-radius: 9px;
+  .inner .wrapper > .wrapper {
+    width: 290px;
+    margin: 0 auto;
+    padding: 45px 0 33px 0;
+    position: relative;
+  }
 
-  -webkit-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.39);
-  -moz-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.39);
-  box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.39);
-}
-
-.optimalVariantIco {
-  background: #d3e7d6 url('../img/optimalVariantIco.png') 6px no-repeat;
-}
-
-.greenPanSm {
-  width: 580px;
-  padding: 17px 0 13px 0;
-  margin-top: -4px;
-  font-family: 'PTSansBold';
-  font-size: 18px;
-  color: #333333;
-  text-transform: uppercase;
-  background: #d3e7d6;
-  border-radius: 45px;
-
-  -webkit-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.39);
-  -moz-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.39);
-  box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.39);
-}
-
-.principleOfFormation {
-  width: 1144px;
-  height: 1203px;
-  padding: 65px 92px;
-  margin: 0 auto;
-  background: url('../img/principleOfFormation.png') center no-repeat;
-
-  font-family: 'PTSansItalic';
-  font-size: 18px;
-  color: #333333;
-  line-height: 24px;
-}
-
-.principleOfFormation .h2 {
-  font-family: 'PTSansBold';
-  font-size: 18px;
-  color: #ed1e24;
-  text-transform: uppercase;
-  margin: 0 0 20px 0;
-}
-
-.principleOfFormation p {
-  margin: 0 0 24px 0;
-}
-
-.principleOfFormation strong {
-  color: #569029;
-}
-
-.principleOfFormation .block1 {
-  width: 646px;
-  margin: 0 0 0 300px;
-  padding: 0 0 18px 0;
-}
-
-.principleOfFormation .block2 {
-  width: 638px;
-  margin: 0 0 0 0px;
-  padding: 0 0 35px 0;
-}
-
-.principleOfFormation .block3 {
-  width: 646px;
-  margin: 0 0 0 300px;
-  padding: 0 0 18px 0;
-}
-
-.miniGroupsAdvantages > ul {
-  width: 940px;
-  margin: 0 auto 45px -9px;
-  padding: 41px 0 0 0;
-}
-
-.miniGroupsAdvantages > ul > li {
-  padding: 0 0 0 60px;
-  font-size: 18px;
-  line-height: 24px;
-  margin: 0 0 37px 0;
-  position: relative;
-}
-
-.miniGroupsAdvantages > ul > li:before {
-  position: absolute;
-  left: 0px;
-  top: -9px;
-  content: url('../img/tickGreen.png');
-}
-
-.miniGroupsAdvantages .h3 {
-  font-family: 'PTSansBold';
-  color: #ed1e24;
-  text-transform: uppercase;
-  margin: 0 0 18px 0;
-}
-
-.miniGroupsAdvantages li > p {
-  margin: 0 0 24px 0;
-}
-
-.miniGroupsAdvantages > ul > li > ul {
-  padding: 18px 0 0 0;
-  width: 880px;
-}
-
-.miniGroupsAdvantages > ul > li > ul > li {
-  padding: 0 0 0 100px;
-  position: relative;
-}
-
-.miniGroupsAdvantages > ul > li > ul > li:nth-child(3) {
-  margin: 0 0 37px 0;
-}
-
-.miniGroupsAdvantages > ul > li > ul > li:nth-child(4) {
-  margin: 0 0 35px 0;
-}
-
-.miniGroupsAdvantages > ul > li > ul > li:before {
-  content: '';
-  display: inline-block;
-  width: 61px;
-  height: 61px;
-  position: absolute;
-  left: 20px;
-  top: -10px;
-  background: url('../img/tickEffective.png') left no-repeat;
-}
-
-.miniGroupsAdvantages > ul > li > ul > li:nth-child(2):before {
-  background: url('../img/tickEffective.png') -61px top no-repeat;
-}
-
-.miniGroupsAdvantages > ul > li > ul > li:nth-child(3):before {
-  background: url('../img/tickEffective.png') -122px top no-repeat;
-}
-
-.miniGroupsAdvantages > ul > li > ul > li:nth-child(4):before {
-  background: url('../img/tickEffective.png') -183px top no-repeat;
-}
-
-.miniGroupsAdvantages > ul > li > ul > li:nth-child(5):before {
-  background: url('../img/tickEffective.png') -244px top no-repeat;
-}
-
-.proofIco {
-  background: #d3e7d6 url('../img/proofIco.png') 6px no-repeat;
-}
-
-.reviewLink {
-  font-family: 'PTSansItalic';
-  text-align: right;
-  margin: 12px 0 0 0;
-}
-
-.reviewLink a {
-  font-size: 18px;
-  color: #de5958;
-  text-decoration: none;
-  border-bottom: 1px solid #de5958;
-  position: relative;
-}
-
-.reviewLink a:hover {
-  text-decoration: none;
-  border-bottom: 1px solid #FFF;
-}
-
-.reviewLink a:before {
-  content: url('../img/reviewIco.png');
-  position: absolute;
-  left: -28px;
-  top: 2px;
+  .inner .loginPan {
+    font-size: 16px;
+  }
 }
