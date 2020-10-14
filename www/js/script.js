@@ -5,8 +5,6 @@
   var shedule = document.querySelector('.shedule');
   var takeClass = document.querySelector('.takeClass');
   var body = document.querySelector('body');
-  var photoSlider = document.querySelector('.photoSlider ul');
-  var photoSliderAllElements = photoSlider.children;
 
   /*toggle menu*/
 
@@ -26,10 +24,15 @@
 
   /*change justify-content value in photoSlider from mini-groups page*/
 
-  if (photoSliderAllElements.length > 2) {
-    photoSlider.style.justifyContent = 'space-between';
-  } else {
-    photoSlider.style.justifyContent = 'space-evenly';
+  var photoSlider = document.querySelector('.photoSlider ul');
+
+  if (photoSlider) {
+    var photoSliderAllElements = photoSlider.children;
+    if (photoSliderAllElements.length > 2) {
+      photoSlider.style.justifyContent = 'space-between';
+    } else {
+      photoSlider.style.justifyContent = 'space-evenly';
+    }
   }
 
 })();
