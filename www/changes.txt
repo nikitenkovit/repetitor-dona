@@ -148,6 +148,12 @@
 
 в открытой статье на десктопе фотки прилипают к тексту!
 
+
+-------------------contacts.html------------------------
+
+не стилизовал слайдер, потому, что его нет.
+карта яндекса - модальное окно
+
 //////////////////////////////////////
 img
 
@@ -218,6 +224,10 @@ vacancyBottomPic-480.jpg
 vacancyGreenFlag-480.png
 principleOfFormation-480.png
 principleOfFormation-320.png
+titleFlag-480.png
+titleFlagLeft-480.png
+titleFlagLeft-320.png
+titleFlag-320.png
 
 netcat_files/19/20 добавил banner-tochilka-480.jpg
 netcat_files/19/20 добавил banner-prevedi-druga-480.jpg
