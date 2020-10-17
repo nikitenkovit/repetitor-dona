@@ -108,9 +108,7 @@ nav {
 @media (max-width: 769px) {
   .darkBackground::before {
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
