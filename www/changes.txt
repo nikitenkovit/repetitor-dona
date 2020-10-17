@@ -71,9 +71,7 @@
 
 -------------------podrobnee-o-prepodovatele.html------------------------
 
-СЛАЙДЕР!!!
-фотка - белый фон в слайдере! СЕРЬЁЗНО!?)))))
-
+в слайдере на айфоне стрелки овальные
 
 -------------------otzivi.html------------------------
 
@@ -228,6 +226,10 @@ titleFlag-480.png
 titleFlagLeft-480.png
 titleFlagLeft-320.png
 titleFlag-320.png
+diplomaSliderBg-480.png
+diplomaSliderArrow-left-480.png
+diplomaSliderArrow-right-480.png
+diplomaSliderBg-320.png
 
 netcat_files/19/20 добавил banner-tochilka-480.jpg
 netcat_files/19/20 добавил banner-prevedi-druga-480.jpg

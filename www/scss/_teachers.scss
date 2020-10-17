@@ -122,6 +122,7 @@
     text-align: center;
     margin: 0 0 23px 0;
     position: relative;
+
     & .br__320px {
       display: block;
     }
@@ -259,6 +260,7 @@
   color: #666666;
   text-decoration: none;
   border-bottom: 1px solid #666666;
+
   &:last-child {
     margin-right: 0;
   }
@@ -1204,7 +1206,7 @@
   }
 
   .teacherItemAbout ul li:before {
-  display: none;
+    display: none;
   }
 
   .teacherItemAbout ol li {
@@ -1218,7 +1220,11 @@
   .teacherItemAboutEducationPic {
     text-align: center;
     padding: 0;
-    margin: 0;
+    margin: 0 !important;
+  }
+
+  .teacherItemAboutEducationPic + div:not(.teacherItemAboutEducationPic) {
+    margin-top: 20px !important;
   }
 
   .teacherItemAboutEducationPic img {
@@ -1232,80 +1238,61 @@
     padding: 0;
   }
 
+  /*-------------------Слайдер с дипломами 769----------------------*/
+
   .teacherItemAboutEducation .diplomaSlider {
-    margin: -24px 0 -33px 0;
-    width: 100%;
-    height: 482px;
+    margin: -10px auto 20px auto;
+    width: 437px;
+    height: 212px;
     overflow: hidden;
-    padding: 50px 0 0 0;
-    background: url('../img/diplomaSliderBg.png') center top no-repeat;
+    padding: 25px 0 0 0;
+    background: url('../img/diplomaSliderBg-480.png') center top no-repeat;
     position: relative;
-    left: -25px;
+    left: -14px;
   }
 
   .diplomaSliderWrapper {
-    width: 100%;
-    position: relative;
-    vertical-align: middle;
-    height: 342px;
-    margin: 0 auto;
+    width: 365px;
+    height: 150px;
   }
 
   .slick-slide {
-    display: inline-block;
-    outline: none;
-    text-align: center;
+    width: 177px !important;
+    height: 150px !important;
+  }
+
+  .slick-list {
+    height: 100%;
   }
 
   .slick-slide a {
-    display: table;
-    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   .diplomaSliderWrapper img {
-    width: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .diplomaSlider .slick-arrow {
-    width: 32px;
-    height: 32px;
-    background: #FFF;
-    border: 1px solid #cdcdcd;
-    position: absolute;
-    top: 155px;
-    border-radius: 16px;
-
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
   }
 
   .diplomaSlider .slick-prev.slick-arrow {
-    left: -40px;
-    background: url('../img/diplomaSliderArrowLeft.png') center no-repeat;
+    left: -22px;
+    background: url('../img/diplomaSliderArrow-left-480.png') 4px center no-repeat;
   }
 
   .diplomaSlider .slick-next.slick-arrow {
-    right: -42px;
-    background: url('../img/diplomaSliderArrowRight.png') center no-repeat;
-  }
-
-  .teacherItemAbout .showReview a {
-    display: block;
-    width: 300px;
-    font-family: 'PTSansBold';
-    font-size: 18px;
-    color: #FFF;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 8px auto;
-    padding: 19px 17px 15px 17px;
-    border: none;
-    background: #ed1e24;
-  }
-
-  .teacherItemAbout .showReview a:hover {
-    background: #de5958;
+    right: -22px;
+    background: url('../img/diplomaSliderArrow-right-480.png') 4px center no-repeat;
   }
 }
 
@@ -1315,66 +1302,49 @@
     line-height: 17px;
   }
 
-  .teacherItemAboutEducation .diplomaSlider {
-    margin: -24px 0 -33px 0;
-    width: 100%;
-    height: 482px;
-    overflow: hidden;
-    padding: 50px 0 0 0;
-    background: url('../img/diplomaSliderBg.png') center top no-repeat;
-    position: relative;
-    left: -25px;
-  }
-
-  .diplomaSliderWrapper {
-    width: 100%;
-    position: relative;
-    vertical-align: middle;
-    height: 342px;
-    margin: 0 auto;
-  }
-
-  .slick-slide {
-    display: inline-block;
-    outline: none;
+  .teacherItemAboutEducationPic + div:not(.teacherItemAboutEducationPic) {
     text-align: center;
   }
 
-  .slick-slide a {
-    display: table;
-    margin: 0 auto;
+  /*-------------------Слайдер с дипломами 479----------------------*/
+
+  .teacherItemAboutEducation .diplomaSlider {
+    margin: -15px auto 20px auto;
+    width: 288px;
+    height: 139px;
+    padding: 13px 0 0 0;
+    background: url('../img/diplomaSliderBg-320.png') center top no-repeat;
+    left: -12px;
   }
 
-  .diplomaSliderWrapper img {
-    width: auto;
+  .diplomaSliderWrapper {
+    width: 239px;
+    height: 99px;
+  }
+
+  .slick-slide {
+    width: 117px !important;
+    height: 99px !important;
   }
 
   .diplomaSlider .slick-arrow {
-    width: 32px;
-    height: 32px;
-    background: #FFF;
-    border: 1px solid #cdcdcd;
-    position: absolute;
-    top: 155px;
-    border-radius: 16px;
-
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    z-index: 1;
   }
 
   .diplomaSlider .slick-prev.slick-arrow {
-    left: -40px;
-    background: url('../img/diplomaSliderArrowLeft.png') center no-repeat;
+    left: -12px;
+    background: rgba(255, 255, 255, 0.5) url('../img/diplomaSliderArrow-left-480.png') 4px center no-repeat;
   }
 
   .diplomaSlider .slick-next.slick-arrow {
-    right: -42px;
-    background: url('../img/diplomaSliderArrowRight.png') center no-repeat;
+    right: -12px;
+    background: rgba(255, 255, 255, 0.5) url('../img/diplomaSliderArrow-right-480.png') 4px center no-repeat;
   }
 
+  /////////////////////////////////////
   .teacherItemAbout .showReview a {
     width: 205px;
     font-size: 15px;
   }
+
 }
