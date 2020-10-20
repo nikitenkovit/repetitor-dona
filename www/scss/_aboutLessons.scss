@@ -1,3 +1,8 @@
+/* about lessons
+-----------------------------------------------------------------------------*/
+
+/*-------------------Верхняя часть с преимуществами------------------------*/
+
 .aboutLessons {
   width: 100%;
   height: 1489px;
@@ -169,7 +174,7 @@
 .aboutLessonsItem.item5 .ico6 {
   position: absolute;
   right: -160px;
-  top: 0px;
+  top: 0;
   width: 85px;
   height: 126px;
   background: url('../img/aboutLessonsIco.png') -447px top no-repeat;
@@ -178,11 +183,223 @@
 .aboutLessonsItem.item6 .ico7 {
   position: absolute;
   left: -210px;
-  top: 0px;
+  top: 0;
   width: 94px;
   height: 126px;
   background: url('../img/aboutLessonsIco.png') -532px top no-repeat;
 }
+
+@media (max-width: 769px) {
+  .aboutLessons {
+    width: 100%;
+    height: 2300px;
+    min-height: 2229px;
+    background-image: url('../img/aboutLessonsBg-480.png');
+    background-position: top center;
+    background-size: 100% 100%;
+    z-index: 0;
+  }
+
+  .aboutLessons .wrapper {
+    width: 450px;
+    margin: 0 auto;
+    padding: 54px 0 0 0;
+    font-size: 16px;
+    z-index: 0;
+  }
+
+  .aboutLessons .wrapper .h1 {
+    margin-top: 18px;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-align: center;
+    z-index: 0;
+  }
+
+  .aboutLessons .wrapper p {
+    font-size: 14px;
+    line-height: normal;
+    margin: 0 0 17px 0;
+  }
+
+  .aboutLessonsItem {
+    width: 418px;
+    margin: 0 auto;
+    margin-top: 110px;
+    padding: 20px 9px 10px 15px;
+  }
+
+  .aboutLessonsItem:before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    line-height: 25px;
+    width: 80px;
+    height: 48px;
+    top: -48px;
+    left: 0;
+    z-index: 0;
+  }
+
+  .aboutLessonsItem:after {
+    /*фича скрывающая тень у прямоугольника с номером*/
+    width: 85px;
+    height: 13px;
+    top: 0;
+    z-index: 0;
+  }
+
+  .aboutLessonsItem:nth-child(even) {
+    margin: 0 auto;
+    margin-top: 110px;
+  }
+
+  .aboutLessons h1 + .aboutLessonsItem {
+    margin-top: 80px;
+  }
+
+  .aboutLessonsItem.item1 .ico1 {
+    right: 70px;
+    top: -70px;
+    width: 49px;
+    height: 56px;
+    background: url('../img/aboutLessonsIco-1.png') center no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  .aboutLessonsItem.item2 .ico2 {
+    left: auto;
+    right: -20px;
+    top: -230px;
+    width: 56px;
+    height: 66px;
+    background: url('../img/aboutLessonsIco-2.png') center no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  .aboutLessonsItem.item2 .ico3 {
+    left: auto;
+    right: 115px;
+    top: -85px;
+    width: 59px;
+    height: 69px;
+    background: url('../img/aboutLessonsIco-3.png') center no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  .aboutLessonsItem.item3 .ico4 {
+    right: auto;
+    left: 120px;
+    top: -80px;
+    width: 55px;
+    height: 64px;
+    background: url('../img/aboutLessonsIco-4.png') center no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  .aboutLessonsItem.item4 .ico5 {
+    left: auto;
+    right: 90px;
+    top: -85px;
+    width: 58px;
+    height: 67px;
+    background: url('../img/aboutLessonsIco-5.png') center no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  .aboutLessonsItem.item5 .ico6 {
+    left: 130px;
+    top: -85px;
+    width: 56px;
+    height: 65px;
+    background: url('../img/aboutLessonsIco-6.png') center no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  .aboutLessonsItem.item6 .ico7 {
+    left: auto;
+    right: 110px;
+    top: -80px;
+    width: 59px;
+    height: 69px;
+    background: url('../img/aboutLessonsIco-7.png') center no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .aboutLessons {
+    height: 2620px;
+    background: url('../img/aboutLessonsBg-320.png') center top no-repeat;
+    background-size: auto 2620px;
+  }
+
+  .aboutLessons .wrapper {
+    width: 290px;
+  }
+
+  .aboutLessons .wrapper .h1 {
+    width: 100%;
+    padding: 0;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .aboutLessonsItem {
+    width: 100%;
+    margin-top: 98px;
+    padding: 20px 9px 10px 13px;
+  }
+
+  .aboutLessonsItem:nth-child(even) {
+    margin-top: 98px;
+  }
+
+  .aboutLessonsItem.item1 .ico1 {
+    right: 0;
+  }
+
+  .aboutLessonsItem.item2 .ico2 {
+    right: -13px;
+    top: -275px;
+    width: 48px;
+    height: 56px;
+  }
+
+  .aboutLessonsItem.item2 .ico3 {
+    right: 100px;
+  }
+
+  .aboutLessonsItem.item3 .h2 {
+    width: 185px;
+  }
+
+  .aboutLessonsItem.item4 .ico5 {
+    right: 10px;
+  }
+
+  .aboutLessonsItem.item5 .ico6 {
+    left: 110px;
+    top: -75px;
+  }
+
+  .aboutLessonsItem.item6 .ico7 {
+    right: 10px;
+  }
+}
+
+/*-------------------Отзывы-------------------------------*/
 
 .inner .wrapper > .wrapper.aboutLessonsReviews {
   padding: 0px 0 35px 0;
@@ -211,12 +428,6 @@
 
 .aboutLessonsReviews td:first-child img {
   width: 344px;
-  /*
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -120px;*/
 }
 
 .aboutLessonsReviews td:last-child {
@@ -275,6 +486,121 @@
   background: #e56e6e;
   transition: all 0.2s;
 }
+
+@media (max-width: 769px) {
+  .inner .wrapper > .wrapper.aboutLessonsReviews {
+    margin-top: 30px;
+    padding: 0 0 60px 0;
+  }
+
+  .inner .wrapper > .wrapper.aboutLessonsReviews .h1 {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0 0 31px 0;
+  }
+
+  .aboutLessonsReviews table {
+    margin: 0 0 24px 0;
+  }
+
+  .aboutLessonsReviews td:first-child {
+    width: 131px;
+  }
+
+  .aboutLessonsReviews td:first-child img {
+    width: 100%;
+    height: 157px;
+    object-fit: cover;
+  }
+
+  .aboutLessonsReviews td:last-child {
+    padding: 9px 15px;
+  }
+
+  .aboutLessonsReviews .h2 {
+    font-size: 15px;
+    margin: 0 0 7px 0;
+  }
+
+  .aboutLessonsReviews p {
+    font-size: 11px;
+    line-height: 14px;
+    margin: 0 0 7px 0;
+  }
+
+  .aboutLessonsReviews .aboutLessonsMarks {
+    font-size: 11px;
+    margin: 0;
+  }
+
+  .aboutLessonsReviews .aboutLessonsMarks > p {
+    font-size: 11px;
+    line-height: normal;
+  }
+
+  .redButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 275px;
+    height: 48px;
+    margin-top: 39px;
+    font-size: 16px;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 479px) {
+  .inner .wrapper > .wrapper.aboutLessonsReviews {
+    padding-bottom: 64px;
+    margin-top: 15px;
+  }
+
+  .inner .wrapper > .wrapper.aboutLessonsReviews .h1 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .aboutLessonsReviews td:first-child {
+    width: 100px;
+  }
+
+  .aboutLessonsReviews td:first-child img {
+    width: 100%;
+    height: 169px;
+  }
+
+  .aboutLessonsReviews td:last-child {
+    padding: 8px 5px 8px 12px;
+  }
+
+  .aboutLessonsReviews .h2 {
+    font-size: 13px;
+    line-height: normal;
+    margin: 0 0 7px 0;
+  }
+
+  .aboutLessonsReviews p {
+    font-size: 10px;
+    line-height: 10.69px;
+    margin: 0 0 7px 0;
+  }
+
+  .aboutLessonsReviews .aboutLessonsMarks {
+    font-size: 10px;
+  }
+
+  .aboutLessonsReviews .aboutLessonsMarks > p {
+    font-size: 10px;
+  }
+
+  .redButton {
+    width: 245px;
+    height: 47px;
+  }
+}
+
+/*-------------------Форма 1-2-------------------------------*/
 
 .aboutLessonsForm1 {
   width: 100%;
@@ -406,6 +732,117 @@
 
 }
 
+@media (max-width: 769px) {
+  .aboutLessonsForm1 .wrapper, .aboutLessonsForm2 .wrapper {
+    width: 450px;
+    height: 607px;
+    padding: 53px 0 0 0;
+  }
+
+  .aboutLessonsForm2 .wrapper {
+    height: 682px;
+  }
+
+  .aboutLessonsForm1 .wrapper:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    height: 160px;
+    background: url('../img/askTestLessonPic.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .aboutLessonsForm2 .wrapper:before {
+    content: "";
+    bottom: 0;
+    left: 50%;
+    width: 306px;
+    height: 222px;
+    transform: translateX(-50%);
+    background: url('../img/askTestLessonPic2-480.png') no-repeat center;
+    background-size: cover;
+  }
+
+  .aboutLessonsForm1 .h1, .aboutLessonsForm2 .h1 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .aboutLessonsForm1 form, .aboutLessonsForm2 form {
+    width: 380px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .aboutLessonsForm1 form > div, .aboutLessonsForm2 form > div {
+    padding: 0 0 22px 0;
+  }
+
+  .aboutLessonsForm1 input, .aboutLessonsForm2 input {
+    font-size: 16px;
+    line-height: 14px;
+  }
+
+  .aboutLessonsForm1 .inputTime label,
+  .aboutLessonsForm2 .inputTime label {
+    margin-right: 17px;
+    margin-left: 10px;
+  }
+
+  .formButton {
+    margin: 4px 0 0 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .aboutLessonsForm1 .wrapper, .aboutLessonsForm2 .wrapper {
+    width: 290px;
+    height: 586px;
+  }
+
+  .aboutLessonsForm2 .wrapper {
+    height: 656px;
+  }
+
+  .aboutLessonsForm1 .wrapper:before {
+    height: 165px;
+  }
+
+  .aboutLessonsForm1 .h1, .aboutLessonsForm2 .h1 {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .aboutLessonsForm1 form, .aboutLessonsForm2 form {
+    width: 100%;
+  }
+
+  .aboutLessonsForm1 .inputTime input,
+  .aboutLessonsForm2 .inputTime input {
+    width: 148px;
+  }
+
+  .aboutLessonsForm1 form > div, .aboutLessonsForm2 form > div {
+    padding: 0 0 22px 0;
+  }
+
+  .aboutLessonsForm1 input, .aboutLessonsForm2 input {
+    font-size: 16px;
+    line-height: 14px;
+  }
+
+  .aboutLessonsForm1 .inputTime label,
+  .aboutLessonsForm2 .inputTime label {
+    margin-right: 30px;
+    margin-left: -20px;
+  }
+}
+
+/*---------------------FAQ-----------------------------*/
+
 .aboutLessonsFAQ > .wrapper {
   padding: 40px 0 30px 0;
 }
@@ -456,4 +893,73 @@
   font-size: 14px;
   text-decoration: none;
   border-bottom: 1px solid #838cb4;
+}
+
+@media (max-width: 769px) {
+  .aboutLessonsFAQ > .wrapper {
+    width: 450px;
+    padding: 70px 12px 0 12px;
+  }
+
+  .aboutLessonsFAQ br {
+    display: none;
+  }
+
+  .aboutLessonsFAQ .h1 {
+    font-size: 22px;
+    line-height: 14px;
+  }
+
+  .aboutLessonsFAQ tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutLessonsFAQ td {
+    width: 100%;
+  }
+
+  .aboutLessonsFAQ td:first-child {
+    padding: 0;
+  }
+
+  .aboutLessonsFAQ td:last-child {
+    position: relative;
+    padding: 0 0 162px 0;
+    background: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 51px;
+      width: 109px;
+      height: 121px;
+      background: url('../img/questionMarkIco-480.png') no-repeat center;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .aboutLessonsFAQ > .wrapper {
+    width: 290px;
+    padding: 60px 0 0 0;
+  }
+
+  .aboutLessonsFAQ .h1 {
+    font-size: 18px;
+    line-height: 14px;
+  }
+
+  .aboutLessonsFAQ table {
+    margin-top: 30px;
+  }
+
+  .aboutLessonsFAQ td:last-child {
+    &::after {
+      bottom: 30px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
 }

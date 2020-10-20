@@ -152,6 +152,14 @@
 не стилизовал слайдер, потому, что его нет.
 карта яндекса - модальное окно
 
+-------------------about-lessons.html------------------------
+
+проверить на андроиде респонсив первый блок респонсив по вертикали (предположительно из-за разного размера текста - нужен normalize.css)
+
+63 строка br с классом <h1 class="h1">Как проходят занятия <br class="br__480px"> в центре довузовской подготовки «Репетитор Дона»?</h1>
+
+блок FAQ нет ссылок!!!!!
+
 //////////////////////////////////////
 img
 
@@ -230,6 +238,18 @@ diplomaSliderBg-480.png
 diplomaSliderArrow-left-480.png
 diplomaSliderArrow-right-480.png
 diplomaSliderBg-320.png
+aboutLessonsBg-480.png
+aboutLessonsIco-1.png
+aboutLessonsIco-2.png
+aboutLessonsIco-3.png
+aboutLessonsIco-4.png
+aboutLessonsIco-5.png
+aboutLessonsIco-6.png
+aboutLessonsIco-7.png
+aboutLessonsBg-320.png
+оптимизировал askTestLessonPic.jpg
+askTestLessonPic2-480.png
+questionMarkIco-480.png
 
 netcat_files/19/20 добавил banner-tochilka-480.jpg
 netcat_files/19/20 добавил banner-prevedi-druga-480.jpg
@@ -256,4 +276,6 @@ whyMiniGroups на десктопе отсутсвовал бэкграунд с
 
 модалка Заказать обратный звонок - на мобиле сделать по середине
 
-меню сделать позишн фиксед и затемнение на всю страницу.
+есть проблеммы на главной на планшете
+
+овальные кнопки на айфоне дипломослайдер
