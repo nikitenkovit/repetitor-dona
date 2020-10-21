@@ -1,3 +1,6 @@
+/* ModalWindow
+-----------------------------------------------------------------------------*/
+
 .modalWindow {
   position: fixed;
   z-index: 10000;
@@ -129,4 +132,12 @@
 
 .modalWindow.getCall .block {
   margin: 0 0 21px 0;
+}
+
+@media (max-width: 769px) {
+  .modalWindow {
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

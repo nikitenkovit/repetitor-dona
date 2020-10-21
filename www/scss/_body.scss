@@ -306,6 +306,14 @@ button {
 }
 
 @media (max-width: 769px) {
+
+  #colorbox {
+    width: 100% !important;
+  }
+  #cboxWrapper {
+    //width: 480px !important;
+  }
+
   * {
     box-sizing: border-box;
   }

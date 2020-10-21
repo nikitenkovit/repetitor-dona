@@ -59,4 +59,25 @@
     }
   }
 
+  /*responsive to ColorBox*/
+
+  jQuery.colorbox.settings.maxWidth = '95%';
+  jQuery.colorbox.settings.maxHeight = '95%';
+
+  /*resize function ColorBox*/
+
+  var resizeTimer;
+  function resizeColorBox()
+  {
+    if (resizeTimer) clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      if (jQuery('#cboxOverlay').is(':visible')) {
+        jQuery.colorbox.load(true);
+      }
+    }, 300);
+  }
+
+  jQuery(window).resize(resizeColorBox);
+  window.addEventListener("orientationchange", resizeColorBox, false);
+
 })();

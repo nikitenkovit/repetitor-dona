@@ -192,8 +192,7 @@
 @media (max-width: 769px) {
   .aboutLessons {
     width: 100%;
-    height: 2300px;
-    min-height: 2229px;
+    height: 2229px;
     background-image: url('../img/aboutLessonsBg-480.png');
     background-position: top center;
     background-size: 100% 100%;
@@ -220,8 +219,8 @@
 
   .aboutLessons .wrapper p {
     font-size: 14px;
-    line-height: normal;
-    margin: 0 0 17px 0;
+    line-height: 120%;
+    margin: 0 0 15px 0;
   }
 
   .aboutLessonsItem {
@@ -274,7 +273,7 @@
   .aboutLessonsItem.item2 .ico2 {
     left: auto;
     right: -20px;
-    top: -230px;
+    top: -240px;
     width: 56px;
     height: 66px;
     background: url('../img/aboutLessonsIco-2.png') center no-repeat;
@@ -339,9 +338,9 @@
 
 @media (max-width: 479px) {
   .aboutLessons {
-    height: 2620px;
-    background: url('../img/aboutLessonsBg-320.png') center top no-repeat;
-    background-size: auto 2620px;
+    height: 2531px;
+    background: url('../img/aboutLessonsBg-320.png') center bottom no-repeat;
+    background-size: auto;
   }
 
   .aboutLessons .wrapper {
@@ -358,12 +357,16 @@
 
   .aboutLessonsItem {
     width: 100%;
-    margin-top: 98px;
+    margin-top: 95px;
     padding: 20px 9px 10px 13px;
   }
 
   .aboutLessonsItem:nth-child(even) {
     margin-top: 98px;
+  }
+
+  .aboutLessons h1 + .aboutLessonsItem {
+    margin-top: 75px;
   }
 
   .aboutLessonsItem.item1 .ico1 {
@@ -372,7 +375,7 @@
 
   .aboutLessonsItem.item2 .ico2 {
     right: -13px;
-    top: -275px;
+    top: -280px;
     width: 48px;
     height: 56px;
   }
