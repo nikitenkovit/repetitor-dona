@@ -601,7 +601,7 @@
     background: url('../img/giaBlock8BGPic-480.png') no-repeat center;
     background-size: cover;
     font-size: 15px;
-    line-height: normal;
+    line-height: 120%;
   }
 
   .gia .block8 .review p {
@@ -655,13 +655,11 @@
     background: url('../img/giaBlock8BGPic-320.png') no-repeat center;
     background-size: contain;
     font-size: 14px;
-    line-height: normal;
-    letter-spacing: -0.3px;
-    white-space: normal;
+    line-height: 120%;
   }
 
   .gia .block8 .review p {
-    margin: 0 0 5px 0;
+    margin: 0 0 8px 0;
   }
 
   .gia .block8 p:first-child {
@@ -687,7 +685,7 @@
 
   .gia .block8 .author {
     font-size: 18px;
-    margin-top: -5px;
+    margin-top: 5px;
     margin-right: 5px;
   }
 }

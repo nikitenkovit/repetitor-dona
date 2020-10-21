@@ -152,11 +152,11 @@
   }
 
   .interview .wrapper {
-    padding: 10px;
+    padding: 15px;
   }
 
   .interview .wrapper:last-child {
-    padding: 10px;
+    padding: 15px;
   }
 
   .interview .h2 {
@@ -165,10 +165,7 @@
   }
 
   .interviewHeader + .h2 {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
     width: 200px;
   }
 
@@ -197,6 +194,7 @@
 
   .formControl:nth-child(8) {
     margin-right: 20px;
+
     & label {
       display: none;
     }
@@ -205,5 +203,15 @@
     & label {
       display: none;
     }
+  }
+}
+
+@media (max-width: 479px) {
+  .interview {
+    top: 0;
+  }
+
+  .interviewHeader + .h2 {
+    margin-top: -10px;
   }
 }
