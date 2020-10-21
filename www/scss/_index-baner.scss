@@ -17,13 +17,13 @@
   display: inline-block;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   .banner {
     height: 200px;
   }
 
   .banner .wrapper {
-    width: 480px;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -32,8 +32,8 @@
   .banner ul {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100%;
-
   }
 
   .banner li {
@@ -45,27 +45,11 @@
 @media (max-width: 479px) {
   .banner {
     min-width: 320px;
-    width: 100%;
     height: 160px;
   }
 
   .banner .wrapper {
-    width: 100%;
-    max-width: 320px;
-    height: 100%;
     margin: 0 auto;
     padding: 0 15px;
-  }
-
-  .banner ul {
-    display: flex;
-    align-items: center;
-    height: 100%;
-
-  }
-
-  .banner li {
-    display: block;
-    position: static;
   }
 }

@@ -17,7 +17,7 @@
   top: 10px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   .inner {
     background: url('../img/innerBg.jpg') 225px;
   }
@@ -33,6 +33,7 @@
     margin-top: 25px;
     font-size: 20px;
     line-height: 30px;
+    text-align: center;
   }
 
   .inner .loginPan {

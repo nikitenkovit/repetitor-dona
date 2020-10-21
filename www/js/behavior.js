@@ -95,7 +95,7 @@ $(function () {
 
     $('.interview').addClass('active');
 
-  }, 0);
+  }, 60000);
 
   function closeWindow() {
     $('#cboxOverlay, .closeModalWindow').on('click', function () {

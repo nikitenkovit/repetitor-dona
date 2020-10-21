@@ -105,7 +105,7 @@ nav {
   display: none;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   .darkBackground::before {
     content: "";
     position: fixed;
@@ -118,7 +118,7 @@ nav {
   nav {
     position: relative;
     width: 100%;
-    max-width: 769px;
+    max-width: 1025px;
     height: 77px;
   }
 

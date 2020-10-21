@@ -189,7 +189,7 @@
   background: url('../img/aboutLessonsIco.png') -532px top no-repeat;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   .aboutLessons {
     width: 100%;
     height: 2229px;
@@ -490,7 +490,7 @@
   transition: all 0.2s;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   .inner .wrapper > .wrapper.aboutLessonsReviews {
     margin-top: 30px;
     padding: 0 0 60px 0;
@@ -735,7 +735,7 @@
 
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   .aboutLessonsForm1 .wrapper, .aboutLessonsForm2 .wrapper {
     width: 450px;
     height: 607px;
@@ -898,7 +898,7 @@
   border-bottom: 1px solid #838cb4;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   .aboutLessonsFAQ > .wrapper {
     width: 450px;
     padding: 70px 12px 0 12px;

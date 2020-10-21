@@ -305,7 +305,7 @@ button {
   display: none;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
 
   #colorbox {
     width: 100% !important;
@@ -320,7 +320,7 @@ button {
 
   body > div {
     width: 100%;
-    max-width: 769px;
+    max-width: 1025px;
     box-sizing: border-box;
     overflow: hidden;
   }

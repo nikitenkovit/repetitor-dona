@@ -21,7 +21,7 @@
                                    <li><a href=''>
                                      <picture>
                                        <source srcset="./netcat_files/19/20/banner-tochilka-320.jpg" media="(max-width: 479px)">
-                                       <source srcset="./netcat_files/19/20/banner-tochilka-480.jpg" media="(max-width: 769px)">
+                                       <source srcset="./netcat_files/19/20/banner-tochilka-480.jpg" media="(max-width: 939px)">
                                        <img class="banner__image" src='./netcat_files/19/20/bannerTop.jpg' alt=''>
                                      </picture>
                                    </a></li>
@@ -47,7 +47,8 @@
     <p class="teachers__description teachers__description--2"><em>В нашей команде только профессионалы своего дела</em></p>
 87 - Добавил br <li>Опыт репетиторской работы наших преподавателей &ndash;<br class="px br__320px"> от 8 до 40 лет.</li>
 
-98 строка убрали дивы  <div class="matter">
+98 строка убрали дивы
+                    <div class="matter">
                        <a href='?action=index&srchPat[1]=13'>Математика</a>
                        <a href='?action=index&srchPat[1]=4'>Обществознание</a>
                        <a href='?action=index&srchPat[1]=3'>Информатика</a>
@@ -129,7 +130,6 @@
 
 СЛАЙДЕР!!!!
 
-59+- строка тег h1 - создал и навесил класс (_body.scss) visually-hidden, для того, что бы доступно спрятать заголовок на странице  <h1 class="h1 visually-hidden">Занятия в мини-группах</h1> Этого заголовка нет в макете и в действительности он не нужен. Класс visually-hidden известный патерн, который прячет доступно и позволяет этот заголовок прочитать скринридерам.
 60 убрал заинлайненый style="margin-top:20px" из html в scc. <div class="greenPan optimalVariantIco">Оптимальный вариант по цене и качеству — это подготовка к ЕГЭ в мини-группе (3-7 человек).<br>Занятия ведёт опытный репетитор по специально разработанной методике.</div>
 82 строка br с классом <div class="h3">Эффективнее, чем на подкурсах, <br class="br__480px"> в школе и в группах больше <br class="br__320px"> 6 человек</div>
 
@@ -260,12 +260,6 @@ js
 
 добавил файл script.js
 ///////////////////////////////////
-
-
-
-планшет max-width: 769px
-мобила max-width: 479px
-
 
 в basicCompose на десктопе уменьшил высоту родителя на 5 пикселей до 555
 whyMiniGroups на десктопе отсутсвовал бэкграунд сделал новый

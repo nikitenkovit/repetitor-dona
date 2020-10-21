@@ -65,7 +65,7 @@
   background: url('../img/teachersTick.png') center -185px no-repeat;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   .inner .wrapper > .wrapper.teachers {
     display: flex;
     flex-direction: column;
@@ -266,7 +266,7 @@
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   .matterWrapper {
     width: 450px;
     margin: 0 auto;
@@ -524,7 +524,7 @@
   margin: 0 0 0 0;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   .teacherItem {
     position: relative;
     margin: 0;
@@ -877,7 +877,7 @@
   margin-left: 37px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   .teacherItemMoreInfo {
     width: 100%;
     margin-top: 30px;
@@ -1186,7 +1186,7 @@
   background: #de5958;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   .teacherItemAbout {
     padding-top: 22px;
     padding-bottom: 26px;
