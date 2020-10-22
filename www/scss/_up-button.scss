@@ -1,0 +1,44 @@
+.up-button--hidden {
+  display: none;
+}
+
+.up-button {
+  position: fixed;
+  bottom: 75px;
+  right: 50px;
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  border: 2px solid #de5958;
+  border-radius: 50%;
+  font-size: 34px;
+  line-height: 120%;
+  font-weight: 500;
+  color: #de5958;
+  z-index: 1;
+  background-color: transparent;
+  background-image: url('../img/up-arrow-color.svg');
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  cursor: pointer;
+}
+
+.up-button:hover {
+  background-color: #de5958;
+  background-image: url('../img/up-arrow-white.svg');
+  color: #ffffff;
+}
+
+@media (max-width: 1025px) {
+  .up-button {
+    bottom: 35px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 479px) {
+  .up-button {
+    bottom: 35px;
+    right: 15px;
+  }
+}
