@@ -1,0 +1,68 @@
+.fact {
+  background:url(../img/fact-bg.png) 50% 0;
+  padding: 35px 0;
+  background-size: cover;
+  height: 518px;
+  position: relative;
+}
+.fact .line-fact {
+  background: url(../img/fact-line.png) no-repeat;
+  text-align: center;
+  padding: 3px 0;
+  font-size: 34px;
+  color: #ffffff;
+  font-family: 'Myriad Pro';
+  font-weight: 300;
+  font-style: normal;
+}
+.fact .block-fact {
+  width: 630px;
+  margin-left: 45px;
+  margin-top: 40px;
+}
+.fact .block-fact div {
+  text-align:center;
+  height: 185px;
+}
+.fact .block-fact div img {
+  display:inline;
+  margin-left: 28px;
+}
+.fact .barancov {
+  position:absolute;
+  bottom:0;
+  right:130px;
+  z-index:1;
+}
+.fact .col-md-4 {
+  position:relative;
+}
+.fact .col-md-4 span {
+  position:absolute;
+  top: 90px;
+  width: 100%;
+  left:0;
+  padding: 0px 5%;
+  font-size: 16px;
+  color: #595959;
+  font-family: 'Myriad Pro';
+  font-weight: 600;
+  font-style: normal;
+}
+.fact .rty{
+  background: url(../img/rty.png) no-repeat;
+  width: 134px;
+  height: 121px !important;
+  position: relative;
+  margin-left: 39px;
+}
+
+.fact .rty span{
+  position: absolute;
+  top: 19px;
+  font-size: 32px;
+  color: #ffffff;
+  left: 0;
+  width: 100px;
+
+}

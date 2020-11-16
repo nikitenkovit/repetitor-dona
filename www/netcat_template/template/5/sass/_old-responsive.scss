@@ -1,0 +1,46 @@
+@media screen and (max-width: 1000px) {
+  .b-none {
+    display: none;
+  }
+  .fact {
+    height: 580px;
+  }
+  .problems {
+    height: 1050px;
+    background-size: cover;
+  }
+  .fact .barancov {
+    right: 20px;
+  }
+  .fact .block-fact {
+    width: 500px;
+  }
+  .fact .block-fact div {
+    text-align: center;
+    height: 144px;
+  }
+  .problems .row {
+    width: 73%;
+  }
+  .col-md-4 {
+    float: left;
+    width: 50%;
+  }
+  .olimpic .line-olimpik {
+    width: 100%;
+    background-position: 50% 0;
+  }
+  .olimpic .olimpic-element {
+    width: 940px;
+    margin: 0 auto;
+    background-size: contain;
+  }
+  .olimpic .olimpic-element span {
+    width: 75%;
+    padding: 38px 0 38px 12px;
+    margin: 0 auto;
+  }
+  .stock form, .stock-gh form {
+    left: -81px;
+  }
+}

@@ -26,17 +26,17 @@ function browsersync() {
 }
 
 function styles() {
-	return src('www/scss/*.scss') // Выбираем источник: "app/sass/main.sass" или "app/less/main.less"
+	return src('www/netcat_template/template/5/sass/*.scss') // Выбираем источник: "app/sass/main.sass" или "app/less/main.less"
 		.pipe(sass())
 		.pipe(concat('style.min.css')) // Конкатенируем в файл app.min.js
 		.pipe(autoprefixer({ overrideBrowserslist: ['last 11 versions'], grid: true })) // Создадим префиксы с помощью Autoprefixer
 		.pipe(cleancss( { level: { 1: { specialComments: 0 } }/* , format: 'beautify' */ } )) // Минифицируем стили
-		.pipe(dest('www/css/')) // Выгрузим результат в папку "app/css/"
+		.pipe(dest('www/netcat_template/template/5/css/')) // Выгрузим результат в папку "app/css/"
 		.pipe(browserSync.stream()) // Сделаем инъекцию в браузер
 }
 
 function startwatch() {
-	watch('www/scss/*.scss', styles);
+	watch('www/netcat_template/template/5/sass/*.scss', styles);
 	watch('www/*.html').on('change', browserSync.reload);
 }
 

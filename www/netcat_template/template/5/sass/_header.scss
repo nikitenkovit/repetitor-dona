@@ -1,0 +1,167 @@
+.orange:hover {
+  background: #e86a6a;
+}
+.orange:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow:    none;
+  box-shadow:         none;
+}
+.header {
+  height: 170px;
+  width: 100%;
+  background: url(../img/headerBg.jpg) center top no-repeat;
+  border-bottom: 2px solid #ed1e24;
+}
+.logo {
+  background: url(../img/logo.png) center no-repeat;
+  width: 514px;
+  height: 123px;
+  position: absolute;
+  left: 0px;
+  top: 20px;
+}
+.loginPan {
+  position: absolute;
+  right: 0px;
+  top: -65px;
+}
+a.enter:hover {
+  border-bottom: none;
+  text-decoration: none;
+}
+.callBackForm a.enter {
+  right: 0px;
+  top: -26px;
+}
+a.enter:before {
+  position: absolute;
+  left: -14px;
+  top: 0px;
+  content: url(../img/enterIco.png);
+}
+a.enter {
+  font-size: 18px;
+  color: #de5958;
+  border-bottom: 1px solid #de5958;
+}
+.phones {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  font-family: 'PTSansRegular';
+  font-size: 32px;
+  line-height: 45px;
+  color: #FFF;
+  text-align: right;
+}
+.whiteFont {
+  font-family: 'PTSansRegular';
+  color: #FFF;
+}
+a.callBack {
+  position: absolute;
+  right: 0px;
+  top: 125px;
+  font-size: 18px;
+  font-style: italic;
+  text-decoration: none;
+  border-bottom: 1px solid #FFF;
+}
+a.callBack:before {
+  content: url(../img/callBackIco.png);
+  position: absolute;
+  left: -25px;
+  top: -1px;
+}
+a.callBack:hover {
+  color: #FFF;
+  text-decoration: none;
+  border-bottom: 1px solid #ed1e24;
+}
+nav {
+  width: 100%;
+  height: 105px;
+  background: #dce6f0;
+  border-bottom: 1px solid #d3d3d3;
+  position: relative;
+  z-index: 2;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+}
+.shedule {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  font-family: 'PTSansItalic';
+  font-size: 14px;
+  color: #333333;
+  line-height: 16px;
+  padding: 0 0 0 42px;
+  background: url(../img/clockIco.png) left 2px no-repeat;
+}
+.shedule span {
+  font-family: 'PTSansBoldItalic';
+  color: #ed1e24;
+  line-height: 16px;
+}
+.takeClass.top {
+  position: absolute;
+  left: 0px;
+  top: 54px;
+}
+.takeClass {
+  cursor: pointer;
+  padding: 10px 34px;
+  font-size: 18px;
+  border: none;
+  text-shadow: 0px 1px 0 rgba(173, 43, 42, 1);
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(199, 71, 70, 1);
+  -moz-box-shadow: 3px 3px 0px 0px rgba(199, 71, 70, 1);
+  box-shadow: 3px 3px 0px 0px rgba(199, 71, 70, 1);
+}
+.orange {
+  color: #fffefe;
+  background: #de5958;
+}
+.menu {
+  float: right;
+  width: 640px;
+  margin: 26px 0 0 0;
+}
+.menuTop {
+  padding: 0 0 11px 0;
+  border-bottom: 1px solid #b2b2b2;
+}
+.menuBottom {
+  padding: 9px 0 0 0;
+  font-size: 18px;
+  font-family: 'PTSansItalic';
+}
+.menuBottom a {
+  color: #333333;
+}
+.menuBottom a:hover {
+  color: #ed1e24;
+}
+.menuBottom .active {
+  color: #ed1e24;
+}
+.menuTop li {
+  display: inline;
+  font-size: 14px;
+  font-family: 'PTSansBold';
+  text-transform: uppercase;
+}
+.menuTop a {
+  color: #323232;
+}
+.menuTop .active, .menuTop a:hover {
+  color: #666666;
+}
+.menuTop, .menuBottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

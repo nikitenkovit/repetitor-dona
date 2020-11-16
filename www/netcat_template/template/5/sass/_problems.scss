@@ -1,0 +1,53 @@
+.problems {
+  position: relative;
+  background:url(../img/problems-bg.png) 50% 0 no-repeat;
+  height: 880px;
+}
+.problems .row {
+  margin: 0;
+  width: 100%;
+  padding: 80px 0;
+}
+.problems-line {
+  background:#F2E9EA;
+  font-size: 30.88px;
+  padding:17px 0;
+  color: #D80923;
+  text-align:center;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-style: normal;
+}
+.block-problems {
+  background:url(../img/problems-block.png) no-repeat;
+  width:301px;
+  height:130px;
+  margin-bottom: 30px;
+}
+.block-problems span {
+  position: relative;
+  top: 58px;
+  text-align: center;
+  width: 291px;
+  left: 6px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #1F1B20;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+  display: table-cell;
+  vertical-align: middle;
+  height: 70px;
+}
+.problems .col-md-4 {
+  height:160px
+}
+.shadow-r {
+  width: 100%;
+  background: url(../img/shadow.png) 50% 0 no-repeat;
+  height:43px;
+  position:absolute;
+  bottom: -43px;
+  z-index: 1;
+}

@@ -1,0 +1,155 @@
+.reviews {
+  background:url(../img/bg-teachers-don.jpg) 50% 0 no-repeat;
+  position:relative;
+}
+.reviews .line-h1 {
+  background:#DBE5EF;
+  position: relative;
+  color: #4D4D4D;
+  text-align:center;
+  font-size:36px;
+  font-weight:bold;
+  padding: 30px 0;
+  margin-bottom: 60px;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-style: normal;
+}
+.reviews .line-h2 {
+  font-size: 31px;
+  margin-top: 10px;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-style: normal;
+}
+.reviews .line-h1 span {
+  color:#D8462E;
+}
+.reviews .line-h1:after {
+  content:'';
+  width: 100%;
+  background: url(../img/shadow.png) 50% 0 no-repeat;
+  height: 43px;
+  position: absolute;
+  bottom: -43px;
+  left: 0;
+  z-index: 1;
+}
+.tabs-year {
+  padding:30px 0;
+  margin-top:-50px;
+}
+.tabs-year:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.tabs-year .tab {
+  width: 16.666%;
+  float: left;
+  text-align: center;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+}
+.tabs-year .tab a {
+  font-size: 32px;
+  display: inline-block;
+  padding: 7px 38px;
+  color:#666666;
+  text-decoration:none;
+}
+.tabs-year .tab a:hover, .tabs-year .tab .active {
+  padding: 6px 38px;
+  border: 1px solid #C4C4C4;
+  border-radius:5px;
+  background:#F5F5F5;
+  box-shadow: inset -1px 3px 10px #C4C4C4;
+}
+.reviews .reviews-content {
+  background:#ffffff;
+  padding:40px 75px;
+}
+.reviews .reviews-content .item {
+  margin-bottom: 60px;
+}
+.reviews .reviews-content .left {
+  float:left;
+  width:300px;
+}
+.reviews .reviews-content .right {
+  float:left;
+  width: 490px;
+  padding-top: 30px;
+}
+.reviews .reviews-content .item .foto {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #C5C6C6;
+  display: inline-block;
+}
+.reviews .reviews-content .item .row {
+  margin:0;
+  background: #ffffff;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+  padding: 20px 0;
+}
+.reviews .reviews-content .item .text {
+  background:#E9EFF5;
+  padding: 60px 25px 30px 25px;
+  margin-top: -30px;
+  font-size: 18px;
+  color: #2B2A29;
+  font-family: 'Myriad Pro';
+  font-weight: 300;
+  font-style: normal;
+  line-height: 21px;
+}
+.reviews .reviews-content .reviewsItemVideo{
+  padding:10px;
+  border:1px solid #ccc;
+  border-radius:10px;
+  background: #EDEDED;
+  margin-top:25px
+}
+.reviews .reviews-content .reviewsItemVideo .reviewsItemVideoReview{
+  border:1px solid #ffffff;
+}
+.reviews .reviews-content .reviewsItemVideo iframe{
+  width:100%;
+  height:350px;
+}
+.reviews .reviews-content .item .text .scroll-b {
+  width:100%;
+  height: 123px;
+  overflow:hidden;
+  max-height: 123px;
+}
+.reviews .reviews-content .item .left {
+  border-right:1px solid #BBBCBC;
+}
+.reviews .reviews-content .item .foto img {
+  width: 260px;
+}
+.reviews .reviews-content .item .name {
+  font-size: 28px;
+  color: #FF0000;
+  line-height: 36px;
+  margin-left: 80px;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: italic;
+}
+.reviews .reviews-content .item .ted {
+  font-size: 24px;
+  color: #1A1A1A;
+  line-height: 30px;
+  margin-left: 80px;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: italic;
+}

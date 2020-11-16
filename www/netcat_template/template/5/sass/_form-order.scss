@@ -1,0 +1,70 @@
+.form-order {
+  background:#8EB2DC;
+  text-align:center;
+  padding-top: 20px;
+  overflow: hidden;
+  height: 210px;
+}
+.form-order .form-courses {
+  width: 917px;
+}
+.form-order .form-courses .input {
+  font-family: 'PTSansRegular';
+  background:url(../img/input-courses.png) no-repeat;
+  width: 219px;
+  height:  95px;
+  float: left;
+  margin: 5px;
+}
+.form-order .form-courses .submit {
+  font-family: 'PTSansRegular';
+  background: url(../img/submit-courses-v2.png);
+  width: 219px;
+  height:  75px;
+  float: left;
+  margin: 5px;
+}
+.form-order .form-courses .submit:hover {
+  width: 219px;
+  background-position: 219px 0;
+}
+.form-order .form-courses .input input {
+  width:100%;
+  padding: 10px;
+  background: none;
+  border: 0;
+  text-align: center;
+  font-size: 16px;
+  color: #727272;
+  font-family: 'Myriad Pro';
+  font-weight: 300;
+  font-style: normal;
+}
+.form-order .form-courses input[type="submit"] {
+  width:100%;
+  padding: 12px;
+  background: none;
+  border: 0;
+  text-align: center;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: 'Myriad Pro';
+  font-weight: 600;
+  font-style: normal;
+}
+.form-order .text-h-o1 {
+  font-family: 'Myriad Pro';
+  font-size: 32.63px;
+  color: #ffffff;
+  margin: 25px 0 13px 0;
+  font-weight: bold;
+  font-style: normal;
+}
+.form-order .text-h-o2 {
+  font-family: 'Myriad Pro';
+  font-size: 25.45px;
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-weight: 300;
+  font-style: normal;
+}

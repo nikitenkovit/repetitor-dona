@@ -1,0 +1,104 @@
+.teacher {
+  background:url(../img/teacher.gif) no-repeat 50% 0;
+  position: relative;
+  top: -59px;
+  padding-bottom:50px;
+}
+.teacher .wrapper {
+  margin-top: -85px;
+  z-index: 3;
+}
+.teacher .teacher-block {
+  position:relative;
+  background:url(../img/teacher-block.png) no-repeat;
+  width:849px;
+  height:962px;
+  margin:  0 auto;
+}
+.children-block {
+  position:relative;
+  background:url(../img/children.png) no-repeat;
+  width:700px;
+  height:611px;
+  margin-top: -288px;
+  float: right;
+}
+.children-one-block {
+  position:relative;
+  background: url(../img/children-one.png) no-repeat;
+  width:639px;
+  height:340px;
+}
+.teacher .block-lopl {
+  position:absolute;
+  width:382px;
+  text-align:center;
+}
+.teacher .block-lopl .line {
+  background:url(../img/line-children.png) no-repeat;
+  width:382px;
+  height:37px;
+  font-size:24px;
+  text-align:center;
+  padding:8px 0;
+  color:#ffffff;
+  margin-bottom:30px;
+  font-family: 'Myriad Pro';
+  font-weight: 600;
+  font-style: normal;
+}
+.teacher .block-lopl span {
+  display:block;
+  margin-bottom:30px;
+  font-size:16px;
+  color: #20333D;
+  font-family: 'Myriad Pro';
+  font-weight: 600;
+  font-style: normal;
+}
+.children-block .block-lopl {
+  left: -240px;
+  bottom: 42px;
+}
+.children-block .block-lopl {
+  left: -240px;
+  bottom: 42px;
+}
+.children-one-block .block-lopl {
+  right: -235px;
+  bottom: 95px;
+}
+.teacher-lopl {
+  position:absolute;
+  width:400px;
+  left: 355px;
+  top: 230px;
+}
+.teacher-lopl .title {
+  font-size: 23px;
+  font-weight:bold;
+  color:#ffffff;
+  font-family: 'Myriad Pro';
+  font-weight: 600;
+  font-style: normal;
+}
+.teacher-lopl span {
+  font-size: 15px;
+  font-weight:bold;
+  color:#ffffff;
+  display: block;
+  margin-top: 45px;
+  margin-left: 30px;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+}
+.teacher-lopl span:before {
+  content:'';
+  display:block;
+  float:left;
+  background:url(../img/ok.png);
+  height: 49px;
+  width: 50px;
+  margin-top: -15px;
+}

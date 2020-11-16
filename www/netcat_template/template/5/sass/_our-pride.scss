@@ -1,0 +1,111 @@
+.our-pride .wrapper {
+  background: url(../img/our-pride.png) no-repeat;
+  height: 843px;
+  padding-top: 35px;
+}
+.our-pride .item {
+  width: 50%;
+  float:left;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px 0 8px 21px;
+}
+
+.item:nth-child(2n+1) .paddleft{
+  padding-left: 140px;
+}
+
+.our-pride .name {
+  position:absolute;
+  left:3px;
+  top: 119px;
+  color:#ffffff;
+  width: 107px;
+  text-align: center;
+  font-style: normal;
+  font-size: 14px;
+  font-family: 'Myriad Pro';
+  font-weight: 300;
+}
+.our-pride .fotoatest a {
+  float: left;
+  width: 29%;
+  margin-right: 3%;
+  margin-top: 45px;
+}
+.our-pride .fotoatest a img {
+  width: 100%;
+}
+
+.our-pride .text {
+  position: absolute;
+  font-size: 11px;
+  right: 16px;
+  top: 30px;
+  width: 54%;
+  color: #2B2A29;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.our-pride .text p{
+  margin-bottom:5px;
+}
+
+.our-pride .text p b,
+.our-pride .text p strong{
+  font-weight: 600 !important;
+}
+
+.our-pride .text ul{
+  list-style: disc;
+  margin-left: 14px;
+  line-height: 12px;
+  margin-bottom:5px;
+}
+
+.our-pride .item:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.our-pride {
+  background: #F7F8FA;
+  padding-bottom: 40px;
+  margin-top: -25px;
+}
+.our-pride .h1 {
+  font-size: 33px;
+  color: #D80923;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 0;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-style: normal;
+}
+.our-pride .foto-lo {
+  background: url(../img/our-pride-foto.png) no-repeat;
+  background-size: cover;
+  width: 313px;
+  height: 175px;
+  position: relative;
+}
+
+.our-pride .col-md-5,
+.our-pride .col-md-7{
+  margin:0;
+  padding: 0;
+}
+
+.our-pride .foto-lo img {
+  position: relative;
+  top: 1.5px;
+  left: 2px;
+  width: 110px;
+  height: 110px;
+  display: block;
+  border-radius: 50%;
+  z-index: 1;
+}

@@ -1,0 +1,54 @@
+.group-mini {
+  position:relative;
+  background: url(../img/minigroup.png) 50% 0;
+  height:600px;
+  margin-top: 50px;
+  z-index: 2;
+}
+.group-mini .wrapper:before {
+  content:'';
+  display:block;
+  position:absolute;
+  top: -110px;
+  left: -153px;
+  width:355px;
+  height:675px;
+  background: url(../img/book-kump.png) no-repeat;
+}
+.group-mini .line {
+  background:url(../img/line-minigroup.png) no-repeat;
+  padding:14px 0;
+  font-size:33px;
+  color:#ffffff;
+  text-align:center;
+  width: 861px;
+  float: right;
+  margin-top:90px;
+  font-family: 'Myriad Pro';
+  font-weight: 600;
+  font-style: normal;
+}
+.group-mini .h1 {
+  font-size:29px;
+  color:#ffffff;
+  margin-left: 141px;
+  margin-top: 80px;
+  margin-bottom: 25px;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+}
+.group-mini span {
+  padding: 12px 20px;
+  background:#ffffff;
+  font-size:18px;
+  color: #262626;
+  font-weight:bold;
+  display:block;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  margin-left: 123px;
+  font-family: 'Myriad Pro';
+  font-weight: 600;
+  font-style: normal;
+}

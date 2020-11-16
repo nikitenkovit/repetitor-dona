@@ -1,0 +1,261 @@
+.teachers-don {
+  margin-bottom:40px;
+}
+.teachers-don .h1 {
+  font-size: 32px;
+  color: #6DB337;
+  text-align:center;
+  font-weight:bold;
+  margin-bottom:70px;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-style: normal;
+}
+.teachers-don .h1 span {
+  color: #FF0000;
+}
+
+.teachers-sl-5mil{
+  text-align:center;
+}
+
+.teachers-sl-5mil:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+
+.teachers-sl-5mil .item{
+  width: 192px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.teachers-sl .item .block,
+.teachers-sl-5mil .item .block{
+  width:90%;
+  margin:0 auto;
+  text-align: center;
+}
+.teachers-sl .item .block .foto,
+.teachers-sl-5mil .item .block .foto{
+  width:125px;
+  height:125px;
+  overflow:hidden;
+  border-radius:50%;
+  border: 2px solid #B2B3B3;
+  display: inline-block;
+}
+.teachers-sl .item .block .foto img,
+.teachers-sl-5mil .item .block .foto img{
+  width:130px;
+}
+.teachers-sl .item .block .name,
+.teachers-sl-5mil .item .block .name {
+  font-size: 17px;
+  line-height: 18px;
+  color: #2B2A29;
+  margin-top:15px;
+  margin-bottom:15px;
+  text-transform:uppercase;
+  height: 60px;
+  font-family: 'Myriad Pro';
+  font-weight: 600;
+  font-style: normal;
+}
+.teachers-sl .item .block .bottom-teacher,
+.teachers-sl-5mil .item .block .bottom-teacher{
+  background: #6BB23A;
+  font-size: 10px;
+  padding: 15px 0;
+  color: #ffffff;
+  width: 170px;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+}
+.teachers-sl .item .block .bottom-teacher:hover,
+.teachers-sl-5mil .item .block .bottom-teacher:hover{
+  background:#47910C;
+}
+
+.owl-stage:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.teachers-don .block-nfo-teachers {
+  border: 1px solid #B2B3B3;
+  border-radius:6px;
+  margin-top:40px;
+}
+.teachers-don .block-nfo-teachers .row {
+  padding:20px;
+}
+.teachers-don .block-nfo-teachers .col-md-4 {
+  border-right:1px solid #cccccc;
+  text-align:center;
+}
+.teachers-don .block-nfo-teachers .foto {
+  width:215px;
+  height:215px;
+  overflow:hidden;
+  border-radius:50%;
+  border: 2px solid #B2B3B3;
+  display: inline-block;
+}
+.teachers-don .block-nfo-teachers .foto img {
+  width: 230px;
+}
+.teachers-don .block-nfo-teachers .name {
+  width:200px;
+  margin:15px auto;
+  font-size:24px;
+  line-height:28px;
+  color: #2B2A29;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-style: normal;
+}
+.teachers-don .block-nfo-teachers span {
+  border-bottom:1px solid #cccccc;
+  padding: 10px 0 10px 0;
+  display:block;
+  width:85%;
+  font-size:16px;
+  margin:0 auto;
+  color: #353535;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: italic;
+}
+.dffg span {
+  border-bottom: none !important;
+  padding: 0 !important;
+  display: inline-block !important;
+  width: inherit !important;
+  margin: inherit !important;
+  margin-left: 5px !important;
+}
+.teachers-don .block-nfo-teachers .obr {
+  font-size: 14px;
+  color: #353535;
+  margin: 20px 0;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 19px;
+}
+.teachers-don .block-nfo-teachers .content {
+  margin: 0 45px 45px 45px;
+  min-height: 359px;
+}
+.teacherItemMoreInfoLinks {
+  position: absolute;
+  bottom: 0;
+  right: 18px;
+  text-align: right;
+}
+.teachers-don .block-nfo-teachers .content p{
+  font-size: 17px;
+  color: #2B2A29;
+  margin-bottom:40px;
+  font-family: 'Myriad Pro';
+  font-weight: 300;
+  font-style: normal;
+  line-height: 21px;
+}
+
+.teachers-don .block-nfo-teachers .h2{
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 22px;
+}
+.teachers-don .block-nfo-teachers .content p strong{
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+}
+.teachers-don .block-nfo-teachers .content ul{
+  margin-bottom:40px;
+}
+.teachers-don .block-nfo-teachers .content ul li{
+  font-size: 17px;
+  color: #2B2A29;
+  font-family: 'Myriad Pro';
+  font-weight: 300;
+  font-style: normal;
+  line-height: 21px;
+  padding-left: 25px;
+}
+.teachers-don .block-nfo-teachers .video {
+  background: #DC291B;
+  width:90%;
+  font-size: 15px;
+  color:#ffffff;
+  display:block;
+  margin:10px auto 0 auto;
+  padding:10px;
+  font-family: 'Myriad Pro';
+  font-weight: 600;
+  font-style: normal;
+}
+.teachers-don .block-nfo-teachers .video:hover {
+  background:#a00004;
+}
+.teachers-don .block-nfo-teachers .content div.dffg {
+  border-top:4px solid #E94A4D;
+  position:relative;
+  padding-top: 6px;
+  padding-left:40px;
+}
+.teachers-don .block-nfo-teachers .content div.dffg:before {
+  content:'';
+  background:url(../img/fg.png);
+  width:28px;
+  height:27px;
+  position:absolute;
+  left:0;
+  top:-3px;
+}
+.teachers-don .block-nfo-teachers .content .a {
+  color: #E31E24;
+  font-size: 16px;
+  text-decoration: underline;
+  float: right;
+  display: block;
+  padding: 0 0 0 40px;
+  font-family: 'Myriad Pro';
+  font-weight: 300;
+  font-style: normal;
+}
+.teachers-don .block-nfo-teachers .content .a:hover {
+  text-decoration: none;
+}
+.owl-nav {
+  position: absolute;
+  z-index: 6;
+  top: 15%;
+  width: 100%;
+}
+.owl-nav .owl-prev {
+  background: url(../img/p-n.png) !important;
+  width: 21px;
+  height: 50px;
+  position: absolute;
+  left: -10px;
+  z-index: 3;
+}
+.owl-nav .owl-next {
+  background: url(../img/p-n.png) 21px 0 !important;
+  width: 21px;
+  height: 50px;
+  position: absolute;
+  right: -10px;
+  z-index: 3;
+}

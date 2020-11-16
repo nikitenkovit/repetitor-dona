@@ -1,0 +1,29 @@
+.address {
+  text-align:center;
+  margin:30px 0;
+}
+.address ul {
+  width: 100%;
+  font-size: 0;
+}
+.address li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2% 0 2%;
+  width: 46%;
+  text-align: center;
+}
+.address li img {
+  width:100%
+}
+.address .h1 {
+  margin: 0 0 40px 0;
+  font-size: 32px;
+  font-style: bold;
+  color: #4E4E4E;
+  line-height: 29px;
+  text-transform: uppercase;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-style: normal;
+}

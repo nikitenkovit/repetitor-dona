@@ -1,0 +1,258 @@
+.why-we {
+  background:url(../img/why-we-bg.gif) 50% 0 no-repeat;
+  padding: 40px 0;
+}
+.why-we .line-why-we {
+  background:url(../img/why-we-line.png) no-repeat;
+  background-size: contain;
+  width: 100%;
+  text-align:center;
+  font-size: 32.16px;
+  color: #334661;
+  padding: 6px 0px;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+}
+.why-we .line-why-we strong{color: #FC0000;font-family: 'Myriad Pro';font-weight: bold;font-style: normal;}
+.block-why-we {
+  background:url(../img/why-we-block.png);
+  background-size: cover;
+  width: 960px;
+  height: 1003px;
+  position:relative;
+  line-height: 15px;
+  margin:40px 0;
+}
+.block-why-we span {font-size: 13px;font-family: 'Myriad Pro';color: #1A1918;font-weight: normal;font-style: normal;}
+
+.block-why-we b,
+.block-why-we strong {
+  display:block;
+  color: #334661;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-family: 'Myriad Pro';
+  font-weight: 600;
+  font-style: normal;
+}
+
+.block-why-we .bb1,
+.block-why-we .bb2,
+.block-why-we .bb3,
+.block-why-we .bb4,
+.block-why-we .bb5,
+.block-why-we .bb6,
+.block-why-we .bb7,
+.block-why-we .bb8,
+.block-why-we .bb9,
+.block-why-we .bb10{
+  position:relative;
+}
+
+.blocjik{
+  position:absolute;
+  border: none !important;
+  background:#70B437 !important;
+  color:#ffffff;
+  border-radius: 50% !important;
+  font-weight: 600;
+  width:65px;
+  height:65px;
+  text-align:center;
+  line-height: 64px;
+  font-size: 18px;
+}
+
+.block-why-we .bb1 .blocjik{
+  font-size: 22px;
+  top: 149px;
+  right: 440px;
+  width: 80px;
+  height: 80px;
+  line-height: 79px;
+}
+
+.block-why-we .bb2 .blocjik{
+  top: 277px;
+  right: 271px;
+}
+
+.block-why-we .bb3 .blocjik{
+  font-size: 22px;
+  top: 479px;
+  right: 178px;
+  width: 80px;
+  height: 80px;
+  line-height: 79px;
+}
+
+.block-why-we .bb4 .blocjik{
+  top: 698px;
+  right: 232px;
+}
+
+.block-why-we .bb5 .blocjik{
+  font-size: 16px;
+  top: 914px;
+  right: 238px;
+  width: 45px;
+  height: 45px;
+  line-height: 49px;
+}
+
+.block-why-we .bb6 .blocjik{
+  font-size: 26px;
+  top: 780px;
+  left: 438px;
+  width: 80px;
+  height: 80px;
+  line-height: 79px;
+}
+
+.block-why-we .bb7 .blocjik{
+  font-size: 20px;
+  top: 885px;
+  left: 236px;
+  width: 60px;
+  height: 60px;
+  line-height: 59px;
+}
+
+.block-why-we .bb8 .blocjik{
+  font-size: 30px;
+  top: 682px;
+  left: 237px;
+  width: 75px;
+  height: 75px;
+  line-height: 76px;
+}
+
+.block-why-we .bb9 .blocjik{
+  font-size: 20px;
+  top: 228px;
+  left: 230px;
+  width: 65px;
+  height: 65px;
+  line-height: 64px;
+}
+
+.block-why-we .bb10 .blocjik{
+  font-size: 22px;
+  top: 449px;
+  left: 164px;
+  width: 73px;
+  height: 73px;
+  line-height: 73px;
+}
+
+.block-why-we .bb1 .descript {
+  position: absolute;
+  top: 1px;
+  z-index: 2;
+  left: 313px;
+  width: 337px;
+  padding: 10px;
+  font-size: 12.5px;
+  color: #525252;
+  text-align: center;
+}
+.block-why-we .bb2 .descript {
+  position: absolute;
+  top: 135px;
+  z-index: 2;
+  right: 0;
+  width: 317px;
+  padding: 10px;
+  font-size: 12.5px;
+  color: #525252;
+  text-align: center;
+}
+.block-why-we .bb3 .descript {
+  position: absolute;
+  top: 357px;
+  z-index: 2;
+  right: 0;
+  width: 318px;
+  padding: 10px;
+  font-size: 12.5px;
+  color: #525252;
+  text-align: center;
+}
+.block-why-we .bb4 .descript {
+  position: absolute;
+  top: 582px;
+  z-index: 2;
+  right: 0;
+  width: 317px;
+  padding: 10px;
+  font-size: 12.5px;
+  color: #525252;
+  text-align: center;
+}
+.block-why-we .bb5 .descript {
+  position: absolute;
+  top: 791px;
+  z-index: 2;
+  right: 0;
+  width: 318px;
+  padding: 10px;
+  font-size: 12.5px;
+  color: #525252;
+  text-align: center;
+}
+.block-why-we .bb6 .descript {
+  position: absolute;
+  top: 905px;
+  z-index: 2;
+  left: 311px;
+  width: 341px;
+  padding: 10px;
+  font-size: 12.5px;
+  color: #525252;
+  text-align: center;
+}
+.block-why-we .bb7 .descript {
+  position: absolute;
+  top: 778px;
+  z-index: 2;
+  left: 4px;
+  width: 292px;
+  padding: 10px;
+  font-size: 12.5px;
+  color: #525252;
+  text-align: center;
+}
+.block-why-we .bb8 .descript {
+  position: absolute;
+  top: 540px;
+  z-index: 2;
+  left: 4px;
+  width: 292px;
+  padding: 10px;
+  font-size: 12.5px;
+  color: #525252;
+  text-align: center;
+}
+.block-why-we .bb9 .descript {
+  position: absolute;
+  top: 309px;
+  z-index: 2;
+  left: 2px;
+  width: 294px;
+  padding: 10px;
+  font-size: 12.5px;
+  color: #525252;
+  text-align: center;
+}
+.block-why-we .bb10 .descript {
+  position: absolute;
+  top: 71px;
+  z-index: 2;
+  left: 0;
+  width: 296px;
+  padding: 10px;
+  font-size: 12.5px;
+  color: #525252;
+  text-align: center;
+}

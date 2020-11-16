@@ -1,0 +1,178 @@
+.stock-gh {
+  background: url(../img/stock-bg.png) no-repeat 50% 0;
+  padding: 40px 0;
+  height: 520px;
+  position: relative;
+  top: -60px;
+}
+
+.stock {
+  background: #D9E5D3;
+  padding: 40px 0;
+  height: 487px;
+}
+
+.stock .row {
+  background: #6BB23A;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+.stock-gh .row {
+  padding-bottom: 30px;
+}
+
+.stock form, .stock-gh form {
+  background: url(../img/stock-list.png) no-repeat;
+  position: absolute;
+  top: -121px;
+  left: -39px;
+  z-index: 3;
+  width: 493px;
+  height: 647px;
+}
+
+.stock form input[type="text"], .stock-gh form input[type="text"] {
+  display: block;
+  margin: 10px auto;
+  border: 0;
+  font-size: 16px;
+  color: #FFFFFF;
+  width: 60%;
+  padding: 15px 0;
+  background: #6A6A6A;
+  text-align: center;
+  font-family: 'Myriad Pro';
+  font-weight: 300;
+  font-style: normal;
+}
+
+.stock form .title, .stock-gh form .title {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 70px;
+  text-align: center;
+  margin-top: 163px;
+  line-height: 20px;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+}
+
+//.stock form input[type="text"]::-webkit-input-placeholder,
+//.stock-gh form input[type="text"]::-webkit-input-placeholder {
+//  opacity: 1;
+//  color: #ffffff;
+//}
+
+//.stock form input[type="text"]::-moz-placeholder. .stock-gh form input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+//  opacity: 1;
+//  color: #ffffff;
+//}
+//
+//.stock form input[type="text"]:-ms-input-placeholder, .stock-gh form input[type="text"]:-ms-input-placeholder { /* IE 10+ */
+//  opacity: 1;
+//  color: #ffffff;
+//}
+//
+//.stock form input[type="text"]:-moz-placeholder, .stock-gh form input[type="text"]:-moz-placeholder { /* Firefox 18- */
+//  opacity: 1;
+//  color: #ffffff;
+//}
+
+.stock form input[type="submit"], .stock-gh form input[type="submit"] {
+  display: block;
+  border: #F00709 2px solid;
+  padding: 12px 0;
+  width: 300px;
+  margin: 20px auto 0 auto;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  background: rgba(255, 58, 3, 1);
+  background: linear-gradient(to bottom, rgba(255, 58, 3, 1) 0%, rgba(178, 11, 8, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3a03', endColorstr='#b20b08', GradientType=0);
+  border-radius: 2px;
+  font-family: 'Myriad Pro';
+  font-weight: 600;
+  font-style: normal;
+}
+
+.stock form input[type="submit"]:hover, .stock-gh form input[type="submit"]:hover {
+  background: rgba(255, 58, 3, 1);
+  background: -moz-linear-gradient(top, rgba(178, 11, 8, 1) 0%, rgba(255, 58, 3, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 58, 3, 1) 0%, rgba(178, 11, 8, 1) 100%);
+  background: -o-linear-gradient(top, rgba(178, 11, 8, 1) 0%, rgba(255, 58, 3, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(178, 11, 8, 1) 0%, rgba(255, 58, 3, 1) 100%);
+  background: linear-gradient(to bottom, rgba(178, 11, 8, 1) 0%, rgba(255, 58, 3, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b20b08', endColorstr='#ff3a03', GradientType=0);
+}
+
+.j1 {
+  font-size: 50px;
+  margin: 40px 0 25px 55px;
+  color: #ffffff;
+  font-family: 'Myriad Pro';
+  font-weight: 600;
+  font-style: normal;
+}
+
+.stock-gh .j1 {
+  margin: 40px 0 25px 0px;
+}
+
+.stock-gh .j2 {
+  margin: 0px 30px 60px 0;
+}
+
+.stock-gh .k1, .stock-gh .k2, .stock-gh .k3 {
+  margin: 0px 0 15px 0;
+}
+
+.j2 {
+  font-size: 32px;
+  margin: 0px 30px 60px 55px;
+  color: #ffffff;
+  line-height: 37px;
+  font-family: 'Myriad Pro';
+  font-style: normal;
+}
+
+.k1, .k2, .k3 {
+  font-size: 20px;
+  margin: 0px 0 15px 55px;
+  color: #fff;
+  font-family: 'Myriad Pro';
+  font-weight: 300;
+  font-style: normal;
+}
+
+.k1:before {
+  content: '';
+  float: left;
+  background: url(../img/i-1.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+
+.k2:before {
+  content: '';
+  float: left;
+  background: url(../img/i-2.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: -2px;
+  margin-right: 10px;
+}
+
+.k3:before {
+  content: '';
+  float: left;
+  background: url(../img/i-3.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: -4px;
+  margin-right: 10px;
+}

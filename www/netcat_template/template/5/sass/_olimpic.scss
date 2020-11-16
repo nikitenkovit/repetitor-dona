@@ -1,0 +1,35 @@
+.olimpic {
+  background:url(../img/olimpic-bg.png) 50% 0 no-repeat;
+  position: relative;
+  height: 295px;
+}
+.olimpic .line-olimpik {
+  background:url(../img/line-olimpik.png) no-repeat;
+  font-size: 32px;
+  color:#ffffff;
+  padding: 11px 0;
+  margin: 0 auto;
+  width: 1162px;
+  position: relative;
+  top: -25px;
+  text-align: center;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-style: normal;
+}
+.olimpic .olimpic-element {
+  background: url(../img/olimpic-element.png) no-repeat;
+  width: 990px;
+  height: 243px;
+  font-family: 'Myriad Pro';
+  font-weight: 300;
+  font-style: normal;
+}
+.olimpic .olimpic-element span {
+  display: block;
+  padding: 50px 140px;
+  font-size: 18.32px;
+  color: #ffffff;
+  width: 1000px;
+  text-align: center;
+}

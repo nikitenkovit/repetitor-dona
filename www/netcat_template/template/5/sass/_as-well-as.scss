@@ -1,0 +1,237 @@
+.as-well-as {
+  background:#F0F8F3;
+  position: relative;
+  padding-bottom: 80px;
+}
+.as-well-as .line-h1 {
+  position:relative;
+  background:#ECF4F2;
+  color:#6EB33A;
+  font-size: 32px;
+  padding: 15px 0;
+  text-align:center;
+  z-index:2;
+  margin: 0 0 55px 0;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-style: normal;
+}
+.block1, .block2, .block3, .block4 {
+  position:relative;
+  z-index:2;
+}
+.as-well-as .block1:before {
+  content: '';
+  background: url(../img/as-well-ico-1.png);
+  width: 71px;
+  height: 71px;
+  position: absolute;
+  top: -15px;
+  margin-left: -36px;
+  z-index: 2;
+  left: 50%;
+}
+.as-well-as .block1 .row {
+  margin: 20px 20px 0 20px;
+}
+.as-well-as .block1 .col-md-6 {
+  padding:0 0 20px 0;
+}
+.as-well-as .block1 .line {
+  background:url(../img/as-well-line.png) no-repeat;
+  padding: 13px 0 13px 65px;
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  width: 105%;
+  right: 0px;
+  top: 0px;
+  font-family: 'Myriad Pro';
+  font-weight: 600;
+  font-style: normal;
+}
+.as-well-as .block1 .foto {
+  padding:15px;
+  border-radius:10px;
+  background:#6EB33A;
+}
+.as-well-as .block1 .foto img {
+  width:100%;
+  border-radius:10px;
+  border:1px solid #ffffff;
+}
+.as-well-as:before {
+  content:'';
+  position:absolute;
+  right: 50%;
+  top: 117px;
+  border-right:4px dotted #cccccc;
+  height: 90%;
+  z-index: 0;
+}
+.as-well-as:after {
+  content:'';
+  position:absolute;
+  background:#EAEAEA;
+  display:block;
+  right: 50%;
+  bottom: -19px;
+  width: 45px;
+  height: 45px;
+  margin-right: -22.5px;
+  border-radius:50%;
+  border:4px solid #cccccc;
+}
+.as-well-as .block1 .l {
+  background:#ffffff;
+  min-height: 247px;
+  width: 97%;
+  float: right;
+}
+.as-well-as .text-block {
+  padding: 15px 10px;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 15px;
+  color: #585959;
+  font-weight: bold;
+  border-radius: 3px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 37%, rgba(237,239,236,1) 68%, rgba(255,255,255,1) 94%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(37%, rgba(255,255,255,1)), color-stop(68%, rgba(237,239,236,1)), color-stop(94%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 37%, rgba(237,239,236,1) 68%, rgba(255,255,255,1) 94%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 37%, rgba(237,239,236,1) 68%, rgba(255,255,255,1) 94%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 37%, rgba(237,239,236,1) 68%, rgba(255,255,255,1) 94%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 37%, rgba(237,239,236,1) 68%, rgba(255,255,255,1) 94%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+}
+.as-well-as .block2 .line {
+  background:url(../img/as-well-line2.png) no-repeat;
+  background-size: contain;
+  padding: 13px 0 13px 0;
+  text-align:center;
+  font-size: 18px;
+  color: #fff;
+  width: 100%;
+  height: 42px;
+  font-family: 'Myriad Pro';
+  font-weight: 600;
+  font-style: normal;
+}
+.as-well-as .block2 .row {
+  background:#ffffff;
+  margin:0 30px;
+  padding: 10px 0;
+}
+.block2 .col-md-4 {
+  min-height: 100px;
+}
+.as-well-as .block2 .ico {
+  width:70px;
+  height:70px;
+  display:block;
+  margin: 10px auto 0;
+}
+.block3 {
+  margin-top: 40px;
+}
+.block2 {
+  margin-top: 10px;
+}
+.as-well-as .block3:before {
+  content: '';
+  background: url(../img/as-well-ico-3.png);
+  width: 71px;
+  height: 71px;
+  position: absolute;
+  top: -15px;
+  margin-left: -36px;
+  z-index: 2;
+  left: 50%;
+}
+.as-well-as .block3 .row {
+  margin: 20px 20px 0 20px;
+}
+.as-well-as .block3 .col-md-6 {
+  padding:0 0 20px 0;
+}
+.as-well-as .block3 .line {
+  background:url(../img/as-well-line3.png) no-repeat;
+  padding: 13px 0 13px 5px;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  width: 107%;
+  left: -21px;
+  top: 0px;
+  font-family: 'Myriad Pro';
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+.as-well-as .block3 .foto {
+  padding:15px;
+  border-radius:10px;
+  background:#D8462E;
+}
+.as-well-as .block3 .foto img {
+  width:100%;
+  border-radius:10px;
+  border:1px solid #ffffff;
+}
+.as-well-as .block3 .l {
+  background:#ffffff;
+  min-height: 370px;
+  width: 97%;
+  float: left;
+}
+.as-well-as .block4:before {
+  content: '';
+  background: url(../img/as-well-ico4.png);
+  width: 70px;
+  height: 69px;
+  position: absolute;
+  top: -15px;
+  margin-left: -35px;
+  z-index: 2;
+  left: 50%;
+}
+.as-well-as .block4 .row {
+  margin: 20px 20px 0 20px;
+}
+.as-well-as .block4 .col-md-6 {
+  padding:0 0 20px 0;
+}
+.as-well-as .block4 .line {
+  background: url(../img/as-well-line4.png) no-repeat;
+  padding: 13px 0 13px 0px;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  width: 105%;
+  right: 0px;
+  top: 0px;
+  text-align: center;
+  font-family: 'Myriad Pro';
+  font-weight: 600;
+  font-style: normal;
+}
+.as-well-as .block4 .foto {
+  padding:15px;
+  border-radius:10px;
+  background:#586B8B;
+}
+.as-well-as .block4 .foto img {
+  width:100%;
+  border-radius:10px;
+  border:1px solid #ffffff;
+}
+.as-well-as .block4 .l {
+  background:#ffffff;
+  min-height: 221px;
+  width: 97%;
+  float: right;
+}
